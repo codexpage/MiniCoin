@@ -1,0 +1,2 @@
+# MiniCoin
+mini blockchain
