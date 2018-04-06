@@ -117,6 +117,7 @@ def getAndReplaceChain(addr):
 
 
 def receiveTxhandler(tx):
+    # addToTransactionPool(tx)
     pass
     #add tx to pool
     #broadcast
