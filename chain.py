@@ -92,7 +92,7 @@ def getMyUtxos():
 
 def getDifficulty():
 	lastBlock= blockchain[-1]
-	if lastBlock.index % DIFFICULTY_ADJUSTMENT_INTERVAL ==0 and lastBlock.index !=0:
+	if lastBlock.index % DIFFICULTY_ADJUSTMENT_INTERVAL ==0 and lastBlock.index !=0:#adjust 
 		preAdjBlock = blockchain[len(blockchain)-1-DIFFICULTY_ADJUSTMENT_INTERVAL]
 		timeExpected = BLOCK_GENERATION_INTERVAL * DIFFICULTY_ADJUSTMENT_INTERVAL
 		timeTaken = lastBlock.timestamp -preAdjBlock.timestamp
@@ -102,7 +102,7 @@ def getDifficulty():
 			return preAdjBlock.difficulty - 1
 		else:
 			return preAdjBlock.difficulty
-	else:
+	else:#keep old difficulty
 		return lastBlock.difficulty
 
 
@@ -206,6 +206,10 @@ def validate_blockchain(chain):
 # print(validate_blockchain([]))
 
 
+def getAccumulatedDifficulty(chain):
+	return sum([2**block.difficulty for block in chain])
+
+
 #replace the chian with new chain if it's has more work
 def replaceChain(newchain):
 	if validate_blockchain(newchain):
@@ -221,14 +225,6 @@ def replaceChain(newchain):
 
 
 
-# def matchDifficuilty(hash, difficulty)
-
-
-
-def getAccumulatedDifficulty(chain):
-	return sum([2**block.difficulty for block in chain])
-
-
 # def isValidTimestamp():
 # 	pass
 
@@ -236,6 +232,4 @@ def getAccumulatedDifficulty(chain):
 # def addBlockToChain():
 # 	pass
 
-# def replaceChain():
-# 	pass
 
