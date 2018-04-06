@@ -1,6 +1,8 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify,request
 import pickle
 import requests
+import chain
+import json
 
 app = Flask(__name__)
 
@@ -22,20 +24,52 @@ tasks = [
     }
 ]
 
+def readUrlfromFile():
+    #fill peerip
+    pass
+
+def broadcast(data, route):
+    #send to all peer
+    for url in peers:
+        postRequest(url+route,data)
+
+
 @app.route('/querylast', methods=['GET'])
 def querylast():
-    print(pickle.dumps({'tasks': tasks}))#bytes
-    return jsonify({'tasks': tasks})
+    #return last block
+    return jsonify(chain.getLastBlock())
 
 @app.route('/queryall', methods=['GET'])
 def queryall():
-    print(pickle.dumps({'tasks': tasks}))#bytes
-    return jsonify({'tasks': tasks})
+    return jsonify(chain.blockchain)
 
 @app.route('/querytx', methods=['GET'])
 def querytx():
-    print(pickle.dumps({'tasks': tasks}))#bytes
-    return jsonify({'tasks': tasks})
+    #return the pool
+    return jsonify()
+
+# @app.route('/chain', methods=['POST'])
+# def receiveChain():
+#     content = request.getjson()
+#     print(content)
+#     obj = json.dumps(content)
+#     return "ok"
+
+@app.route('/block', methods=['POST'])
+def receiveBlock():
+    content = request.getjson()
+    print(content)
+    obj = json.dumps(content)
+    receiveBlockHandler(obj)
+    return "ok"
+
+@app.route('/tx', methods=['POST'])
+def receiveTx():
+    content = request.getjson()
+    print(content)
+    obj = json.dumps(content)
+    receiveTxhandler(obj)
+    return "ok"
 
 # r = requests.post("http://bugs.python.org", data={'number': 12524, 'type': 'issue', 'action': 'show'})
 
@@ -46,6 +80,48 @@ def getRequest(url) -> dict:
 def postRequest(url, data) -> dict:
     r = requests.post(url, data)
     return r.json()
+
+
+def receiveBlockHandler(block:chain.Block):
+    if not chain.validate_block_types(block):
+        print("block structuture not valid")
+        return
+    lastblock = chain.getLastBlock()
+    if block.index > lastblock.index: #receive longer chain's block
+        if lastblock.hash ==  block.prev_hash: # one block behind
+            chain.addBlockToChain(block)
+            broadcast(block,"/block")
+        else: #serveral blocks behind, or branch
+            addr = request.remote_addr
+            #broadcast request query all chain
+            getAndReplaceChain(addr)
+
+
+def receiveTxhandler():
+    #put into pool
+    #braodcast
+    pass
+
+
+
+def getAndReplaceChain(addr):
+    otherchain = getRequest(addr+"/queryall")
+    if not chain.validate_blockchain(otherchain):#verify chain
+        print("receive a invalid block chain")
+        return
+    if len(otherchain)>len(chain.blockchain): #should compare difficult
+        chain.blockchain = otherchain
+    broadcast(otherchain[-1], "/block")
+    #broadcast block
+
+
+
+def receiveTxhandler(tx):
+    pass
+    #add tx to pool
+    #broadcast
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)

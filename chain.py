@@ -65,17 +65,16 @@ def getBlockchain():
 	return blockchain
 
 def getUtxos():
-	return utxo.deepcopy() #why?
+	pass
+	# return utxo.deepcopy() #why?
 
 
 
 #====================functions==================
 
-def getDifficulty():
-	pass
+def getLastBlock():
+	return blockchain[-1]
 
-def getAdjustedDifficulty():
-	pass
 
 def  generateEmptyNextBlock():
 	pass
@@ -213,8 +212,8 @@ def getAccumulatedDifficulty(chain):
 #replace the chian with new chain if it's has more work
 def replaceChain(newchain):
 	if validate_blockchain(newchain):
-		getAccumulatedDifficulty(blockchain) > getAccumulatedDifficulty(newchain):
-		blockchain=newchain
+		if getAccumulatedDifficulty(blockchain) > getAccumulatedDifficulty(newchain):
+			blockchain=newchain
 		#setUtxos(utxo)
 		#update tx pool
 		#broadcast latest
