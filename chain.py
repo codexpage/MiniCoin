@@ -8,7 +8,7 @@ import transaction as tr
 import wallet as wa
 import TxPool as pool
 import p2p
-
+# from typing import Iterable
 BLOCK_GENERATION_INTERVAL = 10  # 10s
 DIFFICULTY_ADJUSTMENT_INTERVAL = 10  # 10 blocks
 
@@ -95,20 +95,12 @@ def getLastBlock():
     return blockchain[-1]
 
 
-def generateEmptyNextBlock():
-    pass
+# def generateEmptyNextBlock():
+#     pass
 
 
 # return a block with no data
 
-def getMyUtxos():
-    pass
-
-
-# return utxos
-
-
-# Input a block with default nonce
 
 def getDifficulty():
     lastBlock = blockchain[-1]
@@ -186,7 +178,7 @@ def miner():
         block = assmbleDataToMineBlock()
         if block:
             addBlockToChain()       #attach block to chain
-            p2p.broadcast(block,"/block") #TODO:is this the same p2p?
+            p2p.broadcast(block,"/block") #TODO:is this the same p2p? peers?
             #TODO save to disk
         #if block is empty means it was interuptted
 
@@ -212,7 +204,7 @@ def validate_block_types(block):
 
 def validate_genesis_block(block):
     if not genesis_block == block:
-        # raise ValueError('Invalid genesis block')
+        print('Invalid genesis block')
         return False
     return True
 
@@ -236,7 +228,7 @@ def validate_block(block, prev_block):
         # raise ValueError('Invalid hash')
 
 
-# valide a whole chain
+# valide a whole chain, return utxo if ture, return None if flase
 def validate_blockchain(chain):
     """When given a blockchain, validates that all blocks are valid, raising
     a ValueError if an inconsistency or other problem is found"""
@@ -245,11 +237,18 @@ def validate_blockchain(chain):
         return False
     if not validate_genesis_block(chain[0]):
         return False
-    for i in range(1, len(chain)):
-        if not validate_block(chain[i], chain[i - 1]):
-            return False
-    return True
-    #TODO validate transactions
+
+    res_utxos=[]
+    for i in range(0, len(chain)):
+        if i!=0 and (not validate_block(chain[i], chain[i - 1])):
+            return None
+        block:Block = chain[-1]
+        res_utxos = tr.processTx(block.data,res_utxos,block.index)
+        if not res_utxos:
+            print("transactions is invalid")
+            return None
+    return res_utxos
+
 
 
 # print(validate_blockchain([]))
@@ -265,33 +264,28 @@ def addBlockToChain(block):
         res_utxos = tr.processTx(block.data,getUtxos(),block.index)
         if res_utxos:
             blockchain.append(block)
+            mine_interrupt.set()#stop mining and mine on new block
             setUtxos(res_utxos)
             pool.updateTxPool(utxos)
+            print("The block has been accepted")
         else:
             print("the block has invalid tx")
             return False
-    #is valid block
-    #utxo = processTransactions(block.data,getutxos(),block.index)
-    #if not utxo:
-    #    not valid return false
-    #else
-    #blockchian.append(block)
-    #setutxos(utxos)
-    #pool.updateTxPool(utxos)
 
 
 # replace the chian with new chain if it's has more work
-def replaceChain(newchain):
-    if validate_blockchain(newchain):
+def replaceChain(newchain)->bool:
+    res_utxos = validate_blockchain(newchain)
+    if res_utxos:
         if getAccumulatedDifficulty(getBlockchain()) > getAccumulatedDifficulty(newchain):
             setBlockchain(newchain)
-        #TODO :
-        # setUtxos(utxo)
-        # update tx pool
-        # broadcast latest
-        pass
+        setUtxos(res_utxos)
+        pool.updateTxPool(res_utxos)
+        # broadcast latest in p2p
+        return True
     else:
         print("Received blockchain is invalid.")
+        return False
 
 # def isValidTimestamp():
 # 	pass

@@ -27,7 +27,9 @@ tasks = [
 
 def readUrlfromFile():
     #fill peerip
-    pass
+    global peers
+    peers=["http://localhost:8001","http://localhost:8002"]
+    return
 
 def broadcast(data, route):
     #send to all peer
@@ -107,13 +109,8 @@ def receiveTxhandler():
 
 def getAndReplaceChain(addr):
     otherchain = getRequest(addr+"/queryall")
-    if not chain.validate_blockchain(otherchain):#verify chain
-        print("receive a invalid block chain")
-        return
-    if len(otherchain)>len(chain.blockchain): #should compare difficult
-        chain.blockchain = otherchain
-    broadcast(otherchain[-1], "/block")
-    #broadcast block
+    if chain.replaceChain(otherchain):
+        broadcast(otherchain[-1], "/block") #broadcast block
 
 
 
@@ -128,8 +125,8 @@ def http_server():
     app.run(debug=True)
 
 
-def miner():
-    pass
+# def miner():
+#     pass
 
 def main():
     readUrlfromFile()
@@ -139,7 +136,7 @@ def main():
         threads[-1].start()
 
     start_thread(http_server)
-    # start_thread(miner)
+    start_thread(chain.miner)
     [t.join() for t in threads]
 
 
