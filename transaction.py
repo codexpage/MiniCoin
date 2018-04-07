@@ -3,6 +3,7 @@ import utils
 import string
 from functools import reduce
 
+
 # use rsa2048 (2048bit) instead of dsa
 
 COINBASE_AMOUNT = 50
@@ -89,6 +90,8 @@ def validateBlockTxs(txs, unspentTxOuts, index):
     normalTx = txs.slice(1)
     return normalTx.map(lambda tx: validateTx(tx, unspentTxOuts)).recude(lambda t1, t2: t1 and t2, True)
 
+
+# TODO
 def hasDups(txIns):
     # groups = _.countBy(txIns, (txIn) = > txIn.txOutId + txIn.txOutId);
     # return _(groups)
@@ -118,12 +121,12 @@ def validateTxIn(txIn: TxIn, tx: Transaction, unspents):
         return False
     addr = referencedTxOut.address
 
-    # TODO key
-    key = ""
+
+    # key = ""
 
     # key = ec.keyFromPublic(address, 'hex');
     # return key.verify(transaction.id, txIn.signature);
-    return key
+    return rsa.verify(tx.id, txIn.signature, utils.pubkey)
 
 
 def getTxInAmount(txIn: TxIn, unspents):
@@ -155,9 +158,10 @@ def signTxin(tx: Transaction, txInIndex: int, pk: str, unspentTxOuts) -> str:
         raise ("input does not match")
 
     # TODO key
-    key = ""
-    signature = toHex(rsa.encrypt(id, pk))
-    return signature
+    # key = toHex(utils.privatekey)
+    # signature = toHex(rsa.encrypt(id, pk))
+
+    return rsa.sign(id, utils.privatekey)
 
 
 
@@ -184,8 +188,8 @@ def processTx(txs, unspentTxout, blockIndex):
     return updateUnspentTxOut(txs, unspentTxout)
 
 
-def toHex(byte):
-    pass
+# def toHex(byte):
+#     pass
 
 
 def getPublicKey(privatekey: str) -> str:
