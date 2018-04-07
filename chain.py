@@ -23,10 +23,12 @@ class Block:
         self.nonce = nonce
         self.difficulty = difficulty  # int
 
+    #TODO data hash and tree hash
     # 计算block hash，不包括nonce
     def calculate_hash(self):
-        return list_hash(
-            [str(self.index), self.data, str(self.timestamp), self.prev_hash, str(self.difficulty), str(self.nonce)])
+        return list_hash([str(self)])
+        # return list_hash(
+        #     [str(self.index), self.data, str(self.timestamp), self.prev_hash, str(self.difficulty), str(self.nonce)])
 
     def __eq__(self, other):
         return (
@@ -40,23 +42,16 @@ class Block:
         )
 
     def __str__(self):
-        return f'Block:{self.index}\nData:{self.data}\nTime:{self.timestamp} \
-    	\nHash:{self.hash}\nPrevHash:{self.prev_hash}\nNonce:{self.nonce}\nDifficulty:{self.difficulty}\n'
+        return f'Block:{self.index}\nData:{self.data}\nTime:{self.timestamp}' \
+               f'\nPrevHash:{self.prev_hash}\nNonce:{self.nonce}\nDifficulty:{self.difficulty}\n'
 
-
-# genesisTransaction = {
-#     'txIns': [{'signature': '', 'txOutId': '', 'txOutIndex': 0}],
-#     'txOuts': [{
-#         'address': '04bfcab8722991ae774db48f934ca79cfb7dd991229153b9f732ba5334aafcd8e7266e47076996b55a14bf9913ee3145ce0cfc1372ada8ada74bd287450313534a',
-#         'amount': 50
-#     }],
-#     'id': 'e655f6a5f26dc9b4cac6e46f52336428287759cf81ef5ff10854f69d68f43fa3'
-# }
-
+genesisTransaction=tr.Transaction('e655f6a5f26dc9b4cac6e46f52336428287759cf81ef5ff10854f69d68f43fa3',
+                                  tr.TxIn('',0,''),
+                                  tr.TxOut('04bfcab8722991ae774db48f934ca79cfb7dd991229153b9f732ba5334aafcd8e7266e47076996b55a14bf9913ee3145ce0cfc1372ada8ada74bd287450313534a',50))
 
 genesis_block = Block(
     index=0,
-    data='Genesis Block',
+    data=[genesisTransaction],
     timestamp=1519415703,
     hash='e9d3061d5e216863506649096aac5ddd2089357c0bb3d647db332cd9b926f8b9',
     prev_hash='',
@@ -166,7 +161,7 @@ def assmbleDataToMineBlock():
     # build the block
     # call generateBlock_with_data
     coinbaseTx = tr.getCoinbaseTx(wa.getPubKeyFromWallet(),getLastBlock().index+1)
-    blockData = [coinbaseTx]+tr.getTxPool()
+    blockData = [coinbaseTx]+tr.getTxPool() #TODO move getTXPool into TXPool.py
     return generateBlock_with_data(blockData)
 
 
