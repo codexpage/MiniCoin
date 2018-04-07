@@ -226,6 +226,7 @@ def validate_block(block, prev_block):
     elif block.calculate_hash() != block.hash:
         return False
         # raise ValueError('Invalid hash')
+    #TODO check timestamp
 
 
 # valide a whole chain, return utxo if ture, return None if flase
