@@ -6,6 +6,8 @@ import json
 import threading
 import transaction as tr
 import wallet as wa
+import TxPool as pool
+import p2p
 
 BLOCK_GENERATION_INTERVAL = 10  # 10s
 DIFFICULTY_ADJUSTMENT_INTERVAL = 10  # 10 blocks
@@ -65,15 +67,23 @@ genesis_block = Block(
 # print(genesis_block.calculate_hash())
 
 blockchain = [genesis_block]
-utxos = []  # list of utxo
+# utxos = []  # list of utxo
+utxos = tr.processTx(blockchain[0].data,[],0)
 
 
 def getBlockchain():
     return blockchain
 
+def setBlockchain(newchain):
+    global blockchain
+    blockchain = newchain
 
 def getUtxos():
-    pass
+    return utxos
+
+def setUtxos(newutxos):
+    global utxos
+    utxos = newutxos
 
 
 # return utxo.deepcopy() #why?
@@ -163,16 +173,22 @@ def assmbleDataToMineBlock():
     # build a tree
     # build the block
     # call generateBlock_with_data
-    coinbaseTx = tr.getcoinbaseTx(wa.getPubKeyFromWallet(),getLastBlock().index+1)
+    coinbaseTx = tr.getCoinbaseTx(wa.getPubKeyFromWallet(),getLastBlock().index+1)
     blockData = [coinbaseTx]+tr.getTxPool()
-    return generateBlock_with_data(blockData);
+    return generateBlock_with_data(blockData)
 
 
-
+#mine forever
 def miner():
     while True:
-        data = "hello"
-        generateBlock_with_data(data)
+        # data = "hello"
+        # generateBlock_with_data(data)
+        block = assmbleDataToMineBlock()
+        if block:
+            addBlockToChain()       #attach block to chain
+            p2p.broadcast(block,"/block") #TODO:is this the same p2p?
+            #TODO save to disk
+        #if block is empty means it was interuptted
 
 
 # =========validate block========
@@ -233,7 +249,7 @@ def validate_blockchain(chain):
         if not validate_block(chain[i], chain[i - 1]):
             return False
     return True
-    ##and validate transactions
+    #TODO validate transactions
 
 
 # print(validate_blockchain([]))
@@ -243,11 +259,33 @@ def getAccumulatedDifficulty(chain):
     return sum([2 ** block.difficulty for block in chain])
 
 
+#挖到新块，或者收到新块，要加到chain上
+def addBlockToChain(block):
+    if validate_block(block, getLastBlock()):
+        res_utxos = tr.processTx(block.data,getUtxos(),block.index)
+        if res_utxos:
+            blockchain.append(block)
+            setUtxos(res_utxos)
+            pool.updateTxPool(utxos)
+        else:
+            print("the block has invalid tx")
+            return False
+    #is valid block
+    #utxo = processTransactions(block.data,getutxos(),block.index)
+    #if not utxo:
+    #    not valid return false
+    #else
+    #blockchian.append(block)
+    #setutxos(utxos)
+    #pool.updateTxPool(utxos)
+
+
 # replace the chian with new chain if it's has more work
 def replaceChain(newchain):
     if validate_blockchain(newchain):
-        if getAccumulatedDifficulty(blockchain) > getAccumulatedDifficulty(newchain):
-            blockchain = newchain
+        if getAccumulatedDifficulty(getBlockchain()) > getAccumulatedDifficulty(newchain):
+            setBlockchain(newchain)
+        #TODO :
         # setUtxos(utxo)
         # update tx pool
         # broadcast latest
