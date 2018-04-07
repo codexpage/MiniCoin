@@ -137,11 +137,8 @@ def findUnspentTxOut(txId, index, unspents):
 
 
 def getCoinbaseTx(addr: str, index: int):
-    t = Transaction()
-    txIn = TxIn("", "", index)
-
-    t.txIns = [txIn]
-    t.txOuts = [TxOut(addr, COINBASE_AMOUNT)]
+    txIn = TxIn("", index,"")
+    t = Transaction('',[txIn],[TxOut(addr, COINBASE_AMOUNT)])
     t.id = getTxid(t)
     return t
 
@@ -229,9 +226,9 @@ def isValidTxList(txs) -> bool:
 def isValidTxStruct(tx: Transaction) -> bool:
     return (
             type(tx.id) == str
-            and isinstance(tx.txIns, [])
+            and isinstance(tx.txIns, list)
             and reduce(lambda t1, t2: t1 and t2, map(lambda txin: isValidTxIn(txin), tx.txIns))
-            and isinstance(tx.txOuts, [])
+            and isinstance(tx.txOuts, list)
             and reduce(lambda t1, t2: t1 and t2, map(lambda txout: isValidTxOut(txout), tx.txOuts))
     )
 
