@@ -3,38 +3,38 @@ import rsa
 
 (privatekey, pubkey) = rsa.newkeys(2048)
 
-def sha256d(s:[str, bytes]) -> str: #加密hash
+
+def sha256d(s: [str, bytes]) -> str:  # 加密hash
     """A double SHA-256 hash."""
     if not isinstance(s, bytes):
-        s = s.encode() #to bytes
+        s = s.encode()  # to bytes
 
     # return hashlib.sha256(hashlib.sha256(s).digest()).hexdigest()
     return hashlib.sha256(s).hexdigest()
 
 
-#convert bytes to hex string
-#use hexdigest
-#covnert form string to bytes
-#use encode
+# convert bytes to hex string
+# use hexdigest
+# covnert form string to bytes
+# use encode
 
-#serialization
-#we use pickle or json to seialize and deseialize
-
-
+# serialization
+# we use pickle or json to seialize and deseialize
 
 
-
-#use secp256k1
+# use secp256k1
 def getPubKey(privateKey: str) -> str:
-	return pubkey
+    return pubkey
 
 
-def getCurrentTimestamp() -> int :
-	#get tie 
-	pass
+def getCurrentTimestamp() -> int:
+    # get tie
+    pass
+
 
 def main():
-	print(sha256d("hello world"))
+    print(sha256d("hello world"))
+
 
 def list_hash(to_hash) -> str:
     """Calculates the hash for a block that would contain the passed attributes"""
@@ -43,5 +43,6 @@ def list_hash(to_hash) -> str:
     to_hash = to_hash.encode('utf-8')
     return sha256d(to_hash)
 
+
 if __name__ == '__main__':
-	main()
+    main()

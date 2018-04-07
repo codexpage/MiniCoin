@@ -161,7 +161,7 @@ def assmbleDataToMineBlock():
     # build the block
     # call generateBlock_with_data
     coinbaseTx = tr.getCoinbaseTx(wa.getPubKeyFromWallet(),getLastBlock().index+1)
-    blockData = [coinbaseTx]+tr.getTxPool() #TODO move getTXPool into TXPool.py
+    blockData = [coinbaseTx]+pool.getTxPool() #TODO move getTXPool into TXPool.py
     return generateBlock_with_data(blockData)
 
 
@@ -173,6 +173,7 @@ def miner():
         block = assmbleDataToMineBlock()
         if block:
             addBlockToChain()       #attach block to chain
+            print(block)
             p2p.broadcast(block,"/block") #TODO:is this the same p2p? peers?
             #TODO save to disk
         #if block is empty means it was interuptted
@@ -289,3 +290,5 @@ def replaceChain(newchain)->bool:
 
 # def addBlockToChain():
 # 	pass
+if __name__ == '__main__':
+    miner()
