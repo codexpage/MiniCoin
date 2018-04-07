@@ -1,20 +1,23 @@
+import utils
 
 
 privateKeyPath = "./private_key"
 
 def getPrivateKeyFromWallet() -> str:
-	pass
+	return utils.privatekey
+	# pass
 	#read from file private_key
 	#return the string
 
 
 def getPubKeyFromWallet():
-	pass
+	return utils.pubkey
+	# pass
 	#return calpub(private_key)
 
 
-def generatePrivateKey()->str:
-	pass
+# def generatePrivateKey()->str:
+# 	pass
 	#use the lib to gen key pair
 	#return pri str
 
