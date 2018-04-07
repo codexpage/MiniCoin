@@ -3,6 +3,7 @@ import pickle
 import requests
 import chain
 import json
+import threading
 
 app = Flask(__name__)
 
@@ -123,6 +124,25 @@ def receiveTxhandler(tx):
     #broadcast
 
 
+def http_server():
+    app.run(debug=True)
+
+
+def miner():
+    pass
+
+def main():
+    readUrlfromFile()
+    threads = []
+    def start_thread(fnc): #启动线程的函数
+        threads.append(threading.Thread(target=fnc, daemon=True))
+        threads[-1].start()
+
+    start_thread(http_server)
+    # start_thread(miner)
+    [t.join() for t in threads]
+
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    main()
+    # app.run(debug=True)
