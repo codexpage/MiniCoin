@@ -1,4 +1,7 @@
 import hashlib
+import rsa
+
+(privatekey, pubkey) = rsa.newkeys(2048)
 
 def sha256d(s:[str, bytes]) -> str: #加密hash
     """A double SHA-256 hash."""
@@ -23,7 +26,8 @@ def sha256d(s:[str, bytes]) -> str: #加密hash
 
 #use secp256k1
 def getPubKey(privateKey: str) -> str:
-	pass
+	return pubkey
+
 
 def getCurrentTimestamp() -> int :
 	#get tie 
