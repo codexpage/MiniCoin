@@ -35,7 +35,8 @@ def findTtxos():
 	pass
 
 
-def createTxOuts():
+#return list of TxOut
+def createTxOuts(receiverAddr:str, myAddr,amount, leftAmount):
 	pass
 
 def createTx():
@@ -46,6 +47,9 @@ def fileterTxPool():
 	pass
 	
 
+#return a Tx
+def createTransaction(receiverAddr:str, amount:int, privateKey:str, utxos, txPool):
+	pass
 
 
 
