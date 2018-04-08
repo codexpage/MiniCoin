@@ -74,17 +74,17 @@ def queryall():
 
 @app.route('/block', methods=['POST'])
 def receiveBlock():
-    content = request.data
-    print(content)
-    obj = pickle.dumps(content)
+    content = request.get_data()
+    # print(content)
+    obj = pickle.loads(content)
     receiveBlockHandler(obj)
     return "ok"
 
 @app.route('/tx', methods=['POST'])
 def receiveTx():
-    content = request.data
-    print(content)
-    obj = pickle.dumps(content)
+    content = request.get_data()
+    # print(content)
+    obj = pickle.loads(content)
     receiveTxhandler(obj)
     return "ok"
 
@@ -97,7 +97,7 @@ def getRequest(url) -> dict:
 
 def postRequest(url, data):
     try:
-        r = requests.post(url, data)
+        r = requests.post(url, pickle.dumps(data))
         return pickle.loads(r.content)
     except:
         print("connection error")
@@ -106,6 +106,9 @@ def postRequest(url, data):
 #TODO when edit chain , add lock
 #when receive a block
 def receiveBlockHandler(block):
+    print("======block received=========")
+    print(block)
+    print("======block received=========")
     if not chain.validate_block_types(block):
         print("block structuture not valid")
         return
@@ -124,7 +127,7 @@ def receiveBlockHandler(block):
 
 
 def getAndReplaceChain(addr):
-    otherchain = getRequest(addr+"/queryall")
+    otherchain = getRequest("http://"+addr+"/queryall")
     if chain.replaceChain(otherchain):
         broadcast(otherchain[-1], "/block") #broadcast block
 
