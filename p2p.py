@@ -35,9 +35,11 @@ tasks = [
 
 #TODO read url filter url ,build peer list
 def readUrlfromFile():
-    #fill peerip
+    #fill peerip TODO read ip from file
     global peers
-    peers=["http://localhost:8001","http://localhost:8002"]
+    li = ["http://localhost:8001","http://localhost:8002"]
+    li.remove(selfip)#remove selfip
+    peers = li
     return
 
 def broadcast(data, route):
@@ -127,9 +129,8 @@ def receiveTxhandler(tx):
     #if tx exist, don't broadcast
 
 
-def http_server():
-    app.run(debug=True)
-
+def http_server(port):
+    app.run(debug=True, host='0.0.0.0', port=port)
 
 def main():
     readUrlfromFile()
@@ -138,6 +139,7 @@ def main():
         threads.append(threading.Thread(target=fnc, daemon=True))
         threads[-1].start()
 
+    print("start utxos:",chain.getUtxos())
     start_thread(http_server)
     start_thread(chain.miner)
     [t.join() for t in threads]#TODO what is join
@@ -148,5 +150,6 @@ if __name__ == '__main__':
     port = int(args["<port>"])
     # print(port)
     selfip = f"http://localhost:{port}"
-    # main()
-    app.run(debug=True,host= '0.0.0.0',port=port)
+    main()
+    # http_server(port)
+
