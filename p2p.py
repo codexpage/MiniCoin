@@ -11,6 +11,7 @@ import threading
 import TxPool as pool
 import transaction as tr
 from docopt import docopt
+import os
 
 
 app = Flask(__name__)
@@ -134,15 +135,16 @@ def http_server(port):
 
 def main(port):
     readUrlfromFile()
+    print("peers:", peers)
     threads = []
     def start_thread(fnc): #启动线程的函数
         threads.append(threading.Thread(target=fnc, daemon=True))
         threads[-1].start()
 
     print("start utxos:",chain.getUtxos())
-    start_thread(http_server(port))
     start_thread(chain.miner)
-    [t.join() for t in threads]#TODO what is join
+    # start_thread(http_server(port))
+    [t.join() for t in threads]#main thread join to wait two subthread
 
 
 if __name__ == '__main__':
@@ -150,6 +152,7 @@ if __name__ == '__main__':
     port = int(args["<port>"])
     # print(port)
     selfip = f"http://localhost:{port}"
+    print("start main")
     main(port)
     # http_server(port)
 

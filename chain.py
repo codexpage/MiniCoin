@@ -8,6 +8,7 @@ import transaction as tr
 import wallet as wa
 import TxPool as pool
 import p2p
+import os
 # from typing import Iterable
 BLOCK_GENERATION_INTERVAL = 10  # 10s
 DIFFICULTY_ADJUSTMENT_INTERVAL = 3  # 10 blocks
@@ -99,10 +100,11 @@ def getLastBlock():
 
 def getDifficulty():
     lastBlock = getLastBlock()
-    if lastBlock.index % DIFFICULTY_ADJUSTMENT_INTERVAL == 0 and lastBlock.index != 0:  # adjust
-        preAdjBlock = blockchain[len(blockchain) - 1 - DIFFICULTY_ADJUSTMENT_INTERVAL]
+    if lastBlock.index % DIFFICULTY_ADJUSTMENT_INTERVAL == 0 and lastBlock.index!=0:  # adjust
+        preAdjBlock = blockchain[len(blockchain) - DIFFICULTY_ADJUSTMENT_INTERVAL]
         timeExpected = BLOCK_GENERATION_INTERVAL * DIFFICULTY_ADJUSTMENT_INTERVAL
         timeTaken = lastBlock.timestamp - preAdjBlock.timestamp
+        print("change diff:",timeExpected,lastBlock.timestamp,preAdjBlock.timestamp,timeTaken)
         if timeTaken < timeExpected / 2:  # too fast
             return preAdjBlock.difficulty + 1
         elif timeTaken > timeExpected * 2:  # too slow
@@ -167,13 +169,15 @@ def assmbleDataToMineBlock():
 
 #mine forever
 def miner():
+    cnt =0
     while True:
         # data = "hello"
         # generateBlock_with_data(data)
         block = assmbleDataToMineBlock()
         if block:
             addBlockToChain(block)       #attach block to chain
-            print(block)
+            cnt+=1
+            print(os.getpid(),cnt,"mined a block",block)
             p2p.broadcast(block,"/block") #TODO:is this the same p2p? peers?
             #TODO save to disk
         #if block is empty means it was interuptted, start new loop on new block
@@ -183,14 +187,12 @@ def miner():
 # block类型检查
 def validate_block_types(block):
     """Returns whether all of the types in the given block are correct"""
-    # util.util.raisenotdefined()
     return (
             type(block.index) == int
-            and type(block.data) == str
+            and type(block.data) == list
             and type(block.timestamp) == int
             and type(block.hash) == str
             and type(block.prev_hash) == str
-            and type(block.nonce) == int
             and type(block.nonce) == int
     )
 
@@ -207,21 +209,23 @@ def validate_genesis_block(block):
 
 # print(validate_genesis_block(genesis_block))
 
-def validate_block(block, prev_block):
+def validate_block(block, prev_block)->bool:
     """Validates a given non-genesis block, raising a ValueError if a problem
     is found"""
     if not validate_block_types(block):
+        print('validate_block: Block types invalid')
         return False
-        # raise ValueError('Block types invalid')
     elif block.index != prev_block.index + 1:
+        print('validate_block: Invalid block index')
         return False
-        # raise ValueError('Invalid block index')
     elif block.prev_hash != prev_block.hash:
+        print('validate_block: Invalid previous hash')
         return False
-        # raise ValueError('Invalid previous hash')
     elif block.calculate_hash() != block.hash:
+        print("'Invalid hash'")
         return False
-        # raise ValueError('Invalid hash')
+    else:
+        return True
     #TODO check timestamp
 
 
@@ -268,6 +272,8 @@ def addBlockToChain(block):
         else:
             print("the block has invalid tx")
             return False
+    else:
+        print("new block is not invalid to add to chain.")
 
 
 # replace the chian with new chain if it's has more work
