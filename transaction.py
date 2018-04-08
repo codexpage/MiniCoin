@@ -87,6 +87,7 @@ def validateTx(tx: Transaction, unspentTxOuts):
 def validateBlockTxs(txs, unspentTxOuts, index):
     coinbaseTx = txs[0]
     if not validateCoinbaseTx(coinbaseTx, index):
+        print("invalid coinbase tx")
         return False
 
     txIns = []
@@ -131,14 +132,16 @@ def hasDups(txIns):
     # return false;
     # pass
 
+#input tx and block index
 def validateCoinbaseTx(tx: Transaction, index: int) -> bool:
+    # print(getTxid(tx),tx.id)
     return (
         tx is not None
         and getTxid(tx) == tx.id
         and len(tx.txIns) == 1
-        and tx.txIns[0].txOutIndex == index
+        and tx.txIns[0].txOutIndex == index #special outindex for coinbase = block index
         and len(tx.txOuts) == 1
-        and tx.txOuts[0].amount == COINBASE_AMOUNT
+        and tx.txOuts[0].amount == COINBASE_AMOUNT #TODO halve the subsidy
     )
 
 
@@ -252,8 +255,10 @@ def updateUnspentTxOut(txs, unspentTxout):
 
 def processTx(txs, unspentTxout, blockIndex):
     if not isValidTxList(txs):
+        print("tx in block is invalid")
         return None
     if not validateBlockTxs(txs, unspentTxout, blockIndex):
+        print("tx dups or invlid coinbase")
         return None
     return updateUnspentTxOut(txs, unspentTxout)
 

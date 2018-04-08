@@ -10,7 +10,7 @@ import TxPool as pool
 import p2p
 # from typing import Iterable
 BLOCK_GENERATION_INTERVAL = 10  # 10s
-DIFFICULTY_ADJUSTMENT_INTERVAL = 10  # 10 blocks
+DIFFICULTY_ADJUSTMENT_INTERVAL = 3  # 10 blocks
 
 
 class Block:
@@ -45,7 +45,7 @@ class Block:
         return f'Block:{self.index}\nData:{self.data}\nTime:{self.timestamp}' \
                f'\nPrevHash:{self.prev_hash}\nNonce:{self.nonce}\nDifficulty:{self.difficulty}\n'
 
-genesisTransaction=tr.Transaction('e655f6a5f26dc9b4cac6e46f52336428287759cf81ef5ff10854f69d68f43fa3',
+genesisTransaction=tr.Transaction('95db0b8e71740baf81a619bfff7afe3600181828b59815d02c7f1b7b3209c831',
                                   [tr.TxIn('',0,'')],
                                   [tr.TxOut('60ba02269f0aa21a5ee18de8f21f4c159587713db66459d8baca5406021cc51269fe4b4d23587bf58c70e7014d727d1e10ec6b80fa395829b3b79dae3fdc7360',50)])
 
@@ -98,7 +98,7 @@ def getLastBlock():
 
 
 def getDifficulty():
-    lastBlock = blockchain[-1]
+    lastBlock = getLastBlock()
     if lastBlock.index % DIFFICULTY_ADJUSTMENT_INTERVAL == 0 and lastBlock.index != 0:  # adjust
         preAdjBlock = blockchain[len(blockchain) - 1 - DIFFICULTY_ADJUSTMENT_INTERVAL]
         timeExpected = BLOCK_GENERATION_INTERVAL * DIFFICULTY_ADJUSTMENT_INTERVAL
@@ -292,4 +292,4 @@ def replaceChain(newchain)->bool:
 # 	pass
 if __name__ == '__main__':
     # miner()
-    print("start")
+    print(getUtxos())
