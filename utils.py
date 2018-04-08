@@ -1,6 +1,5 @@
 import hashlib
 # import rsa
-
 # (privatekey, pubkey) = rsa.newkeys(2048)
 
 
@@ -32,6 +31,20 @@ def list_hash(to_hash) -> str:
     # to_hash = str(index) + str(prev_hash) + str(timestamp) + data
     to_hash = to_hash.encode('utf-8')
     return sha256d(to_hash)
+
+
+selfip = ""
+peers=[] #read from file list of ip
+
+#TODO read url filter url ,build peer list
+def readUrlfromFile():
+    #fill peerip TODO read ip from file
+    global peers
+    li = ["http://localhost:8001","http://localhost:8002"]
+    li.remove(selfip)#remove selfip
+    peers = li
+    return
+
 
 
 if __name__ == '__main__':

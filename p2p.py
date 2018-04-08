@@ -11,13 +11,14 @@ import threading
 import TxPool as pool
 import transaction as tr
 from docopt import docopt
+import  utils
 import os
 
 
 app = Flask(__name__)
 
-selfip = ""
-peers=[] #read from file list of ip 
+# selfip = ""
+# peers=[] #read from file list of ip
 
 tasks = [
     {
@@ -34,18 +35,19 @@ tasks = [
     }
 ]
 
-#TODO read url filter url ,build peer list
-def readUrlfromFile():
-    #fill peerip TODO read ip from file
-    global peers
-    li = ["http://localhost:8001","http://localhost:8002"]
-    li.remove(selfip)#remove selfip
-    peers = li
-    return
+# #TODO read url filter url ,build peer list
+# def readUrlfromFile():
+#     #fill peerip TODO read ip from file
+#     global peers
+#     li = ["http://localhost:8001","http://localhost:8002"]
+#     li.remove(selfip)#remove selfip
+#     peers = li
+#     return
 
 def broadcast(data, route):
     #send to all peer
-    for url in peers:
+    print("broadcast:",utils.peers)
+    for url in utils.peers:
         postRequest(url+route,data)
 
 
@@ -93,9 +95,13 @@ def getRequest(url) -> dict:
     print(r.content)
     return pickle.loads(r.content)
 
-def postRequest(url, data) -> dict:
-    r = requests.post(url, data)
-    return pickle.loads(r.content)
+def postRequest(url, data):
+    try:
+        r = requests.post(url, data)
+        return pickle.loads(r.content)
+    except:
+        print("connection error")
+        return None
 
 #TODO when edit chain , add lock
 #when receive a block
@@ -134,8 +140,8 @@ def http_server(port):
     app.run(debug=False, host='0.0.0.0', port=port)
 
 def main(port):
-    readUrlfromFile()
-    print("peers:", peers)
+    utils.readUrlfromFile()
+    print("peers:", utils.peers)
     threads = []
     def start_thread(fnc): #启动线程的函数
         threads.append(threading.Thread(target=fnc, daemon=True))
@@ -151,7 +157,7 @@ if __name__ == '__main__':
     args = docopt(__doc__, argv=None, help=True, version=None, options_first=False)
     port = int(args["<port>"])
     # print(port)
-    selfip = f"http://localhost:{port}"
+    utils.selfip = f"http://localhost:{port}"
     print("start main")
     main(port)
     # http_server(port)
