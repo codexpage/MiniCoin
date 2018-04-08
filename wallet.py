@@ -1,59 +1,149 @@
-import utils
-
-
+# import utils
+import ecdsa
+import os
+import transaction
 privateKeyPath = "./private_key"
+EC = ecdsa.ecdsa('secp256k1')
+
+
+# prik = "privateKey"
+# pubk = "publicKey"
 
 def getPrivateKeyFromWallet() -> str:
-	return utils.privatekey
-	# pass
-	#read from file private_key
-	#return the string
+    # return utils.privatekey
+    with open(privateKeyPath, 'rb') as pri:
+        privateKey = pri.read()
+        pri.close(privateKey)
+    return privateKey
+
+
+# pass
+# read from file private_key
+# return the string
 
 
 def getPubKeyFromWallet():
-	return utils.pubkey
-	# pass
-	#return calpub(private_key)
+    # return utils.pubkey
+    privateKey = getPrivateKeyFromWallet()
+    key = EC.keyFromPrivate(privateKey, 'hex')
+    return key.getPublic().encode('hex')
 
+
+# pass
+# return calpub(private_key)
+def generatePrivateKey():
+    keyPair = EC.genKeyPair()
+    privateKey = keyPair.getPrivate()
+    return privateKey.encode('hex')
 
 # def generatePrivateKey()->str:
 # 	pass
-	#use the lib to gen key pair
-	#return pri str
+# use the lib to gen key pair
+# return pri str
 
-def initWallet():#gen pri key file
-	pass
-	#check private_key 
-	#if not exist 
-	#gen pri key
-	#write to file
-	#print
+def initWallet():  # gen pri key file
+    # pass
+    if os.path.exists(privateKeyPath):
+        return
 
-#input wallet addr and current utxos, return balance
-def getBalance(addr:str, utxos)-> int:
-	pass
+    newPrivateKey = generatePrivateKey()
+    with open(privateKeyPath, 'wr') as pri:
+        pri.write(newPrivateKey)
+        pri.close()
 
+def deleteWallet():
+    if os.path.exists(privateKeyPath):
+        os.remove(privateKeyPath)
+# check private_key
+# if not exist
+# gen pri key
+# write to file
+# print
 
-def findTtxos():
-	pass
-
-
-#return list of TxOut
-def createTxOuts(receiverAddr:str, myAddr,amount, leftAmount):
-	pass
-
-def createTx():
-	pass
-
-
-def fileterTxPool():
-	pass
-	
-
-#return a Tx
-def createTransaction(receiverAddr:str, amount:int, privateKey:str, utxos, txPool):
-	pass
+# input wallet addr and current utxos, return balance
+def getBalance(addr: str, utxos) -> int:
+    balance = 0
+    for outs in findTtxos(addr, utxos):
+        balance += outs.amount
+    return balance
 
 
+def findTtxos(addr: str, unspentTxOuts):
+    ret = []
+    for outs in unspentTxOuts:
+        if outs.address == addr:
+          ret.append(outs)
+    return ret
 
 
+def findAmount(amount: int, unspentTxOuts):
+    balance = 0
+    find = []
+    for out in unspentTxOuts:
+        find.append(out)
+        balance += out.amout
+        if balance >= amount:
+            changes = balance - amount
+            return find, changes
+
+    raise("balance not enough")
+# return list of TxOut
+
+
+def createTxOuts(receiverAddr: str, myAddr, amount, leftAmount):
+    # pass
+    txOut = transaction.TxOut(receiverAddr, amount)
+    if leftAmount == 0:
+        return [txOut]
+    else:
+        changes = transaction.TxOut(myAddr, leftAmount)
+        return [txOut, changes]
+
+
+def createTx(receiver, amount, privateKey, unspentTxOuts, pool):
+    # pass
+    myaddr = transaction.getPublicKey(privateKey)
+    myUnsepnts = []
+    for out in unspentTxOuts:
+        if out.address == myaddr:
+            myUnsepnts.append(out)
+
+    myUnspentTxOut = fileterTxPool(myUnsepnts, pool)
+
+    included, changes = findTtxos(amount, myUnspentTxOut)
+
+    unsigned  = []
+    for txout in included:
+        unsigned.append(toUnsignedTxIn(txout))
+
+    tx = transaction.Transaction('', unsigned, createTxOuts(receiver, myaddr, amount, changes))
+    tx.id = transaction.getTxid(tx)
+
+    for i in range (0, len(tx.txIns)):
+        tx.txIns[i].signature = transaction.signTxin(tx, i, privateKey, unspentTxOuts)
+
+    return tx
+
+
+def toUnsignedTxIn(unspentTxOut:transaction.UnspentTxOut):
+    return transaction.TxIn(unspentTxOut.txOutId, unspentTxOut.txOutIndex)
+
+
+def fileterTxPool(unspentTxOuts, pool:[transaction.Transaction]):
+    # pass
+    txIns = []
+    for ins in pool:
+        txIns.append(ins.txIns)
+
+    removeable = []
+    for out in unspentTxOuts:
+        for ins in txIns:
+            if ins.txOutIndex == out.txOutIndex and ins.txOutId == out.txOutId:
+                removeable.append(out)
+
+    for rm in removeable:
+        unspentTxOuts.delete(rm)
+    return unspentTxOuts
+# return a Tx
+def createTransaction(receiverAddr: str, amount: int, privateKey: str, utxos, txPool):
+    pass
