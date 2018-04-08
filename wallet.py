@@ -121,7 +121,7 @@ def createTx(receiver, amount, privateKey, unspentTxOuts, pool):
         if out.address == myaddr:
             myUnsepnts.append(out)
 
-    myUnspentTxOut = fileterTxPool(myUnsepnts, pool)
+    myUnspentTxOut = filterTxPool(myUnsepnts, pool)
 
     included, changes = findTtxos(amount, myUnspentTxOut)
 
@@ -142,7 +142,7 @@ def toUnsignedTxIn(unspentTxOut: transaction.UnspentTxOut):
     return transaction.TxIn(unspentTxOut.txOutId, unspentTxOut.txOutIndex)
 
 
-def fileterTxPool(unspentTxOuts, pool: [transaction.Transaction]):
+def filterTxPool(unspentTxOuts, pool: [transaction.Transaction]):
     # pass
     txIns = []
     for ins in pool:
@@ -155,7 +155,7 @@ def fileterTxPool(unspentTxOuts, pool: [transaction.Transaction]):
                 removeable.append(out)
 
     for rm in removeable:
-        unspentTxOuts.delete(rm)
+        unspentTxOuts.remove(rm)
     return unspentTxOuts
 
 
