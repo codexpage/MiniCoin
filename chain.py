@@ -46,8 +46,8 @@ class Block:
                f'\nPrevHash:{self.prev_hash}\nNonce:{self.nonce}\nDifficulty:{self.difficulty}\n'
 
 genesisTransaction=tr.Transaction('e655f6a5f26dc9b4cac6e46f52336428287759cf81ef5ff10854f69d68f43fa3',
-                                  tr.TxIn('',0,''),
-                                  tr.TxOut('04bfcab8722991ae774db48f934ca79cfb7dd991229153b9f732ba5334aafcd8e7266e47076996b55a14bf9913ee3145ce0cfc1372ada8ada74bd287450313534a',50))
+                                  [tr.TxIn('',0,'')],
+                                  [tr.TxOut('60ba02269f0aa21a5ee18de8f21f4c159587713db66459d8baca5406021cc51269fe4b4d23587bf58c70e7014d727d1e10ec6b80fa395829b3b79dae3fdc7360',50)])
 
 genesis_block = Block(
     index=0,

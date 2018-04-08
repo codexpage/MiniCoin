@@ -1,3 +1,6 @@
+"""
+Usage: p2p.py <port>
+"""
 from flask import Flask, jsonify,request
 import pickle
 import requests
@@ -7,11 +10,8 @@ import threading
 # from chain import Block
 import TxPool as pool
 import transaction as tr
-
-
 from docopt import docopt
-"""Usage: p2p.py <port> 
-"""
+
 
 app = Flask(__name__)
 
@@ -144,6 +144,8 @@ def main():
 
 if __name__ == '__main__':
     args = docopt(__doc__, argv=None, help=True, version=None, options_first=False)
-    print(args["port"])
+    port = args["<port>"]
+    print(port)
+    selfip = f"http://localhost:{port}"
     # main()
-    app.run(debug=True)#TODO receive port and selfip
+    app.run(debug=True,host= '0.0.0.0',port=port)

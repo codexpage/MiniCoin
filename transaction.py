@@ -285,7 +285,7 @@ def isValidTxOut(txout: TxOut) -> bool:
 
 
 def isValidAddr(address: str) -> bool:
-    if len(address) != 256:
+    if len(address) != 128:
         print("invalid public key length")
         return False
     elif not all(c in string.hexdigits for c in address):
