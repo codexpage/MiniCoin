@@ -292,4 +292,4 @@ def replaceChain(newchain)->bool:
 # 	pass
 if __name__ == '__main__':
     # miner()
-    print(getUtxos())
+    print(getUtxos()[0].amount)

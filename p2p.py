@@ -132,7 +132,7 @@ def receiveTxhandler(tx):
 def http_server(port):
     app.run(debug=True, host='0.0.0.0', port=port)
 
-def main():
+def main(port):
     readUrlfromFile()
     threads = []
     def start_thread(fnc): #启动线程的函数
@@ -140,7 +140,7 @@ def main():
         threads[-1].start()
 
     print("start utxos:",chain.getUtxos())
-    start_thread(http_server)
+    start_thread(http_server(port))
     start_thread(chain.miner)
     [t.join() for t in threads]#TODO what is join
 
@@ -150,6 +150,6 @@ if __name__ == '__main__':
     port = int(args["<port>"])
     # print(port)
     selfip = f"http://localhost:{port}"
-    main()
+    main(port)
     # http_server(port)
 
