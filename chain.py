@@ -148,7 +148,7 @@ def generateBlock_with_data(data):
     newTime = int(time.time())  # sec
     newBlock_raw = Block(newIndex, data, newTime, '', prev_block.hash, 0, difficulty)
     newBlock = mineBlock(newBlock_raw)  # start mine block
-    return newBlock
+    return newBlock #return none if interrupted
 
 
 # print(generateBlock_with_data("hello"))
@@ -161,7 +161,7 @@ def assmbleDataToMineBlock():
     # build the block
     # call generateBlock_with_data
     coinbaseTx = tr.getCoinbaseTx(wa.getPubKeyFromWallet(),getLastBlock().index+1)
-    blockData = [coinbaseTx]+pool.getTxPool() #get all tx in pool
+    blockData = [coinbaseTx]+pool.getTxPool() #get all tx in pool #TODO select some of txs instead of all
     return generateBlock_with_data(blockData)
 
 
@@ -172,11 +172,11 @@ def miner():
         # generateBlock_with_data(data)
         block = assmbleDataToMineBlock()
         if block:
-            addBlockToChain()       #attach block to chain
+            addBlockToChain(block)       #attach block to chain
             print(block)
             p2p.broadcast(block,"/block") #TODO:is this the same p2p? peers?
             #TODO save to disk
-        #if block is empty means it was interuptted
+        #if block is empty means it was interuptted, start new loop on new block
 
 
 # =========validate block========
@@ -262,8 +262,8 @@ def addBlockToChain(block):
         if res_utxos:
             blockchain.append(block)
             mine_interrupt.set()#stop mining and mine on new block
-            setUtxos(res_utxos)
-            pool.updateTxPool(utxos)
+            setUtxos(res_utxos) #update utxos
+            pool.updateTxPool(res_utxos) #update pool
             print("The block has been accepted")
         else:
             print("the block has invalid tx")
