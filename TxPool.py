@@ -39,20 +39,15 @@ def updateTxPool(unspentTxOuts: [transaction.UnspentTxOut]):
 
 
 def getTxPoolIns(pool: [transaction.Transaction]):
-    return pool.map(lambda tx: tx.txIns).flatten().value()
-
+    ret = []
+    for p in pool:
+        ret.append(p.txIns)
+    # return pool.map(lambda tx: tx.txIns).flatten().value()
+    return ret
 
 def isValidTxForPool(tx: transaction.Transaction, pool: [transaction.Transaction]):
-    txPoolIns = getTxPoolIns()
+    txPoolIns = getTxPoolIns(pool)
 
-
-    # TODO
-    # const
-    # containsTxIn = (txIns: TxIn[], txIn: TxIn) = > {
-    # return _.find(txPoolIns, ((txPoolIn) = > {
-    # return txIn.txOutIndex === txPoolIn.txOutIndex & & txIn.txOutId == = txPoolIn.txOutId;
-    # }));
-    # };
 
     for ins in tx.txIns:
         if containsTxIn(txPoolIns, ins):
@@ -60,5 +55,9 @@ def isValidTxForPool(tx: transaction.Transaction, pool: [transaction.Transaction
     return True
 
 
-def containsTxIn():
-    pass
+def containsTxIn(txIns, txIn):
+    # contains = True
+    for ins in txIns:
+        if txIn.txOutIndex == ins.txOutIndex and txIn.txOutId == ins.txOutId:
+            return True
+    return  False
