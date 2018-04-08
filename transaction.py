@@ -92,7 +92,7 @@ def validateBlockTxs(txs, unspentTxOuts, index):
 
     txIns = []
     for tx in txs:
-        txIns.append(tx.txIns)
+        txIns += tx.txIns
 
 #     // check
 #     for duplicate txIns.Each txIn can be included only once
@@ -108,6 +108,7 @@ def validateBlockTxs(txs, unspentTxOuts, index):
 # }
 #     txIns = txs.map(lambda tx: txIns).flatten().value()
     if hasDups(txIns):
+        # print("dups")
         return False
 
     # normalTx = txs.slice(1)
@@ -118,7 +119,8 @@ def validateBlockTxs(txs, unspentTxOuts, index):
     return validNormalTx
 
 def hasDups(txIns):
-    if len(txIns) == len(set(txIns)):
+    if len(txIns) != len(set(txIns)):
+        print
     # if len(txIns) == set(txIns):
         return True
     return False
@@ -233,7 +235,7 @@ def updateUnspentTxOut(txs, unspentTxout):
     consumedTxOuts = []
     newTxIns = []
     for tx in txs:
-        newTxIns.append(tx.txIns)
+        newTxIns += tx.txIns
 
     for ins in newTxIns:
         consumedTxOuts.append(UnspentTxOut(ins.txOutId, ins.txOutIndex, '', 0))
