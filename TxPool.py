@@ -6,15 +6,16 @@ txPool =[]
 def getTxPool():
     return copy.deepcopy(txPool)
 
-def addToTxPool(tx: transaction, unspentTxOuts):
+def addToTxPool(tx: transaction, unspentTxOuts) -> bool:
     if not transaction.validateTx(tx, unspentTxOuts):
-        raise("invalid tx")
-
+        # raise("invalid tx")
+        return False
     if not isValidTxForPool(tx, txPool):
-        raise("invalid addtion")
-
+        # raise("invalid addtion")
+        return False
+    
     txPool.append(tx)
-
+    return True
 
 def hasTxIn(txIn: transaction.TxIn, unspentTxOut:[transaction.UnspentTxOut]):
     newTxIn = []
