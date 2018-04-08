@@ -291,4 +291,5 @@ def replaceChain(newchain)->bool:
 # def addBlockToChain():
 # 	pass
 if __name__ == '__main__':
-    miner()
+    # miner()
+    print("start")

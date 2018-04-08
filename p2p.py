@@ -4,6 +4,10 @@ import requests
 import chain
 import json
 import threading
+# from chain import Block
+from docopt import docopt
+"""Usage: p2p.py <port> 
+"""
 
 app = Flask(__name__)
 
@@ -40,37 +44,37 @@ def broadcast(data, route):
 @app.route('/querylast', methods=['GET'])
 def querylast():
     #return last block
-    return jsonify(chain.getLastBlock())
+    return pickle.dumps(chain.getLastBlock())
 
 @app.route('/queryall', methods=['GET'])
 def queryall():
-    return jsonify(chain.blockchain)
+    return pickle.dumps(chain.blockchain)
 
-@app.route('/querytx', methods=['GET'])
-def querytx():
-    #return the pool
-    return jsonify()
+# @app.route('/querytx', methods=['GET'])
+# def querytx():
+#     #return the pool
+#     return pickle.dumps
 
 # @app.route('/chain', methods=['POST'])
 # def receiveChain():
-#     content = request.getjson()
+#     content = request.data
 #     print(content)
 #     obj = json.dumps(content)
 #     return "ok"
 
 @app.route('/block', methods=['POST'])
 def receiveBlock():
-    content = request.getjson()
+    content = request.data
     print(content)
-    obj = json.dumps(content)
+    obj = pickle.dumps(content)
     receiveBlockHandler(obj)
     return "ok"
 
 @app.route('/tx', methods=['POST'])
 def receiveTx():
-    content = request.getjson()
+    content = request.data
     print(content)
-    obj = json.dumps(content)
+    obj = pickle.dumps(content)
     receiveTxhandler(obj)
     return "ok"
 
@@ -78,14 +82,14 @@ def receiveTx():
 
 def getRequest(url) -> dict:
     r = requests.get(url)
-    return r.json()
+    return pickle.loads(r.content)
 
 def postRequest(url, data) -> dict:
     r = requests.post(url, data)
-    return r.json()
+    return pickle.loads(r.content)
 
 
-def receiveBlockHandler(block:chain.Block):
+def receiveBlockHandler(block):
     if not chain.validate_block_types(block):
         print("block structuture not valid")
         return
@@ -141,5 +145,7 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
-    # app.run(debug=True)
+    args = docopt(__doc__, argv=None, help=True, version=None, options_first=False)
+    print(args["port"])
+    # main()
+    app.run(debug=True)
