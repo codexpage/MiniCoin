@@ -122,9 +122,9 @@ def getAndReplaceChain(addr):
 
 #when receive tx
 def receiveTxhandler(tx):
-    pool.addToTxPool(tx,chain.getUtxos())#add tx to pool
-    #TODO if tx exist, don't broadcast
-    broadcast(tx,"/tx")#broadcast
+    if pool.addToTxPool(tx,chain.getUtxos()):#add tx to pool
+        broadcast(tx,"/tx")#broadcast
+    #if tx exist, don't broadcast
 
 
 def http_server():
