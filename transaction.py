@@ -158,9 +158,9 @@ def validateTxIn(txIn: TxIn, tx: Transaction, unspents):
 
     # public key
     addr = referencedTxOut.address
-
-    key = ecdsa.keyFromPublic(addr, 'hex')
-    ecdsa.verify(tx.id, txIn.signature)
+    key = ecdsa.VerifyingKey.from_string(string=addr, curve=ecdsa.SECP256k1)
+    # key = ecdsa.keyFromPublic(addr, 'hex')
+    # ecdsa.verify(tx.id, txIn.signature)
     # key = ""
     return key.verify(tx.id, txIn.signature)
     # key = ec.keyFromPublic(address, 'hex');
@@ -199,8 +199,9 @@ def signTxin(tx: Transaction, txInIndex: int, pk: str, unspentTxOuts) -> str:
         raise ("input does not match")
 
     # TODO key
-    key = ecdsa.keyFromPrivate(pk, 'hex')
-    signiture = key.sign(id).toDER().encode('hex')
+    # key = ecdsa.keyFromPrivate(pk, 'hex')
+    key = ecdsa.SigningKey.from_string(string=pk, curve=ecdsa.SECP256k1)
+    signiture = key.sign(id).hex() #.toDER().encode('hex')
 
     # key = toHex(utils.privatekey)
     # signature = toHex(rsa.encrypt(id, pk))
@@ -263,7 +264,9 @@ def processTx(txs, unspentTxout, blockIndex):
 
 def getPublicKey(privatekey: str) -> str:
 #     rsa.construct()
-    return ecdsa.keyFromPrivate(privatekey, 'hex').getPublic().encode('hex')
+    return ecdsa.SigningKey().from_string(privatekey, curve=ecdsa.SECP256k1).get_verifying_key().hex()
+
+    # return ecdsa.keyFromPrivate(privatekey, 'hex').getPublic().encode('hex')
     pass
 
 def isValidTxIn(txin: TxIn) -> bool:
