@@ -1,7 +1,7 @@
 import hashlib
-import rsa
+# import rsa
 
-(privatekey, pubkey) = rsa.newkeys(2048)
+# (privatekey, pubkey) = rsa.newkeys(2048)
 
 
 def sha256d(s: [str, bytes]) -> str:  # 加密hash
@@ -20,16 +20,6 @@ def sha256d(s: [str, bytes]) -> str:  # 加密hash
 
 # serialization
 # we use pickle or json to seialize and deseialize
-
-
-# use secp256k1
-def getPubKey(privateKey: str) -> str:
-    return pubkey
-
-
-def getCurrentTimestamp() -> int:
-    # get tie
-    pass
 
 
 def main():

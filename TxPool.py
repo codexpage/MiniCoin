@@ -1,7 +1,7 @@
 import transaction
 import copy
 #list of txs
-txPool : transaction.Transaction =[]
+txPool =[]
 
 def getTxPool():
     return copy.deepcopy(txPool)

@@ -2,18 +2,21 @@
 import ecdsa
 import os
 import transaction
+
 privateKeyPath = "./private_key"
-EC = ecdsa.ecdsa('secp256k1')
+# EC = ecdsa.ecdsa('secp256k1')
 
 
 # prik = "privateKey"
 # pubk = "publicKey"
 
-def getPrivateKeyFromWallet() -> str:
+def getPrivateKeyFromWallet():
     # return utils.privatekey
     with open(privateKeyPath, 'rb') as pri:
-        privateKey = pri.read()
-        pri.close(privateKey)
+        # privateKey = pri.read()
+        privateKey = ecdsa.SigningKey.from_string(
+            pri.read(), curve=ecdsa.SECP256k1)
+        pri.close()
     return privateKey
 
 
@@ -22,19 +25,24 @@ def getPrivateKeyFromWallet() -> str:
 # return the string
 
 
-def getPubKeyFromWallet():
+def getPubKeyFromWallet()->str:
     # return utils.pubkey
     privateKey = getPrivateKeyFromWallet()
-    key = EC.keyFromPrivate(privateKey, 'hex')
-    return key.getPublic().encode('hex')
+    # key = EC.keyFromPrivate(privateKey, 'hex')
+    # return key.getPublic().encode('hex')
+    return privateKey.get_verifying_key().to_string().hex()
+
 
 
 # pass
 # return calpub(private_key)
 def generatePrivateKey():
-    keyPair = EC.genKeyPair()
-    privateKey = keyPair.getPrivate()
-    return privateKey.encode('hex')
+    # keyPair = EC.genKeyPair()
+    # privateKey = keyPair.getPrivate()
+    # return privateKey.encode('hex')
+    signing_key = ecdsa.SigningKey.generate(curve=ecdsa.SECP256k1)
+    return signing_key
+
 
 # def generatePrivateKey()->str:
 # 	pass
@@ -47,13 +55,16 @@ def initWallet():  # gen pri key file
         return
 
     newPrivateKey = generatePrivateKey()
-    with open(privateKeyPath, 'wr') as pri:
-        pri.write(newPrivateKey)
+    with open(privateKeyPath, 'wb') as pri:
+        pri.write(newPrivateKey.to_string())
         pri.close()
+
 
 def deleteWallet():
     if os.path.exists(privateKeyPath):
         os.remove(privateKeyPath)
+
+
 # check private_key
 # if not exist
 # gen pri key
@@ -72,7 +83,7 @@ def findTtxos(addr: str, unspentTxOuts):
     ret = []
     for outs in unspentTxOuts:
         if outs.address == addr:
-          ret.append(outs)
+            ret.append(outs)
     return ret
 
 
@@ -86,7 +97,9 @@ def findAmount(amount: int, unspentTxOuts):
             changes = balance - amount
             return find, changes
 
-    raise("balance not enough")
+    raise ("balance not enough")
+
+
 # return list of TxOut
 
 
@@ -112,24 +125,24 @@ def createTx(receiver, amount, privateKey, unspentTxOuts, pool):
 
     included, changes = findTtxos(amount, myUnspentTxOut)
 
-    unsigned  = []
+    unsigned = []
     for txout in included:
         unsigned.append(toUnsignedTxIn(txout))
 
     tx = transaction.Transaction('', unsigned, createTxOuts(receiver, myaddr, amount, changes))
     tx.id = transaction.getTxid(tx)
 
-    for i in range (0, len(tx.txIns)):
+    for i in range(0, len(tx.txIns)):
         tx.txIns[i].signature = transaction.signTxin(tx, i, privateKey, unspentTxOuts)
 
     return tx
 
 
-def toUnsignedTxIn(unspentTxOut:transaction.UnspentTxOut):
+def toUnsignedTxIn(unspentTxOut: transaction.UnspentTxOut):
     return transaction.TxIn(unspentTxOut.txOutId, unspentTxOut.txOutIndex)
 
 
-def fileterTxPool(unspentTxOuts, pool:[transaction.Transaction]):
+def fileterTxPool(unspentTxOuts, pool: [transaction.Transaction]):
     # pass
     txIns = []
     for ins in pool:
@@ -144,6 +157,10 @@ def fileterTxPool(unspentTxOuts, pool:[transaction.Transaction]):
     for rm in removeable:
         unspentTxOuts.delete(rm)
     return unspentTxOuts
-# return a Tx
-def createTransaction(receiverAddr: str, amount: int, privateKey: str, utxos, txPool):
+
+
+if __name__ == '__main__':
     pass
+    # initWallet()
+    # print(getPrivateKeyFromWallet().to_string().hex())
+    # print(getPubKeyFromWallet())

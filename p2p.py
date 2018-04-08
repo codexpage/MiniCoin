@@ -5,6 +5,10 @@ import chain
 import json
 import threading
 # from chain import Block
+import TxPool as pool
+import transaction as tr
+
+
 from docopt import docopt
 """Usage: p2p.py <port> 
 """
@@ -29,6 +33,7 @@ tasks = [
     }
 ]
 
+#TODO read url filter url ,build peer list
 def readUrlfromFile():
     #fill peerip
     global peers
@@ -88,13 +93,15 @@ def postRequest(url, data) -> dict:
     r = requests.post(url, data)
     return pickle.loads(r.content)
 
-
+#TODO when edit chain , add lock
+#when receive a block
 def receiveBlockHandler(block):
     if not chain.validate_block_types(block):
         print("block structuture not valid")
         return
     lastblock = chain.getLastBlock()
-    if block.index > lastblock.index: #receive longer chain's block
+    #if block exist, then index must be smaller, so don't broadcast and do nothing
+    if block.index > lastblock.index: #only when receive longer chain's block
         if lastblock.hash ==  block.prev_hash: # one block behind
             chain.addBlockToChain(block)
             broadcast(block,"/block")
@@ -104,11 +111,6 @@ def receiveBlockHandler(block):
             getAndReplaceChain(addr)
 
 
-def receiveTxhandler():
-    #put into pool
-    #braodcast
-    pass
-
 
 
 def getAndReplaceChain(addr):
@@ -117,20 +119,16 @@ def getAndReplaceChain(addr):
         broadcast(otherchain[-1], "/block") #broadcast block
 
 
-
+#when receive tx
 def receiveTxhandler(tx):
-    # addToTransactionPool(tx)
-    pass
-    #add tx to pool
-    #broadcast
+    pool.addToTxPool(tx,chain.getUtxos())#add tx to pool
+    #TODO if tx exist, don't broadcast
+    broadcast(tx,"/tx")#broadcast
 
 
 def http_server():
     app.run(debug=True)
 
-
-# def miner():
-#     pass
 
 def main():
     readUrlfromFile()
@@ -141,11 +139,11 @@ def main():
 
     start_thread(http_server)
     start_thread(chain.miner)
-    [t.join() for t in threads]
+    [t.join() for t in threads]#TODO what is join
 
 
 if __name__ == '__main__':
     args = docopt(__doc__, argv=None, help=True, version=None, options_first=False)
     print(args["port"])
     # main()
-    app.run(debug=True)
+    app.run(debug=True)#TODO receive port and selfip

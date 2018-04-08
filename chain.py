@@ -161,7 +161,7 @@ def assmbleDataToMineBlock():
     # build the block
     # call generateBlock_with_data
     coinbaseTx = tr.getCoinbaseTx(wa.getPubKeyFromWallet(),getLastBlock().index+1)
-    blockData = [coinbaseTx]+pool.getTxPool() #TODO move getTXPool into TXPool.py
+    blockData = [coinbaseTx]+pool.getTxPool() #get all tx in pool
     return generateBlock_with_data(blockData)
 
 
