@@ -87,6 +87,7 @@ def receiveTx():
 
 def getRequest(url) -> dict:
     r = requests.get(url)
+    print(r.content)
     return pickle.loads(r.content)
 
 def postRequest(url, data) -> dict:
@@ -144,8 +145,8 @@ def main():
 
 if __name__ == '__main__':
     args = docopt(__doc__, argv=None, help=True, version=None, options_first=False)
-    port = args["<port>"]
-    print(port)
+    port = int(args["<port>"])
+    # print(port)
     selfip = f"http://localhost:{port}"
     # main()
     app.run(debug=True,host= '0.0.0.0',port=port)
