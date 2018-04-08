@@ -131,7 +131,7 @@ def receiveTxhandler(tx):
 
 
 def http_server(port):
-    app.run(debug=True, host='0.0.0.0', port=port)
+    app.run(debug=False, host='0.0.0.0', port=port)
 
 def main(port):
     readUrlfromFile()
@@ -143,7 +143,7 @@ def main(port):
 
     print("start utxos:",chain.getUtxos())
     start_thread(chain.miner)
-    # start_thread(http_server(port))
+    start_thread(http_server(port))
     [t.join() for t in threads]#main thread join to wait two subthread
 
 

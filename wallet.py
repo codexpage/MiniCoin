@@ -162,5 +162,5 @@ def filterTxPool(unspentTxOuts, pool: [transaction.Transaction]):
 if __name__ == '__main__':
     pass
     # initWallet()
-    # print(getPrivateKeyFromWallet().to_string().hex())
+    print(getPrivateKeyFromWallet().to_string().hex())
     # print(getPubKeyFromWallet())
