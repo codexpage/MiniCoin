@@ -117,7 +117,8 @@ def validateBlockTxs(txs, unspentTxOuts, index):
     return validNormalTx
 
 def hasDups(txIns):
-    if len(txIns) == set(txIns):
+    if len(txIns) == len(set(txIns)):
+    # if len(txIns) == set(txIns):
         return True
     return False
     # groups = _.countBy(txIns, (txIn) = > txIn.txOutId + txIn.txOutId);
