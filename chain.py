@@ -283,7 +283,7 @@ def addBlockToChain(block):
 def replaceChain(newchain)->bool:
     res_utxos = validate_blockchain(newchain)
     if res_utxos:
-        if getAccumulatedDifficulty(getBlockchain()) > getAccumulatedDifficulty(newchain):
+        if getAccumulatedDifficulty(getBlockchain()) < getAccumulatedDifficulty(newchain):
             setBlockchain(newchain)
         setUtxos(res_utxos)
         pool.updateTxPool(res_utxos)
