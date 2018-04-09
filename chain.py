@@ -130,11 +130,14 @@ mine_interrupt = threading.Event()
 # TODO: add timer and print hash rate
 def mineBlock(block):
     block.nonce = 0
-    mine_interrupt.clear()
+    # mine_interrupt.clear()
     while True:
         h = block.calculate_hash()
-        if block.nonce % 10000 == 0 and mine_interrupt.is_set():  # check per 1000 iters
+        # print("event:",mine_interrupt,mine_interrupt.is_set())
+        # if block.nonce % 10000 == 0 and mine_interrupt.is_set():  # check per 1000 iters
+        if  mine_interrupt.is_set():  # check per 1000 iters
             mine_interrupt.clear()
+            print("mining interrupted.",blockchain[-1].index)
             return None  # stop mining
         if matchDifficuilty(h, block.difficulty):
             # return new block with nonce
@@ -285,6 +288,8 @@ def replaceChain(newchain)->bool:
         setUtxos(res_utxos)
         pool.updateTxPool(res_utxos)
         # broadcast latest in p2p
+        mine_interrupt.set()
+        print("afterset",mine_interrupt,mine_interrupt.is_set())
         return True
     else:
         print("Received blockchain is invalid.")

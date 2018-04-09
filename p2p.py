@@ -124,9 +124,10 @@ def receiveBlockHandler(blockandip):
 def getAndReplaceChain(ip):
     print("request a chain")
     otherchain = getRequest(ip+"/queryall")
-    print("rececie longer chain")
+    print("longer chain getted")
     if chain.replaceChain(otherchain):
         broadcast((otherchain[-1],utils.selfip), "/block") #broadcast block
+
     print("replaced chain")
 
 
