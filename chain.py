@@ -174,11 +174,10 @@ def assmbleDataToMineBlock():
 def miner():
     cnt =0
     while True:
-        # data = "hello"
-        # generateBlock_with_data(data)
         block = assmbleDataToMineBlock()
         if block:
-            addBlockToChain(block)       #attach block to chain
+            if not addBlockToChain(block):   #mined block must be valid to add to chain
+                raise Exception("mined block is not valid") #shold never happen, for debug
             cnt+=1
             print(os.getpid(),cnt,"mined a block",block)
             p2p.broadcast((block,utils.selfip),"/block")
@@ -268,15 +267,16 @@ def addBlockToChain(block):
         res_utxos = tr.processTx(block.data,getUtxos(),block.index)
         if res_utxos:
             blockchain.append(block)
-            mine_interrupt.set()#stop mining and mine on new block
             setUtxos(res_utxos) #update utxos
             pool.updateTxPool(res_utxos) #update pool
             print("The block has been accepted")
+            return True
         else:
             print("the block has invalid tx")
             return False
     else:
         print("new block is not invalid to add to chain.")
+        return False
 
 
 # replace the chian with new chain if it's has more work

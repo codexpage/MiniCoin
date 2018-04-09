@@ -122,8 +122,9 @@ def receiveBlockHandler(blockandip):
     if block.index > lastblock.index: #only when receive longer chain's block
         if lastblock.hash ==  block.prev_hash: # one block behind
             print("one block behind, add to chain")
-            chain.addBlockToChain(block)
-            broadcast((block,utils.selfip),"/block")
+            if chain.addBlockToChain(block):
+                chain.mine_interrupt.set()  # stop mining and mine on new block
+                broadcast((block,utils.selfip),"/block") #and broad cast received block
         else: #serveral blocks behind, or branch
             # addr = request.remote_addr
 
