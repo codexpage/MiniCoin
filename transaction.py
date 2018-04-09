@@ -179,6 +179,7 @@ def validateTxIn(txIn: TxIn, tx: Transaction, unspents):
     # referencedTxOut =
 
     # referencedTxOut = unspents.find(lambda t: t.txOutId == txIn.txOutId and t.txOutId == txIn.txOutId)
+    referencedTxOut=None
 
     for unspent in unspents:
         if unspent.txOutId == txIn.txOutId and unspent.txOutIndex == txIn.txOutIndex:

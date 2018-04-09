@@ -148,8 +148,8 @@ def toUnsignedTxIn(unspentTxOut):
 def filterTxPool(unspentTxOuts, pool):
     # pass
     txIns = []
-    for ins in pool:
-        txIns.append(ins.txIns)
+    for tx in pool:
+        txIns.extend(tx.txIns)
 
     removeable = []
     for out in unspentTxOuts:

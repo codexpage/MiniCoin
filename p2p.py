@@ -151,6 +151,8 @@ def getAndReplaceChain(ip):
 def receiveTxhandler(tx):
     if pool.addToTxPool(tx,chain.getUtxos()):#add tx to pool
         broadcast(tx,"/tx")#broadcast
+    else:
+        print("receive a invalid tx")
     #if tx exist, don't broadcast
 
 

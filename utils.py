@@ -1,4 +1,5 @@
 import hashlib
+
 # import rsa
 # (privatekey, pubkey) = rsa.newkeys(2048)
 
@@ -47,6 +48,7 @@ def readUrlfromFile():
     peers = li
     selfport = selfip[-4:]
     return
+
 
 
 

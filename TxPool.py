@@ -42,7 +42,7 @@ def updateTxPool(unspentTxOuts: [transaction.UnspentTxOut]):
 def getTxPoolIns(pool: [transaction.Transaction]):
     ret = []
     for p in pool:
-        ret.append(p.txIns)
+        ret.extend(p.txIns)
     # return pool.map(lambda tx: tx.txIns).flatten().value()
     return ret
 
