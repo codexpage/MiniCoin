@@ -89,6 +89,7 @@ def sendMoney():
    receiver = request.args['receiver']
    tx = w.createTx(receiver, amount, w.getPrivateKeyFromWallet(), chain.getUtxos(), pool.getTxPool())
    receiveTxhandler(tx) # receive from self
+   return "ok"
 
 # r = requests.post("http://bugs.python.org", data={'number': 12524, 'type': 'issue', 'action': 'show'})
 

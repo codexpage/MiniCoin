@@ -196,7 +196,7 @@ def validateTxIn(txIn: TxIn, tx: Transaction, unspents):
     # key = ecdsa.keyFromPublic(addr, 'hex')
     # ecdsa.verify(tx.id, txIn.signature)
     # key = ""
-    return key.verify(txIn.signature.encode(),tx.id.encode())
+    return key.verify(bytes.fromhex(txIn.signature),tx.id.encode())
     # key = ec.keyFromPublic(address, 'hex');
     # return key.verify(transaction.id, txIn.signature);
     # return rsa.verify(tx.id, txIn.signature, utils.pubkey)
