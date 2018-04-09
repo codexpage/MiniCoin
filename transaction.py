@@ -4,7 +4,6 @@ import ecdsa
 import string
 from functools import reduce
 
-
 # use rsa2048 (2048bit) instead of dsa
 
 COINBASE_AMOUNT = 50
@@ -17,6 +16,14 @@ class UnspentTxOut:
         self.address = address
         self.amount = amount
 
+    def __eq__(self, other):
+        return (
+                self.txOutId == other.txOutId
+                and self.txOutIndex == other.txOutIndex
+                and self.address == other.address
+                and self.amount == other.amount
+        )
+
 
 class TxIn:
     def __init__(self, txOutId: str, txOutIndex: int, signature: str):
@@ -24,18 +31,41 @@ class TxIn:
         self.txOutIndex = txOutIndex
         self.signature = signature
 
+    def __eq__(self, other):
+        return (
+                self.txOutId == other.txOutId
+                and self.txOutIndex == other.txOutIndex
+                and self.signature == other.signature
+        )
+
+    def __hash__(self):
+        return hash(frozenset(self.__dict__.items()))
+
 
 class TxOut:
     def __init__(self, address: str, amount: int):
         self.address = address
         self.amount = amount
 
+    def __eq__(self, other):
+        return (
+            self.address == other.address
+            and self.amount == other.amount
+        )
+
 
 class Transaction:
     def __init__(self, id: str, txIns, txOuts):
         self.id = id
-        self.txIns = txIns  # list
-        self.txOuts = txOuts
+        self.txIns = txIns  # [TxIn]
+        self.txOuts = txOuts # [TxOut]
+    def __eq__(self, other):
+        return (
+            self.id == other.id
+            and self.txIns == other.txIns #compare two list
+            and self.txOuts == other.txOuts
+        )
+
 
 # def __getattr__(self, item):
 # 	return self.item
@@ -48,9 +78,7 @@ def getTxid(tx):
     return utils.sha256d(txin_content + txout_content)
 
 
-
 def validateTx(tx: Transaction, unspentTxOuts):
-
     if not isValidTxStruct(tx):
         return False
 
@@ -61,7 +89,6 @@ def validateTx(tx: Transaction, unspentTxOuts):
     hasValidTxIns = True
     for ins in tx.txIns:
         hasValidTxIns = hasValidTxIns and validateTxIn(ins, tx, unspentTxOuts)
-
 
     if not hasValidTxIns:
         return False
@@ -76,10 +103,8 @@ def validateTx(tx: Transaction, unspentTxOuts):
     for outs in tx.txOuts:
         totalTxOutValue += outs.amount
 
-
     if totalTxInValue != totalTxOutValue:
         return False
-
 
     return True
 
@@ -94,19 +119,19 @@ def validateBlockTxs(txs, unspentTxOuts, index):
     for tx in txs:
         txIns += tx.txIns
 
-#     // check
-#     for duplicate txIns.Each txIn can be included only once
-#     const
-#     txIns: TxIn[] = _(aTransactions)
-#     .map(tx= > tx.txIns)
-#     .flatten()
-#     .value();
-#
-#
-# if (hasDuplicates(txIns)) {
-# return false;
-# }
-#     txIns = txs.map(lambda tx: txIns).flatten().value()
+    #     // check
+    #     for duplicate txIns.Each txIn can be included only once
+    #     const
+    #     txIns: TxIn[] = _(aTransactions)
+    #     .map(tx= > tx.txIns)
+    #     .flatten()
+    #     .value();
+    #
+    #
+    # if (hasDuplicates(txIns)) {
+    # return false;
+    # }
+    #     txIns = txs.map(lambda tx: txIns).flatten().value()
     if hasDups(txIns):
         # print("dups")
         return False
@@ -118,10 +143,11 @@ def validateBlockTxs(txs, unspentTxOuts, index):
     # return normalTx.map(lambda tx: validateTx(tx, unspentTxOuts)).recude(lambda t1, t2: t1 and t2, True)
     return validNormalTx
 
+
 def hasDups(txIns):
     if len(txIns) != len(set(txIns)):
         print
-    # if len(txIns) == set(txIns):
+        # if len(txIns) == set(txIns):
         return True
     return False
     # groups = _.countBy(txIns, (txIn) = > txIn.txOutId + txIn.txOutId);
@@ -135,21 +161,21 @@ def hasDups(txIns):
     # return false;
     # pass
 
-#input tx and block index
+
+# input tx and block index
 def validateCoinbaseTx(tx: Transaction, index: int) -> bool:
     # print(getTxid(tx),tx.id)
     return (
-        tx is not None
-        and getTxid(tx) == tx.id
-        and len(tx.txIns) == 1
-        and tx.txIns[0].txOutIndex == index #special outindex for coinbase = block index
-        and len(tx.txOuts) == 1
-        and tx.txOuts[0].amount == COINBASE_AMOUNT #TODO halve the subsidy
+            tx is not None
+            and getTxid(tx) == tx.id
+            and len(tx.txIns) == 1
+            and tx.txIns[0].txOutIndex == index  # special outindex for coinbase = block index
+            and len(tx.txOuts) == 1
+            and tx.txOuts[0].amount == COINBASE_AMOUNT  # TODO halve the subsidy
     )
 
 
 def validateTxIn(txIn: TxIn, tx: Transaction, unspents):
-
     # referencedTxOut =
 
     # referencedTxOut = unspents.find(lambda t: t.txOutId == txIn.txOutId and t.txOutId == txIn.txOutId)
@@ -177,6 +203,7 @@ def validateTxIn(txIn: TxIn, tx: Transaction, unspents):
 def getTxInAmount(txIn: TxIn, unspents):
     return findUnspentTxOut(txIn.txOutId, txIn.txOutIndex, unspents).amount
 
+
 def findUnspentTxOut(txId, index, unspents):
     for unspent in unspents:
         if unspent.txOutId == txId and unspent.txOutIndex == index:
@@ -187,8 +214,8 @@ def findUnspentTxOut(txId, index, unspents):
 
 
 def getCoinbaseTx(addr: str, index: int):
-    txIn = TxIn("", index,"")
-    t = Transaction('',[txIn],[TxOut(addr, COINBASE_AMOUNT)])
+    txIn = TxIn("", index, "")
+    t = Transaction('', [txIn], [TxOut(addr, COINBASE_AMOUNT)])
     t.id = getTxid(t)
     return t
 
@@ -207,7 +234,7 @@ def signTxin(tx: Transaction, txInIndex: int, pk: str, unspentTxOuts) -> str:
     # TODO key
     # key = ecdsa.keyFromPrivate(pk, 'hex')
     key = ecdsa.SigningKey.from_string(string=pk, curve=ecdsa.SECP256k1)
-    signiture = key.sign(id).hex() #.toDER().encode('hex')
+    signiture = key.sign(id).hex()  # .toDER().encode('hex')
 
     # key = toHex(utils.privatekey)
     # signature = toHex(rsa.encrypt(id, pk))
@@ -215,17 +242,13 @@ def signTxin(tx: Transaction, txInIndex: int, pk: str, unspentTxOuts) -> str:
     return signiture
 
 
-
-
 def updateUnspentTxOut(txs, unspentTxout):
-
     newUnspentTxOut = []
     for tx in txs:
         txout = []
-        for i in range (0, len(tx.txOuts)):
+        for i in range(0, len(tx.txOuts)):
             txout.append(UnspentTxOut(tx.id, i, tx.txOuts[i].address, tx.txOuts[i].amount))
         newUnspentTxOut = newUnspentTxOut + txout
-
 
     # newUnspentTxOut = reduce(lambda t1, t2: t1 + t2 ,
     #                          map(lambda tx:
@@ -240,8 +263,6 @@ def updateUnspentTxOut(txs, unspentTxout):
     for ins in newTxIns:
         consumedTxOuts.append(UnspentTxOut(ins.txOutId, ins.txOutIndex, '', 0))
 
-
-
     # consumedTxOuts = map(lambda txin: UnspentTxOut(txin.txOutId, txin.txOutIndex, "", 0) ,
     #                      reduce(lambda t1, t2: t1+ t2,
     #                             map(lambda tx: tx.txIns,
@@ -255,6 +276,7 @@ def updateUnspentTxOut(txs, unspentTxout):
     return result
     # result = filter(lambda tx: not findUnspentTxOut(tx.txOutsId, tx.txOutsIndex, consumedTxOuts), unspentTxout) \
     #          + newUnspentTxOut
+
 
 def processTx(txs, unspentTxout, blockIndex):
     if not isValidTxList(txs):
@@ -271,11 +293,12 @@ def processTx(txs, unspentTxout, blockIndex):
 
 
 def getPublicKey(privatekey: str) -> str:
-#     rsa.construct()
+    #     rsa.construct()
     return ecdsa.SigningKey().from_string(privatekey, curve=ecdsa.SECP256k1).get_verifying_key().hex()
 
     # return ecdsa.keyFromPrivate(privatekey, 'hex').getPublic().encode('hex')
     pass
+
 
 def isValidTxIn(txin: TxIn) -> bool:
     return (
@@ -288,10 +311,10 @@ def isValidTxIn(txin: TxIn) -> bool:
 
 def isValidTxOut(txout: TxOut) -> bool:
     return (
-        txout is not None
-        and type(txout.address) == str
-        and isValidAddr(txout.address)
-        and type(txout.amount) == int
+            txout is not None
+            and type(txout.address) == str
+            and isValidAddr(txout.address)
+            and type(txout.amount) == int
     )
 
 
@@ -304,8 +327,10 @@ def isValidAddr(address: str) -> bool:
         return False
     return True
 
+
 def isValidTxList(txs) -> bool:
     return reduce(lambda tx1, tx2: tx1 and tx2, map(lambda tx: isValidTxStruct(tx), txs))
+
 
 def isValidTxStruct(tx: Transaction) -> bool:
     validateIn = True
@@ -322,9 +347,8 @@ def isValidTxStruct(tx: Transaction) -> bool:
             # and reduce(lambda t1, t2: t1 and t2, map(lambda txin: isValidTxIn(txin), tx.txIns))
             and isinstance(tx.txOuts, list)
             and validateOut
-            # and reduce(lambda t1, t2: t1 and t2, map(lambda txout: isValidTxOut(txout), tx.txOuts))
+        # and reduce(lambda t1, t2: t1 and t2, map(lambda txout: isValidTxOut(txout), tx.txOuts))
     )
-
 
 # def updateUtxos(txs, utxo):
 #     # return new utxo list
