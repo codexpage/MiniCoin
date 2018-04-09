@@ -27,7 +27,7 @@ class Block:
     #TODO data hash and tree hash
     # 计算block hash，不包括nonce
     def calculate_hash(self):
-        return list_hash([str(self)])
+        return list_hash([str(self)]+[tx.id for tx in self.data])
         # return list_hash(
         #     [str(self.index), self.data, str(self.timestamp), self.prev_hash, str(self.difficulty), str(self.nonce)])
 
@@ -43,7 +43,7 @@ class Block:
         )
 
     def __str__(self):
-        return f'Block:{self.index}\nData:{self.data}\nTime:{self.timestamp}' \
+        return f'Block:{self.index}\nDataLen:{len(self.data)}\nTime:{self.timestamp}' \
                f'\nPrevHash:{self.prev_hash}\nNonce:{self.nonce}\nDifficulty:{self.difficulty}\n'
 
 genesisTransaction=tr.Transaction('95db0b8e71740baf81a619bfff7afe3600181828b59815d02c7f1b7b3209c831',
