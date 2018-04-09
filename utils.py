@@ -34,15 +34,18 @@ def list_hash(to_hash) -> str:
 
 
 selfip = ""
+selfport =""
 peers=[] #read from file list of ip
 
 #TODO read url filter url ,build peer list
 def readUrlfromFile():
     #fill peerip TODO read ip from file
     global peers
+    global selfport
     li = ["http://localhost:8001","http://localhost:8002"]
     li.remove(selfip)#remove selfip
     peers = li
+    selfport = selfip[-4:]
     return
 
 

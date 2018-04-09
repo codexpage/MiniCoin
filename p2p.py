@@ -20,20 +20,6 @@ app = Flask(__name__)
 # selfip = ""
 # peers=[] #read from file list of ip
 
-tasks = [
-    {
-        'id': 1,
-        'title': u'Buy groceries',
-        'description': u'Milk, Cheese, Pizza, Fruit, Tylenol', 
-        'done': False
-    },
-    {
-        'id': 2,
-        'title': u'Learn Python',
-        'description': u'Need to find a good Python tutorial on the web', 
-        'done': False
-    }
-]
 
 # #TODO read url filter url ,build peer list
 # def readUrlfromFile():
@@ -58,6 +44,7 @@ def querylast():
 
 @app.route('/queryall', methods=['GET'])
 def queryall():
+    print("send all chain")
     return pickle.dumps(chain.blockchain)
 
 # @app.route('/querytx', methods=['GET'])
@@ -98,17 +85,19 @@ def getRequest(url) -> dict:
 def postRequest(url, data):
     try:
         r = requests.post(url, pickle.dumps(data))
+        print(r.content)
         return pickle.loads(r.content)
-    except:
-        print("connection error")
+    except Exception as e:
+        print(e)
         return None
 
 #TODO when edit chain , add lock
 #when receive a block
-def receiveBlockHandler(block):
+def receiveBlockHandler(blockandip):
+    block,ip = blockandip
     print("======block received=========")
     print(block)
-    print("======block received=========")
+    print("=============================")
     if not chain.validate_block_types(block):
         print("block structuture not valid")
         return
@@ -116,20 +105,29 @@ def receiveBlockHandler(block):
     #if block exist, then index must be smaller, so don't broadcast and do nothing
     if block.index > lastblock.index: #only when receive longer chain's block
         if lastblock.hash ==  block.prev_hash: # one block behind
+            print("one block behind, add to chain")
             chain.addBlockToChain(block)
-            broadcast(block,"/block")
+            broadcast((block,utils.selfip),"/block")
         else: #serveral blocks behind, or branch
-            addr = request.remote_addr
+            # addr = request.remote_addr
+
             #broadcast request query all chain
-            getAndReplaceChain(addr)
+            print("need to replace chain from",ip)
+            th=threading.Thread(target=getAndReplaceChain,args=(ip,), daemon=True)
+            th.start()
+    else:
+        print("this block is from a shorter chain")
 
 
 
 
-def getAndReplaceChain(addr):
-    otherchain = getRequest("http://"+addr+"/queryall")
+def getAndReplaceChain(ip):
+    print("request a chain")
+    otherchain = getRequest(ip+"/queryall")
+    print("rececie longer chain")
     if chain.replaceChain(otherchain):
-        broadcast(otherchain[-1], "/block") #broadcast block
+        broadcast((otherchain[-1],utils.selfip), "/block") #broadcast block
+    print("replaced chain")
 
 
 #when receive tx
@@ -152,7 +150,8 @@ def main(port):
 
     print("start utxos:",chain.getUtxos())
     start_thread(chain.miner)
-    start_thread(http_server(port))
+    # start_thread(http_server(port))
+    http_server(port)
     [t.join() for t in threads]#main thread join to wait two subthread
 
 

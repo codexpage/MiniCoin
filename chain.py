@@ -178,7 +178,7 @@ def miner():
             addBlockToChain(block)       #attach block to chain
             cnt+=1
             print(os.getpid(),cnt,"mined a block",block)
-            p2p.broadcast(block,"/block") #TODO:is this the same p2p? peers?
+            p2p.broadcast((block,utils.selfip),"/block")
             #TODO save to disk
         #if block is empty means it was interuptted, start new loop on new block
 
