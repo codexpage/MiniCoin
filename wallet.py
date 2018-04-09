@@ -78,7 +78,7 @@ def getBalance(addr: str, utxos) -> int:
         balance += outs.amount
     return balance
 
-
+#find txouts owned by an addr
 def findTtxos(addr: str, unspentTxOuts):
     ret = []
     for outs in unspentTxOuts:
@@ -92,12 +92,13 @@ def findAmount(amount: int, unspentTxOuts):
     find = []
     for out in unspentTxOuts:
         find.append(out)
-        balance += out.amout
+        balance += out.amount
         if balance >= amount:
             changes = balance - amount
             return find, changes
 
-    raise ("balance not enough")
+    print("balance not enough")
+    return None,None
 
 
 # return list of TxOut
@@ -121,9 +122,11 @@ def createTx(receiver, amount, privateKey, unspentTxOuts, pool):
         if out.address == myaddr:
             myUnsepnts.append(out)
 
-    myUnspentTxOut = filterTxPool(myUnsepnts, pool)
+    myUnspentTxOut = filterTxPool(myUnsepnts, pool) #remove utxos which has been spent in the pool
 
-    included, changes = findTtxos(amount, myUnspentTxOut)
+    included, changes = findAmount(amount, myUnspentTxOut)
+    if not included:
+        return None
 
     unsigned = []
     for txout in included:
@@ -138,11 +141,11 @@ def createTx(receiver, amount, privateKey, unspentTxOuts, pool):
     return tx
 
 
-def toUnsignedTxIn(unspentTxOut: transaction.UnspentTxOut):
-    return transaction.TxIn(unspentTxOut.txOutId, unspentTxOut.txOutIndex)
+def toUnsignedTxIn(unspentTxOut):
+    return transaction.TxIn(unspentTxOut.txOutId, unspentTxOut.txOutIndex,'')
 
-
-def filterTxPool(unspentTxOuts, pool: [transaction.Transaction]):
+#filter utxo based on bunch of txs
+def filterTxPool(unspentTxOuts, pool):
     # pass
     txIns = []
     for ins in pool:

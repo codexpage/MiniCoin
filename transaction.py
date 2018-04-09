@@ -3,7 +3,7 @@ import utils
 import ecdsa
 import string
 from functools import reduce
-
+from wallet import getPrivateKeyFromWallet, getPubKeyFromWallet
 # use rsa2048 (2048bit) instead of dsa
 
 COINBASE_AMOUNT = 50
@@ -190,11 +190,13 @@ def validateTxIn(txIn: TxIn, tx: Transaction, unspents):
 
     # public key
     addr = referencedTxOut.address
-    key = ecdsa.VerifyingKey.from_string(string=addr, curve=ecdsa.SECP256k1)
+    # key = ecdsa.VerifyingKey.from_string(string=addr, curve=ecdsa.SECP256k1)
+    # key = ecdsa.SigningKey().from_string()
+    key = getPrivateKeyFromWallet().get_verifying_key()
     # key = ecdsa.keyFromPublic(addr, 'hex')
     # ecdsa.verify(tx.id, txIn.signature)
     # key = ""
-    return key.verify(tx.id, txIn.signature)
+    return key.verify(txIn.signature.encode(),tx.id.encode())
     # key = ec.keyFromPublic(address, 'hex');
     # return key.verify(transaction.id, txIn.signature);
     # return rsa.verify(tx.id, txIn.signature, utils.pubkey)
@@ -233,8 +235,9 @@ def signTxin(tx: Transaction, txInIndex: int, pk: str, unspentTxOuts) -> str:
 
     # TODO key
     # key = ecdsa.keyFromPrivate(pk, 'hex')
-    key = ecdsa.SigningKey.from_string(string=pk, curve=ecdsa.SECP256k1)
-    signiture = key.sign(id).hex()  # .toDER().encode('hex')
+    # key = ecdsa.SigningKey.from_string(string=pk, curve=ecdsa.SECP256k1)
+    key = getPrivateKeyFromWallet()
+    signiture = key.sign(id.encode()).hex()  # .toDER().encode('hex')
 
     # key = toHex(utils.privatekey)
     # signature = toHex(rsa.encrypt(id, pk))
@@ -292,9 +295,9 @@ def processTx(txs, unspentTxout, blockIndex):
 #     pass
 
 
-def getPublicKey(privatekey: str) -> str:
+def getPublicKey(privatekey) -> str:
     #     rsa.construct()
-    return ecdsa.SigningKey().from_string(privatekey, curve=ecdsa.SECP256k1).get_verifying_key().hex()
+    return privatekey.get_verifying_key().to_string().hex()
 
     # return ecdsa.keyFromPrivate(privatekey, 'hex').getPublic().encode('hex')
     pass

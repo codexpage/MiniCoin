@@ -11,6 +11,7 @@ import threading
 import TxPool as pool
 import transaction as tr
 from docopt import docopt
+import  wallet as w
 import  utils
 import os
 
@@ -74,6 +75,20 @@ def receiveTx():
     obj = pickle.loads(content)
     receiveTxhandler(obj)
     return "ok"
+
+
+@app.route('/balance', methods=['GET'])
+def getBalance():
+    addr = w.getPubKeyFromWallet()
+    return "Address:"+addr+"\n"+str(w.getBalance(addr,chain.getUtxos()))
+
+#self node send money to others
+@app.route('/send', methods=['GET'])
+def sendMoney():
+   amount = int(request.args['amount'])
+   receiver = request.args['receiver']
+   tx = w.createTx(receiver, amount, w.getPrivateKeyFromWallet(), chain.getUtxos(), pool.getTxPool())
+   receiveTxhandler(tx) # receive from self
 
 # r = requests.post("http://bugs.python.org", data={'number': 12524, 'type': 'issue', 'action': 'show'})
 
