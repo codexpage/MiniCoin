@@ -265,7 +265,7 @@ def getAccumulatedDifficulty(chain):
 def addBlockToChain(block):
     if validate_block(block, getLastBlock()):
         res_utxos = tr.processTx(block.data,getUtxos(),block.index)
-        if res_utxos:
+        if res_utxos: #if tx in block is valid
             blockchain.append(block)
             setUtxos(res_utxos) #update utxos
             pool.updateTxPool(res_utxos) #update pool

@@ -19,16 +19,16 @@ def addToTxPool(tx: transaction, unspentTxOuts) -> bool:
 
 def hasTxIn(txIn: transaction.TxIn, unspentTxOut:[transaction.UnspentTxOut]):
     newTxIn = []
-    for tx in unspentTxOut:
-        if tx.txOutId == txIn.txOutId and tx.txOutIndex == txIn.txOutIndex:
-            newTxIn.append(tx)
-    return (newTxIn is not None)
+    for utxo in unspentTxOut:
+        if utxo.txOutId == txIn.txOutId and utxo.txOutIndex == txIn.txOutIndex:
+            newTxIn.append(utxo)
+    return not(newTxIn==[])
 
 def updateTxPool(unspentTxOuts: [transaction.UnspentTxOut]):
     invalidTxs = []
     for tx in txPool:
-        for ins in tx.txIns:
-            if not hasTxIn(ins, unspentTxOuts):
+        for txin in tx.txIns:
+            if not hasTxIn(txin, unspentTxOuts):
                 invalidTxs.append(tx)
                 break
 
