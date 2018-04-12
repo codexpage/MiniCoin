@@ -2,10 +2,11 @@
 import ecdsa
 import os
 import transaction
+import utils
 
-privateKeyPath = "./private_key"
+privateKeyPath = "./key/private_key"
 # EC = ecdsa.ecdsa('secp256k1')
-
+# print("key of ", utils.selfport, privateKeyPath)
 
 # prik = "privateKey"
 # pubk = "publicKey"
@@ -165,5 +166,5 @@ def filterTxPool(unspentTxOuts, pool):
 if __name__ == '__main__':
     pass
     # initWallet()
-    print(getPrivateKeyFromWallet().to_string().hex())
+    # print(getPrivateKeyFromWallet().to_string().hex())
     # print(getPubKeyFromWallet())

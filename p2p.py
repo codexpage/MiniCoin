@@ -17,7 +17,8 @@ import os
 
 
 app = Flask(__name__)
-
+requests.adapters.DEFAULT_RETRIES = 0
+# requests.adapters.DEFAULT_RETRIES
 # selfip = ""
 # peers=[] #read from file list of ip
 
@@ -34,9 +35,15 @@ app = Flask(__name__)
 def broadcast(data, route):
     #send to all peer
     print("broadcast:",utils.peers)
+    # for url in utils.peers:
+    #     postRequest(url+route,data)
+    threads = []
     for url in utils.peers:
-        postRequest(url+route,data)
-
+        t = threading.Thread(target=postRequest, args=(url+route,data))
+        threads.append(t)
+        t.start()
+# def post(dest, msg):
+#     postRequest(dest ,msg)
 
 @app.route('/querylast', methods=['GET'])
 def querylast():
@@ -162,6 +169,7 @@ def http_server(port):
 
 def main(port):
     utils.readUrlfromFile()
+    w.initWallet()
     print("peers:", utils.peers)
     threads = []
     def start_thread(fnc): #启动线程的函数
@@ -180,6 +188,7 @@ if __name__ == '__main__':
     port = int(args["<port>"])
     # print(port)
     utils.selfip = f"http://localhost:{port}"
+    w.privateKeyPath += str(port)
     print("start main")
     main(port)
     # http_server(port)
