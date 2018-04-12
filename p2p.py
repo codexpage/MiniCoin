@@ -14,10 +14,13 @@ from docopt import docopt
 import  wallet as w
 import  utils
 import os
-
+import datetime
 
 app = Flask(__name__)
 requests.adapters.DEFAULT_RETRIES = 0
+lock = threading.Lock()
+
+
 # requests.adapters.DEFAULT_RETRIES
 # selfip = ""
 # peers=[] #read from file list of ip
@@ -118,7 +121,7 @@ def postRequest(url, data):
 #when receive a block
 def receiveBlockHandler(blockandip):
     block,ip = blockandip
-    print("======block received=========")
+    print("======A block received=========,{time: %H:%M:%S}".format(time =datetime.datetime.now())," current length", len(chain.blockchain))
     print(block)
     print("=============================")
     if not chain.validate_block_types(block):
@@ -149,10 +152,10 @@ def getAndReplaceChain(ip):
     print("request a chain")
     otherchain = getRequest(ip+"/queryall")
     print("longer chain getted")
-    if chain.replaceChain(otherchain):
-        broadcast((otherchain[-1],utils.selfip), "/block") #broadcast block
-
-    print("replaced chain")
+    with lock:
+        if chain.replaceChain(otherchain):
+            broadcast((otherchain[-1],utils.selfip), "/block") #broadcast block
+        print("replaced chain")
 
 
 #when receive tx
