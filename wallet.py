@@ -10,15 +10,22 @@ privateKeyPath = "./key/private_key"
 
 # prik = "privateKey"
 # pubk = "publicKey"
+priKey = ""
+
 
 def getPrivateKeyFromWallet():
     # return utils.privatekey
-    with open(privateKeyPath, 'rb') as pri:
-        # privateKey = pri.read()
-        privateKey = ecdsa.SigningKey.from_string(
-            pri.read(), curve=ecdsa.SECP256k1)
-        pri.close()
-    return privateKey
+    global priKey
+    if priKey:
+        return priKey
+    else:
+        with open(privateKeyPath, 'rb') as pri:
+            # privateKey = pri.read()
+            privateKey = ecdsa.SigningKey.from_string(
+                pri.read(), curve=ecdsa.SECP256k1)
+            pri.close()
+            priKey = privateKey
+        return privateKey
 
 
 # pass
