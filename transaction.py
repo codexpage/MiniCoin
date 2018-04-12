@@ -80,17 +80,20 @@ def getTxid(tx):
 
 def validateTx(tx: Transaction, unspentTxOuts):
     if not isValidTxStruct(tx):
+        print("tx struct is not valid")
         return False
 
     if getTxid(tx) != tx.id:
+        print("txid is not correct")
         return False
 
     # hasValidTxIns = tx.txIns.map(lambda t: validateTxIn(t, tx, unspentTxOuts)).reduce(lambda t1, t2: t1 and t2, True)
     hasValidTxIns = True
     for ins in tx.txIns:
-        hasValidTxIns = hasValidTxIns and validateTxIn(ins, tx, unspentTxOuts)
+        hasValidTxIns = hasValidTxIns and validateTxIn(ins, tx, unspentTxOuts)#all In should be valid
 
     if not hasValidTxIns:
+        print("some txIn in the tx is not invalid ")
         return False
 
     # totalTxInValue = tx.txIns.map(lambda t: getTxInAmount(t, unspentTxOuts)).reduce(lambda t1, t2: t1 + t2, 0)
@@ -104,11 +107,12 @@ def validateTx(tx: Transaction, unspentTxOuts):
         totalTxOutValue += outs.amount
 
     if totalTxInValue != totalTxOutValue:
+        print("txIn value not equal to txOut value")
         return False
 
     return True
 
-
+#validate every tx in a block
 def validateBlockTxs(txs, unspentTxOuts, index):
     coinbaseTx = txs[0]
     if not validateCoinbaseTx(coinbaseTx, index):
@@ -133,12 +137,12 @@ def validateBlockTxs(txs, unspentTxOuts, index):
     # }
     #     txIns = txs.map(lambda tx: txIns).flatten().value()
     if hasDups(txIns):
-        # print("dups")
+        print("block contain dup txIn, cannot spend same txout twice.")
         return False
 
     # normalTx = txs.slice(1)
     validNormalTx = True
-    for i in range(1, len(txs)):
+    for i in range(1, len(txs)): #every tx  should be valid (except coinbase tx)
         validNormalTx = validNormalTx and validateTx(txs[i], unspentTxOuts)
     # return normalTx.map(lambda tx: validateTx(tx, unspentTxOuts)).recude(lambda t1, t2: t1 and t2, True)
     return validNormalTx
@@ -146,7 +150,6 @@ def validateBlockTxs(txs, unspentTxOuts, index):
 
 def hasDups(txIns):
     if len(txIns) != len(set(txIns)):
-        print
         # if len(txIns) == set(txIns):
         return True
     return False
@@ -176,7 +179,6 @@ def validateCoinbaseTx(tx: Transaction, index: int) -> bool:
 
 
 def validateTxIn(txIn: TxIn, tx: Transaction, unspents):
-    # referencedTxOut =
 
     # referencedTxOut = unspents.find(lambda t: t.txOutId == txIn.txOutId and t.txOutId == txIn.txOutId)
     referencedTxOut=None
@@ -187,17 +189,22 @@ def validateTxIn(txIn: TxIn, tx: Transaction, unspents):
             break
 
     if referencedTxOut is None:
+        print("there is not matching txout in utxos for this txIn", txIn)
         return False
 
     # public key
-    addr = referencedTxOut.address
-    # key = ecdsa.VerifyingKey.from_string(string=addr, curve=ecdsa.SECP256k1)
-    # key = ecdsa.SigningKey().from_string()
-    key = getPrivateKeyFromWallet().get_verifying_key()
+    pub = bytes.fromhex(referencedTxOut.address)
+    key = ecdsa.VerifyingKey.from_string(string=pub, curve=ecdsa.SECP256k1)
+
+    # key = getPrivateKeyFromWallet().get_verifying_key()
+
     # key = ecdsa.keyFromPublic(addr, 'hex')
     # ecdsa.verify(tx.id, txIn.signature)
     # key = ""
-    return key.verify(bytes.fromhex(txIn.signature),tx.id.encode())
+    if not key.verify(bytes.fromhex(txIn.signature), tx.id.encode()):
+        print("txin signature incorrect", txIn)
+        return False
+    return True
     # key = ec.keyFromPublic(address, 'hex');
     # return key.verify(transaction.id, txIn.signature);
     # return rsa.verify(tx.id, txIn.signature, utils.pubkey)
@@ -282,6 +289,8 @@ def updateUnspentTxOut(txs, unspentTxout):
     #          + newUnspentTxOut
 
 
+#  input current utxos
+#  return changed utxos after some txs
 def processTx(txs, unspentTxout, blockIndex):
     if not isValidTxList(txs):
         print("tx in block is invalid")
@@ -292,8 +301,6 @@ def processTx(txs, unspentTxout, blockIndex):
     return updateUnspentTxOut(txs, unspentTxout)
 
 
-# def toHex(byte):
-#     pass
 
 
 def getPublicKey(privatekey) -> str:
