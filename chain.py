@@ -8,6 +8,7 @@ import transaction as tr
 import wallet as wa
 import TxPool as pool
 import p2p
+import datetime
 import os
 # from typing import Iterable
 BLOCK_GENERATION_INTERVAL = 10  # 10s
@@ -179,7 +180,7 @@ def miner():
             if not addBlockToChain(block):   #mined block must be valid to add to chain
                 raise Exception("mined block is not valid") #shold never happen, for debug
             cnt+=1
-            print(os.getpid(),cnt,"mined a block",block)
+            print("{time: %H:%M:%S}".format(time = datetime.datetime.now()),"mined a block",block)
             p2p.broadcast((block,utils.selfip),"/block")
             #TODO save to disk
         #if block is empty means it was interuptted, start new loop on new block
