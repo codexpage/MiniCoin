@@ -280,6 +280,7 @@ def addBlockToChain(block):
         return False
 
 
+#TODO treat read chain from file as replace chain, save to disk when exit(or each block)
 # replace the chian with new chain if it's has more work
 def replaceChain(newchain)->bool:
     res_utxos = validate_blockchain(newchain)
