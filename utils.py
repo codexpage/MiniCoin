@@ -46,7 +46,7 @@ def readUrlfromFile():
     # li = ["http://localhost:8001","http://localhost:8002"]
     li = []
     base = "http://localhost"
-    for p in range (8000, 8050):
+    for p in range (8000, 8004):
         li.append(base + ":" + str(p))
     li.remove(selfip)#remove selfip
     peers = li

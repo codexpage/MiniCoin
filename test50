@@ -1,7 +1,7 @@
 #!/bin/bash
 set -m
 
-for n in {8000..8050}
+for n in {8000..8002}
 do
 #sleep 5
 python3 -u p2p.py "$n" >./testres/testres"$n" &
