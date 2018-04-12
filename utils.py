@@ -43,7 +43,11 @@ def readUrlfromFile():
     #fill peerip TODO read ip from file
     global peers
     global selfport
-    li = ["http://localhost:8001","http://localhost:8002"]
+    # li = ["http://localhost:8001","http://localhost:8002"]
+    li = []
+    base = "http://localhost"
+    for p in range (8000, 8050):
+        li.append(base + ":" + str(p))
     li.remove(selfip)#remove selfip
     peers = li
     selfport = selfip[-4:]
