@@ -10,11 +10,12 @@ import TxPool as pool
 import p2p
 import datetime
 import os
+import signal
+import pickle
 # from typing import Iterable
 BLOCK_GENERATION_INTERVAL = 10  # 10s
 DIFFICULTY_ADJUSTMENT_INTERVAL = 3  # 10 blocks
-
-
+storage = "./chains/blockchains"
 class Block:
     def __init__(self, index, data, timestamp, hash, prev_hash, nonce, difficulty):
         self.index = index
@@ -46,6 +47,9 @@ class Block:
     def __str__(self):
         return f'Block:{self.index}\nDataLen:{len(self.data)}\nTime:{self.timestamp}' \
                f'\nPrevHash:{self.prev_hash}\nNonce:{self.nonce}\nDifficulty:{self.difficulty}\n'
+
+
+
 
 genesisTransaction=tr.Transaction('95db0b8e71740baf81a619bfff7afe3600181828b59815d02c7f1b7b3209c831',
                                   [tr.TxIn('',0,'')],
@@ -171,10 +175,31 @@ def assmbleDataToMineBlock():
     return generateBlock_with_data(blockData)
 
 
+def readChain():
+    if os.path.exists(storage) and os.path.getsize(storage) > 0:
+        # with open(storage, "rb") as store:
+        oldchain = pickle.load(open(storage, "rb"))
+        if oldchain:
+            if replaceChain(oldchain):
+                print("read from file", storage)
+            else:
+                print("file broken")
+        else:
+            print("file doesnt exist")
+
+def flush(signal, frame):
+        print("get signal", signal)
+        pickle.dump(blockchain, open(storage, "wb"))
+        print("saved chain to file", storage)
+        pickle.dump(utils.peerList, open(utils.peerList, "wb"))
+        print("saved peers to file", utils.peerList)
+        exit(0)
 #mine forever
 def miner():
     # cnt =0
+    readChain()
     p2p.initProgress()
+
     while True:
         block = assmbleDataToMineBlock()
         if block:

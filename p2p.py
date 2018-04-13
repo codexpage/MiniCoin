@@ -16,6 +16,7 @@ import  utils
 import os
 import datetime
 import time
+import signal
 import random
 
 app = Flask(__name__)
@@ -110,13 +111,19 @@ def heartBeat():
     # print(content)
     peer = pickle.loads(content)
     addtoLive(str(peer))
+    syncPeer(str(peer))
     return "live"
 # r = requests.post("http://bugs.python.org", data={'number': 12524, 'type': 'issue', 'action': 'show'})
+
+
+def syncPeer(peer):
+    if peer not in utils.everContact:
+        utils.everContact.append(peer)
 
 def getHeartBeat():
     while True:
 
-        for p in utils.peers:
+        for p in utils.live:
             try:
                 r = requests.post(p + "/heartbeat", pickle.dumps(utils.selfip))
                 print("heart beat of ", p, r.content)
@@ -199,21 +206,12 @@ def getAndReplaceChain(ip):
     else:
         return False
 
-# def initChain(dest):
-#     print("init chain")
-#     chain = getRequest(dest + "/queryall")
-#     if chain:
-#         with lock:
-#             if chain.replaceChain(chain):
-#                 broadcast((chain[-1],utils.selfip), "/block") #broadcast block
-#                 print("replaced chain")
-#                 return True
-#     return False
 
 def initProgress():
-        for p in utils.live:
-            if getAndReplaceChain(p):
-                break;
+        # for p in utils.live:
+        #     if getAndReplaceChain(p):
+        #         break;
+        pass
 
 
 #when receive tx
@@ -250,8 +248,12 @@ if __name__ == '__main__':
     port = int(args["<port>"])
     # print(port)
     utils.selfip = f"http://localhost:{port}"
+    utils.peerList += str(port)
     w.privateKeyPath += str(port)
+    chain.storage += str(port)
     print("start main")
+    signal.signal(signal.SIGINT, chain.flush)
+
     main(port)
     # http_server(port)
 

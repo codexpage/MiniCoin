@@ -4,7 +4,7 @@ import os
 import transaction
 import utils
 
-privateKeyPath = "./key/private_key"
+privateKeyPath = "./key/"
 # EC = ecdsa.ecdsa('secp256k1')
 # print("key of ", utils.selfport, privateKeyPath)
 

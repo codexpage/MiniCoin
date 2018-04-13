@@ -1,6 +1,8 @@
 import hashlib
 import random
 import copy
+import os
+import pickle
 # import rsa
 # (privatekey, pubkey) = rsa.newkeys(2048)
 
@@ -37,20 +39,35 @@ def list_hash(to_hash) -> str:
 
 selfip = ""
 selfport =""
+peerList = "./peerlist/peersto"
 peers=[] #read from file list of ip
 live = []
+everContact = []
 #TODO read url filter url ,build peer list
 def readUrlfromFile():
     #fill peerip TODO read ip from file
     global peers
     global selfport
+    global live
+    if os.path.exists(peerList) and os.path.getsize(peerList) > 0:
+        peers = list(pickle.load(open(peerList, "rb")))
+# bugs temporary solution
+        if '.' in peers:
+            peers = []
+        if selfip in peers:
+            peers.remove(selfip)
+    else:
+
+    # if selfip
     # li = ["http://localhost:8001","http://localhost:8002"]
-    li = []
-    base = "http://localhost"
-    for p in range (7999, 8100):
-        li.append(base + ":" + str(p))
-    li.remove(selfip)#remove selfip
-    peers = li
+        li = []
+        base = "http://localhost"
+        for p in range (7999, 8050):
+            li.append(base + ":" + str(p))
+        li.remove(selfip)#remove selfip
+        peers = li
+
+
     random.shuffle(peers)
     live = copy.deepcopy(peers)
     selfport = selfip[-4:]
