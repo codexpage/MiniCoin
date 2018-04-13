@@ -1,5 +1,5 @@
 #!/bin/bash
 for n in {8000..8049}
 do
-kill $(lsof -t -i:$n)
+kill -2 $(lsof -t -i:$n)
 done
