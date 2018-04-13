@@ -1,0 +1,919 @@
+start main
+peers: ['http://localhost:8036', 'http://localhost:8025', 'http://localhost:8009', 'http://localhost:8039', 'http://localhost:8020', 'http://localhost:8002', 'http://localhost:8022', 'http://localhost:8030', 'http://localhost:8024', 'http://localhost:8010', 'http://localhost:8029', 'http://localhost:8044', 'http://localhost:8038', 'http://localhost:8032', 'http://localhost:8012', 'http://localhost:7999', 'http://localhost:8004', 'http://localhost:8045', 'http://localhost:8019', 'http://localhost:8041', 'http://localhost:8026', 'http://localhost:8006', 'http://localhost:8021', 'http://localhost:8027', 'http://localhost:8031', 'http://localhost:8001', 'http://localhost:8017', 'http://localhost:8035', 'http://localhost:8011', 'http://localhost:8049', 'http://localhost:8028', 'http://localhost:8015', 'http://localhost:8046', 'http://localhost:8037', 'http://localhost:8033', 'http://localhost:8007', 'http://localhost:8008', 'http://localhost:8014', 'http://localhost:8040', 'http://localhost:8005', 'http://localhost:8000', 'http://localhost:8034', 'http://localhost:8047', 'http://localhost:8042', 'http://localhost:8013', 'http://localhost:8043', 'http://localhost:8048', 'http://localhost:8018', 'http://localhost:8023', 'http://localhost:8003']
+start utxos: [<transaction.UnspentTxOut object at 0x10e5a72b0>]
+request a chain
+HTTPConnectionPool(host='localhost', port=8036): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10e5ec4a8>: Failed to establish a new connection: [Errno 61] Connection refused',))
+request a chain
+send all chain
+send all chain
+from http://localhost:8047 ======A block received=========, 20:09:10  current length 1
+0
+=============================
+this block is from a shorter chain
+from http://localhost:8047 ======A block received=========, 20:09:11  current length 1
+1
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: ['http://localhost:8036', 'http://localhost:8025', 'http://localhost:8009', 'http://localhost:8039', 'http://localhost:8020', 'http://localhost:8002', 'http://localhost:8022', 'http://localhost:8030', 'http://localhost:8024', 'http://localhost:8010', 'http://localhost:8029', 'http://localhost:8044', 'http://localhost:8038', 'http://localhost:8032', 'http://localhost:8012', 'http://localhost:7999', 'http://localhost:8004', 'http://localhost:8045', 'http://localhost:8019', 'http://localhost:8041', 'http://localhost:8026', 'http://localhost:8006', 'http://localhost:8021', 'http://localhost:8027', 'http://localhost:8031', 'http://localhost:8001', 'http://localhost:8017', 'http://localhost:8035', 'http://localhost:8011', 'http://localhost:8049', 'http://localhost:8028', 'http://localhost:8015', 'http://localhost:8046', 'http://localhost:8037', 'http://localhost:8033', 'http://localhost:8007', 'http://localhost:8008', 'http://localhost:8014', 'http://localhost:8040', 'http://localhost:8005', 'http://localhost:8000', 'http://localhost:8034', 'http://localhost:8047', 'http://localhost:8042', 'http://localhost:8013', 'http://localhost:8043', 'http://localhost:8048', 'http://localhost:8018', 'http://localhost:8023', 'http://localhost:8003']
+from http://localhost:8047 ======A block received=========, 20:09:12  current length 2
+3
+=============================
+need to replace chain from http://localhost:8047
+request a chain
+from http://localhost:8047 ======A block received=========, 20:09:12  current length 2
+4
+=============================
+need to replace chain from http://localhost:8047
+request a chain
+from http://localhost:8049 ======A block received=========, 20:09:12  current length 2
+0
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 20:09:12  current length 2
+0
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 20:09:12  current length 2
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8047 ======A block received=========, 20:09:15  current length 2
+2
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: ['http://localhost:8036', 'http://localhost:8025', 'http://localhost:8009', 'http://localhost:8039', 'http://localhost:8020', 'http://localhost:8002', 'http://localhost:8022', 'http://localhost:8030', 'http://localhost:8024', 'http://localhost:8010', 'http://localhost:8029', 'http://localhost:8044', 'http://localhost:8038', 'http://localhost:8032', 'http://localhost:8012', 'http://localhost:7999', 'http://localhost:8004', 'http://localhost:8045', 'http://localhost:8019', 'http://localhost:8041', 'http://localhost:8026', 'http://localhost:8006', 'http://localhost:8021', 'http://localhost:8027', 'http://localhost:8031', 'http://localhost:8001', 'http://localhost:8017', 'http://localhost:8035', 'http://localhost:8011', 'http://localhost:8049', 'http://localhost:8028', 'http://localhost:8015', 'http://localhost:8046', 'http://localhost:8037', 'http://localhost:8033', 'http://localhost:8007', 'http://localhost:8008', 'http://localhost:8014', 'http://localhost:8040', 'http://localhost:8005', 'http://localhost:8000', 'http://localhost:8034', 'http://localhost:8047', 'http://localhost:8042', 'http://localhost:8013', 'http://localhost:8043', 'http://localhost:8048', 'http://localhost:8018', 'http://localhost:8023', 'http://localhost:8003']
+from http://localhost:8023 ======A block received=========, 20:09:37  current length 3
+4
+=============================
+need to replace chain from http://localhost:8023
+request a chain
+from http://localhost:8021 ======A block received=========, 20:09:42  current length 3
+3
+=============================
+need to replace chain from http://localhost:8021
+request a chain
+from http://localhost:8023 ======A block received=========, 20:09:42  current length 3
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8023 ======A block received=========, 20:09:48  current length 3
+7
+=============================
+need to replace chain from http://localhost:8023
+request a chain
+from http://localhost:8021 ======A block received=========, 20:09:49  current length 3
+4
+=============================
+need to replace chain from http://localhost:8021
+request a chain
+from http://localhost:8047 ======A block received=========, 20:10:18  current length 3
+15
+=============================
+need to replace chain from http://localhost:8047
+request a chain
+HTTPConnectionPool(host='localhost', port=8025): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10eeb5cf8>: Failed to establish a new connection: [Errno 61] Connection refused',))
+request a chain
+from http://localhost:8012 ======A block received=========, 20:10:26  current length 3
+3
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: ['http://localhost:8036', 'http://localhost:8025', 'http://localhost:8009', 'http://localhost:8039', 'http://localhost:8020', 'http://localhost:8002', 'http://localhost:8022', 'http://localhost:8030', 'http://localhost:8024', 'http://localhost:8010', 'http://localhost:8029', 'http://localhost:8044', 'http://localhost:8038', 'http://localhost:8032', 'http://localhost:8012', 'http://localhost:7999', 'http://localhost:8004', 'http://localhost:8045', 'http://localhost:8019', 'http://localhost:8041', 'http://localhost:8026', 'http://localhost:8006', 'http://localhost:8021', 'http://localhost:8027', 'http://localhost:8031', 'http://localhost:8001', 'http://localhost:8017', 'http://localhost:8035', 'http://localhost:8011', 'http://localhost:8049', 'http://localhost:8028', 'http://localhost:8015', 'http://localhost:8046', 'http://localhost:8037', 'http://localhost:8033', 'http://localhost:8007', 'http://localhost:8008', 'http://localhost:8014', 'http://localhost:8040', 'http://localhost:8005', 'http://localhost:8000', 'http://localhost:8034', 'http://localhost:8047', 'http://localhost:8042', 'http://localhost:8013', 'http://localhost:8043', 'http://localhost:8048', 'http://localhost:8018', 'http://localhost:8023', 'http://localhost:8003']
+from http://localhost:8047 ======A block received=========, 20:10:34  current length 4
+24
+=============================
+need to replace chain from http://localhost:8047
+request a chain
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+from http://localhost:8045 ======A block received=========, 20:10:37  current length 4
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 20:10:40  current length 4
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8028 ======A block received=========, 20:10:41  current length 4
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8003 ======A block received=========, 20:10:43  current length 4
+10
+=============================
+need to replace chain from http://localhost:8003
+request a chain
+HTTPConnectionPool(host='localhost', port=8048): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10f0eac88>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+from http://localhost:8031 ======A block received=========, 20:10:58  current length 4
+5
+=============================
+need to replace chain from http://localhost:8031
+request a chain
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+from http://localhost:8001 ======A block received=========, 20:11:03  current length 4
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8035 ======A block received=========, 20:11:05  current length 4
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8042 ======A block received=========, 20:11:05  current length 4
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8013 ======A block received=========, 20:11:08  current length 4
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8011 ======A block received=========, 20:11:09  current length 4
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8011 ======A block received=========, 20:11:09  current length 4
+2
+=============================
+this block is from a shorter chain
+b'ok'
+could not find MARK
+from http://localhost:8014 ======A block received=========, 20:11:10  current length 4
+1
+=============================
+this block is from a shorter chain
+b'ok'
+could not find MARK
+from http://localhost:8022 ======A block received=========, 20:11:18  current length 4
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8022 ======A block received=========, 20:11:18  current length 4
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8020 ======A block received=========, 20:11:18  current length 4
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8034 ======A block received=========, 20:11:18  current length 4
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8034 ======A block received=========, 20:11:18  current length 4
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8020 ======A block received=========, 20:11:18  current length 4
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8018 ======A block received=========, 20:11:18  current length 4
+4
+=============================
+need to replace chain from http://localhost:8018
+request a chain
+from http://localhost:8043 ======A block received=========, 20:11:21  current length 4
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8043 ======A block received=========, 20:11:22  current length 4
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 20:11:22  current length 4
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8023 ======A block received=========, 20:11:22  current length 4
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 20:11:22  current length 4
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8023 ======A block received=========, 20:11:24  current length 4
+5
+=============================
+need to replace chain from http://localhost:8023
+request a chain
+from http://localhost:8031 ======A block received=========, 20:11:25  current length 4
+2
+=============================
+this block is from a shorter chain
+b'ok'
+could not find MARK
+from http://localhost:8008 ======A block received=========, 20:11:28  current length 4
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8008 ======A block received=========, 20:11:28  current length 4
+1
+=============================
+this block is from a shorter chain
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
+('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
+b'ok'
+could not find MARK
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
+('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+from http://localhost:8038 ======A block received=========, 20:11:37  current length 4
+1
+=============================
+this block is from a shorter chain
+HTTPConnectionPool(host='localhost', port=7999): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10f1d1320>: Failed to establish a new connection: [Errno 61] Connection refused',))
+b'ok'
+could not find MARK
+HTTPConnectionPool(host='localhost', port=7999): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10f147cf8>: Failed to establish a new connection: [Errno 61] Connection refused',))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+from http://localhost:8021 ======A block received=========, 20:11:40  current length 4
+6
+=============================
+need to replace chain from http://localhost:8021
+request a chain
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+from http://localhost:8018 ======A block received=========, 20:11:52  current length 4
+8
+=============================
+need to replace chain from http://localhost:8018
+request a chain
+b'ok'
+could not find MARK
+from http://localhost:8018 ======A block received=========, 20:11:54  current length 4
+5
+=============================
+need to replace chain from http://localhost:8018
+request a chain
+from http://localhost:8002 ======A block received=========, 20:11:54  current length 4
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 20:11:54  current length 4
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 20:11:54  current length 4
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8046 ======A block received=========, 20:11:54  current length 4
+7
+=============================
+need to replace chain from http://localhost:8046
+request a chain
+from http://localhost:8018 ======A block received=========, 20:11:55  current length 4
+3
+=============================
+this block is from a shorter chain
+from http://localhost:8018 ======A block received=========, 20:11:55  current length 4
+6
+=============================
+need to replace chain from http://localhost:8018
+request a chain
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+from http://localhost:8046 ======A block received=========, 20:12:04  current length 4
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 20:12:05  current length 4
+5
+=============================
+need to replace chain from http://localhost:8007
+request a chain
+b'ok'
+could not find MARK
+from http://localhost:8019 ======A block received=========, 20:12:12  current length 4
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8012 ======A block received=========, 20:12:16  current length 4
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8012 ======A block received=========, 20:12:16  current length 4
+2
+=============================
+this block is from a shorter chain
+HTTPConnectionPool(host='localhost', port=8033): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10f0c62b0>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+from http://localhost:8031 ======A block received=========, 20:12:41  current length 4
+10
+=============================
+need to replace chain from http://localhost:8031
+request a chain
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+HTTPConnectionPool(host='localhost', port=8017): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10f117550>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+HTTPConnectionPool(host='localhost', port=8009): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10ef2f208>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+HTTPConnectionPool(host='localhost', port=8017): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10f12b278>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+HTTPConnectionPool(host='localhost', port=8033): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10f13aa58>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+HTTPConnectionPool(host='localhost', port=8026): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10f05e9b0>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+b'ok'
+could not find MARK
+HTTPConnectionPool(host='localhost', port=8009): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10f1c4c50>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+HTTPConnectionPool(host='localhost', port=8041): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10f173a90>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+HTTPConnectionPool(host='localhost', port=8026): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10f15cc50>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+HTTPConnectionPool(host='localhost', port=8041): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10f173dd8>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+b'ok'
+could not find MARK
+from http://localhost:8032 ======A block received=========, 20:12:57  current length 4
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8010 ======A block received=========, 20:12:59  current length 4
+3
+=============================
+this block is from a shorter chain
+HTTPConnectionPool(host='localhost', port=8023): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10f0de7f0>: Failed to establish a new connection: [Errno 23] Too many open files in system',))
+b'ok'
+could not find MARK
+from http://localhost:8007 ======A block received=========, 20:13:12  current length 4
+4
+=============================
+need to replace chain from http://localhost:8007
+request a chain
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+from http://localhost:8032 ======A block received=========, 20:13:13  current length 4
+8
+=============================
+need to replace chain from http://localhost:8032
+request a chain
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+from http://localhost:8032 ======A block received=========, 20:13:13  current length 4
+12
+=============================
+need to replace chain from http://localhost:8032
+request a chain
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+from http://localhost:8007 ======A block received=========, 20:13:15  current length 4
+11
+=============================
+need to replace chain from http://localhost:8007
+request a chain
+b'ok'
+could not find MARK
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+HTTPConnectionPool(host='localhost', port=7999): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10f3466d8>: Failed to establish a new connection: [Errno 61] Connection refused',))
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+from http://localhost:8002 ======A block received=========, 20:13:16  current length 4
+3
+=============================
+this block is from a shorter chain
+send all chain
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'\x80\x03]q\x00(cchain\nBlock\nq\x01)\x81q\x02}q\x03(X\x05\x00\x00\x00indexq\x04K\x00X\x04\x00\x00\x00dataq\x05]q\x06ctransaction\nTransaction\nq\x07)\x81q\x08}q\t(X\x02\x00\x00\x00idq\nX@\x00\x00\x0095db0b8e71740baf81a619bfff7afe3600181828b59815d02c7f1b7b3209c831q\x0bX\x05\x00\x00\x00txInsq\x0c]q\rctransaction\nTxIn\nq\x0e)\x81q\x0f}q\x10(X\x07\x00\x00\x00txOutIdq\x11X\x00\x00\x00\x00q\x12X\n\x00\x00\x00txOutIndexq\x13K\x00X\t\x00\x00\x00signatureq\x14h\x12ubaX\x06\x00\x00\x00txOutsq\x15]q\x16ctransaction\nTxOut\nq\x17)\x81q\x18}q\x19(X\x07\x00\x00\x00addressq\x1aX\x80\x00\x00\x0060ba02269f0aa21a5ee18de8f21f4c159587713db66459d8baca5406021cc51269fe4b4d23587bf58c70e7014d727d1e10ec6b80fa395829b3b79dae3fdc7360q\x1bX\x06\x00\x00\x00amountq\x1cK2ubaubaX\t\x00\x00\x00timestampq\x1dJ\x97q\x90ZX\x04\x00\x00\x00hashq\x1eX@\x00\x00\x00e9d3061d5e216863506649096aac5ddd2089357c0bb3d647db332cd9b926f8b9q\x1fX\t\x00\x00\x00prev_hashq h\x12X\x05\x00\x00\x00nonceq!K\x00X\n\x00\x00\x00difficultyq"K\x00ubh\x01)\x81q#}q$(h\x04K\x01h\x05]q%h\x07)\x81q&}q\'(h\nX@\x00\x00\x005d1bf5ecbcc8d1631a2d18eca4862f5749d52e1caf4830144867fc462ab5c957q(h\x0c]q)h\x0e)\x81q*}q+(h\x11h\x12h\x13K\x01h\x14h\x12ubah\x15]q,h\x17)\x81q-}q.(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efq/h\x1cK2ubaubah\x1dJ$\xf5\xcfZh\x1eX@\x00\x00\x00e66fc2b2efaecec0721c263e91219c628032e0619ac9283343a186d2af2f3bafq0h X@\x00\x00\x00e9d3061d5e216863506649096aac5ddd2089357c0bb3d647db332cd9b926f8b9q1h!K\x00h"K\x00ubh\x01)\x81q2}q3(h\x04K\x02h\x05]q4h\x07)\x81q5}q6(h\nX@\x00\x00\x00e123af3859bc7977bc9a6d03b141cd318f3722b3ff9dcfc927899ecf0ef429e0q7h\x0c]q8h\x0e)\x81q9}q:(h\x11h\x12h\x13K\x02h\x14h\x12ubah\x15]q;h\x17)\x81q<}q=(h\x1aX\x80\x00\x00\x00e0b0fbdd9d6ba66cae12b6fc8c705864471204088fa4676fdd06647305afa8abd1a1cee4d2141fd66cfaa96bdb9a44575d466826c9f17a8a07878618b4faa505q>h\x1cK2ubaubah\x1dJ(\xf5\xcfZh\x1eX@\x00\x00\x002b33bf5f9f8cb7ebcc1f28246473c400816a88c64ba00635b8e18e3359e8f3eaq?h h0h!K\x00h"K\x00ubh\x01)\x81q@}qA(h\x04K\x03h\x05]qBh\x07)\x81qC}qD(h\nX@\x00\x00\x00730c82a277e01fb3e154ec06ed536b7121201bd4e4f1719c20c2343b7ba8c274qEh\x0c]qFh\x0e)\x81qG}qH(h\x11h\x12h\x13K\x03h\x14h\x12ubah\x15]qIh\x17)\x81qJ}qK(h\x1aX\x80\x00\x00\x00e0b0fbdd9d6ba66cae12b6fc8c705864471204088fa4676fdd06647305afa8abd1a1cee4d2141fd66cfaa96bdb9a44575d466826c9f17a8a07878618b4faa505qLh\x1cK2ubaubah\x1dJ)\xf5\xcfZh\x1eX@\x00\x00\x00a2d26846adb062a269df327f2191472f6771cac034eb1f5b8579b7be68184878qMh h?h!K\x00h"K\x00ubh\x01)\x81qN}qO(h\x04K\x04h\x05]qPh\x07)\x81qQ}qR(h\nX@\x00\x00\x00fa6f5e7c3346fa97caeb6862c9880a2a51e17c9783a2932f6b4d26e5ecdd3909qSh\x0c]qTh\x0e)\x81qU}qV(h\x11h\x12h\x13K\x04h\x14h\x12ubah\x15]qWh\x17)\x81qX}qY(h\x1aX\x80\x00\x00\x00e0b0fbdd9d6ba66cae12b6fc8c705864471204088fa4676fdd06647305afa8abd1a1cee4d2141fd66cfaa96bdb9a44575d466826c9f17a8a07878618b4faa505qZh\x1cK2ubaubah\x1dJ)\xf5\xcfZh\x1eX@\x00\x00\x00343a68bb3e60af5374fdc77ee3808d0ec0c98d74ca61d94c3a677dd70c60eb54q[h hMh!K\x00h"K\x01ubh\x01)\x81q\\}q](h\x04K\x05h\x05]q^h\x07)\x81q_}q`(h\nX@\x00\x00\x0025ccf5831776be784e1d8c1c90b99acde8c4764a74f89519db3d54771f8ca05aqah\x0c]qbh\x0e)\x81qc}qd(h\x11h\x12h\x13K\x05h\x14h\x12ubah\x15]qeh\x17)\x81qf}qg(h\x1aX\x80\x00\x00\x00e0b0fbdd9d6ba66cae12b6fc8c705864471204088fa4676fdd06647305afa8abd1a1cee4d2141fd66cfaa96bdb9a44575d466826c9f17a8a07878618b4faa505qhh\x1cK2ubaubah\x1dJ*\xf5\xcfZh\x1eX@\x00\x00\x007a27413ea693fb30e699db9a18b744a0a8bca44c60d5f799fef10dcfb4940fadqih h[h!K\x00h"K\x01ubh\x01)\x81qj}qk(h\x04K\x06h\x05]qlh\x07)\x81qm}qn(h\nX@\x00\x00\x00d6a9e67e6b24302b9184eb1b46a46fb9119b9a8c4cf924aa5977c3ab620cce49qoh\x0c]qph\x0e)\x81qq}qr(h\x11h\x12h\x13K\x06h\x14h\x12ubah\x15]qsh\x17)\x81qt}qu(h\x1aX\x80\x00\x00\x00e0b0fbdd9d6ba66cae12b6fc8c705864471204088fa4676fdd06647305afa8abd1a1cee4d2141fd66cfaa96bdb9a44575d466826c9f17a8a07878618b4faa505qvh\x1cK2ubaubah\x1dJ+\xf5\xcfZh\x1eX@\x00\x00\x007ad31359fd90892f7a3feaea6a8ba4559c7d73bb50c91db95e1c32db435a1a35qwh hih!K\x01h"K\x01ubh\x01)\x81qx}qy(h\x04K\x07h\x05]qzh\x07)\x81q{}q|(h\nX@\x00\x00\x0066f6c4f432808c7066df3b24d8977bfba452f19514ad4503561ad0998d444cd3q}h\x0c]q~h\x0e)\x81q\x7f}q\x80(h\x11h\x12h\x13K\x07h\x14h\x12ubah\x15]q\x81h\x17)\x81q\x82}q\x83(h\x1aX\x80\x00\x00\x00e0b0fbdd9d6ba66cae12b6fc8c705864471204088fa4676fdd06647305afa8abd1a1cee4d2141fd66cfaa96bdb9a44575d466826c9f17a8a07878618b4faa505q\x84h\x1cK2ubaubah\x1dJ+\xf5\xcfZh\x1eX@\x00\x00\x001cb1d27f4ea055810c01d818f5440f5f2c1c1a8405fe92810684920eb059625fq\x85h hwh!K\th"K\x02ubh\x01)\x81q\x86}q\x87(h\x04K\x08h\x05]q\x88h\x07)\x81q\x89}q\x8a(h\nX@\x00\x00\x005bea14b3e878c3f4ba69f912c85d1a7d69dd5ab691d409cce20d6941f0d71947q\x8bh\x0c]q\x8ch\x0e)\x81q\x8d}q\x8e(h\x11h\x12h\x13K\x08h\x14h\x12ubah\x15]q\x8fh\x17)\x81q\x90}q\x91(h\x1aX\x80\x00\x00\x00e0b0fbdd9d6ba66cae12b6fc8c705864471204088fa4676fdd06647305afa8abd1a1cee4d2141fd66cfaa96bdb9a44575d466826c9f17a8a07878618b4faa505q\x92h\x1cK2ubaubah\x1dJ,\xf5\xcfZh\x1eX@\x00\x00\x003256988890e79d7515d2308e1b005c7cfea3a1bca3a342908f2ff7d6ff66b081q\x93h h\x85h!K\x02h"K\x02ubh\x01)\x81q\x94}q\x95(h\x04K\th\x05]q\x96h\x07)\x81q\x97}q\x98(h\nX@\x00\x00\x00e5361417dd1acff642b287bb48bf3d4afc38ce6ed9d3b9bf083d2ca38d657d86q\x99h\x0c]q\x9ah\x0e)\x81q\x9b}q\x9c(h\x11h\x12h\x13K\th\x14h\x12ubah\x15]q\x9dh\x17)\x81q\x9e}q\x9f(h\x1aX\x80\x00\x00\x00e0b0fbdd9d6ba66cae12b6fc8c705864471204088fa4676fdd06647305afa8abd1a1cee4d2141fd66cfaa96bdb9a44575d466826c9f17a8a07878618b4faa505q\xa0h\x1cK2ubaubah\x1dJ-\xf5\xcfZh\x1eX@\x00\x00\x001b5467162c223435119b6b7a9b310a70079a5bd15b10b3e3bec40f3b58094b73q\xa1h h\x93h!K\x02h"K\x02ubh\x01)\x81q\xa2}q\xa3(h\x04K\nh\x05]q\xa4h\x07)\x81q\xa5}q\xa6(h\nX@\x00\x00\x00049608fe1f618dc94010cee2815be045b5e6b16261a941132f5ea6b4a71b397bq\xa7h\x0c]q\xa8h\x0e)\x81q\xa9}q\xaa(h\x11h\x12h\x13K\nh\x14h\x12ubah\x15]q\xabh\x17)\x81q\xac}q\xad(h\x1aX\x80\x00\x00\x00e0b0fbdd9d6ba66cae12b6fc8c705864471204088fa4676fdd06647305afa8abd1a1cee4d2141fd66cfaa96bdb9a44575d466826c9f17a8a07878618b4faa505q\xaeh\x1cK2ubaubah\x1dJ.\xf5\xcfZh\x1eX@\x00\x00\x00014113000d6286410bd2867fc87ad5356e345407e6123e1ecc0a6a939449b598q\xafh h\xa1h!K\x07h"K\x03ubh\x01)\x81q\xb0}q\xb1(h\x04K\x0bh\x05]q\xb2h\x07)\x81q\xb3}q\xb4(h\nX@\x00\x00\x003b59f3177465940fd6035e964614e7ef6d247e53461d99fb9496f878581d13b4q\xb5h\x0c]q\xb6h\x0e)\x81q\xb7}q\xb8(h\x11h\x12h\x13K\x0bh\x14h\x12ubah\x15]q\xb9h\x17)\x81q\xba}q\xbb(h\x1aX\x80\x00\x00\x00e0b0fbdd9d6ba66cae12b6fc8c705864471204088fa4676fdd06647305afa8abd1a1cee4d2141fd66cfaa96bdb9a44575d466826c9f17a8a07878618b4faa505q\xbch\x1cK2ubaubah\x1dJ\x92\xf5\xcfZh\x1eX@\x00\x00\x0011f287d2c9d798dc813a03aebc1732b18b6494355de96c6d8380d73e5f94b78aq\xbdh h\xafh!K\x19h"K\x03ubh\x01)\x81q\xbe}q\xbf(h\x04K\x0ch\x05]q\xc0h\x07)\x81q\xc1}q\xc2(h\nX@\x00\x00\x00ecacf88709d0ddd6bd6c8d97de09944e3a86b0117c1c95bc47159f524eb9089aq\xc3h\x0c]q\xc4h\x0e)\x81q\xc5}q\xc6(h\x11h\x12h\x13K\x0ch\x14h\x12ubah\x15]q\xc7h\x17)\x81q\xc8}q\xc9(h\x1aX\x80\x00\x00\x00e0b0fbdd9d6ba66cae12b6fc8c705864471204088fa4676fdd06647305afa8abd1a1cee4d2141fd66cfaa96bdb9a44575d466826c9f17a8a07878618b4faa505q\xcah\x1cK2ubaubah\x1dJ\x95\xf5\xcfZh\x1eX@\x00\x00\x000891f3570530020c2b940f1837ba218e42dab15095ef6056a03447f8dd515583q\xcbh h\xbdh!K\x05h"K\x03ubh\x01)\x81q\xcc}q\xcd(h\x04K\rh\x05]q\xceh\x07)\x81q\xcf}q\xd0(h\nX@\x00\x00\x000316ef453646748f4a06ce0d5f57b6d458545ed115f439c83a53c7ec0e9aa6fdq\xd1h\x0c]q\xd2h\x0e)\x81q\xd3}q\xd4(h\x11h\x12h\x13K\rh\x14h\x12ubah\x15]q\xd5h\x17)\x81q\xd6}q\xd7(h\x1aX\x80\x00\x00\x00e0b0fbdd9d6ba66cae12b6fc8c705864471204088fa4676fdd06647305afa8abd1a1cee4d2141fd66cfaa96bdb9a44575d466826c9f17a8a07878618b4faa505q\xd8h\x1cK2ubaubah\x1dJ\x96\xf5\xcfZh\x1eX@\x00\x00\x00242316725407427e88546d798e7365bab2fd47e55cbf19448ab9769e9a1d76f9q\xd9h h\xcbh!K\x01h"K\x02ubh\x01)\x81q\xda}q\xdb(h\x04K\x0eh\x05]q\xdch\x07)\x81q\xdd}q\xde(h\nX@\x00\x00\x00c7123f219e3dbca6c6f23da9ce8dcd9e545a291da6bb926a0e99ab87ff8e1135q\xdfh\x0c]q\xe0h\x0e)\x81q\xe1}q\xe2(h\x11h\x12h\x13K\x0eh\x14h\x12ubah\x15]q\xe3h\x17)\x81q\xe4}q\xe5(h\x1aX\x80\x00\x00\x00e0b0fbdd9d6ba66cae12b6fc8c705864471204088fa4676fdd06647305afa8abd1a1cee4d2141fd66cfaa96bdb9a44575d466826c9f17a8a07878618b4faa505q\xe6h\x1cK2ubaubah\x1dJ\x98\xf5\xcfZh\x1eX@\x00\x00\x0005aa6d7c4a9dc798272ccf888bf5585d0147798757bc054781373acbd74f8525q\xe7h h\xd9h!K\rh"K\x02ubh\x01)\x81q\xe8}q\xe9(h\x04K\x0fh\x05]q\xeah\x07)\x81q\xeb}q\xec(h\nX@\x00\x00\x000060f01d9c02a0038dd9efdf8fbf6a15f91622804d5cf01699957bd056122822q\xedh\x0c]q\xeeh\x0e)\x81q\xef}q\xf0(h\x11h\x12h\x13K\x0fh\x14h\x12ubah\x15]q\xf1h\x17)\x81q\xf2}q\xf3(h\x1aX\x80\x00\x00\x00e0b0fbdd9d6ba66cae12b6fc8c705864471204088fa4676fdd06647305afa8abd1a1cee4d2141fd66cfaa96bdb9a44575d466826c9f17a8a07878618b4faa505q\xf4h\x1cK2ubaubah\x1dJ\x9a\xf5\xcfZh\x1eX@\x00\x00\x001dfae484a64b0de595cbbb01787eca35d8257620045d068ce7edd9e1fd1adb7dq\xf5h h\xe7h!K\x04h"K\x02ubh\x01)\x81q\xf6}q\xf7(h\x04K\x10h\x05]q\xf8h\x07)\x81q\xf9}q\xfa(h\nX@\x00\x00\x00293e53bfbcb9671336f5b989e17dd04a604277afbf808db2cecd32e8fe533be0q\xfbh\x0c]q\xfch\x0e)\x81q\xfd}q\xfe(h\x11h\x12h\x13K\x10h\x14h\x12ubah\x15]q\xffh\x17)\x81r\x00\x01\x00\x00}r\x01\x01\x00\x00(h\x1aX\x80\x00\x00\x00e0b0fbdd9d6ba66cae12b6fc8c705864471204088fa4676fdd06647305afa8abd1a1cee4d2141fd66cfaa96bdb9a44575d466826c9f17a8a07878618b4faa505r\x02\x01\x00\x00h\x1cK2ubaubah\x1dJ\x9b\xf5\xcfZh\x1eX@\x00\x00\x0019254f6100f3a7ffd2f44729d397ded680ac07b3c282f1250eef64c18de7a827r\x03\x01\x00\x00h h\xf5h!K\x00h"K\x03ubh\x01)\x81r\x04\x01\x00\x00}r\x05\x01\x00\x00(h\x04K\x11h\x05]r\x06\x01\x00\x00h\x07)\x81r\x07\x01\x00\x00}r\x08\x01\x00\x00(h\nX@\x00\x00\x009811dc7c152e574fbb4b85efdbc2b12353e05c531f9743cd6e66f5cbafa1669br\t\x01\x00\x00h\x0c]r\n\x01\x00\x00h\x0e)\x81r\x0b\x01\x00\x00}r\x0c\x01\x00\x00(h\x11h\x12h\x13K\x11h\x14h\x12ubah\x15]r\r\x01\x00\x00h\x17)\x81r\x0e\x01\x00\x00}r\x0f\x01\x00\x00(h\x1aX\x80\x00\x00\x00e0b0fbdd9d6ba66cae12b6fc8c705864471204088fa4676fdd06647305afa8abd1a1cee4d2141fd66cfaa96bdb9a44575d466826c9f17a8a07878618b4faa505r\x10\x01\x00\x00h\x1cK2ubaubah\x1dJ\xa2\xf5\xcfZh\x1eX@\x00\x00\x001d1621c5f2526ce70cfa20195e65b6b3a1dc0fd326add94f600aad7aeb84c94cr\x11\x01\x00\x00h j\x03\x01\x00\x00h!K\th"K\x03ubh\x01)\x81r\x12\x01\x00\x00}r\x13\x01\x00\x00(h\x04K\x12h\x05]r\x14\x01\x00\x00h\x07)\x81r\x15\x01\x00\x00}r\x16\x01\x00\x00(h\nX@\x00\x00\x00d01a7a59122278de9ff09570fd81cec11f675bbec9d1c5022b6cf412f403e7a1r\x17\x01\x00\x00h\x0c]r\x18\x01\x00\x00h\x0e)\x81r\x19\x01\x00\x00}r\x1a\x01\x00\x00(h\x11h\x12h\x13K\x12h\x14h\x12ubah\x15]r\x1b\x01\x00\x00h\x17)\x81r\x1c\x01\x00\x00}r\x1d\x01\x00\x00(h\x1aX\x80\x00\x00\x00e0b0fbdd9d6ba66cae12b6fc8c705864471204088fa4676fdd06647305afa8abd1a1cee4d2141fd66cfaa96bdb9a44575d466826c9f17a8a07878618b4faa505r\x1e\x01\x00\x00h\x1cK2ubaubah\x1dJ\xaa\xf5\xcfZh\x1eX@\x00\x00\x000b6e3049940cb595da2320ce1918e9ec30cab1f05e2d9e2ec685202d217ba257r\x1f\x01\x00\x00h j\x11\x01\x00\x00h!K\x03h"K\x03ubh\x01)\x81r \x01\x00\x00}r!\x01\x00\x00(h\x04K\x13h\x05]r"\x01\x00\x00h\x07)\x81r#\x01\x00\x00}r$\x01\x00\x00(h\nX@\x00\x00\x00b01c0680875230ef0e94cd3ceac81f15921d3375838371aeff2a123aace37549r%\x01\x00\x00h\x0c]r&\x01\x00\x00h\x0e)\x81r\'\x01\x00\x00}r(\x01\x00\x00(h\x11h\x12h\x13K\x13h\x14h\x12ubah\x15]r)\x01\x00\x00h\x17)\x81r*\x01\x00\x00}r+\x01\x00\x00(h\x1aX\x80\x00\x00\x00e0b0fbdd9d6ba66cae12b6fc8c705864471204088fa4676fdd06647305afa8abd1a1cee4d2141fd66cfaa96bdb9a44575d466826c9f17a8a07878618b4faa505r,\x01\x00\x00h\x1cK2ubaubah\x1dJ\x0c\xf6\xcfZh\x1eX@\x00\x00\x00178d5be5ce351d1f1d7bd3369aab4cd64b0e61ad71d77d7eb848acf08b3042d9r-\x01\x00\x00h j\x1f\x01\x00\x00h!K\x04h"K\x03ubh\x01)\x81r.\x01\x00\x00}r/\x01\x00\x00(h\x04K\x14h\x05]r0\x01\x00\x00h\x07)\x81r1\x01\x00\x00}r2\x01\x00\x00(h\nX@\x00\x00\x0096fe1f79d5b3983ee9e0e9a6e3152dacfb1ae1684688fc381f29cca1797885d2r3\x01\x00\x00h\x0c]r4\x01\x00\x00h\x0e)\x81r5\x01\x00\x00}r6\x01\x00\x00(h\x11h\x12h\x13K\x14h\x14h\x12ubah\x15]r7\x01\x00\x00h\x17)\x81r8\x01\x00\x00}r9\x01\x00\x00(h\x1aX\x80\x00\x00\x00e0b0fbdd9d6ba66cae12b6fc8c705864471204088fa4676fdd06647305afa8abd1a1cee4d2141fd66cfaa96bdb9a44575d466826c9f17a8a07878618b4faa505r:\x01\x00\x00h\x1cK2ubaubah\x1dJ\x18\xf6\xcfZh\x1eX@\x00\x00\x00021d70f795c27ea136d24f646b25eb557a054eaf5867319fd629cdf9c7209b69r;\x01\x00\x00h j-\x01\x00\x00h!K\th"K\x03ube.'
+longer chain getted
+afterset <threading.Event object at 0x10e5a7320> True
+broadcast: ['http://localhost:8036', 'http://localhost:8025', 'http://localhost:8009', 'http://localhost:8039', 'http://localhost:8020', 'http://localhost:8002', 'http://localhost:8022', 'http://localhost:8030', 'http://localhost:8024', 'http://localhost:8010', 'http://localhost:8029', 'http://localhost:8044', 'http://localhost:8038', 'http://localhost:8032', 'http://localhost:8012', 'http://localhost:7999', 'http://localhost:8004', 'http://localhost:8045', 'http://localhost:8019', 'http://localhost:8041', 'http://localhost:8026', 'http://localhost:8006', 'http://localhost:8021', 'http://localhost:8027', 'http://localhost:8031', 'http://localhost:8001', 'http://localhost:8017', 'http://localhost:8035', 'http://localhost:8011', 'http://localhost:8049', 'http://localhost:8028', 'http://localhost:8015', 'http://localhost:8046', 'http://localhost:8037', 'http://localhost:8033', 'http://localhost:8007', 'http://localhost:8008', 'http://localhost:8014', 'http://localhost:8040', 'http://localhost:8005', 'http://localhost:8000', 'http://localhost:8034', 'http://localhost:8047', 'http://localhost:8042', 'http://localhost:8013', 'http://localhost:8043', 'http://localhost:8048', 'http://localhost:8018', 'http://localhost:8023', 'http://localhost:8003']
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+from http://localhost:8008 ======A block received=========, 20:13:17  current length 21
+3
+=============================
+this block is from a shorter chain
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+from http://localhost:8004 ======A block received=========, 20:13:27  current length 21
+5
+=============================
+this block is from a shorter chain
+from http://localhost:8004 ======A block received=========, 20:13:27  current length 21
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8004 ======A block received=========, 20:13:27  current length 21
+3
+=============================
+this block is from a shorter chain
+from http://localhost:8004 ======A block received=========, 20:13:27  current length 21
+7
+=============================
+this block is from a shorter chain
+from http://localhost:8004 ======A block received=========, 20:13:27  current length 21
+9
+=============================
+this block is from a shorter chain
+b'ok'
+could not find MARK
+from http://localhost:8007 ======A block received=========, 20:13:29  current length 21
+7
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 20:13:29  current length 21
+0
+=============================
+this block is from a shorter chain
+replaced chain
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+from http://localhost:8004 ======A block received=========, 20:13:46  current length 21
+12
+=============================
+this block is from a shorter chain
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+from http://localhost:8007 ======A block received=========, 20:13:57  current length 21
+13
+=============================
+this block is from a shorter chain
+b'ok'
+could not find MARK
+from http://localhost:8020 ======A block received=========, 20:14:08  current length 21
+22
+=============================
+need to replace chain from http://localhost:8020
+request a chain
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+HTTPConnectionPool(host='localhost', port=8009): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10f1e9da0>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+request a chain
+HTTPConnectionPool(host='localhost', port=8009): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10f341400>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+HTTPConnectionPool(host='localhost', port=8026): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10f147a90>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+from http://localhost:8026 ======A block received=========, 20:14:46  current length 21
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8032 ======A block received=========, 20:14:46  current length 21
+0
+=============================
+this block is from a shorter chain
+from http://localhost:8018 ======A block received=========, 20:14:46  current length 21
+14
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 20:14:46  current length 21
+19
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 20:14:46  current length 21
+2
+=============================
+this block is from a shorter chain
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+from http://localhost:8026 ======A block received=========, 20:14:53  current length 21
+6
+=============================
+this block is from a shorter chain
+from http://localhost:8047 ======A block received=========, 20:14:53  current length 21
+35
+=============================
+need to replace chain from http://localhost:8047
+request a chain
+from http://localhost:8026 ======A block received=========, 20:14:53  current length 21
+9
+=============================
+this block is from a shorter chain
+from http://localhost:8026 ======A block received=========, 20:14:53  current length 21
+13
+=============================
+this block is from a shorter chain
+from http://localhost:8012 ======A block received=========, 20:14:53  current length 21
+19
+=============================
+this block is from a shorter chain
+from http://localhost:8020 ======A block received=========, 20:14:56  current length 21
+22
+=============================
+need to replace chain from http://localhost:8020
+request a chain
+from http://localhost:8045 ======A block received=========, 20:14:57  current length 21
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 20:14:58  current length 21
+14
+=============================
+this block is from a shorter chain
+b'ok'
+b'ok'
+could not find MARK
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+from http://localhost:8018 ======A block received=========, 20:15:05  current length 21
+19
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 20:15:08  current length 21
+22
+=============================
+need to replace chain from http://localhost:8001
+request a chain
+from http://localhost:8007 ======A block received=========, 20:15:09  current length 21
+18
+=============================
+this block is from a shorter chain
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+from http://localhost:8011 ======A block received=========, 20:15:10  current length 21
+22
+=============================
+need to replace chain from http://localhost:8011
+request a chain
+from http://localhost:8032 ======A block received=========, 20:15:12  current length 21
+21
+=============================
+need to replace chain from http://localhost:8032
+request a chain
+from http://localhost:8046 ======A block received=========, 20:15:14  current length 21
+0
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 20:15:15  current length 21
+21
+=============================
+need to replace chain from http://localhost:8006
+request a chain
+from http://localhost:8011 ======A block received=========, 20:15:16  current length 21
+21
+=============================
+need to replace chain from http://localhost:8011
+request a chain
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+from http://localhost:8021 ======A block received=========, 20:15:28  current length 21
+11
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 20:15:28  current length 21
+3
+=============================
+this block is from a shorter chain
+b'ok'
+could not find MARK
+from http://localhost:8024 ======A block received=========, 20:15:28  current length 21
+11
+=============================
+this block is from a shorter chain
+b'ok'
+could not find MARK
+from http://localhost:8018 ======A block received=========, 20:15:29  current length 21
+21
+=============================
+need to replace chain from http://localhost:8018
+request a chain
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+HTTPConnectionPool(host='localhost', port=7999): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10f3fa0f0>: Failed to establish a new connection: [Errno 61] Connection refused',))
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'\x80\x03]q\x00(cchain\nBlock\nq\x01)\x81q\x02}q\x03(X\x05\x00\x00\x00indexq\x04K\x00X\x04\x00\x00\x00dataq\x05]q\x06ctransaction\nTransaction\nq\x07)\x81q\x08}q\t(X\x02\x00\x00\x00idq\nX@\x00\x00\x0095db0b8e71740baf81a619bfff7afe3600181828b59815d02c7f1b7b3209c831q\x0bX\x05\x00\x00\x00txInsq\x0c]q\rctransaction\nTxIn\nq\x0e)\x81q\x0f}q\x10(X\x07\x00\x00\x00txOutIdq\x11X\x00\x00\x00\x00q\x12X\n\x00\x00\x00txOutIndexq\x13K\x00X\t\x00\x00\x00signatureq\x14h\x12ubaX\x06\x00\x00\x00txOutsq\x15]q\x16ctransaction\nTxOut\nq\x17)\x81q\x18}q\x19(X\x07\x00\x00\x00addressq\x1aX\x80\x00\x00\x0060ba02269f0aa21a5ee18de8f21f4c159587713db66459d8baca5406021cc51269fe4b4d23587bf58c70e7014d727d1e10ec6b80fa395829b3b79dae3fdc7360q\x1bX\x06\x00\x00\x00amountq\x1cK2ubaubaX\t\x00\x00\x00timestampq\x1dJ\x97q\x90ZX\x04\x00\x00\x00hashq\x1eX@\x00\x00\x00e9d3061d5e216863506649096aac5ddd2089357c0bb3d647db332cd9b926f8b9q\x1fX\t\x00\x00\x00prev_hashq h\x12X\x05\x00\x00\x00nonceq!K\x00X\n\x00\x00\x00difficultyq"K\x00ubh\x01)\x81q#}q$(h\x04K\x01h\x05]q%h\x07)\x81q&}q\'(h\nX@\x00\x00\x005d1bf5ecbcc8d1631a2d18eca4862f5749d52e1caf4830144867fc462ab5c957q(h\x0c]q)h\x0e)\x81q*}q+(h\x11h\x12h\x13K\x01h\x14h\x12ubah\x15]q,h\x17)\x81q-}q.(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efq/h\x1cK2ubaubah\x1dJ$\xf5\xcfZh\x1eX@\x00\x00\x00e66fc2b2efaecec0721c263e91219c628032e0619ac9283343a186d2af2f3bafq0h X@\x00\x00\x00e9d3061d5e216863506649096aac5ddd2089357c0bb3d647db332cd9b926f8b9q1h!K\x00h"K\x00ubh\x01)\x81q2}q3(h\x04K\x02h\x05]q4h\x07)\x81q5}q6(h\nX@\x00\x00\x009c3c6295b8e899f5138dbb76b2c1a31bef03eadd499818ddce20cf5db4ba3022q7h\x0c]q8h\x0e)\x81q9}q:(h\x11h\x12h\x13K\x02h\x14h\x12ubah\x15]q;h\x17)\x81q<}q=(h\x1aX\x80\x00\x00\x005c23449be3ceeef3b16097bab79ae9aa1c61d66ec87532b0ca3fee6a0c0e8e83d403262a4d42cbda5365d0bd542afb07299d635228512ae588da160039782888q>h\x1cK2ubaubah\x1dJ)\xf5\xcfZh\x1eX@\x00\x00\x00f3f2b69f2e0605c9d9c864605513118f75d235c2394cf97cd94448c228a9eb87q?h h0h!K\x00h"K\x00ubh\x01)\x81q@}qA(h\x04K\x03h\x05]qBh\x07)\x81qC}qD(h\nX@\x00\x00\x004441528017424de02485bcfacddaaf7201e41051dac5024e8c2dd9f08099a4a0qEh\x0c]qFh\x0e)\x81qG}qH(h\x11h\x12h\x13K\x03h\x14h\x12ubah\x15]qIh\x17)\x81qJ}qK(h\x1aX\x80\x00\x00\x005c23449be3ceeef3b16097bab79ae9aa1c61d66ec87532b0ca3fee6a0c0e8e83d403262a4d42cbda5365d0bd542afb07299d635228512ae588da160039782888qLh\x1cK2ubaubah\x1dJ*\xf5\xcfZh\x1eX@\x00\x00\x006e35f50dde94841cc392e943da643774ce65bbb652e0abca32f4f9b369a4b831qMh h?h!K\x00h"K\x00ubh\x01)\x81qN}qO(h\x04K\x04h\x05]qPh\x07)\x81qQ}qR(h\nX@\x00\x00\x005649e34bec4ab10c9ea231a25302ca9fa7bde95534ab48a85682cf00869d58b7qSh\x0c]qTh\x0e)\x81qU}qV(h\x11h\x12h\x13K\x04h\x14h\x12ubah\x15]qWh\x17)\x81qX}qY(h\x1aX\x80\x00\x00\x005c23449be3ceeef3b16097bab79ae9aa1c61d66ec87532b0ca3fee6a0c0e8e83d403262a4d42cbda5365d0bd542afb07299d635228512ae588da160039782888qZh\x1cK2ubaubah\x1dJ*\xf5\xcfZh\x1eX@\x00\x00\x0075e705202d8528d3d66fc1de74ab0faee8806deb0b6ca29bdbe83fa2db582a7fq[h hMh!K\x01h"K\x01ubh\x01)\x81q\\}q](h\x04K\x05h\x05]q^h\x07)\x81q_}q`(h\nX@\x00\x00\x0059b2a17383996bf2691558e854d155722e8e2dd4ffe977d48c52c463e46cad18qah\x0c]qbh\x0e)\x81qc}qd(h\x11h\x12h\x13K\x05h\x14h\x12ubah\x15]qeh\x17)\x81qf}qg(h\x1aX\x80\x00\x00\x005c23449be3ceeef3b16097bab79ae9aa1c61d66ec87532b0ca3fee6a0c0e8e83d403262a4d42cbda5365d0bd542afb07299d635228512ae588da160039782888qhh\x1cK2ubaubah\x1dJ+\xf5\xcfZh\x1eX@\x00\x00\x0013e6c817134fc347010a95d00a574d8d44fc489cf7ce7663cc9e0f4d8e9efcb7qih h[h!K\x01h"K\x01ubh\x01)\x81qj}qk(h\x04K\x06h\x05]qlh\x07)\x81qm}qn(h\nX@\x00\x00\x008dbfb801f1e6dd99c63e257d37fd5fb72c5d246d2936ab7f8ab713a72ec36924qoh\x0c]qph\x0e)\x81qq}qr(h\x11h\x12h\x13K\x06h\x14h\x12ubah\x15]qsh\x17)\x81qt}qu(h\x1aX\x80\x00\x00\x005c23449be3ceeef3b16097bab79ae9aa1c61d66ec87532b0ca3fee6a0c0e8e83d403262a4d42cbda5365d0bd542afb07299d635228512ae588da160039782888qvh\x1cK2ubaubah\x1dJ,\xf5\xcfZh\x1eX@\x00\x00\x005506184edf9694f95bc849c323a127c286955da0335c860d36a470bd1d8a7926qwh hih!K\x01h"K\x01ubh\x01)\x81qx}qy(h\x04K\x07h\x05]qzh\x07)\x81q{}q|(h\nX@\x00\x00\x00bb9f510954987249f6eef07d28835d89ae8e4edd5f4a8f28dde12ded53a06e1bq}h\x0c]q~h\x0e)\x81q\x7f}q\x80(h\x11h\x12h\x13K\x07h\x14h\x12ubah\x15]q\x81h\x17)\x81q\x82}q\x83(h\x1aX\x80\x00\x00\x005c23449be3ceeef3b16097bab79ae9aa1c61d66ec87532b0ca3fee6a0c0e8e83d403262a4d42cbda5365d0bd542afb07299d635228512ae588da160039782888q\x84h\x1cK2ubaubah\x1dJ-\xf5\xcfZh\x1eX@\x00\x00\x002836bdbaadca6a1c4baac068748cc7b91659fe2151674406ded6488b839c1882q\x85h hwh!K\x08h"K\x02ubh\x01)\x81q\x86}q\x87(h\x04K\x08h\x05]q\x88h\x07)\x81q\x89}q\x8a(h\nX@\x00\x00\x0050f56a772bdfe01751fbeb43ee1da9d492dbfe6cfca50d1a41bb18c397016b3fq\x8bh\x0c]q\x8ch\x0e)\x81q\x8d}q\x8e(h\x11h\x12h\x13K\x08h\x14h\x12ubah\x15]q\x8fh\x17)\x81q\x90}q\x91(h\x1aX\x80\x00\x00\x005c23449be3ceeef3b16097bab79ae9aa1c61d66ec87532b0ca3fee6a0c0e8e83d403262a4d42cbda5365d0bd542afb07299d635228512ae588da160039782888q\x92h\x1cK2ubaubah\x1dJO\xf5\xcfZh\x1eX@\x00\x00\x0028d12cc34ce11f3a51ade883d2e442f9eae206b92122cd09e2467d00b17ad90dq\x93h h\x85h!K\x02h"K\x02ubh\x01)\x81q\x94}q\x95(h\x04K\th\x05]q\x96h\x07)\x81q\x97}q\x98(h\nX@\x00\x00\x0055ed3c00ecea816259c700e4315fe1a54aa98c1831baea91629940ed58454a0aq\x99h\x0c]q\x9ah\x0e)\x81q\x9b}q\x9c(h\x11h\x12h\x13K\th\x14h\x12ubah\x15]q\x9dh\x17)\x81q\x9e}q\x9f(h\x1aX\x80\x00\x00\x005c23449be3ceeef3b16097bab79ae9aa1c61d66ec87532b0ca3fee6a0c0e8e83d403262a4d42cbda5365d0bd542afb07299d635228512ae588da160039782888q\xa0h\x1cK2ubaubah\x1dJb\xf5\xcfZh\x1eX@\x00\x00\x0030526735a9d12b92b23b32c3548d0f5b5a360c348375441cefd84908c10ac504q\xa1h h\x93h!K\x0fh"K\x02ubh\x01)\x81q\xa2}q\xa3(h\x04K\nh\x05]q\xa4h\x07)\x81q\xa5}q\xa6(h\nX@\x00\x00\x00b6b2dbfcbea9e560af5facc50100934f95a1f6f7a8efc9bf008becc10176a455q\xa7h\x0c]q\xa8h\x0e)\x81q\xa9}q\xaa(h\x11h\x12h\x13K\nh\x14h\x12ubah\x15]q\xabh\x17)\x81q\xac}q\xad(h\x1aX\x80\x00\x00\x005c23449be3ceeef3b16097bab79ae9aa1c61d66ec87532b0ca3fee6a0c0e8e83d403262a4d42cbda5365d0bd542afb07299d635228512ae588da160039782888q\xaeh\x1cK2ubaubah\x1dJs\xf5\xcfZh\x1eX@\x00\x00\x00002dcdcbb498cdcbda066d4a49ea7c32afcf7e72f69b39c34358f526c25ae78fq\xafh h\xa1h!K\x02h"K\x02ubh\x01)\x81q\xb0}q\xb1(h\x04K\x0bh\x05]q\xb2h\x07)\x81q\xb3}q\xb4(h\nX@\x00\x00\x00ebc77120455d1c86cf95add951e111ab3a6303ad433e90a74806e1754cbc76e6q\xb5h\x0c]q\xb6h\x0e)\x81q\xb7}q\xb8(h\x11h\x12h\x13K\x0bh\x14h\x12ubah\x15]q\xb9h\x17)\x81q\xba}q\xbb(h\x1aX\x80\x00\x00\x005c23449be3ceeef3b16097bab79ae9aa1c61d66ec87532b0ca3fee6a0c0e8e83d403262a4d42cbda5365d0bd542afb07299d635228512ae588da160039782888q\xbch\x1cK2ubaubah\x1dJ}\xf5\xcfZh\x1eX@\x00\x00\x001478311c4201850542df995e0190217658e0c41aa6bc84957efd828e30fafbf5q\xbdh h\xafh!K\x00h"K\x02ubh\x01)\x81q\xbe}q\xbf(h\x04K\x0ch\x05]q\xc0h\x07)\x81q\xc1}q\xc2(h\nX@\x00\x00\x000f6f531be26a49f2fbc0a71d078621c4a042559337d9404e1b20c3ffea55d0e3q\xc3h\x0c]q\xc4h\x0e)\x81q\xc5}q\xc6(h\x11h\x12h\x13K\x0ch\x14h\x12ubah\x15]q\xc7h\x17)\x81q\xc8}q\xc9(h\x1aX\x80\x00\x00\x005c23449be3ceeef3b16097bab79ae9aa1c61d66ec87532b0ca3fee6a0c0e8e83d403262a4d42cbda5365d0bd542afb07299d635228512ae588da160039782888q\xcah\x1cK2ubaubah\x1dJ\x81\xf5\xcfZh\x1eX@\x00\x00\x003f05f7a6087946a3364268fe0fa8805fff845f7a14fd21c1391157f98c82623eq\xcbh h\xbdh!K\x05h"K\x02ubh\x01)\x81q\xcc}q\xcd(h\x04K\rh\x05]q\xceh\x07)\x81q\xcf}q\xd0(h\nX@\x00\x00\x009496c057ede8fc40114f36a7cd173eb36ba5c1e759d9f73e808ea93efcfce6f3q\xd1h\x0c]q\xd2h\x0e)\x81q\xd3}q\xd4(h\x11h\x12h\x13K\rh\x14h\x12ubah\x15]q\xd5h\x17)\x81q\xd6}q\xd7(h\x1aX\x80\x00\x00\x005c23449be3ceeef3b16097bab79ae9aa1c61d66ec87532b0ca3fee6a0c0e8e83d403262a4d42cbda5365d0bd542afb07299d635228512ae588da160039782888q\xd8h\x1cK2ubaubah\x1dJ\x84\xf5\xcfZh\x1eX@\x00\x00\x0010001b2ce61857b358fae2b47bc708d9b10305b73f4108dfc0e032387175413fq\xd9h h\xcbh!K\nh"K\x03ubh\x01)\x81q\xda}q\xdb(h\x04K\x0eh\x05]q\xdch\x07)\x81q\xdd}q\xde(h\nX@\x00\x00\x00f63c6d5f409fbde70e04d839a833c87c93ecee6768dcd250c7aec7574858b01eq\xdfh\x0c]q\xe0h\x0e)\x81q\xe1}q\xe2(h\x11h\x12h\x13K\x0eh\x14h\x12ubah\x15]q\xe3h\x17)\x81q\xe4}q\xe5(h\x1aX\x80\x00\x00\x005c23449be3ceeef3b16097bab79ae9aa1c61d66ec87532b0ca3fee6a0c0e8e83d403262a4d42cbda5365d0bd542afb07299d635228512ae588da160039782888q\xe6h\x1cK2ubaubah\x1dJ\x86\xf5\xcfZh\x1eX@\x00\x00\x0000decc8dc8754d50d8b58b4a95efa6d01126d83a2d19a8698fc9d088d1ce21b2q\xe7h h\xd9h!K\x06h"K\x03ubh\x01)\x81q\xe8}q\xe9(h\x04K\x0fh\x05]q\xeah\x07)\x81q\xeb}q\xec(h\nX@\x00\x00\x00e38d7e9c333b0f84ccc7ef3efda42b01c56b5f438b28af957dca7ed734b190f8q\xedh\x0c]q\xeeh\x0e)\x81q\xef}q\xf0(h\x11h\x12h\x13K\x0fh\x14h\x12ubah\x15]q\xf1h\x17)\x81q\xf2}q\xf3(h\x1aX\x80\x00\x00\x005c23449be3ceeef3b16097bab79ae9aa1c61d66ec87532b0ca3fee6a0c0e8e83d403262a4d42cbda5365d0bd542afb07299d635228512ae588da160039782888q\xf4h\x1cK2ubaubah\x1dJ\x88\xf5\xcfZh\x1eX@\x00\x00\x00026472cc2d8e38fa1d6685055e2289072521ee9fb1f2cd660cefb42e7d38a8e9q\xf5h h\xe7h!K\th"K\x03ubh\x01)\x81q\xf6}q\xf7(h\x04K\x10h\x05]q\xf8h\x07)\x81q\xf9}q\xfa(h\nX@\x00\x00\x009c84d1d8169e0569c50a416b1be5390d110bd52e4b5f80bcf1205da9ddf9d015q\xfbh\x0c]q\xfch\x0e)\x81q\xfd}q\xfe(h\x11h\x12h\x13K\x10h\x14h\x12ubah\x15]q\xffh\x17)\x81r\x00\x01\x00\x00}r\x01\x01\x00\x00(h\x1aX\x80\x00\x00\x005c23449be3ceeef3b16097bab79ae9aa1c61d66ec87532b0ca3fee6a0c0e8e83d403262a4d42cbda5365d0bd542afb07299d635228512ae588da160039782888r\x02\x01\x00\x00h\x1cK2ubaubah\x1dJ\x8c\xf5\xcfZh\x1eX@\x00\x00\x000c94d59092d01fbde3533514df40b7e283f6b5bda7e4b4f0c2a2c06a9f0a8defr\x03\x01\x00\x00h h\xf5h!K\x06h"K\x04ubh\x01)\x81r\x04\x01\x00\x00}r\x05\x01\x00\x00(h\x04K\x11h\x05]r\x06\x01\x00\x00h\x07)\x81r\x07\x01\x00\x00}r\x08\x01\x00\x00(h\nX@\x00\x00\x00a4cbe555e6f49ae7115d12a639fa16e15dbd458a23699812e1da5e1b744ea714r\t\x01\x00\x00h\x0c]r\n\x01\x00\x00h\x0e)\x81r\x0b\x01\x00\x00}r\x0c\x01\x00\x00(h\x11h\x12h\x13K\x11h\x14h\x12ubah\x15]r\r\x01\x00\x00h\x17)\x81r\x0e\x01\x00\x00}r\x0f\x01\x00\x00(h\x1aX\x80\x00\x00\x005c23449be3ceeef3b16097bab79ae9aa1c61d66ec87532b0ca3fee6a0c0e8e83d403262a4d42cbda5365d0bd542afb07299d635228512ae588da160039782888r\x10\x01\x00\x00h\x1cK2ubaubah\x1dJ\x92\xf5\xcfZh\x1eX@\x00\x00\x0004e1b2b6164baec88249435aaf7de2e3d406d2b35b49106d76df03b6f09b544er\x11\x01\x00\x00h j\x03\x01\x00\x00h!K\x0bh"K\x04ubh\x01)\x81r\x12\x01\x00\x00}r\x13\x01\x00\x00(h\x04K\x12h\x05]r\x14\x01\x00\x00h\x07)\x81r\x15\x01\x00\x00}r\x16\x01\x00\x00(h\nX@\x00\x00\x00b5b522ac8127a29923897f7b60d783690f309a66ff2a3f9a5eed9f61052782fcr\x17\x01\x00\x00h\x0c]r\x18\x01\x00\x00h\x0e)\x81r\x19\x01\x00\x00}r\x1a\x01\x00\x00(h\x11h\x12h\x13K\x12h\x14h\x12ubah\x15]r\x1b\x01\x00\x00h\x17)\x81r\x1c\x01\x00\x00}r\x1d\x01\x00\x00(h\x1aX\x80\x00\x00\x005c23449be3ceeef3b16097bab79ae9aa1c61d66ec87532b0ca3fee6a0c0e8e83d403262a4d42cbda5365d0bd542afb07299d635228512ae588da160039782888r\x1e\x01\x00\x00h\x1cK2ubaubah\x1dJ\x96\xf5\xcfZh\x1eX@\x00\x00\x000cd6ea5f3d102e71586cb8e7f05442f685f07580532ced34eb59ca20e25f7e60r\x1f\x01\x00\x00h j\x11\x01\x00\x00h!K\x06h"K\x04ubh\x01)\x81r \x01\x00\x00}r!\x01\x00\x00(h\x04K\x13h\x05]r"\x01\x00\x00h\x07)\x81r#\x01\x00\x00}r$\x01\x00\x00(h\nX@\x00\x00\x00e94ef019a53a66563f9929b369c65fe72992cad795b536bfd9d15898ad9a38c8r%\x01\x00\x00h\x0c]r&\x01\x00\x00h\x0e)\x81r\'\x01\x00\x00}r(\x01\x00\x00(h\x11h\x12h\x13K\x13h\x14h\x12ubah\x15]r)\x01\x00\x00h\x17)\x81r*\x01\x00\x00}r+\x01\x00\x00(h\x1aX\x80\x00\x00\x005c23449be3ceeef3b16097bab79ae9aa1c61d66ec87532b0ca3fee6a0c0e8e83d403262a4d42cbda5365d0bd542afb07299d635228512ae588da160039782888r,\x01\x00\x00h\x1cK2ubaubah\x1dJ\x98\xf5\xcfZh\x1eX@\x00\x00\x000789acd87b81a5f5e76acb51d7f73eac119e4d0689d2fdcc63e8497b2c6202d4r-\x01\x00\x00h j\x1f\x01\x00\x00h!K\x1ch"K\x05ubh\x01)\x81r.\x01\x00\x00}r/\x01\x00\x00(h\x04K\x14h\x05]r0\x01\x00\x00h\x07)\x81r1\x01\x00\x00}r2\x01\x00\x00(h\nX@\x00\x00\x008d62a89b03eb4dfed3277541822a2b2028225e42b849f9690c5a05615e6a6ff3r3\x01\x00\x00h\x0c]r4\x01\x00\x00h\x0e)\x81r5\x01\x00\x00}r6\x01\x00\x00(h\x11h\x12h\x13K\x14h\x14h\x12ubah\x15]r7\x01\x00\x00h\x17)\x81r8\x01\x00\x00}r9\x01\x00\x00(h\x1aX\x80\x00\x00\x005c23449be3ceeef3b16097bab79ae9aa1c61d66ec87532b0ca3fee6a0c0e8e83d403262a4d42cbda5365d0bd542afb07299d635228512ae588da160039782888r:\x01\x00\x00h\x1cK2ubaubah\x1dJ\x99\xf5\xcfZh\x1eX@\x00\x00\x0001a6e9bb91efdeb43b4328a6a13135da38a737e8435ecf54e8af4bad6403ae69r;\x01\x00\x00h j-\x01\x00\x00h!K\x06h"K\x05ubh\x01)\x81r<\x01\x00\x00}r=\x01\x00\x00(h\x04K\x15h\x05]r>\x01\x00\x00h\x07)\x81r?\x01\x00\x00}r@\x01\x00\x00(h\nX@\x00\x00\x002c073e5726fe4d7ed769d38772ce3580cad2e0c4ca3d97876f746e23c10d7e94rA\x01\x00\x00h\x0c]rB\x01\x00\x00h\x0e)\x81rC\x01\x00\x00}rD\x01\x00\x00(h\x11h\x12h\x13K\x15h\x14h\x12ubah\x15]rE\x01\x00\x00h\x17)\x81rF\x01\x00\x00}rG\x01\x00\x00(h\x1aX\x80\x00\x00\x005c23449be3ceeef3b16097bab79ae9aa1c61d66ec87532b0ca3fee6a0c0e8e83d403262a4d42cbda5365d0bd542afb07299d635228512ae588da160039782888rH\x01\x00\x00h\x1cK2ubaubah\x1dJ\x9b\xf5\xcfZh\x1eX@\x00\x00\x00026341233321b8a9c8500e09a6b91f085267dd57937a9a554a55be559644ba05rI\x01\x00\x00h j;\x01\x00\x00h!K&h"K\x05ubh\x01)\x81rJ\x01\x00\x00}rK\x01\x00\x00(h\x04K\x16h\x05]rL\x01\x00\x00h\x07)\x81rM\x01\x00\x00}rN\x01\x00\x00(h\nX@\x00\x00\x0043e80a6beb1ff8c4f5870bb359298f13ab07293235b8605b46a6027f1c97cee9rO\x01\x00\x00h\x0c]rP\x01\x00\x00h\x0e)\x81rQ\x01\x00\x00}rR\x01\x00\x00(h\x11h\x12h\x13K\x16h\x14h\x12ubah\x15]rS\x01\x00\x00h\x17)\x81rT\x01\x00\x00}rU\x01\x00\x00(h\x1aX\x80\x00\x00\x005c23449be3ceeef3b16097bab79ae9aa1c61d66ec87532b0ca3fee6a0c0e8e83d403262a4d42cbda5365d0bd542afb07299d635228512ae588da160039782888rV\x01\x00\x00h\x1cK2ubaubah\x1dJ\x9e\xf5\xcfZh\x1eX@\x00\x00\x0000bbc15ffa4cc7c4bcef5b3682ea3f9871c828312459d4ab589bc398886c2fb0rW\x01\x00\x00h jI\x01\x00\x00h!KAh"K\x06ube.'
+longer chain getted
+afterset <threading.Event object at 0x10e5a7320> True
+broadcast: ['http://localhost:8036', 'http://localhost:8025', 'http://localhost:8009', 'http://localhost:8039', 'http://localhost:8020', 'http://localhost:8002', 'http://localhost:8022', 'http://localhost:8030', 'http://localhost:8024', 'http://localhost:8010', 'http://localhost:8029', 'http://localhost:8044', 'http://localhost:8038', 'http://localhost:8032', 'http://localhost:8012', 'http://localhost:7999', 'http://localhost:8004', 'http://localhost:8045', 'http://localhost:8019', 'http://localhost:8041', 'http://localhost:8026', 'http://localhost:8006', 'http://localhost:8021', 'http://localhost:8027', 'http://localhost:8031', 'http://localhost:8001', 'http://localhost:8017', 'http://localhost:8035', 'http://localhost:8011', 'http://localhost:8049', 'http://localhost:8028', 'http://localhost:8015', 'http://localhost:8046', 'http://localhost:8037', 'http://localhost:8033', 'http://localhost:8007', 'http://localhost:8008', 'http://localhost:8014', 'http://localhost:8040', 'http://localhost:8005', 'http://localhost:8000', 'http://localhost:8034', 'http://localhost:8047', 'http://localhost:8042', 'http://localhost:8013', 'http://localhost:8043', 'http://localhost:8048', 'http://localhost:8018', 'http://localhost:8023', 'http://localhost:8003']
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+from http://localhost:8045 ======A block received=========, 20:15:36  current length 23
+4
+=============================
+this block is from a shorter chain
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+replaced chain
+b'ok'
+could not find MARK
+from http://localhost:8048 ======A block received=========, 20:16:07  current length 23
+0
+=============================
+this block is from a shorter chain
+from http://localhost:8010 ======A block received=========, 20:16:09  current length 23
+18
+=============================
+this block is from a shorter chain
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'\x80\x03]q\x00(cchain\nBlock\nq\x01)\x81q\x02}q\x03(X\x05\x00\x00\x00indexq\x04K\x00X\x04\x00\x00\x00dataq\x05]q\x06ctransaction\nTransaction\nq\x07)\x81q\x08}q\t(X\x02\x00\x00\x00idq\nX@\x00\x00\x0095db0b8e71740baf81a619bfff7afe3600181828b59815d02c7f1b7b3209c831q\x0bX\x05\x00\x00\x00txInsq\x0c]q\rctransaction\nTxIn\nq\x0e)\x81q\x0f}q\x10(X\x07\x00\x00\x00txOutIdq\x11X\x00\x00\x00\x00q\x12X\n\x00\x00\x00txOutIndexq\x13K\x00X\t\x00\x00\x00signatureq\x14h\x12ubaX\x06\x00\x00\x00txOutsq\x15]q\x16ctransaction\nTxOut\nq\x17)\x81q\x18}q\x19(X\x07\x00\x00\x00addressq\x1aX\x80\x00\x00\x0060ba02269f0aa21a5ee18de8f21f4c159587713db66459d8baca5406021cc51269fe4b4d23587bf58c70e7014d727d1e10ec6b80fa395829b3b79dae3fdc7360q\x1bX\x06\x00\x00\x00amountq\x1cK2ubaubaX\t\x00\x00\x00timestampq\x1dJ\x97q\x90ZX\x04\x00\x00\x00hashq\x1eX@\x00\x00\x00e9d3061d5e216863506649096aac5ddd2089357c0bb3d647db332cd9b926f8b9q\x1fX\t\x00\x00\x00prev_hashq h\x12X\x05\x00\x00\x00nonceq!K\x00X\n\x00\x00\x00difficultyq"K\x00ubh\x01)\x81q#}q$(h\x04K\x01h\x05]q%h\x07)\x81q&}q\'(h\nX@\x00\x00\x003b8a84d23334af5945a440fa0eee7699ef8ec56163532cc35b6e12baecb45786q(h\x0c]q)h\x0e)\x81q*}q+(h\x11h\x12h\x13K\x01h\x14h\x12ubah\x15]q,h\x17)\x81q-}q.(h\x1aX\x80\x00\x00\x00e1f812049deeba95fe8094ea11eab65ca5bd25d8060fb976b22bc990bd7268381de16239089751488817941e1a10105041e3aa23d336ef1c7ec58f58d20bb704q/h\x1cK2ubaubah\x1dJ(\xf5\xcfZh\x1eX@\x00\x00\x0016b93088140e546dbdd8b991abf70d720dce884e499cc1f0bccd71695d1d7894q0h h\x1fh!K\x00h"K\x00ubh\x01)\x81q1}q2(h\x04K\x02h\x05]q3h\x07)\x81q4}q5(h\nX@\x00\x00\x00fa805d46c528610bb38363094fa6f36bedfd9dc1378abd3da3880b2e43316df8q6h\x0c]q7h\x0e)\x81q8}q9(h\x11h\x12h\x13K\x02h\x14h\x12ubah\x15]q:h\x17)\x81q;}q<(h\x1aX\x80\x00\x00\x00e1f812049deeba95fe8094ea11eab65ca5bd25d8060fb976b22bc990bd7268381de16239089751488817941e1a10105041e3aa23d336ef1c7ec58f58d20bb704q=h\x1cK2ubaubah\x1dJ)\xf5\xcfZh\x1eX@\x00\x00\x00a4f7e05759207a950a5e8bdf50014b9f7386ba44352385a2d7b5f43af10ff9b4q>h h0h!K\x00h"K\x00ubh\x01)\x81q?}q@(h\x04K\x03h\x05]qAh\x07)\x81qB}qC(h\nX@\x00\x00\x0049706eda6d27bfc071a5d3a39a6cfec4bd3004b2f07569d51e3d961bb90e730bqDh\x0c]qEh\x0e)\x81qF}qG(h\x11h\x12h\x13K\x03h\x14h\x12ubah\x15]qHh\x17)\x81qI}qJ(h\x1aX\x80\x00\x00\x00e1f812049deeba95fe8094ea11eab65ca5bd25d8060fb976b22bc990bd7268381de16239089751488817941e1a10105041e3aa23d336ef1c7ec58f58d20bb704qKh\x1cK2ubaubah\x1dJ*\xf5\xcfZh\x1eX@\x00\x00\x00285e36a336ce0ed227581ddc506be1e9fb6b6d2f7dc86fd9d1785775633faf98qLh h>h!K\x00h"K\x00ubh\x01)\x81qM}qN(h\x04K\x04h\x05]qOh\x07)\x81qP}qQ(h\nX@\x00\x00\x00cbc683df52d62400df5d4122e39e6a01ae458ea2e88d873c0d1ad3f573100ccfqRh\x0c]qSh\x0e)\x81qT}qU(h\x11h\x12h\x13K\x04h\x14h\x12ubah\x15]qVh\x17)\x81qW}qX(h\x1aX\x80\x00\x00\x00e1f812049deeba95fe8094ea11eab65ca5bd25d8060fb976b22bc990bd7268381de16239089751488817941e1a10105041e3aa23d336ef1c7ec58f58d20bb704qYh\x1cK2ubaubah\x1dJ*\xf5\xcfZh\x1eX@\x00\x00\x00359ba1579e23746bfd0d01ebd2e10c2a67d04f590330e298be9d3e5de0e70709qZh hLh!K\x00h"K\x01ubh\x01)\x81q[}q\\(h\x04K\x05h\x05]q]h\x07)\x81q^}q_(h\nX@\x00\x00\x00d81b3a71482a990a271624a9ffbefc6d8c80b25328f0bdee6a890947dfaaa803q`h\x0c]qah\x0e)\x81qb}qc(h\x11h\x12h\x13K\x05h\x14h\x12ubah\x15]qdh\x17)\x81qe}qf(h\x1aX\x80\x00\x00\x00e1f812049deeba95fe8094ea11eab65ca5bd25d8060fb976b22bc990bd7268381de16239089751488817941e1a10105041e3aa23d336ef1c7ec58f58d20bb704qgh\x1cK2ubaubah\x1dJ+\xf5\xcfZh\x1eX@\x00\x00\x002b4292033f689be96d6c4d52ed526356fff9ccfc89b946469a615456a574d265qhh hZh!K\x02h"K\x01ubh\x01)\x81qi}qj(h\x04K\x06h\x05]qkh\x07)\x81ql}qm(h\nX@\x00\x00\x00b854ecc1235411856d8e034ed1a3e216d555fb73a881a40c9732e19ac4c033ffqnh\x0c]qoh\x0e)\x81qp}qq(h\x11h\x12h\x13K\x06h\x14h\x12ubah\x15]qrh\x17)\x81qs}qt(h\x1aX\x80\x00\x00\x00e1f812049deeba95fe8094ea11eab65ca5bd25d8060fb976b22bc990bd7268381de16239089751488817941e1a10105041e3aa23d336ef1c7ec58f58d20bb704quh\x1cK2ubaubah\x1dJ,\xf5\xcfZh\x1eX@\x00\x00\x0011d67b711014c19b0ee017404d25e5b697354492c18f84c8cf34144316466174qvh hhh!K\x00h"K\x01ubh\x01)\x81qw}qx(h\x04K\x07h\x05]qyh\x07)\x81qz}q{(h\nX@\x00\x00\x0078127e948097aa2dc3a8bc008ad9799b975f784f618227af0eafaaeccdffdc4fq|h\x0c]q}h\x0e)\x81q~}q\x7f(h\x11h\x12h\x13K\x07h\x14h\x12ubah\x15]q\x80h\x17)\x81q\x81}q\x82(h\x1aX\x80\x00\x00\x00e1f812049deeba95fe8094ea11eab65ca5bd25d8060fb976b22bc990bd7268381de16239089751488817941e1a10105041e3aa23d336ef1c7ec58f58d20bb704q\x83h\x1cK2ubaubah\x1dJ-\xf5\xcfZh\x1eX@\x00\x00\x00226eeae3ca8f0b1ac9e58924da4984847e02d06fa38fa93304f9d0b916bc7c2cq\x84h hvh!K\x05h"K\x02ubh\x01)\x81q\x85}q\x86(h\x04K\x08h\x05]q\x87h\x07)\x81q\x88}q\x89(h\nX@\x00\x00\x008bcb55c2f579efe14c13f5482350c961674e4e97b53e755483b32dca73f2f19aq\x8ah\x0c]q\x8bh\x0e)\x81q\x8c}q\x8d(h\x11h\x12h\x13K\x08h\x14h\x12ubah\x15]q\x8eh\x17)\x81q\x8f}q\x90(h\x1aX\x80\x00\x00\x00e1f812049deeba95fe8094ea11eab65ca5bd25d8060fb976b22bc990bd7268381de16239089751488817941e1a10105041e3aa23d336ef1c7ec58f58d20bb704q\x91h\x1cK2ubaubah\x1dJ-\xf5\xcfZh\x1eX@\x00\x00\x003f7947d022b3ab65b7f7cd18ee474fb191cb36496165805292a40245789e0b9dq\x92h h\x84h!K\x00h"K\x02ubh\x01)\x81q\x93}q\x94(h\x04K\th\x05]q\x95h\x07)\x81q\x96}q\x97(h\nX@\x00\x00\x00a640999c89340735a65c20b2643ae702f6f78c09230b9023b1ad35ff664e5c22q\x98h\x0c]q\x99h\x0e)\x81q\x9a}q\x9b(h\x11h\x12h\x13K\th\x14h\x12ubah\x15]q\x9ch\x17)\x81q\x9d}q\x9e(h\x1aX\x80\x00\x00\x00e1f812049deeba95fe8094ea11eab65ca5bd25d8060fb976b22bc990bd7268381de16239089751488817941e1a10105041e3aa23d336ef1c7ec58f58d20bb704q\x9fh\x1cK2ubaubah\x1dJ.\xf5\xcfZh\x1eX@\x00\x00\x003a31a4214b9d42ec3e6e327d1838e63f51a12c8e0a9dfbc5b55c90ef352f482dq\xa0h h\x92h!K\x05h"K\x02ubh\x01)\x81q\xa1}q\xa2(h\x04K\nh\x05]q\xa3h\x07)\x81q\xa4}q\xa5(h\nX@\x00\x00\x0003e29f2b128d2171eb516d1f2e4d14ef4febf4d44b53b0a6f0f1358c08e19150q\xa6h\x0c]q\xa7h\x0e)\x81q\xa8}q\xa9(h\x11h\x12h\x13K\nh\x14h\x12ubah\x15]q\xaah\x17)\x81q\xab}q\xac(h\x1aX\x80\x00\x00\x00e1f812049deeba95fe8094ea11eab65ca5bd25d8060fb976b22bc990bd7268381de16239089751488817941e1a10105041e3aa23d336ef1c7ec58f58d20bb704q\xadh\x1cK2ubaubah\x1dJ|\xf5\xcfZh\x1eX@\x00\x00\x001b128e5c2fca09861335574baa4617c5633e48560f7b10a1e12ab785042c455cq\xaeh h\xa0h!K\x01h"K\x03ubh\x01)\x81q\xaf}q\xb0(h\x04K\x0bh\x05]q\xb1h\x07)\x81q\xb2}q\xb3(h\nX@\x00\x00\x001ca81c79b30f1c328c0fb9711c392832a2e64e24b45f9f1159fce0d3dd67bb33q\xb4h\x0c]q\xb5h\x0e)\x81q\xb6}q\xb7(h\x11h\x12h\x13K\x0bh\x14h\x12ubah\x15]q\xb8h\x17)\x81q\xb9}q\xba(h\x1aX\x80\x00\x00\x00e1f812049deeba95fe8094ea11eab65ca5bd25d8060fb976b22bc990bd7268381de16239089751488817941e1a10105041e3aa23d336ef1c7ec58f58d20bb704q\xbbh\x1cK2ubaubah\x1dJ\x82\xf5\xcfZh\x1eX@\x00\x00\x001844243cf96933099399df67bfe7a95a6a46bd4555ba9f1db162ff65732f6469q\xbch h\xaeh!K\th"K\x03ubh\x01)\x81q\xbd}q\xbe(h\x04K\x0ch\x05]q\xbfh\x07)\x81q\xc0}q\xc1(h\nX@\x00\x00\x00a8a4694eb22269c3ecc2cb3bfe8c5b2e69e8cba4e1362072ab6adfc5260516a5q\xc2h\x0c]q\xc3h\x0e)\x81q\xc4}q\xc5(h\x11h\x12h\x13K\x0ch\x14h\x12ubah\x15]q\xc6h\x17)\x81q\xc7}q\xc8(h\x1aX\x80\x00\x00\x00e1f812049deeba95fe8094ea11eab65ca5bd25d8060fb976b22bc990bd7268381de16239089751488817941e1a10105041e3aa23d336ef1c7ec58f58d20bb704q\xc9h\x1cK2ubaubah\x1dJ\x86\xf5\xcfZh\x1eX@\x00\x00\x00093c7edf75bdb45396a60db78ef16d655b4167b64914691abc31b8c95301190dq\xcah h\xbch!K\x15h"K\x03ubh\x01)\x81q\xcb}q\xcc(h\x04K\rh\x05]q\xcdh\x07)\x81q\xce}q\xcf(h\nX@\x00\x00\x0097209a5cb028afa206f0698d43c44c9b0e6ca9c0ce5d45f4c68bddf3a21866b5q\xd0h\x0c]q\xd1h\x0e)\x81q\xd2}q\xd3(h\x11h\x12h\x13K\rh\x14h\x12ubah\x15]q\xd4h\x17)\x81q\xd5}q\xd6(h\x1aX\x80\x00\x00\x00e1f812049deeba95fe8094ea11eab65ca5bd25d8060fb976b22bc990bd7268381de16239089751488817941e1a10105041e3aa23d336ef1c7ec58f58d20bb704q\xd7h\x1cK2ubaubah\x1dJ\x89\xf5\xcfZh\x1eX@\x00\x00\x00076c7052fd1a45efaa0e8549a0c123c35c93d1888ed2ec16575dc32e9a57caf9q\xd8h h\xcah!K\x02h"K\x04ubh\x01)\x81q\xd9}q\xda(h\x04K\x0eh\x05]q\xdbh\x07)\x81q\xdc}q\xdd(h\nX@\x00\x00\x00113cbb0f04323aa190374f8d63411f61e2bb866a0f9de8c115e3ad9042d61360q\xdeh\x0c]q\xdfh\x0e)\x81q\xe0}q\xe1(h\x11h\x12h\x13K\x0eh\x14h\x12ubah\x15]q\xe2h\x17)\x81q\xe3}q\xe4(h\x1aX\x80\x00\x00\x00e1f812049deeba95fe8094ea11eab65ca5bd25d8060fb976b22bc990bd7268381de16239089751488817941e1a10105041e3aa23d336ef1c7ec58f58d20bb704q\xe5h\x1cK2ubaubah\x1dJ\x8f\xf5\xcfZh\x1eX@\x00\x00\x000f62d2f7c6c238503fa8199592b63e81132120c96f0cf43790465c5f2baceee5q\xe6h h\xd8h!K2h"K\x04ubh\x01)\x81q\xe7}q\xe8(h\x04K\x0fh\x05]q\xe9h\x07)\x81q\xea}q\xeb(h\nX@\x00\x00\x0049d7316577ae61054f3149d910cf4fda1c8bd28647be4b22d46e0082e4decb53q\xech\x0c]q\xedh\x0e)\x81q\xee}q\xef(h\x11h\x12h\x13K\x0fh\x14h\x12ubah\x15]q\xf0h\x17)\x81q\xf1}q\xf2(h\x1aX\x80\x00\x00\x00e1f812049deeba95fe8094ea11eab65ca5bd25d8060fb976b22bc990bd7268381de16239089751488817941e1a10105041e3aa23d336ef1c7ec58f58d20bb704q\xf3h\x1cK2ubaubah\x1dJ\x94\xf5\xcfZh\x1eX@\x00\x00\x000e328c4c6e05d8a224d7ac22b58b3e75808c368053b377bbc47dfee720157dfdq\xf4h h\xe6h!K\th"K\x04ubh\x01)\x81q\xf5}q\xf6(h\x04K\x10h\x05]q\xf7h\x07)\x81q\xf8}q\xf9(h\nX@\x00\x00\x00d25031548b0532dbcd050393984901134d20edbfa9004104bf9c2b85f13a85c3q\xfah\x0c]q\xfbh\x0e)\x81q\xfc}q\xfd(h\x11h\x12h\x13K\x10h\x14h\x12ubah\x15]q\xfeh\x17)\x81q\xff}r\x00\x01\x00\x00(h\x1aX\x80\x00\x00\x00e1f812049deeba95fe8094ea11eab65ca5bd25d8060fb976b22bc990bd7268381de16239089751488817941e1a10105041e3aa23d336ef1c7ec58f58d20bb704r\x01\x01\x00\x00h\x1cK2ubaubah\x1dJ\x96\xf5\xcfZh\x1eX@\x00\x00\x0005dbed21a028b5817e93b966e6c2ccced842aab3df50574d4e6fbbcdf62b7ee0r\x02\x01\x00\x00h h\xf4h!K\x03h"K\x05ubh\x01)\x81r\x03\x01\x00\x00}r\x04\x01\x00\x00(h\x04K\x11h\x05]r\x05\x01\x00\x00h\x07)\x81r\x06\x01\x00\x00}r\x07\x01\x00\x00(h\nX@\x00\x00\x0004935b8ed8e683e4b63fdaac4f7611401a52878dad43ca062caa91032be234d8r\x08\x01\x00\x00h\x0c]r\t\x01\x00\x00h\x0e)\x81r\n\x01\x00\x00}r\x0b\x01\x00\x00(h\x11h\x12h\x13K\x11h\x14h\x12ubah\x15]r\x0c\x01\x00\x00h\x17)\x81r\r\x01\x00\x00}r\x0e\x01\x00\x00(h\x1aX\x80\x00\x00\x00e1f812049deeba95fe8094ea11eab65ca5bd25d8060fb976b22bc990bd7268381de16239089751488817941e1a10105041e3aa23d336ef1c7ec58f58d20bb704r\x0f\x01\x00\x00h\x1cK2ubaubah\x1dJ\x98\xf5\xcfZh\x1eX@\x00\x00\x00055d90553cbc2416c9ae99bed5348585edb34a5772ac59bb8d6c56075a53045cr\x10\x01\x00\x00h j\x02\x01\x00\x00h!K\th"K\x05ubh\x01)\x81r\x11\x01\x00\x00}r\x12\x01\x00\x00(h\x04K\x12h\x05]r\x13\x01\x00\x00h\x07)\x81r\x14\x01\x00\x00}r\x15\x01\x00\x00(h\nX@\x00\x00\x00f4eadfcdcd12749a228aaf8ae4d4b077ab9a6f957ba406a681a2004517814d03r\x16\x01\x00\x00h\x0c]r\x17\x01\x00\x00h\x0e)\x81r\x18\x01\x00\x00}r\x19\x01\x00\x00(h\x11h\x12h\x13K\x12h\x14h\x12ubah\x15]r\x1a\x01\x00\x00h\x17)\x81r\x1b\x01\x00\x00}r\x1c\x01\x00\x00(h\x1aX\x80\x00\x00\x00e1f812049deeba95fe8094ea11eab65ca5bd25d8060fb976b22bc990bd7268381de16239089751488817941e1a10105041e3aa23d336ef1c7ec58f58d20bb704r\x1d\x01\x00\x00h\x1cK2ubaubah\x1dJ\x99\xf5\xcfZh\x1eX@\x00\x00\x000773945d3369a126b1cf630b434d0f799def76bd936e9ba68b8eb5a1a1ed0d95r\x1e\x01\x00\x00h j\x10\x01\x00\x00h!K2h"K\x05ubh\x01)\x81r\x1f\x01\x00\x00}r \x01\x00\x00(h\x04K\x13h\x05]r!\x01\x00\x00h\x07)\x81r"\x01\x00\x00}r#\x01\x00\x00(h\nX@\x00\x00\x006eca3f36b60da925878cad3e529feed1a6435ed2f955589e293f94fe484445e5r$\x01\x00\x00h\x0c]r%\x01\x00\x00h\x0e)\x81r&\x01\x00\x00}r\'\x01\x00\x00(h\x11h\x12h\x13K\x13h\x14h\x12ubah\x15]r(\x01\x00\x00h\x17)\x81r)\x01\x00\x00}r*\x01\x00\x00(h\x1aX\x80\x00\x00\x00e1f812049deeba95fe8094ea11eab65ca5bd25d8060fb976b22bc990bd7268381de16239089751488817941e1a10105041e3aa23d336ef1c7ec58f58d20bb704r+\x01\x00\x00h\x1cK2ubaubah\x1dJ\x9b\xf5\xcfZh\x1eX@\x00\x00\x0001515862e8436ae5aebeb3bfa9fd280cb53ebf27e87f36c9d761f065586d0379r,\x01\x00\x00h j\x1e\x01\x00\x00h!K\rh"K\x06ubh\x01)\x81r-\x01\x00\x00}r.\x01\x00\x00(h\x04K\x14h\x05]r/\x01\x00\x00h\x07)\x81r0\x01\x00\x00}r1\x01\x00\x00(h\nX@\x00\x00\x00de9223448f91c823b91cfbdabeaefd27387a4847f6b81fb1a39c3714d86d7425r2\x01\x00\x00h\x0c]r3\x01\x00\x00h\x0e)\x81r4\x01\x00\x00}r5\x01\x00\x00(h\x11h\x12h\x13K\x14h\x14h\x12ubah\x15]r6\x01\x00\x00h\x17)\x81r7\x01\x00\x00}r8\x01\x00\x00(h\x1aX\x80\x00\x00\x00e1f812049deeba95fe8094ea11eab65ca5bd25d8060fb976b22bc990bd7268381de16239089751488817941e1a10105041e3aa23d336ef1c7ec58f58d20bb704r9\x01\x00\x00h\x1cK2ubaubah\x1dJ\x17\xf6\xcfZh\x1eX@\x00\x00\x000223e0429ee5bf547b517dcaa58fec2e6ffc97a3d5201592c99b4002cdf3978ar:\x01\x00\x00h j,\x01\x00\x00h!K8h"K\x06ubh\x01)\x81r;\x01\x00\x00}r<\x01\x00\x00(h\x04K\x15h\x05]r=\x01\x00\x00h\x07)\x81r>\x01\x00\x00}r?\x01\x00\x00(h\nX@\x00\x00\x002d55703a943d0508aff4935449cfb91342737c8f2f434ddf5578f9090ccffc9er@\x01\x00\x00h\x0c]rA\x01\x00\x00h\x0e)\x81rB\x01\x00\x00}rC\x01\x00\x00(h\x11h\x12h\x13K\x15h\x14h\x12ubah\x15]rD\x01\x00\x00h\x17)\x81rE\x01\x00\x00}rF\x01\x00\x00(h\x1aX\x80\x00\x00\x00e1f812049deeba95fe8094ea11eab65ca5bd25d8060fb976b22bc990bd7268381de16239089751488817941e1a10105041e3aa23d336ef1c7ec58f58d20bb704rG\x01\x00\x00h\x1cK2ubaubah\x1dJ$\xf6\xcfZh\x1eX@\x00\x00\x0003ae6d5c1bbc302dce653a7cdabddbebc57413e3a44266bac416afa4c86fe4efrH\x01\x00\x00h j:\x01\x00\x00h!K%h"K\x06ubh\x01)\x81rI\x01\x00\x00}rJ\x01\x00\x00(h\x04K\x16h\x05]rK\x01\x00\x00h\x07)\x81rL\x01\x00\x00}rM\x01\x00\x00(h\nX@\x00\x00\x00280fd02b0645307d78400f393f2e21d7c01523475d8eea4d7cc5b9110f7c51e8rN\x01\x00\x00h\x0c]rO\x01\x00\x00h\x0e)\x81rP\x01\x00\x00}rQ\x01\x00\x00(h\x11h\x12h\x13K\x16h\x14h\x12ubah\x15]rR\x01\x00\x00h\x17)\x81rS\x01\x00\x00}rT\x01\x00\x00(h\x1aX\x80\x00\x00\x00e1f812049deeba95fe8094ea11eab65ca5bd25d8060fb976b22bc990bd7268381de16239089751488817941e1a10105041e3aa23d336ef1c7ec58f58d20bb704rU\x01\x00\x00h\x1cK2ubaubah\x1dJ8\xf6\xcfZh\x1eX@\x00\x00\x000127aca32a684c2bee6ff3d1f033e3da33d7cf617e85bdcea57c2c62ed2566b3rV\x01\x00\x00h jH\x01\x00\x00h!K\th"K\x05ubh\x01)\x81rW\x01\x00\x00}rX\x01\x00\x00(h\x04K\x17h\x05]rY\x01\x00\x00h\x07)\x81rZ\x01\x00\x00}r[\x01\x00\x00(h\nX@\x00\x00\x0087d505295c37335b97205cb57a44e420019f27f41869b4fceb29df743aca5c79r\\\x01\x00\x00h\x0c]r]\x01\x00\x00h\x0e)\x81r^\x01\x00\x00}r_\x01\x00\x00(h\x11h\x12h\x13K\x17h\x14h\x12ubah\x15]r`\x01\x00\x00h\x17)\x81ra\x01\x00\x00}rb\x01\x00\x00(h\x1aX\x80\x00\x00\x00e1f812049deeba95fe8094ea11eab65ca5bd25d8060fb976b22bc990bd7268381de16239089751488817941e1a10105041e3aa23d336ef1c7ec58f58d20bb704rc\x01\x00\x00h\x1cK2ubaubah\x1dJP\xf6\xcfZh\x1eX@\x00\x00\x00062826d272a9020822aca7e1fe091994bb26e8babc998bb051769a1a544164f4rd\x01\x00\x00h jV\x01\x00\x00h!KZh"K\x05ubh\x01)\x81re\x01\x00\x00}rf\x01\x00\x00(h\x04K\x18h\x05]rg\x01\x00\x00h\x07)\x81rh\x01\x00\x00}ri\x01\x00\x00(h\nX@\x00\x00\x007757fb0c25f033f3122ac1f2540b2ea88b2a5eccce8fd9e78401bcd6bb69d621rj\x01\x00\x00h\x0c]rk\x01\x00\x00h\x0e)\x81rl\x01\x00\x00}rm\x01\x00\x00(h\x11h\x12h\x13K\x18h\x14h\x12ubah\x15]rn\x01\x00\x00h\x17)\x81ro\x01\x00\x00}rp\x01\x00\x00(h\x1aX\x80\x00\x00\x00e1f812049deeba95fe8094ea11eab65ca5bd25d8060fb976b22bc990bd7268381de16239089751488817941e1a10105041e3aa23d336ef1c7ec58f58d20bb704rq\x01\x00\x00h\x1cK2ubaubah\x1dJ\x90\xf6\xcfZh\x1eX@\x00\x00\x0007484907456238bd5131bfcc29e050abfa79b12500ef41fab5f5aa3294beb293rr\x01\x00\x00h jd\x01\x00\x00h!K\x1ch"K\x05ubh\x01)\x81rs\x01\x00\x00}rt\x01\x00\x00(h\x04K\x19h\x05]ru\x01\x00\x00h\x07)\x81rv\x01\x00\x00}rw\x01\x00\x00(h\nX@\x00\x00\x0097588f99f4723c7bd5f1690a1db50bf5455c68efff213887304de53ef0b795b2rx\x01\x00\x00h\x0c]ry\x01\x00\x00h\x0e)\x81rz\x01\x00\x00}r{\x01\x00\x00(h\x11h\x12h\x13K\x19h\x14h\x12ubah\x15]r|\x01\x00\x00h\x17)\x81r}\x01\x00\x00}r~\x01\x00\x00(h\x1aX\x80\x00\x00\x00e1f812049deeba95fe8094ea11eab65ca5bd25d8060fb976b22bc990bd7268381de16239089751488817941e1a10105041e3aa23d336ef1c7ec58f58d20bb704r\x7f\x01\x00\x00h\x1cK2ubaubah\x1dJ\xa6\xf6\xcfZh\x1eX@\x00\x00\x000fe900b3563e1721fd3b09912f4843a49a585e2398e437771c7241f6d890d33ar\x80\x01\x00\x00h jr\x01\x00\x00h!K\th"K\x04ubh\x01)\x81r\x81\x01\x00\x00}r\x82\x01\x00\x00(h\x04K\x1ah\x05]r\x83\x01\x00\x00h\x07)\x81r\x84\x01\x00\x00}r\x85\x01\x00\x00(h\nX@\x00\x00\x007481993e51236d8058a288d0baddc4cb2043eaa7e8704722995b15b41ab102der\x86\x01\x00\x00h\x0c]r\x87\x01\x00\x00h\x0e)\x81r\x88\x01\x00\x00}r\x89\x01\x00\x00(h\x11h\x12h\x13K\x1ah\x14h\x12ubah\x15]r\x8a\x01\x00\x00h\x17)\x81r\x8b\x01\x00\x00}r\x8c\x01\x00\x00(h\x1aX\x80\x00\x00\x00e1f812049deeba95fe8094ea11eab65ca5bd25d8060fb976b22bc990bd7268381de16239089751488817941e1a10105041e3aa23d336ef1c7ec58f58d20bb704r\x8d\x01\x00\x00h\x1cK2ubaubah\x1dJ\xbd\xf6\xcfZh\x1eX@\x00\x00\x000d1e9dbda92ec7feebbca0d60827fddcb578ef6e4ddbd16c6b69a71028f7e604r\x8e\x01\x00\x00h j\x80\x01\x00\x00h!K\th"K\x04ube.'
+longer chain getted
+afterset <threading.Event object at 0x10e5a7320> True
+broadcast: ['http://localhost:8036', 'http://localhost:8025', 'http://localhost:8009', 'http://localhost:8039', 'http://localhost:8020', 'http://localhost:8002', 'http://localhost:8022', 'http://localhost:8030', 'http://localhost:8024', 'http://localhost:8010', 'http://localhost:8029', 'http://localhost:8044', 'http://localhost:8038', 'http://localhost:8032', 'http://localhost:8012', 'http://localhost:7999', 'http://localhost:8004', 'http://localhost:8045', 'http://localhost:8019', 'http://localhost:8041', 'http://localhost:8026', 'http://localhost:8006', 'http://localhost:8021', 'http://localhost:8027', 'http://localhost:8031', 'http://localhost:8001', 'http://localhost:8017', 'http://localhost:8035', 'http://localhost:8011', 'http://localhost:8049', 'http://localhost:8028', 'http://localhost:8015', 'http://localhost:8046', 'http://localhost:8037', 'http://localhost:8033', 'http://localhost:8007', 'http://localhost:8008', 'http://localhost:8014', 'http://localhost:8040', 'http://localhost:8005', 'http://localhost:8000', 'http://localhost:8034', 'http://localhost:8047', 'http://localhost:8042', 'http://localhost:8013', 'http://localhost:8043', 'http://localhost:8048', 'http://localhost:8018', 'http://localhost:8023', 'http://localhost:8003']
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+HTTPConnectionPool(host='localhost', port=8011): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10f29b5f8>: Failed to establish a new connection: [Errno 23] Too many open files in system',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+from http://localhost:8043 ======A block received=========, 20:16:30  current length 27
+b'ok'
+could not find MARK
+22
+=============================
+this block is from a shorter chain
+from http://localhost:8015 ======A block received=========, 20:16:33  current length 27
+3
+=============================
+this block is from a shorter chain
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+from http://localhost:8033 ======A block received=========, 20:16:35  current length 27
+15
+=============================
+this block is from a shorter chain
+from http://localhost:8033 ======A block received=========, 20:16:35  current length 27
+22
+=============================
+this block is from a shorter chain
+from http://localhost:8026 ======A block received=========, 20:16:36  current length 27
+17
+=============================
+this block is from a shorter chain
+from http://localhost:8019 ======A block received=========, 20:16:39  current length 27
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8015 ======A block received=========, 20:16:40  current length 27
+4
+=============================
+this block is from a shorter chain
+HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10f427438>: Failed to establish a new connection: [Errno 23] Too many open files in system',))
+HTTPConnectionPool(host='localhost', port=8020): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10f4278d0>: Failed to establish a new connection: [Errno 23] Too many open files in system',))
+replaced chain
+b'\x80\x03]q\x00(cchain\nBlock\nq\x01)\x81q\x02}q\x03(X\x05\x00\x00\x00indexq\x04K\x00X\x04\x00\x00\x00dataq\x05]q\x06ctransaction\nTransaction\nq\x07)\x81q\x08}q\t(X\x02\x00\x00\x00idq\nX@\x00\x00\x0095db0b8e71740baf81a619bfff7afe3600181828b59815d02c7f1b7b3209c831q\x0bX\x05\x00\x00\x00txInsq\x0c]q\rctransaction\nTxIn\nq\x0e)\x81q\x0f}q\x10(X\x07\x00\x00\x00txOutIdq\x11X\x00\x00\x00\x00q\x12X\n\x00\x00\x00txOutIndexq\x13K\x00X\t\x00\x00\x00signatureq\x14h\x12ubaX\x06\x00\x00\x00txOutsq\x15]q\x16ctransaction\nTxOut\nq\x17)\x81q\x18}q\x19(X\x07\x00\x00\x00addressq\x1aX\x80\x00\x00\x0060ba02269f0aa21a5ee18de8f21f4c159587713db66459d8baca5406021cc51269fe4b4d23587bf58c70e7014d727d1e10ec6b80fa395829b3b79dae3fdc7360q\x1bX\x06\x00\x00\x00amountq\x1cK2ubaubaX\t\x00\x00\x00timestampq\x1dJ\x97q\x90ZX\x04\x00\x00\x00hashq\x1eX@\x00\x00\x00e9d3061d5e216863506649096aac5ddd2089357c0bb3d647db332cd9b926f8b9q\x1fX\t\x00\x00\x00prev_hashq h\x12X\x05\x00\x00\x00nonceq!K\x00X\n\x00\x00\x00difficultyq"K\x00ubh\x01)\x81q#}q$(h\x04K\x01h\x05]q%h\x07)\x81q&}q\'(h\nX@\x00\x00\x005d1bf5ecbcc8d1631a2d18eca4862f5749d52e1caf4830144867fc462ab5c957q(h\x0c]q)h\x0e)\x81q*}q+(h\x11h\x12h\x13K\x01h\x14h\x12ubah\x15]q,h\x17)\x81q-}q.(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efq/h\x1cK2ubaubah\x1dJ$\xf5\xcfZh\x1eX@\x00\x00\x00e66fc2b2efaecec0721c263e91219c628032e0619ac9283343a186d2af2f3bafq0h h\x1fh!K\x00h"K\x00ubh\x01)\x81q1}q2(h\x04K\x02h\x05]q3h\x07)\x81q4}q5(h\nX@\x00\x00\x00027b08a81734f7c43dcb65ffdbba679c09eef1650013ca531e3f8e836d225c44q6h\x0c]q7h\x0e)\x81q8}q9(h\x11h\x12h\x13K\x02h\x14h\x12ubah\x15]q:h\x17)\x81q;}q<(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efq=h\x1cK2ubaubah\x1dJ$\xf5\xcfZh\x1eX@\x00\x00\x00bf67fa4f82977d1680b81f7eb4046cd804387f84f7cbfc017728dc14185307dbq>h h0h!K\x00h"K\x00ubh\x01)\x81q?}q@(h\x04K\x03h\x05]qAh\x07)\x81qB}qC(h\nX@\x00\x00\x0071e8b280aa85b1aa258ba09f075d91936fe3847f1e81cf0d798e09844b94799bqDh\x0c]qEh\x0e)\x81qF}qG(h\x11h\x12h\x13K\x03h\x14h\x12ubah\x15]qHh\x17)\x81qI}qJ(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efqKh\x1cK2ubaubah\x1dJ$\xf5\xcfZh\x1eX@\x00\x00\x00b7091706e2c6f3616898939e70bf62a16089b9a849c31b85605f0d444205d875qLh h>h!K\x00h"K\x00ubh\x01)\x81qM}qN(h\x04K\x04h\x05]qOh\x07)\x81qP}qQ(h\nX@\x00\x00\x00317809975e94f27c52b290ed10a12605bf74dcd4368d94ba813fee8d8368c6c1qRh\x0c]qSh\x0e)\x81qT}qU(h\x11h\x12h\x13K\x04h\x14h\x12ubah\x15]qVh\x17)\x81qW}qX(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efqYh\x1cK2ubaubah\x1dJ%\xf5\xcfZh\x1eX@\x00\x00\x000d6b7066d8e19508df67e832936ec5a78a3866645b020aba7aa17a530b529731qZh hLh!K\x05h"K\x01ubh\x01)\x81q[}q\\(h\x04K\x05h\x05]q]h\x07)\x81q^}q_(h\nX@\x00\x00\x003e6535516462adbc37587067734a31bfce613299eacd8eefa36281b021a7c91eq`h\x0c]qah\x0e)\x81qb}qc(h\x11h\x12h\x13K\x05h\x14h\x12ubah\x15]qdh\x17)\x81qe}qf(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efqgh\x1cK2ubaubah\x1dJ%\xf5\xcfZh\x1eX@\x00\x00\x0060ed1ae6649afcd480c7edc208869d316cf6de314f4803b097c57f690b805ca1qhh hZh!K\x03h"K\x01ubh\x01)\x81qi}qj(h\x04K\x06h\x05]qkh\x07)\x81ql}qm(h\nX@\x00\x00\x001ed5ce945b1bf6c466c37c5426b8f89669a375469e2a3daa833ea54cea5dd7f5qnh\x0c]qoh\x0e)\x81qp}qq(h\x11h\x12h\x13K\x06h\x14h\x12ubah\x15]qrh\x17)\x81qs}qt(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efquh\x1cK2ubaubah\x1dJ%\xf5\xcfZh\x1eX@\x00\x00\x006674b21b7ee67d62e48f16b28f0d7832b3ecd8374ef61e839e06455be5ed0f14qvh hhh!K\x00h"K\x01ubh\x01)\x81qw}qx(h\x04K\x07h\x05]qyh\x07)\x81qz}q{(h\nX@\x00\x00\x00181db6f5b1cf54d88f71b9fbc674d6a52caaae1d15728acf92a1ef372355033bq|h\x0c]q}h\x0e)\x81q~}q\x7f(h\x11h\x12h\x13K\x07h\x14h\x12ubah\x15]q\x80h\x17)\x81q\x81}q\x82(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efq\x83h\x1cK2ubaubah\x1dJ%\xf5\xcfZh\x1eX@\x00\x00\x000f970959000c60a37f830d68fd8df7a3ce38c3dd2e1d0e303240094d99b497cfq\x84h hvh!K\x01h"K\x02ubh\x01)\x81q\x85}q\x86(h\x04K\x08h\x05]q\x87h\x07)\x81q\x88}q\x89(h\nX@\x00\x00\x00c597bf1a6442b71ab1ba2384a1f447ad995bdf0ba87250377356ccdc369b0ed0q\x8ah\x0c]q\x8bh\x0e)\x81q\x8c}q\x8d(h\x11h\x12h\x13K\x08h\x14h\x12ubah\x15]q\x8eh\x17)\x81q\x8f}q\x90(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efq\x91h\x1cK2ubaubah\x1dJ%\xf5\xcfZh\x1eX@\x00\x00\x000e7ec7845d11793915b2b85beef863802255cdc52e89ddea6dc0ee1cb23238d4q\x92h h\x84h!K\x05h"K\x02ubh\x01)\x81q\x93}q\x94(h\x04K\th\x05]q\x95h\x07)\x81q\x96}q\x97(h\nX@\x00\x00\x00267783ba036674ac77cc0067a899386120ca82a28a48b84e81074157c2db7135q\x98h\x0c]q\x99h\x0e)\x81q\x9a}q\x9b(h\x11h\x12h\x13K\th\x14h\x12ubah\x15]q\x9ch\x17)\x81q\x9d}q\x9e(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efq\x9fh\x1cK2ubaubah\x1dJ%\xf5\xcfZh\x1eX@\x00\x00\x0030b9a3364fec5c36112065e8ca4f8984acc9a9b6047efd84abc4fc20157dec91q\xa0h h\x92h!K\x01h"K\x02ubh\x01)\x81q\xa1}q\xa2(h\x04K\nh\x05]q\xa3h\x07)\x81q\xa4}q\xa5(h\nX@\x00\x00\x003836026317c9c94daa576056bb624c4d0dd8e87028aa3921508a3ee54c6082a5q\xa6h\x0c]q\xa7h\x0e)\x81q\xa8}q\xa9(h\x11h\x12h\x13K\nh\x14h\x12ubah\x15]q\xaah\x17)\x81q\xab}q\xac(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efq\xadh\x1cK2ubaubah\x1dJ%\xf5\xcfZh\x1eX@\x00\x00\x001700da6b62cbcba13929128b82d6bd317567bae92946d9817b8023289e0721edq\xaeh h\xa0h!K\x1ch"K\x03ubh\x01)\x81q\xaf}q\xb0(h\x04K\x0bh\x05]q\xb1h\x07)\x81q\xb2}q\xb3(h\nX@\x00\x00\x00287b114d7e566c6d2118cf0962457f7ecc692c804895df86f85f85a90eab589fq\xb4h\x0c]q\xb5h\x0e)\x81q\xb6}q\xb7(h\x11h\x12h\x13K\x0bh\x14h\x12ubah\x15]q\xb8h\x17)\x81q\xb9}q\xba(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efq\xbbh\x1cK2ubaubah\x1dJ%\xf5\xcfZh\x1eX@\x00\x00\x001f958bb2902881662e49c02ec256516a31e01d46d827d75032b1d51ef80793d6q\xbch h\xaeh!K\rh"K\x03ubh\x01)\x81q\xbd}q\xbe(h\x04K\x0ch\x05]q\xbfh\x07)\x81q\xc0}q\xc1(h\nX@\x00\x00\x0086fede97104e0f669b4fc5024f8013debdb3c37d0e99bd804bb74486a1516f9cq\xc2h\x0c]q\xc3h\x0e)\x81q\xc4}q\xc5(h\x11h\x12h\x13K\x0ch\x14h\x12ubah\x15]q\xc6h\x17)\x81q\xc7}q\xc8(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efq\xc9h\x1cK2ubaubah\x1dJ%\xf5\xcfZh\x1eX@\x00\x00\x001ae181837619cb2414e5ae7e4fa8b481ea0bbe43426e72b3729d0c9e14b8e973q\xcah h\xbch!K\nh"K\x03ubh\x01)\x81q\xcb}q\xcc(h\x04K\rh\x05]q\xcdh\x07)\x81q\xce}q\xcf(h\nX@\x00\x00\x00378988df90451532a07778d968240dba34e05b30146be63135ac15e4c5200494q\xd0h\x0c]q\xd1h\x0e)\x81q\xd2}q\xd3(h\x11h\x12h\x13K\rh\x14h\x12ubah\x15]q\xd4h\x17)\x81q\xd5}q\xd6(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efq\xd7h\x1cK2ubaubah\x1dJ&\xf5\xcfZh\x1eX@\x00\x00\x0008bdc71b7ac906346f367bf684de59e98dcee4fcdffd1de59cae6934d832d362q\xd8h h\xcah!K\x07h"K\x04ubh\x01)\x81q\xd9}q\xda(h\x04K\x0eh\x05]q\xdbh\x07)\x81q\xdc}q\xdd(h\nX@\x00\x00\x004cfc54267e2ea7169923e7bad8bfd7c9579854ad681630f78e42d18f2cff2a23q\xdeh\x0c]q\xdfh\x0e)\x81q\xe0}q\xe1(h\x11h\x12h\x13K\x0eh\x14h\x12ubah\x15]q\xe2h\x17)\x81q\xe3}q\xe4(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efq\xe5h\x1cK2ubaubah\x1dJ&\xf5\xcfZh\x1eX@\x00\x00\x0002f6da2abdda4f9201f42499edd81e06b888d9e69891a3741267ec6d5874518dq\xe6h h\xd8h!K\x0eh"K\x04ubh\x01)\x81q\xe7}q\xe8(h\x04K\x0fh\x05]q\xe9h\x07)\x81q\xea}q\xeb(h\nX@\x00\x00\x0099e31a61b2dd0861b68c7b42050111bd23a8dfd236080cff8b6af68027f6f092q\xech\x0c]q\xedh\x0e)\x81q\xee}q\xef(h\x11h\x12h\x13K\x0fh\x14h\x12ubah\x15]q\xf0h\x17)\x81q\xf1}q\xf2(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efq\xf3h\x1cK2ubaubah\x1dJ&\xf5\xcfZh\x1eX@\x00\x00\x0002fcb17adc34b318de905434361ab5c865d0af3ffafe57881a96218eca745dc3q\xf4h h\xe6h!K\x0bh"K\x04ubh\x01)\x81q\xf5}q\xf6(h\x04K\x10h\x05]q\xf7h\x07)\x81q\xf8}q\xf9(h\nX@\x00\x00\x00e898ab407824c6488777f6d61a0615b304c0bfab81680b7d134d496b38933debq\xfah\x0c]q\xfbh\x0e)\x81q\xfc}q\xfd(h\x11h\x12h\x13K\x10h\x14h\x12ubah\x15]q\xfeh\x17)\x81q\xff}r\x00\x01\x00\x00(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efr\x01\x01\x00\x00h\x1cK2ubaubah\x1dJ&\xf5\xcfZh\x1eX@\x00\x00\x00034ffee8916c5c31e8f677a1433440126649747c856085d554363c91b9b9df73r\x02\x01\x00\x00h h\xf4h!K$h"K\x05ubh\x01)\x81r\x03\x01\x00\x00}r\x04\x01\x00\x00(h\x04K\x11h\x05]r\x05\x01\x00\x00h\x07)\x81r\x06\x01\x00\x00}r\x07\x01\x00\x00(h\nX@\x00\x00\x0083504a6975dcc43d6fd0db307d79597efe5a09dda14deb8c44908f9d6f649f9dr\x08\x01\x00\x00h\x0c]r\t\x01\x00\x00h\x0e)\x81r\n\x01\x00\x00}r\x0b\x01\x00\x00(h\x11h\x12h\x13K\x11h\x14h\x12ubah\x15]r\x0c\x01\x00\x00h\x17)\x81r\r\x01\x00\x00}r\x0e\x01\x00\x00(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efr\x0f\x01\x00\x00h\x1cK2ubaubah\x1dJ&\xf5\xcfZh\x1eX@\x00\x00\x0000ba357fac59c85500eedaf25a923a56278d16f503464ba33628ab82604edcb9r\x10\x01\x00\x00h j\x02\x01\x00\x00h!K7h"K\x05ubh\x01)\x81r\x11\x01\x00\x00}r\x12\x01\x00\x00(h\x04K\x12h\x05]r\x13\x01\x00\x00h\x07)\x81r\x14\x01\x00\x00}r\x15\x01\x00\x00(h\nX@\x00\x00\x004a174817e480efc5d3206f20fb62b094c1e2dd203d249382c57a5852a048f9f1r\x16\x01\x00\x00h\x0c]r\x17\x01\x00\x00h\x0e)\x81r\x18\x01\x00\x00}r\x19\x01\x00\x00(h\x11h\x12h\x13K\x12h\x14h\x12ubah\x15]r\x1a\x01\x00\x00h\x17)\x81r\x1b\x01\x00\x00}r\x1c\x01\x00\x00(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efr\x1d\x01\x00\x00h\x1cK2ubaubah\x1dJ&\xf5\xcfZh\x1eX@\x00\x00\x00002078398bf64b77447caa2e4d8e751ff280f98758e8914d3d1d9d481b137eeer\x1e\x01\x00\x00h j\x10\x01\x00\x00h!K\x05h"K\x05ubh\x01)\x81r\x1f\x01\x00\x00}r \x01\x00\x00(h\x04K\x13h\x05]r!\x01\x00\x00h\x07)\x81r"\x01\x00\x00}r#\x01\x00\x00(h\nX@\x00\x00\x006814519d516e7558598a5921b1c4476d185d5022f8f203ea30324d942fce9b09r$\x01\x00\x00h\x0c]r%\x01\x00\x00h\x0e)\x81r&\x01\x00\x00}r\'\x01\x00\x00(h\x11h\x12h\x13K\x13h\x14h\x12ubah\x15]r(\x01\x00\x00h\x17)\x81r)\x01\x00\x00}r*\x01\x00\x00(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efr+\x01\x00\x00h\x1cK2ubaubah\x1dJ\'\xf5\xcfZh\x1eX@\x00\x00\x0002a86a21467d72ef85d31d2bc11df3f333be4fe9d6a7d1ab5cf5b5acad4db903r,\x01\x00\x00h j\x1e\x01\x00\x00h!K\x1ch"K\x06ubh\x01)\x81r-\x01\x00\x00}r.\x01\x00\x00(h\x04K\x14h\x05]r/\x01\x00\x00h\x07)\x81r0\x01\x00\x00}r1\x01\x00\x00(h\nX@\x00\x00\x00812f0c29eb1ce89436038b4b8a42567dcebfbb6f99b28510108f5fe854fe1350r2\x01\x00\x00h\x0c]r3\x01\x00\x00h\x0e)\x81r4\x01\x00\x00}r5\x01\x00\x00(h\x11h\x12h\x13K\x14h\x14h\x12ubah\x15]r6\x01\x00\x00h\x17)\x81r7\x01\x00\x00}r8\x01\x00\x00(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efr9\x01\x00\x00h\x1cK2ubaubah\x1dJ\'\xf5\xcfZh\x1eX@\x00\x00\x000208675f30655bdd47f8ec18a82e89aae92338cd4735ab0471801315349307a1r:\x01\x00\x00h j,\x01\x00\x00h!KIh"K\x06ubh\x01)\x81r;\x01\x00\x00}r<\x01\x00\x00(h\x04K\x15h\x05]r=\x01\x00\x00h\x07)\x81r>\x01\x00\x00}r?\x01\x00\x00(h\nX@\x00\x00\x008e91f0e8b1b1aecdf3a2335a2b32c04850b203bf96147ec922a624cdadb8e525r@\x01\x00\x00h\x0c]rA\x01\x00\x00h\x0e)\x81rB\x01\x00\x00}rC\x01\x00\x00(h\x11h\x12h\x13K\x15h\x14h\x12ubah\x15]rD\x01\x00\x00h\x17)\x81rE\x01\x00\x00}rF\x01\x00\x00(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efrG\x01\x00\x00h\x1cK2ubaubah\x1dJ\'\xf5\xcfZh\x1eX@\x00\x00\x0003cb1e8826fea1e39736f58bb2b889b5212102a0b07b0cc38677d66f6e336d36rH\x01\x00\x00h j:\x01\x00\x00h!K\x0ch"K\x06ubh\x01)\x81rI\x01\x00\x00}rJ\x01\x00\x00(h\x04K\x16h\x05]rK\x01\x00\x00h\x07)\x81rL\x01\x00\x00}rM\x01\x00\x00(h\nX@\x00\x00\x00cb3814f1f7edd13fc2531926dbf96aca28d9fcad984d5479a4e7abc99f256378rN\x01\x00\x00h\x0c]rO\x01\x00\x00h\x0e)\x81rP\x01\x00\x00}rQ\x01\x00\x00(h\x11h\x12h\x13K\x16h\x14h\x12ubah\x15]rR\x01\x00\x00h\x17)\x81rS\x01\x00\x00}rT\x01\x00\x00(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efrU\x01\x00\x00h\x1cK2ubaubah\x1dJ\'\xf5\xcfZh\x1eX@\x00\x00\x000067c9b0f110c3845aefa970a561c93accf935e2955975f21979d6d145a2899arV\x01\x00\x00h jH\x01\x00\x00h!MN\x01h"K\x07ubh\x01)\x81rW\x01\x00\x00}rX\x01\x00\x00(h\x04K\x17h\x05]rY\x01\x00\x00h\x07)\x81rZ\x01\x00\x00}r[\x01\x00\x00(h\nX@\x00\x00\x00484ae3fa46ee8f1a78166fade29fe6da263ee3c35b8676f99c80aa07a0ac1d61r\\\x01\x00\x00h\x0c]r]\x01\x00\x00h\x0e)\x81r^\x01\x00\x00}r_\x01\x00\x00(h\x11h\x12h\x13K\x17h\x14h\x12ubah\x15]r`\x01\x00\x00h\x17)\x81ra\x01\x00\x00}rb\x01\x00\x00(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efrc\x01\x00\x00h\x1cK2ubaubah\x1dJ(\xf5\xcfZh\x1eX@\x00\x00\x0001c320c5dea1e183ec488aaf3204c2d8736516ed478f59774d46496d0ddb25bcrd\x01\x00\x00h jV\x01\x00\x00h!K(h"K\x07ubh\x01)\x81re\x01\x00\x00}rf\x01\x00\x00(h\x04K\x18h\x05]rg\x01\x00\x00h\x07)\x81rh\x01\x00\x00}ri\x01\x00\x00(h\nX@\x00\x00\x004496b6c22ac9fc6bd62cf34a6fe6973e9fd4da5799ebeda752bf0aa0d5f02b2arj\x01\x00\x00h\x0c]rk\x01\x00\x00h\x0e)\x81rl\x01\x00\x00}rm\x01\x00\x00(h\x11h\x12h\x13K\x18h\x14h\x12ubah\x15]rn\x01\x00\x00h\x17)\x81ro\x01\x00\x00}rp\x01\x00\x00(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efrq\x01\x00\x00h\x1cK2ubaubah\x1dJ(\xf5\xcfZh\x1eX@\x00\x00\x0001131a7fc8f55e0ca8d49830de12ac6a8601a69ef4ab415695af1d629d0e0314rr\x01\x00\x00h jd\x01\x00\x00h!K\xb5h"K\x07ubh\x01)\x81rs\x01\x00\x00}rt\x01\x00\x00(h\x04K\x19h\x05]ru\x01\x00\x00h\x07)\x81rv\x01\x00\x00}rw\x01\x00\x00(h\nX@\x00\x00\x0059685ae39a157c8c0078de90f9e4a6c03da722263e693fea4dcdfb2a6a85bbadrx\x01\x00\x00h\x0c]ry\x01\x00\x00h\x0e)\x81rz\x01\x00\x00}r{\x01\x00\x00(h\x11h\x12h\x13K\x19h\x14h\x12ubah\x15]r|\x01\x00\x00h\x17)\x81r}\x01\x00\x00}r~\x01\x00\x00(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efr\x7f\x01\x00\x00h\x1cK2ubaubah\x1dJ)\xf5\xcfZh\x1eX@\x00\x00\x00002549ca8d04c5cc3b04b44ca003e8992e02caf1f2f2f63fb6baaba1482e730dr\x80\x01\x00\x00h jr\x01\x00\x00h!K7h"K\x08ubh\x01)\x81r\x81\x01\x00\x00}r\x82\x01\x00\x00(h\x04K\x1ah\x05]r\x83\x01\x00\x00h\x07)\x81r\x84\x01\x00\x00}r\x85\x01\x00\x00(h\nX@\x00\x00\x009e73ab355cf92dd92d8fe1244d7cb704c24aea3063af759376a37eaaabfbf503r\x86\x01\x00\x00h\x0c]r\x87\x01\x00\x00h\x0e)\x81r\x88\x01\x00\x00}r\x89\x01\x00\x00(h\x11h\x12h\x13K\x1ah\x14h\x12ubah\x15]r\x8a\x01\x00\x00h\x17)\x81r\x8b\x01\x00\x00}r\x8c\x01\x00\x00(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efr\x8d\x01\x00\x00h\x1cK2ubaubah\x1dJ*\xf5\xcfZh\x1eX@\x00\x00\x000070532acaa4b1593833c81c5bfe9374674cfdd9d72c4f2b1ea0a51b0e15afcar\x8e\x01\x00\x00h j\x80\x01\x00\x00h!K"h"K\x08ubh\x01)\x81r\x8f\x01\x00\x00}r\x90\x01\x00\x00(h\x04K\x1bh\x05]r\x91\x01\x00\x00h\x07)\x81r\x92\x01\x00\x00}r\x93\x01\x00\x00(h\nX@\x00\x00\x00a431c01190986cc9655e20c759d3ded91e3ee81b976fd0d6450968978160537er\x94\x01\x00\x00h\x0c]r\x95\x01\x00\x00h\x0e)\x81r\x96\x01\x00\x00}r\x97\x01\x00\x00(h\x11h\x12h\x13K\x1bh\x14h\x12ubah\x15]r\x98\x01\x00\x00h\x17)\x81r\x99\x01\x00\x00}r\x9a\x01\x00\x00(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efr\x9b\x01\x00\x00h\x1cK2ubaubah\x1dJ,\xf5\xcfZh\x1eX@\x00\x00\x0000d0f4706b7ecc65bbccab6b3a832e25cab8e911a1180efa9b640527af80aa16r\x9c\x01\x00\x00h j\x8e\x01\x00\x00h!MZ\x01h"K\x08ubh\x01)\x81r\x9d\x01\x00\x00}r\x9e\x01\x00\x00(h\x04K\x1ch\x05]r\x9f\x01\x00\x00h\x07)\x81r\xa0\x01\x00\x00}r\xa1\x01\x00\x00(h\nX@\x00\x00\x0097a4d514e2ec4b50590217fc12cc4321be8266dea54d87b0f606d9038a741780r\xa2\x01\x00\x00h\x0c]r\xa3\x01\x00\x00h\x0e)\x81r\xa4\x01\x00\x00}r\xa5\x01\x00\x00(h\x11h\x12h\x13K\x1ch\x14h\x12ubah\x15]r\xa6\x01\x00\x00h\x17)\x81r\xa7\x01\x00\x00}r\xa8\x01\x00\x00(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efr\xa9\x01\x00\x00h\x1cK2ubaubah\x1dJy\xf5\xcfZh\x1eX@\x00\x00\x000029acf20bbbc58325f0708bc05d1460ba5e90e609fa4c702793bbe127ee8dfar\xaa\x01\x00\x00h j\x9c\x01\x00\x00h!M\n\x01h"K\tubh\x01)\x81r\xab\x01\x00\x00}r\xac\x01\x00\x00(h\x04K\x1dh\x05]r\xad\x01\x00\x00h\x07)\x81r\xae\x01\x00\x00}r\xaf\x01\x00\x00(h\nX@\x00\x00\x00e9e27fb84aa7a2483590c9530d38a68e3631e9fe47ab4d9d1a26398e455a872cr\xb0\x01\x00\x00h\x0c]r\xb1\x01\x00\x00h\x0e)\x81r\xb2\x01\x00\x00}r\xb3\x01\x00\x00(h\x11h\x12h\x13K\x1dh\x14h\x12ubah\x15]r\xb4\x01\x00\x00h\x17)\x81r\xb5\x01\x00\x00}r\xb6\x01\x00\x00(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efr\xb7\x01\x00\x00h\x1cK2ubaubah\x1dJ\x82\xf5\xcfZh\x1eX@\x00\x00\x00004bdb5910321e3b47e6abe4cf100ef2b9b1518c82e90c6b25802eec0e856cb1r\xb8\x01\x00\x00h j\xaa\x01\x00\x00h!K\xbfh"K\tubh\x01)\x81r\xb9\x01\x00\x00}r\xba\x01\x00\x00(h\x04K\x1eh\x05]r\xbb\x01\x00\x00h\x07)\x81r\xbc\x01\x00\x00}r\xbd\x01\x00\x00(h\nX@\x00\x00\x00d7696f1f7661516dab0fea1a3e525b5999a61360bc1426976e83bfa170237bcer\xbe\x01\x00\x00h\x0c]r\xbf\x01\x00\x00h\x0e)\x81r\xc0\x01\x00\x00}r\xc1\x01\x00\x00(h\x11h\x12h\x13K\x1eh\x14h\x12ubah\x15]r\xc2\x01\x00\x00h\x17)\x81r\xc3\x01\x00\x00}r\xc4\x01\x00\x00(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efr\xc5\x01\x00\x00h\x1cK2ubaubah\x1dJ\x85\xf5\xcfZh\x1eX@\x00\x00\x00001165134b279de03f514ecb1b8439bcf29cfc7bf9e866b8f449750cfa27d14ar\xc6\x01\x00\x00h j\xb8\x01\x00\x00h!M\x16\x02h"K\tubh\x01)\x81r\xc7\x01\x00\x00}r\xc8\x01\x00\x00(h\x04K\x1fh\x05]r\xc9\x01\x00\x00h\x07)\x81r\xca\x01\x00\x00}r\xcb\x01\x00\x00(h\nX@\x00\x00\x0059e195d74d5231447dec1f4b78c053dd0fe2432d65e9ba3c289e8450d6937f74r\xcc\x01\x00\x00h\x0c]r\xcd\x01\x00\x00h\x0e)\x81r\xce\x01\x00\x00}r\xcf\x01\x00\x00(h\x11h\x12h\x13K\x1fh\x14h\x12ubah\x15]r\xd0\x01\x00\x00h\x17)\x81r\xd1\x01\x00\x00}r\xd2\x01\x00\x00(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efr\xd3\x01\x00\x00h\x1cK2ubaubah\x1dJ\x8a\xf5\xcfZh\x1eX@\x00\x00\x00000d7d64a8b993ba8a1c444beb562b094078f13d9437cfe149937af5bb605b38r\xd4\x01\x00\x00h j\xc6\x01\x00\x00h!M\x18\x05h"K\nubh\x01)\x81r\xd5\x01\x00\x00}r\xd6\x01\x00\x00(h\x04K h\x05]r\xd7\x01\x00\x00h\x07)\x81r\xd8\x01\x00\x00}r\xd9\x01\x00\x00(h\nX@\x00\x00\x004b148662bcd52206592a2f277d602803300e0f5de532ad06fdcb9217e93ce1e8r\xda\x01\x00\x00h\x0c]r\xdb\x01\x00\x00h\x0e)\x81r\xdc\x01\x00\x00}r\xdd\x01\x00\x00(h\x11h\x12h\x13K h\x14h\x12ubah\x15]r\xde\x01\x00\x00h\x17)\x81r\xdf\x01\x00\x00}r\xe0\x01\x00\x00(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efr\xe1\x01\x00\x00h\x1cK2ubaubah\x1dJ\x8e\xf5\xcfZh\x1eX@\x00\x00\x0000183f902007a8718ec3cc08106e37a70b2f0acf9e7cf9b91d3395dd845534d4r\xe2\x01\x00\x00h j\xd4\x01\x00\x00h!Mq\x01h"K\nubh\x01)\x81r\xe3\x01\x00\x00}r\xe4\x01\x00\x00(h\x04K!h\x05]r\xe5\x01\x00\x00h\x07)\x81r\xe6\x01\x00\x00}r\xe7\x01\x00\x00(h\nX@\x00\x00\x00a9c6bcc1381d1bcdb465e6730c5d2d1363908ffeb25add3f1ceaddfe981c5320r\xe8\x01\x00\x00h\x0c]r\xe9\x01\x00\x00h\x0e)\x81r\xea\x01\x00\x00}r\xeb\x01\x00\x00(h\x11h\x12h\x13K!h\x14h\x12ubah\x15]r\xec\x01\x00\x00h\x17)\x81r\xed\x01\x00\x00}r\xee\x01\x00\x00(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efr\xef\x01\x00\x00h\x1cK2ubaubah\x1dJ\x92\xf5\xcfZh\x1eX@\x00\x00\x00002a8f8a2c1bd3e66c48e561734f5f1034c8e6def961f969dbf9533548b89bb1r\xf0\x01\x00\x00h j\xe2\x01\x00\x00h!M\x1b\x03h"K\nubh\x01)\x81r\xf1\x01\x00\x00}r\xf2\x01\x00\x00(h\x04K"h\x05]r\xf3\x01\x00\x00h\x07)\x81r\xf4\x01\x00\x00}r\xf5\x01\x00\x00(h\nX@\x00\x00\x009a5fe5179816c0c37c4f1a6c2ae460a1d77c2f4a378bf5e0b6056fff158054c5r\xf6\x01\x00\x00h\x0c]r\xf7\x01\x00\x00h\x0e)\x81r\xf8\x01\x00\x00}r\xf9\x01\x00\x00(h\x11h\x12h\x13K"h\x14h\x12ubah\x15]r\xfa\x01\x00\x00h\x17)\x81r\xfb\x01\x00\x00}r\xfc\x01\x00\x00(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efr\xfd\x01\x00\x00h\x1cK2ubaubah\x1dJ\x95\xf5\xcfZh\x1eX@\x00\x00\x00001bb1f5966b541f5df6286a700bc071840e5efad0a58e1b9b101920e049021er\xfe\x01\x00\x00h j\xf0\x01\x00\x00h!M7\x10h"K\x0bubh\x01)\x81r\xff\x01\x00\x00}r\x00\x02\x00\x00(h\x04K#h\x05]r\x01\x02\x00\x00h\x07)\x81r\x02\x02\x00\x00}r\x03\x02\x00\x00(h\nX@\x00\x00\x00b4302d8a90b946bbb585dc2b8153219a9062d444ae2332926587b798775870c1r\x04\x02\x00\x00h\x0c]r\x05\x02\x00\x00h\x0e)\x81r\x06\x02\x00\x00}r\x07\x02\x00\x00(h\x11h\x12h\x13K#h\x14h\x12ubah\x15]r\x08\x02\x00\x00h\x17)\x81r\t\x02\x00\x00}r\n\x02\x00\x00(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efr\x0b\x02\x00\x00h\x1cK2ubaubah\x1dJ\x97\xf5\xcfZh\x1eX@\x00\x00\x00001330e2c09721ee3f4a5e512cbbe74d1394663eac3bb29e46446c736d496a85r\x0c\x02\x00\x00h j\xfe\x01\x00\x00h!M\x07\x1dh"K\x0bubh\x01)\x81r\r\x02\x00\x00}r\x0e\x02\x00\x00(h\x04K$h\x05]r\x0f\x02\x00\x00h\x07)\x81r\x10\x02\x00\x00}r\x11\x02\x00\x00(h\nX@\x00\x00\x0017ec511ab7ac70ee1d2368d2da24eb4eaa00272483583711b5ecdd985c01a293r\x12\x02\x00\x00h\x0c]r\x13\x02\x00\x00h\x0e)\x81r\x14\x02\x00\x00}r\x15\x02\x00\x00(h\x11h\x12h\x13K$h\x14h\x12ubah\x15]r\x16\x02\x00\x00h\x17)\x81r\x17\x02\x00\x00}r\x18\x02\x00\x00(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efr\x19\x02\x00\x00h\x1cK2ubaubah\x1dJ\x9a\xf5\xcfZh\x1eX@\x00\x00\x0000196d3816b8224c822f6e45186f3ae8970095c27eeb3f321186e35bd8f1102er\x1a\x02\x00\x00h j\x0c\x02\x00\x00h!K\x18h"K\x0bubh\x01)\x81r\x1b\x02\x00\x00}r\x1c\x02\x00\x00(h\x04K%h\x05]r\x1d\x02\x00\x00h\x07)\x81r\x1e\x02\x00\x00}r\x1f\x02\x00\x00(h\nX@\x00\x00\x005c78adb7fd57ed2353122b3d663793ed0e45be49697fba2f8ddabbbedd4e9fcfr \x02\x00\x00h\x0c]r!\x02\x00\x00h\x0e)\x81r"\x02\x00\x00}r#\x02\x00\x00(h\x11h\x12h\x13K%h\x14h\x12ubah\x15]r$\x02\x00\x00h\x17)\x81r%\x02\x00\x00}r&\x02\x00\x00(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efr\'\x02\x00\x00h\x1cK2ubaubah\x1dJ\x9b\xf5\xcfZh\x1eX@\x00\x00\x00000dfe20957324263030f173f18e17c5bf47650e7663490f4b1f721b3e914512r(\x02\x00\x00h j\x1a\x02\x00\x00h!M"\nh"K\x0cubh\x01)\x81r)\x02\x00\x00}r*\x02\x00\x00(h\x04K&h\x05]r+\x02\x00\x00h\x07)\x81r,\x02\x00\x00}r-\x02\x00\x00(h\nX@\x00\x00\x003f00335bda9668629a00be4eda3401d79aec7417c4e274ad4b3725540ddf7479r.\x02\x00\x00h\x0c]r/\x02\x00\x00h\x0e)\x81r0\x02\x00\x00}r1\x02\x00\x00(h\x11h\x12h\x13K&h\x14h\x12ubah\x15]r2\x02\x00\x00h\x17)\x81r3\x02\x00\x00}r4\x02\x00\x00(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efr5\x02\x00\x00h\x1cK2ubaubah\x1dJ\xa6\xf5\xcfZh\x1eX@\x00\x00\x00000afbbc286a28aea062973d4d177315715036b8371504de2f70b33ca3a5ee23r6\x02\x00\x00h j(\x02\x00\x00h!M\xf2\x13h"K\x0cubh\x01)\x81r7\x02\x00\x00}r8\x02\x00\x00(h\x04K\'h\x05]r9\x02\x00\x00h\x07)\x81r:\x02\x00\x00}r;\x02\x00\x00(h\nX@\x00\x00\x00c14a11e653a2cd65d58e7199367b89d3dd43cfba98d26bdfea048ff66a23b353r<\x02\x00\x00h\x0c]r=\x02\x00\x00h\x0e)\x81r>\x02\x00\x00}r?\x02\x00\x00(h\x11h\x12h\x13K\'h\x14h\x12ubah\x15]r@\x02\x00\x00h\x17)\x81rA\x02\x00\x00}rB\x02\x00\x00(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efrC\x02\x00\x00h\x1cK2ubaubah\x1dJR\xf6\xcfZh\x1eX@\x00\x00\x000006ef7a0d7339e3a654e55f83db4fb2fff8704a3c1e0c7977d6495f3f6aa25drD\x02\x00\x00h j6\x02\x00\x00h!M\xfb\x07h"K\x0cubh\x01)\x81rE\x02\x00\x00}rF\x02\x00\x00(h\x04K(h\x05]rG\x02\x00\x00h\x07)\x81rH\x02\x00\x00}rI\x02\x00\x00(h\nX@\x00\x00\x00b80f0c945b30249414b0427e985c794a8679921394525bb39b4ca7a9d77a3f6drJ\x02\x00\x00h\x0c]rK\x02\x00\x00h\x0e)\x81rL\x02\x00\x00}rM\x02\x00\x00(h\x11h\x12h\x13K(h\x14h\x12ubah\x15]rN\x02\x00\x00h\x17)\x81rO\x02\x00\x00}rP\x02\x00\x00(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efrQ\x02\x00\x00h\x1cK2ubaubah\x1dJo\xf6\xcfZh\x1eX@\x00\x00\x000011c546528d2625467ae376450ab39610b2b72f79b18d70c95320ee0908eb7frR\x02\x00\x00h jD\x02\x00\x00h!MQ\x13h"K\x0bubh\x01)\x81rS\x02\x00\x00}rT\x02\x00\x00(h\x04K)h\x05]rU\x02\x00\x00h\x07)\x81rV\x02\x00\x00}rW\x02\x00\x00(h\nX@\x00\x00\x0033f346d5afdff8f5d0da490b319262eeb8c3b4240b8f679108e4cf5f6db7a051rX\x02\x00\x00h\x0c]rY\x02\x00\x00h\x0e)\x81rZ\x02\x00\x00}r[\x02\x00\x00(h\x11h\x12h\x13K)h\x14h\x12ubah\x15]r\\\x02\x00\x00h\x17)\x81r]\x02\x00\x00}r^\x02\x00\x00(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efr_\x02\x00\x00h\x1cK2ubaubah\x1dJ\x8f\xf6\xcfZh\x1eX@\x00\x00\x000013e3770a729e749a8d88460713c8bad9c46f240c5c71c009af9447cbed5a32r`\x02\x00\x00h jR\x02\x00\x00h!K\xbah"K\x0bubh\x01)\x81ra\x02\x00\x00}rb\x02\x00\x00(h\x04K*h\x05]rc\x02\x00\x00h\x07)\x81rd\x02\x00\x00}re\x02\x00\x00(h\nX@\x00\x00\x00d13a72d57cc39174d516b072fec8e73ab92089920bbc040f9a8a6d5e0ec7a6bbrf\x02\x00\x00h\x0c]rg\x02\x00\x00h\x0e)\x81rh\x02\x00\x00}ri\x02\x00\x00(h\x11h\x12h\x13K*h\x14h\x12ubah\x15]rj\x02\x00\x00h\x17)\x81rk\x02\x00\x00}rl\x02\x00\x00(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efrm\x02\x00\x00h\x1cK2ubaubah\x1dJ\xa7\xf6\xcfZh\x1eX@\x00\x00\x00000ef5271a0d010368f6c2d2cae689eb775d7cc49267477af7ead42035278038rn\x02\x00\x00h j`\x02\x00\x00h!M4\x01h"K\x0bubh\x01)\x81ro\x02\x00\x00}rp\x02\x00\x00(h\x04K+h\x05]rq\x02\x00\x00h\x07)\x81rr\x02\x00\x00}rs\x02\x00\x00(h\nX@\x00\x00\x00980163fca8905056b8ecc9cc4ab5a8993f58701ead083d45c303b009560c1edbrt\x02\x00\x00h\x0c]ru\x02\x00\x00h\x0e)\x81rv\x02\x00\x00}rw\x02\x00\x00(h\x11h\x12h\x13K+h\x14h\x12ubah\x15]rx\x02\x00\x00h\x17)\x81ry\x02\x00\x00}rz\x02\x00\x00(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efr{\x02\x00\x00h\x1cK2ubaubah\x1dJ\xca\xf6\xcfZh\x1eX@\x00\x00\x00001a0a89827883ea87e0bb97daa07806c1acfcefc15ac8265c7929a15466822fr|\x02\x00\x00h jn\x02\x00\x00h!M\x00\x03h"K\x0bube.'
+longer chain getted
+afterset <threading.Event object at 0x10e5a7320> True
+broadcast: ['http://localhost:8036', 'http://localhost:8025', 'http://localhost:8009', 'http://localhost:8039', 'http://localhost:8020', 'http://localhost:8002', 'http://localhost:8022', 'http://localhost:8030', 'http://localhost:8024', 'http://localhost:8010', 'http://localhost:8029', 'http://localhost:8044', 'http://localhost:8038', 'http://localhost:8032', 'http://localhost:8012', 'http://localhost:7999', 'http://localhost:8004', 'http://localhost:8045', 'http://localhost:8019', 'http://localhost:8041', 'http://localhost:8026', 'http://localhost:8006', 'http://localhost:8021', 'http://localhost:8027', 'http://localhost:8031', 'http://localhost:8001', 'http://localhost:8017', 'http://localhost:8035', 'http://localhost:8011', 'http://localhost:8049', 'http://localhost:8028', 'http://localhost:8015', 'http://localhost:8046', 'http://localhost:8037', 'http://localhost:8033', 'http://localhost:8007', 'http://localhost:8008', 'http://localhost:8014', 'http://localhost:8040', 'http://localhost:8005', 'http://localhost:8000', 'http://localhost:8034', 'http://localhost:8047', 'http://localhost:8042', 'http://localhost:8013', 'http://localhost:8043', 'http://localhost:8048', 'http://localhost:8018', 'http://localhost:8023', 'http://localhost:8003']
+from http://localhost:8026 ======A block received=========, 20:16:48  current length 44
+0
+=============================
+this block is from a shorter chain
+from http://localhost:8026 ======A block received=========, 20:16:48  current length 44
+15
+=============================
+this block is from a shorter chain
+b'ok'
+could not find MARK
+from http://localhost:8008 ======A block received=========, 20:16:50  current length 44
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8043 ======A block received=========, 20:16:50  current length 44
+20
+=============================
+this block is from a shorter chain
+from http://localhost:8019 ======A block received=========, 20:16:59  current length 44
+3
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 20:17:04  current length 44
+23
+=============================
+this block is from a shorter chain
+from http://localhost:8022 ======A block received=========, 20:17:05  current length 44
+22
+=============================
+this block is from a shorter chain
+from http://localhost:8035 ======A block received=========, 20:17:07  current length 44
+2
+=============================
+this block is from a shorter chain
+replaced chain
+from http://localhost:8019 ======A block received=========, 20:17:11  current length 44
+4
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 20:17:11  current length 44
+22
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 20:17:11  current length 44
+23
+=============================
+this block is from a shorter chain
+HTTPConnectionPool(host='localhost', port=7999): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10d634f98>: Failed to establish a new connection: [Errno 23] Too many open files in system',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+from http://localhost:8028 ======A block received=========, 20:17:21  current length 44
+21
+=============================
+this block is from a shorter chain
+send all chain
+from http://localhost:8023 ======A block received=========, 20:17:23  current length 44
+11
+=============================
+this block is from a shorter chain
+from http://localhost:8032 ======A block received=========, 20:17:24  current length 44
+24
+=============================
+this block is from a shorter chain
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+from http://localhost:8048 ======A block received=========, 20:17:24  current length 44
+24
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 20:17:25  current length 44
+22
+=============================
+this block is from a shorter chain
+HTTPConnectionPool(host='localhost', port=8027): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10f4920b8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10f4e2470>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
+('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+from http://localhost:8012 ======A block received=========, 20:17:30  current length 44
+27
+=============================
+this block is from a shorter chain
+from http://localhost:8047 ======A block received=========, 20:17:33  current length 44
+40
+=============================
+this block is from a shorter chain
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+HTTPConnectionPool(host='localhost', port=8046): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10f58ed68>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8033): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10f255e80>: Failed to establish a new connection: [Errno 24] Too many open files',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+from http://localhost:8019 ======A block received=========, 20:17:53  current length 44
+6
+=============================
+this block is from a shorter chain
+from http://localhost:8026 ======A block received=========, 20:17:54  current length 44
+23
+=============================
+this block is from a shorter chain
+from http://localhost:8004 ======A block received=========, 20:17:56  current length 44
+22
+=============================
+this block is from a shorter chain
+b'ok'
+could not find MARK
+from http://localhost:8047 ======A block received=========, 20:18:00  current length 44
+33
+=============================
+this block is from a shorter chain
+from http://localhost:8047 ======A block received=========, 20:18:00  current length 44
+36
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 20:18:03  current length 44
+42
+=============================
+this block is from a shorter chain
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK

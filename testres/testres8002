@@ -1,0 +1,890 @@
+start main
+peers: ['http://localhost:8045', 'http://localhost:8029', 'http://localhost:8016', 'http://localhost:8017', 'http://localhost:8032', 'http://localhost:8044', 'http://localhost:8013', 'http://localhost:8023', 'http://localhost:8015', 'http://localhost:8049', 'http://localhost:8000', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8030', 'http://localhost:8003', 'http://localhost:8004', 'http://localhost:8047', 'http://localhost:8009', 'http://localhost:8024', 'http://localhost:8037', 'http://localhost:7999', 'http://localhost:8028', 'http://localhost:8020', 'http://localhost:8046', 'http://localhost:8007', 'http://localhost:8036', 'http://localhost:8035', 'http://localhost:8018', 'http://localhost:8012', 'http://localhost:8040', 'http://localhost:8011', 'http://localhost:8041', 'http://localhost:8005', 'http://localhost:8048', 'http://localhost:8033', 'http://localhost:8008', 'http://localhost:8021', 'http://localhost:8010', 'http://localhost:8014', 'http://localhost:8038', 'http://localhost:8043', 'http://localhost:8031', 'http://localhost:8034', 'http://localhost:8022', 'http://localhost:8006', 'http://localhost:8039', 'http://localhost:8001', 'http://localhost:8019', 'http://localhost:8027', 'http://localhost:8025']
+start utxos: [<transaction.UnspentTxOut object at 0x10a6222b0>]
+request a chain
+HTTPConnectionPool(host='localhost', port=8045): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10a6f42b0>: Failed to establish a new connection: [Errno 61] Connection refused',))
+request a chain
+send all chain
+from http://localhost:8047 ======A block received=========, 20:09:10  current length 1
+0
+=============================
+this block is from a shorter chain
+from http://localhost:8047 ======A block received=========, 20:09:10  current length 1
+1
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: ['http://localhost:8045', 'http://localhost:8029', 'http://localhost:8016', 'http://localhost:8017', 'http://localhost:8032', 'http://localhost:8044', 'http://localhost:8013', 'http://localhost:8023', 'http://localhost:8015', 'http://localhost:8049', 'http://localhost:8000', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8030', 'http://localhost:8003', 'http://localhost:8004', 'http://localhost:8047', 'http://localhost:8009', 'http://localhost:8024', 'http://localhost:8037', 'http://localhost:7999', 'http://localhost:8028', 'http://localhost:8020', 'http://localhost:8046', 'http://localhost:8007', 'http://localhost:8036', 'http://localhost:8035', 'http://localhost:8018', 'http://localhost:8012', 'http://localhost:8040', 'http://localhost:8011', 'http://localhost:8041', 'http://localhost:8005', 'http://localhost:8048', 'http://localhost:8033', 'http://localhost:8008', 'http://localhost:8021', 'http://localhost:8010', 'http://localhost:8014', 'http://localhost:8038', 'http://localhost:8043', 'http://localhost:8031', 'http://localhost:8034', 'http://localhost:8022', 'http://localhost:8006', 'http://localhost:8039', 'http://localhost:8001', 'http://localhost:8019', 'http://localhost:8027', 'http://localhost:8025']
+from http://localhost:8047 ======A block received=========, 20:09:12  current length 2
+4
+=============================
+need to replace chain from http://localhost:8047
+request a chain
+from http://localhost:8049 ======A block received=========, 20:09:12  current length 2
+0
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 20:09:12  current length 2
+0
+=============================
+this block is from a shorter chain
+from http://localhost:8049 ======A block received=========, 20:09:12  current length 2
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 20:09:12  current length 2
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8047 ======A block received=========, 20:09:15  current length 2
+2
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: ['http://localhost:8045', 'http://localhost:8029', 'http://localhost:8016', 'http://localhost:8017', 'http://localhost:8032', 'http://localhost:8044', 'http://localhost:8013', 'http://localhost:8023', 'http://localhost:8015', 'http://localhost:8049', 'http://localhost:8000', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8030', 'http://localhost:8003', 'http://localhost:8004', 'http://localhost:8047', 'http://localhost:8009', 'http://localhost:8024', 'http://localhost:8037', 'http://localhost:7999', 'http://localhost:8028', 'http://localhost:8020', 'http://localhost:8046', 'http://localhost:8007', 'http://localhost:8036', 'http://localhost:8035', 'http://localhost:8018', 'http://localhost:8012', 'http://localhost:8040', 'http://localhost:8011', 'http://localhost:8041', 'http://localhost:8005', 'http://localhost:8048', 'http://localhost:8033', 'http://localhost:8008', 'http://localhost:8021', 'http://localhost:8010', 'http://localhost:8014', 'http://localhost:8038', 'http://localhost:8043', 'http://localhost:8031', 'http://localhost:8034', 'http://localhost:8022', 'http://localhost:8006', 'http://localhost:8039', 'http://localhost:8001', 'http://localhost:8019', 'http://localhost:8027', 'http://localhost:8025']
+from http://localhost:8021 ======A block received=========, 20:09:48  current length 3
+6
+=============================
+need to replace chain from http://localhost:8021
+request a chain
+from http://localhost:8023 ======A block received=========, 20:09:49  current length 3
+6
+=============================
+need to replace chain from http://localhost:8023
+request a chain
+from http://localhost:8008 ======A block received=========, 20:09:50  current length 3
+2
+=============================
+this block is from a shorter chain
+('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
+from http://localhost:8047 ======A block received=========, 20:10:17  current length 3
+16
+=============================
+need to replace chain from http://localhost:8047
+request a chain
+from http://localhost:8012 ======A block received=========, 20:10:18  current length 3
+3
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: ['http://localhost:8045', 'http://localhost:8029', 'http://localhost:8016', 'http://localhost:8017', 'http://localhost:8032', 'http://localhost:8044', 'http://localhost:8013', 'http://localhost:8023', 'http://localhost:8015', 'http://localhost:8049', 'http://localhost:8000', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8030', 'http://localhost:8003', 'http://localhost:8004', 'http://localhost:8047', 'http://localhost:8009', 'http://localhost:8024', 'http://localhost:8037', 'http://localhost:7999', 'http://localhost:8028', 'http://localhost:8020', 'http://localhost:8046', 'http://localhost:8007', 'http://localhost:8036', 'http://localhost:8035', 'http://localhost:8018', 'http://localhost:8012', 'http://localhost:8040', 'http://localhost:8011', 'http://localhost:8041', 'http://localhost:8005', 'http://localhost:8048', 'http://localhost:8033', 'http://localhost:8008', 'http://localhost:8021', 'http://localhost:8010', 'http://localhost:8014', 'http://localhost:8038', 'http://localhost:8043', 'http://localhost:8031', 'http://localhost:8034', 'http://localhost:8022', 'http://localhost:8006', 'http://localhost:8039', 'http://localhost:8001', 'http://localhost:8019', 'http://localhost:8027', 'http://localhost:8025']
+HTTPConnectionPool(host='localhost', port=8029): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10a723cc0>: Failed to establish a new connection: [Errno 61] Connection refused',))
+request a chain
+from http://localhost:8046 ======A block received=========, 20:10:30  current length 4
+7
+=============================
+need to replace chain from http://localhost:8046
+request a chain
+from http://localhost:8014 ======A block received=========, 20:10:37  current length 4
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 20:10:41  current length 4
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8028 ======A block received=========, 20:10:41  current length 4
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 20:11:03  current length 4
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8035 ======A block received=========, 20:11:05  current length 4
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8042 ======A block received=========, 20:11:05  current length 4
+1
+=============================
+this block is from a shorter chain
+b'ok'
+could not find MARK
+from http://localhost:8011 ======A block received=========, 20:11:09  current length 4
+1
+=============================
+this block is from a shorter chain
+b'ok'
+could not find MARK
+from http://localhost:8011 ======A block received=========, 20:11:10  current length 4
+2
+=============================
+this block is from a shorter chain
+HTTPConnectionPool(host='localhost', port=8030): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b150048>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+from http://localhost:8034 ======A block received=========, 20:11:15  current length 4
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8022 ======A block received=========, 20:11:16  current length 4
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8022 ======A block received=========, 20:11:16  current length 4
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8038 ======A block received=========, 20:11:16  current length 4
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8034 ======A block received=========, 20:11:17  current length 4
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8043 ======A block received=========, 20:11:21  current length 4
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 20:11:22  current length 4
+7
+=============================
+need to replace chain from http://localhost:8031
+request a chain
+from http://localhost:8031 ======A block received=========, 20:11:23  current length 4
+0
+=============================
+this block is from a shorter chain
+from http://localhost:8023 ======A block received=========, 20:11:23  current length 4
+4
+=============================
+need to replace chain from http://localhost:8023
+request a chain
+from http://localhost:8023 ======A block received=========, 20:11:24  current length 4
+2
+=============================
+this block is from a shorter chain
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+HTTPConnectionPool(host='localhost', port=7999): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10a7cecc0>: Failed to establish a new connection: [Errno 61] Connection refused',))
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+could not find MARK
+('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
+('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
+HTTPConnectionPool(host='localhost', port=7999): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b1d2588>: Failed to establish a new connection: [Errno 61] Connection refused',))
+b'ok'
+could not find MARK
+from http://localhost:8023 ======A block received=========, 20:11:39  current length 4
+5
+=============================
+need to replace chain from http://localhost:8023
+request a chain
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
+from http://localhost:8020 ======A block received=========, 20:11:41  current length 4
+2
+=============================
+this block is from a shorter chain
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+from http://localhost:8018 ======A block received=========, 20:11:51  current length 4
+9
+=============================
+need to replace chain from http://localhost:8018
+request a chain
+b'ok'
+could not find MARK
+from http://localhost:8016 ======A block received=========, 20:11:52  current length 4
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8018 ======A block received=========, 20:11:52  current length 4
+3
+=============================
+this block is from a shorter chain
+from http://localhost:8018 ======A block received=========, 20:11:52  current length 4
+10
+=============================
+need to replace chain from http://localhost:8018
+request a chain
+from http://localhost:8016 ======A block received=========, 20:11:53  current length 4
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8018 ======A block received=========, 20:11:53  current length 4
+12
+=============================
+need to replace chain from http://localhost:8018
+request a chain
+b'ok'
+could not find MARK
+from http://localhost:8008 ======A block received=========, 20:11:53  current length 4
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 20:11:53  current length 4
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8046 ======A block received=========, 20:11:53  current length 4
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8029 ======A block received=========, 20:11:53  current length 4
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8046 ======A block received=========, 20:11:53  current length 4
+8
+=============================
+need to replace chain from http://localhost:8046
+request a chain
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+from http://localhost:8018 ======A block received=========, 20:11:55  current length 4
+13
+=============================
+need to replace chain from http://localhost:8018
+request a chain
+from http://localhost:8020 ======A block received=========, 20:11:55  current length 4
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8013 ======A block received=========, 20:11:55  current length 4
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8018 ======A block received=========, 20:11:57  current length 4
+1
+=============================
+this block is from a shorter chain
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+from http://localhost:8018 ======A block received=========, 20:11:58  current length 4
+15
+=============================
+need to replace chain from http://localhost:8018
+request a chain
+from http://localhost:8012 ======A block received=========, 20:11:59  current length 4
+2
+=============================
+this block is from a shorter chain
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+from http://localhost:8012 ======A block received=========, 20:12:16  current length 4
+1
+=============================
+this block is from a shorter chain
+HTTPConnectionPool(host='localhost', port=8041): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b170630>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+HTTPConnectionPool(host='localhost', port=8026): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b1708d0>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+HTTPConnectionPool(host='localhost', port=8033): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b170d30>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+from http://localhost:8045 ======A block received=========, 20:12:43  current length 4
+1
+=============================
+this block is from a shorter chain
+HTTPConnectionPool(host='localhost', port=8041): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b184128>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+HTTPConnectionPool(host='localhost', port=8017): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b1a46a0>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+HTTPConnectionPool(host='localhost', port=8009): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b1c1be0>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+HTTPConnectionPool(host='localhost', port=8017): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b214518>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+HTTPConnectionPool(host='localhost', port=8026): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b204320>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+HTTPConnectionPool(host='localhost', port=8009): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b204cf8>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+HTTPConnectionPool(host='localhost', port=8033): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b117320>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+from http://localhost:8032 ======A block received=========, 20:12:59  current length 4
+8
+=============================
+need to replace chain from http://localhost:8032
+request a chain
+from http://localhost:8031 ======A block received=========, 20:13:00  current length 4
+11
+=============================
+need to replace chain from http://localhost:8031
+request a chain
+from http://localhost:8010 ======A block received=========, 20:13:00  current length 4
+8
+=============================
+need to replace chain from http://localhost:8010
+request a chain
+from http://localhost:8010 ======A block received=========, 20:13:01  current length 4
+5
+=============================
+need to replace chain from http://localhost:8010
+request a chain
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+HTTPConnectionPool(host='localhost', port=7999): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b34f358>: Failed to establish a new connection: [Errno 61] Connection refused',))
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'\x80\x03]q\x00(cchain\nBlock\nq\x01)\x81q\x02}q\x03(X\x05\x00\x00\x00indexq\x04K\x00X\x04\x00\x00\x00dataq\x05]q\x06ctransaction\nTransaction\nq\x07)\x81q\x08}q\t(X\x02\x00\x00\x00idq\nX@\x00\x00\x0095db0b8e71740baf81a619bfff7afe3600181828b59815d02c7f1b7b3209c831q\x0bX\x05\x00\x00\x00txInsq\x0c]q\rctransaction\nTxIn\nq\x0e)\x81q\x0f}q\x10(X\x07\x00\x00\x00txOutIdq\x11X\x00\x00\x00\x00q\x12X\n\x00\x00\x00txOutIndexq\x13K\x00X\t\x00\x00\x00signatureq\x14h\x12ubaX\x06\x00\x00\x00txOutsq\x15]q\x16ctransaction\nTxOut\nq\x17)\x81q\x18}q\x19(X\x07\x00\x00\x00addressq\x1aX\x80\x00\x00\x0060ba02269f0aa21a5ee18de8f21f4c159587713db66459d8baca5406021cc51269fe4b4d23587bf58c70e7014d727d1e10ec6b80fa395829b3b79dae3fdc7360q\x1bX\x06\x00\x00\x00amountq\x1cK2ubaubaX\t\x00\x00\x00timestampq\x1dJ\x97q\x90ZX\x04\x00\x00\x00hashq\x1eX@\x00\x00\x00e9d3061d5e216863506649096aac5ddd2089357c0bb3d647db332cd9b926f8b9q\x1fX\t\x00\x00\x00prev_hashq h\x12X\x05\x00\x00\x00nonceq!K\x00X\n\x00\x00\x00difficultyq"K\x00ubh\x01)\x81q#}q$(h\x04K\x01h\x05]q%h\x07)\x81q&}q\'(h\nX@\x00\x00\x005d1bf5ecbcc8d1631a2d18eca4862f5749d52e1caf4830144867fc462ab5c957q(h\x0c]q)h\x0e)\x81q*}q+(h\x11h\x12h\x13K\x01h\x14h\x12ubah\x15]q,h\x17)\x81q-}q.(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efq/h\x1cK2ubaubah\x1dJ$\xf5\xcfZh\x1eX@\x00\x00\x00e66fc2b2efaecec0721c263e91219c628032e0619ac9283343a186d2af2f3bafq0h X@\x00\x00\x00e9d3061d5e216863506649096aac5ddd2089357c0bb3d647db332cd9b926f8b9q1h!K\x00h"K\x00ubh\x01)\x81q2}q3(h\x04K\x02h\x05]q4h\x07)\x81q5}q6(h\nX@\x00\x00\x00027b08a81734f7c43dcb65ffdbba679c09eef1650013ca531e3f8e836d225c44q7h\x0c]q8h\x0e)\x81q9}q:(h\x11h\x12h\x13K\x02h\x14h\x12ubah\x15]q;h\x17)\x81q<}q=(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efq>h\x1cK2ubaubah\x1dJ$\xf5\xcfZh\x1eX@\x00\x00\x00bf67fa4f82977d1680b81f7eb4046cd804387f84f7cbfc017728dc14185307dbq?h X@\x00\x00\x00e66fc2b2efaecec0721c263e91219c628032e0619ac9283343a186d2af2f3bafq@h!K\x00h"K\x00ubh\x01)\x81qA}qB(h\x04K\x03h\x05]qCh\x07)\x81qD}qE(h\nX@\x00\x00\x0071e8b280aa85b1aa258ba09f075d91936fe3847f1e81cf0d798e09844b94799bqFh\x0c]qGh\x0e)\x81qH}qI(h\x11h\x12h\x13K\x03h\x14h\x12ubah\x15]qJh\x17)\x81qK}qL(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efqMh\x1cK2ubaubah\x1dJ$\xf5\xcfZh\x1eX@\x00\x00\x00b7091706e2c6f3616898939e70bf62a16089b9a849c31b85605f0d444205d875qNh X@\x00\x00\x00bf67fa4f82977d1680b81f7eb4046cd804387f84f7cbfc017728dc14185307dbqOh!K\x00h"K\x00ube.'
+longer chain getted
+afterset <threading.Event object at 0x10a622320> True
+broadcast: ['http://localhost:8045', 'http://localhost:8029', 'http://localhost:8016', 'http://localhost:8017', 'http://localhost:8032', 'http://localhost:8044', 'http://localhost:8013', 'http://localhost:8023', 'http://localhost:8015', 'http://localhost:8049', 'http://localhost:8000', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8030', 'http://localhost:8003', 'http://localhost:8004', 'http://localhost:8047', 'http://localhost:8009', 'http://localhost:8024', 'http://localhost:8037', 'http://localhost:7999', 'http://localhost:8028', 'http://localhost:8020', 'http://localhost:8046', 'http://localhost:8007', 'http://localhost:8036', 'http://localhost:8035', 'http://localhost:8018', 'http://localhost:8012', 'http://localhost:8040', 'http://localhost:8011', 'http://localhost:8041', 'http://localhost:8005', 'http://localhost:8048', 'http://localhost:8033', 'http://localhost:8008', 'http://localhost:8021', 'http://localhost:8010', 'http://localhost:8014', 'http://localhost:8038', 'http://localhost:8043', 'http://localhost:8031', 'http://localhost:8034', 'http://localhost:8022', 'http://localhost:8006', 'http://localhost:8039', 'http://localhost:8001', 'http://localhost:8019', 'http://localhost:8027', 'http://localhost:8025']
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+from http://localhost:8016 ======A block received=========, 20:13:17  current length 4
+3
+=============================
+this block is from a shorter chain
+b'ok'
+could not find MARK
+from http://localhost:8008 ======A block received=========, 20:13:18  current length 4
+3
+=============================
+this block is from a shorter chain
+from http://localhost:8025 ======A block received=========, 20:13:20  current length 4
+12
+=============================
+need to replace chain from http://localhost:8025
+request a chain
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+from http://localhost:8004 ======A block received=========, 20:13:28  current length 4
+0
+=============================
+this block is from a shorter chain
+from http://localhost:8032 ======A block received=========, 20:13:31  current length 4
+15
+=============================
+need to replace chain from http://localhost:8032
+request a chain
+replaced chain
+from http://localhost:8047 ======A block received=========, 20:13:34  current length 4
+25
+=============================
+need to replace chain from http://localhost:8047
+request a chain
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+b'\x80\x03]q\x00(cchain\nBlock\nq\x01)\x81q\x02}q\x03(X\x05\x00\x00\x00indexq\x04K\x00X\x04\x00\x00\x00dataq\x05]q\x06ctransaction\nTransaction\nq\x07)\x81q\x08}q\t(X\x02\x00\x00\x00idq\nX@\x00\x00\x0095db0b8e71740baf81a619bfff7afe3600181828b59815d02c7f1b7b3209c831q\x0bX\x05\x00\x00\x00txInsq\x0c]q\rctransaction\nTxIn\nq\x0e)\x81q\x0f}q\x10(X\x07\x00\x00\x00txOutIdq\x11X\x00\x00\x00\x00q\x12X\n\x00\x00\x00txOutIndexq\x13K\x00X\t\x00\x00\x00signatureq\x14h\x12ubaX\x06\x00\x00\x00txOutsq\x15]q\x16ctransaction\nTxOut\nq\x17)\x81q\x18}q\x19(X\x07\x00\x00\x00addressq\x1aX\x80\x00\x00\x0060ba02269f0aa21a5ee18de8f21f4c159587713db66459d8baca5406021cc51269fe4b4d23587bf58c70e7014d727d1e10ec6b80fa395829b3b79dae3fdc7360q\x1bX\x06\x00\x00\x00amountq\x1cK2ubaubaX\t\x00\x00\x00timestampq\x1dJ\x97q\x90ZX\x04\x00\x00\x00hashq\x1eX@\x00\x00\x00e9d3061d5e216863506649096aac5ddd2089357c0bb3d647db332cd9b926f8b9q\x1fX\t\x00\x00\x00prev_hashq h\x12X\x05\x00\x00\x00nonceq!K\x00X\n\x00\x00\x00difficultyq"K\x00ubh\x01)\x81q#}q$(h\x04K\x01h\x05]q%h\x07)\x81q&}q\'(h\nX@\x00\x00\x005d1bf5ecbcc8d1631a2d18eca4862f5749d52e1caf4830144867fc462ab5c957q(h\x0c]q)h\x0e)\x81q*}q+(h\x11h\x12h\x13K\x01h\x14h\x12ubah\x15]q,h\x17)\x81q-}q.(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efq/h\x1cK2ubaubah\x1dJ$\xf5\xcfZh\x1eX@\x00\x00\x00e66fc2b2efaecec0721c263e91219c628032e0619ac9283343a186d2af2f3bafq0h X@\x00\x00\x00e9d3061d5e216863506649096aac5ddd2089357c0bb3d647db332cd9b926f8b9q1h!K\x00h"K\x00ubh\x01)\x81q2}q3(h\x04K\x02h\x05]q4h\x07)\x81q5}q6(h\nX@\x00\x00\x00105d93657e58872373d8846ffcdadd1eb6bb4325999125babc01491d47ab4060q7h\x0c]q8h\x0e)\x81q9}q:(h\x11h\x12h\x13K\x02h\x14h\x12ubah\x15]q;h\x17)\x81q<}q=(h\x1aX\x80\x00\x00\x0024e4733aed09c550676e3441f6fc17756700a6768c43d0c3f5287f657b38870e70825ed1e5fb79ec0437093cdef246045b07168d855b626433a1960eff5a3775q>h\x1cK2ubaubah\x1dJ(\xf5\xcfZh\x1eX@\x00\x00\x00f399e1dbfe72aab3d8e08068e773be0c9de346644df7f7d3e1088dc147c103dfq?h h0h!K\x00h"K\x00ubh\x01)\x81q@}qA(h\x04K\x03h\x05]qBh\x07)\x81qC}qD(h\nX@\x00\x00\x00b62e7c259727405c8684281fae4ed7d538f36d0cafc0620438e53af96a69a5c9qEh\x0c]qFh\x0e)\x81qG}qH(h\x11h\x12h\x13K\x03h\x14h\x12ubah\x15]qIh\x17)\x81qJ}qK(h\x1aX\x80\x00\x00\x0024e4733aed09c550676e3441f6fc17756700a6768c43d0c3f5287f657b38870e70825ed1e5fb79ec0437093cdef246045b07168d855b626433a1960eff5a3775qLh\x1cK2ubaubah\x1dJ)\xf5\xcfZh\x1eX@\x00\x00\x00bf192c3edd34f09e022bb2a644d59bc46c9be2e732f23bbb604765ef2f81ce90qMh h?h!K\x00h"K\x00ubh\x01)\x81qN}qO(h\x04K\x04h\x05]qPh\x07)\x81qQ}qR(h\nX@\x00\x00\x001661d3df28c87fdff22e2df0ab03bf0f84a56c9511f9b6e607abf2115b5769c7qSh\x0c]qTh\x0e)\x81qU}qV(h\x11h\x12h\x13K\x04h\x14h\x12ubah\x15]qWh\x17)\x81qX}qY(h\x1aX\x80\x00\x00\x0024e4733aed09c550676e3441f6fc17756700a6768c43d0c3f5287f657b38870e70825ed1e5fb79ec0437093cdef246045b07168d855b626433a1960eff5a3775qZh\x1cK2ubaubah\x1dJ)\xf5\xcfZh\x1eX@\x00\x00\x0051127ab583bf1fa989db4f83e82931708373b0feee724acc212780025e9a3138q[h hMh!K\x00h"K\x01ubh\x01)\x81q\\}q](h\x04K\x05h\x05]q^h\x07)\x81q_}q`(h\nX@\x00\x00\x00f8a0a9d4de2f4514a8bb7bfb10489b0f8818de88b1c1bbee2b1b5601f1ee8797qah\x0c]qbh\x0e)\x81qc}qd(h\x11h\x12h\x13K\x05h\x14h\x12ubah\x15]qeh\x17)\x81qf}qg(h\x1aX\x80\x00\x00\x0024e4733aed09c550676e3441f6fc17756700a6768c43d0c3f5287f657b38870e70825ed1e5fb79ec0437093cdef246045b07168d855b626433a1960eff5a3775qhh\x1cK2ubaubah\x1dJ*\xf5\xcfZh\x1eX@\x00\x00\x002dc04d8a5630d38483e62f3b520cc7065ee48490cbedf0fc93179079812f24f8qih h[h!K\x00h"K\x01ubh\x01)\x81qj}qk(h\x04K\x06h\x05]qlh\x07)\x81qm}qn(h\nX@\x00\x00\x0046060df0dc12cbba57db2a3dcf3086f90b4be9bb44b92625b88fbb66335ef774qoh\x0c]qph\x0e)\x81qq}qr(h\x11h\x12h\x13K\x06h\x14h\x12ubah\x15]qsh\x17)\x81qt}qu(h\x1aX\x80\x00\x00\x0024e4733aed09c550676e3441f6fc17756700a6768c43d0c3f5287f657b38870e70825ed1e5fb79ec0437093cdef246045b07168d855b626433a1960eff5a3775qvh\x1cK2ubaubah\x1dJ+\xf5\xcfZh\x1eX@\x00\x00\x001c6c9ba3a906f680c7ce92e112221f41e03a6113f835481eed30c0b8adcf43deqwh hih!K\x00h"K\x01ubh\x01)\x81qx}qy(h\x04K\x07h\x05]qzh\x07)\x81q{}q|(h\nX@\x00\x00\x00ec900d623d7ba532cebae9cb71bc5c87601faa0f51f885980d7668ecfee75c0dq}h\x0c]q~h\x0e)\x81q\x7f}q\x80(h\x11h\x12h\x13K\x07h\x14h\x12ubah\x15]q\x81h\x17)\x81q\x82}q\x83(h\x1aX\x80\x00\x00\x0024e4733aed09c550676e3441f6fc17756700a6768c43d0c3f5287f657b38870e70825ed1e5fb79ec0437093cdef246045b07168d855b626433a1960eff5a3775q\x84h\x1cK2ubaubah\x1dJ.\xf5\xcfZh\x1eX@\x00\x00\x003c9e51b3e092c624dee3e6c95c7adaf87a560fad6c8773fc28b806de9b214b44q\x85h hwh!K\x06h"K\x02ubh\x01)\x81q\x86}q\x87(h\x04K\x08h\x05]q\x88h\x07)\x81q\x89}q\x8a(h\nX@\x00\x00\x008f7a092b3c7b9b64154b5f5b9cdd95fe4b758c31183832e3540d48d1dac0fe88q\x8bh\x0c]q\x8ch\x0e)\x81q\x8d}q\x8e(h\x11h\x12h\x13K\x08h\x14h\x12ubah\x15]q\x8fh\x17)\x81q\x90}q\x91(h\x1aX\x80\x00\x00\x0024e4733aed09c550676e3441f6fc17756700a6768c43d0c3f5287f657b38870e70825ed1e5fb79ec0437093cdef246045b07168d855b626433a1960eff5a3775q\x92h\x1cK2ubaubah\x1dJI\xf5\xcfZh\x1eX@\x00\x00\x000de8b5704e3e8df6fe022639d3b645508ca6df01ab53fe19cd759c24ff343b0bq\x93h h\x85h!K\x01h"K\x02ubh\x01)\x81q\x94}q\x95(h\x04K\th\x05]q\x96h\x07)\x81q\x97}q\x98(h\nX@\x00\x00\x0097889159be2b6c55c0aec52f5a9a7e1b4e13ba1cd1de1ddd49a196757cbc55caq\x99h\x0c]q\x9ah\x0e)\x81q\x9b}q\x9c(h\x11h\x12h\x13K\th\x14h\x12ubah\x15]q\x9dh\x17)\x81q\x9e}q\x9f(h\x1aX\x80\x00\x00\x0024e4733aed09c550676e3441f6fc17756700a6768c43d0c3f5287f657b38870e70825ed1e5fb79ec0437093cdef246045b07168d855b626433a1960eff5a3775q\xa0h\x1cK2ubaubah\x1dJ]\xf5\xcfZh\x1eX@\x00\x00\x000845fca8a4747bf82e98aff750daab5924f090aaed429915d6ac4e16cf917ce2q\xa1h h\x93h!K\x00h"K\x02ubh\x01)\x81q\xa2}q\xa3(h\x04K\nh\x05]q\xa4h\x07)\x81q\xa5}q\xa6(h\nX@\x00\x00\x009f06d006b42c0be96d7886f6efd3225088ebb45cb4a11b3796e8d6dc980d1fc9q\xa7h\x0c]q\xa8h\x0e)\x81q\xa9}q\xaa(h\x11h\x12h\x13K\nh\x14h\x12ubah\x15]q\xabh\x17)\x81q\xac}q\xad(h\x1aX\x80\x00\x00\x0024e4733aed09c550676e3441f6fc17756700a6768c43d0c3f5287f657b38870e70825ed1e5fb79ec0437093cdef246045b07168d855b626433a1960eff5a3775q\xaeh\x1cK2ubaubah\x1dJp\xf5\xcfZh\x1eX@\x00\x00\x00235bb05771e8e5411658b3e70ab198f6f659e6986347ee2cbf322a7bf07d5701q\xafh h\xa1h!K\x00h"K\x02ubh\x01)\x81q\xb0}q\xb1(h\x04K\x0bh\x05]q\xb2h\x07)\x81q\xb3}q\xb4(h\nX@\x00\x00\x0077a6cab6ab0822d6e4979b886f363a48b684ff8961b4b22a21d6dcc31ef8cbceq\xb5h\x0c]q\xb6h\x0e)\x81q\xb7}q\xb8(h\x11h\x12h\x13K\x0bh\x14h\x12ubah\x15]q\xb9h\x17)\x81q\xba}q\xbb(h\x1aX\x80\x00\x00\x0024e4733aed09c550676e3441f6fc17756700a6768c43d0c3f5287f657b38870e70825ed1e5fb79ec0437093cdef246045b07168d855b626433a1960eff5a3775q\xbch\x1cK2ubaubah\x1dJ|\xf5\xcfZh\x1eX@\x00\x00\x0007954a61a03dd460a4dde35e05e5d006389930c136760aaa12a4c944e82f2b6bq\xbdh h\xafh!K\x05h"K\x02ubh\x01)\x81q\xbe}q\xbf(h\x04K\x0ch\x05]q\xc0h\x07)\x81q\xc1}q\xc2(h\nX@\x00\x00\x00d291938f4d164e7074d9021b9e423df95abe32f62d5229550147feaee7fb4ed6q\xc3h\x0c]q\xc4h\x0e)\x81q\xc5}q\xc6(h\x11h\x12h\x13K\x0ch\x14h\x12ubah\x15]q\xc7h\x17)\x81q\xc8}q\xc9(h\x1aX\x80\x00\x00\x0024e4733aed09c550676e3441f6fc17756700a6768c43d0c3f5287f657b38870e70825ed1e5fb79ec0437093cdef246045b07168d855b626433a1960eff5a3775q\xcah\x1cK2ubaubah\x1dJ\x83\xf5\xcfZh\x1eX@\x00\x00\x003d3990670e691b11182f172b27b1394610861a58133dbf58e237240530f6b641q\xcbh h\xbdh!K\nh"K\x02ubh\x01)\x81q\xcc}q\xcd(h\x04K\rh\x05]q\xceh\x07)\x81q\xcf}q\xd0(h\nX@\x00\x00\x003ade309643f135f64e41e9c63d3ade755304ce2ed874f35192fb3e88f71795f1q\xd1h\x0c]q\xd2h\x0e)\x81q\xd3}q\xd4(h\x11h\x12h\x13K\rh\x14h\x12ubah\x15]q\xd5h\x17)\x81q\xd6}q\xd7(h\x1aX\x80\x00\x00\x0024e4733aed09c550676e3441f6fc17756700a6768c43d0c3f5287f657b38870e70825ed1e5fb79ec0437093cdef246045b07168d855b626433a1960eff5a3775q\xd8h\x1cK2ubaubah\x1dJ\x85\xf5\xcfZh\x1eX@\x00\x00\x0033af2051c0aadd4bb2461bbd3076cf7e0977ffe405069ea1b748f5cc158a75b4q\xd9h h\xcbh!K\x01h"K\x02ubh\x01)\x81q\xda}q\xdb(h\x04K\x0eh\x05]q\xdch\x07)\x81q\xdd}q\xde(h\nX@\x00\x00\x00fbab82344d82d9ed8655a9069d591c58cdba959e67311b4463e961f00104582bq\xdfh\x0c]q\xe0h\x0e)\x81q\xe1}q\xe2(h\x11h\x12h\x13K\x0eh\x14h\x12ubah\x15]q\xe3h\x17)\x81q\xe4}q\xe5(h\x1aX\x80\x00\x00\x0024e4733aed09c550676e3441f6fc17756700a6768c43d0c3f5287f657b38870e70825ed1e5fb79ec0437093cdef246045b07168d855b626433a1960eff5a3775q\xe6h\x1cK2ubaubah\x1dJ\x89\xf5\xcfZh\x1eX@\x00\x00\x0011f33494c90b1e87ccb888b08e80ab42ab6984a3e068157c7723d97ed7a7ee74q\xe7h h\xd9h!K\x01h"K\x02ubh\x01)\x81q\xe8}q\xe9(h\x04K\x0fh\x05]q\xeah\x07)\x81q\xeb}q\xec(h\nX@\x00\x00\x0064c42db3b9e4ba537c92f693ffa6d12bc040290930e8e69f2905837bdc4120a3q\xedh\x0c]q\xeeh\x0e)\x81q\xef}q\xf0(h\x11h\x12h\x13K\x0fh\x14h\x12ubah\x15]q\xf1h\x17)\x81q\xf2}q\xf3(h\x1aX\x80\x00\x00\x0024e4733aed09c550676e3441f6fc17756700a6768c43d0c3f5287f657b38870e70825ed1e5fb79ec0437093cdef246045b07168d855b626433a1960eff5a3775q\xf4h\x1cK2ubaubah\x1dJ\x8f\xf5\xcfZh\x1eX@\x00\x00\x000ef875265cfb19e7a6ce94b9bff39e4f524854487949098c966a2f1d4a2d187bq\xf5h h\xe7h!K\x03h"K\x02ubh\x01)\x81q\xf6}q\xf7(h\x04K\x10h\x05]q\xf8h\x07)\x81q\xf9}q\xfa(h\nX@\x00\x00\x00c8ca0cf2db989fb734aa358a55bc198b08650d6cdc79ff8a6b2f3189cbba3fcfq\xfbh\x0c]q\xfch\x0e)\x81q\xfd}q\xfe(h\x11h\x12h\x13K\x10h\x14h\x12ubah\x15]q\xffh\x17)\x81r\x00\x01\x00\x00}r\x01\x01\x00\x00(h\x1aX\x80\x00\x00\x0024e4733aed09c550676e3441f6fc17756700a6768c43d0c3f5287f657b38870e70825ed1e5fb79ec0437093cdef246045b07168d855b626433a1960eff5a3775r\x02\x01\x00\x00h\x1cK2ubaubah\x1dJ\x92\xf5\xcfZh\x1eX@\x00\x00\x001fe28618eba98c8f562d4f52598d7cb7189c0d05c55ceeb2a7142763511083a1r\x03\x01\x00\x00h h\xf5h!K\nh"K\x03ubh\x01)\x81r\x04\x01\x00\x00}r\x05\x01\x00\x00(h\x04K\x11h\x05]r\x06\x01\x00\x00h\x07)\x81r\x07\x01\x00\x00}r\x08\x01\x00\x00(h\nX@\x00\x00\x00884a4f4676200679c5bb9cb1f3e8509cfbfbc6b9ceac7b36936ea58d284ad808r\t\x01\x00\x00h\x0c]r\n\x01\x00\x00h\x0e)\x81r\x0b\x01\x00\x00}r\x0c\x01\x00\x00(h\x11h\x12h\x13K\x11h\x14h\x12ubah\x15]r\r\x01\x00\x00h\x17)\x81r\x0e\x01\x00\x00}r\x0f\x01\x00\x00(h\x1aX\x80\x00\x00\x0024e4733aed09c550676e3441f6fc17756700a6768c43d0c3f5287f657b38870e70825ed1e5fb79ec0437093cdef246045b07168d855b626433a1960eff5a3775r\x10\x01\x00\x00h\x1cK2ubaubah\x1dJ\x95\xf5\xcfZh\x1eX@\x00\x00\x0008933618a6ca285eeec0f0b3d803b2b2c3f1a851d781f433612e3a2326512fc5r\x11\x01\x00\x00h j\x03\x01\x00\x00h!K\x08h"K\x03ubh\x01)\x81r\x12\x01\x00\x00}r\x13\x01\x00\x00(h\x04K\x12h\x05]r\x14\x01\x00\x00h\x07)\x81r\x15\x01\x00\x00}r\x16\x01\x00\x00(h\nX@\x00\x00\x00625853f16bb1d0c355b469c8002a78546fde7b7f67a47f12728ed35a8ca5527dr\x17\x01\x00\x00h\x0c]r\x18\x01\x00\x00h\x0e)\x81r\x19\x01\x00\x00}r\x1a\x01\x00\x00(h\x11h\x12h\x13K\x12h\x14h\x12ubah\x15]r\x1b\x01\x00\x00h\x17)\x81r\x1c\x01\x00\x00}r\x1d\x01\x00\x00(h\x1aX\x80\x00\x00\x0024e4733aed09c550676e3441f6fc17756700a6768c43d0c3f5287f657b38870e70825ed1e5fb79ec0437093cdef246045b07168d855b626433a1960eff5a3775r\x1e\x01\x00\x00h\x1cK2ubaubah\x1dJ\x98\xf5\xcfZh\x1eX@\x00\x00\x0003ebb19bcdc1edb8c6423269b71bdba4e46db6c781fc96f2d05dadfe0f9881d6r\x1f\x01\x00\x00h j\x11\x01\x00\x00h!K\x04h"K\x03ubh\x01)\x81r \x01\x00\x00}r!\x01\x00\x00(h\x04K\x13h\x05]r"\x01\x00\x00h\x07)\x81r#\x01\x00\x00}r$\x01\x00\x00(h\nX@\x00\x00\x00217266d5f732087950e2ae7d59435ea2e510b360a65ff701675d04a2aa608b00r%\x01\x00\x00h\x0c]r&\x01\x00\x00h\x0e)\x81r\'\x01\x00\x00}r(\x01\x00\x00(h\x11h\x12h\x13K\x13h\x14h\x12ubah\x15]r)\x01\x00\x00h\x17)\x81r*\x01\x00\x00}r+\x01\x00\x00(h\x1aX\x80\x00\x00\x0024e4733aed09c550676e3441f6fc17756700a6768c43d0c3f5287f657b38870e70825ed1e5fb79ec0437093cdef246045b07168d855b626433a1960eff5a3775r,\x01\x00\x00h\x1cK2ubaubah\x1dJ\x99\xf5\xcfZh\x1eX@\x00\x00\x000e69fc4545437f52bcd35aa74700f6d8b19ddd3c48044a02ba2102f8d6db6821r-\x01\x00\x00h j\x1f\x01\x00\x00h!K\x10h"K\x04ubh\x01)\x81r.\x01\x00\x00}r/\x01\x00\x00(h\x04K\x14h\x05]r0\x01\x00\x00h\x07)\x81r1\x01\x00\x00}r2\x01\x00\x00(h\nX@\x00\x00\x0092b8b22c3abaa2186d354379cd855af36c59e27968479e442bdfb83b314904ffr3\x01\x00\x00h\x0c]r4\x01\x00\x00h\x0e)\x81r5\x01\x00\x00}r6\x01\x00\x00(h\x11h\x12h\x13K\x14h\x14h\x12ubah\x15]r7\x01\x00\x00h\x17)\x81r8\x01\x00\x00}r9\x01\x00\x00(h\x1aX\x80\x00\x00\x0024e4733aed09c550676e3441f6fc17756700a6768c43d0c3f5287f657b38870e70825ed1e5fb79ec0437093cdef246045b07168d855b626433a1960eff5a3775r:\x01\x00\x00h\x1cK2ubaubah\x1dJ\x9a\xf5\xcfZh\x1eX@\x00\x00\x00041454a4e36a4d38a5e671060c2b37dbe6e29d787b3adc8bff3e2e67791fd9c3r;\x01\x00\x00h j-\x01\x00\x00h!K\x06h"K\x04ubh\x01)\x81r<\x01\x00\x00}r=\x01\x00\x00(h\x04K\x15h\x05]r>\x01\x00\x00h\x07)\x81r?\x01\x00\x00}r@\x01\x00\x00(h\nX@\x00\x00\x0016d5239af2d1d70bd1d4266fe77ddd965f07303347fbff4a1273a50478102d54rA\x01\x00\x00h\x0c]rB\x01\x00\x00h\x0e)\x81rC\x01\x00\x00}rD\x01\x00\x00(h\x11h\x12h\x13K\x15h\x14h\x12ubah\x15]rE\x01\x00\x00h\x17)\x81rF\x01\x00\x00}rG\x01\x00\x00(h\x1aX\x80\x00\x00\x0024e4733aed09c550676e3441f6fc17756700a6768c43d0c3f5287f657b38870e70825ed1e5fb79ec0437093cdef246045b07168d855b626433a1960eff5a3775rH\x01\x00\x00h\x1cK2ubaubah\x1dJ\x9b\xf5\xcfZh\x1eX@\x00\x00\x00030e978a70553b8714d3f8659f63ce0a01bddf8449ac68eef0662c1574c28a47rI\x01\x00\x00h j;\x01\x00\x00h!K\x16h"K\x04ubh\x01)\x81rJ\x01\x00\x00}rK\x01\x00\x00(h\x04K\x16h\x05]rL\x01\x00\x00h\x07)\x81rM\x01\x00\x00}rN\x01\x00\x00(h\nX@\x00\x00\x00028e28aad4c26d93d7e4a11758ffac13e3af7f264582e1d9f4de21b8e6bc7651rO\x01\x00\x00h\x0c]rP\x01\x00\x00h\x0e)\x81rQ\x01\x00\x00}rR\x01\x00\x00(h\x11h\x12h\x13K\x16h\x14h\x12ubah\x15]rS\x01\x00\x00h\x17)\x81rT\x01\x00\x00}rU\x01\x00\x00(h\x1aX\x80\x00\x00\x0024e4733aed09c550676e3441f6fc17756700a6768c43d0c3f5287f657b38870e70825ed1e5fb79ec0437093cdef246045b07168d855b626433a1960eff5a3775rV\x01\x00\x00h\x1cK2ubaubah\x1dJ\xb2\xf5\xcfZh\x1eX@\x00\x00\x0007b884c94038dcb7a7bc78a073a7b7ee78fcc1fb2fc4e084ba56bcd1e607d113rW\x01\x00\x00h jI\x01\x00\x00h!K6h"K\x05ubh\x01)\x81rX\x01\x00\x00}rY\x01\x00\x00(h\x04K\x17h\x05]rZ\x01\x00\x00h\x07)\x81r[\x01\x00\x00}r\\\x01\x00\x00(h\nX@\x00\x00\x00fe07a879cb4a54c1a8d354e875a52a9813c1d9acd41183ff1188de30d28e1da3r]\x01\x00\x00h\x0c]r^\x01\x00\x00h\x0e)\x81r_\x01\x00\x00}r`\x01\x00\x00(h\x11h\x12h\x13K\x17h\x14h\x12ubah\x15]ra\x01\x00\x00h\x17)\x81rb\x01\x00\x00}rc\x01\x00\x00(h\x1aX\x80\x00\x00\x0024e4733aed09c550676e3441f6fc17756700a6768c43d0c3f5287f657b38870e70825ed1e5fb79ec0437093cdef246045b07168d855b626433a1960eff5a3775rd\x01\x00\x00h\x1cK2ubaubah\x1dJ\xd4\xf5\xcfZh\x1eX@\x00\x00\x000696b99ed9e8f83d925951cd1609272f76a42139c203e11a90d8703e6b063eeare\x01\x00\x00h jW\x01\x00\x00h!Knh"K\x05ubh\x01)\x81rf\x01\x00\x00}rg\x01\x00\x00(h\x04K\x18h\x05]rh\x01\x00\x00h\x07)\x81ri\x01\x00\x00}rj\x01\x00\x00(h\nX@\x00\x00\x00966452603774f54852576b6cc0038fd4769461d9f7cd07d6bcb55c0c03a0f60ark\x01\x00\x00h\x0c]rl\x01\x00\x00h\x0e)\x81rm\x01\x00\x00}rn\x01\x00\x00(h\x11h\x12h\x13K\x18h\x14h\x12ubah\x15]ro\x01\x00\x00h\x17)\x81rp\x01\x00\x00}rq\x01\x00\x00(h\x1aX\x80\x00\x00\x0024e4733aed09c550676e3441f6fc17756700a6768c43d0c3f5287f657b38870e70825ed1e5fb79ec0437093cdef246045b07168d855b626433a1960eff5a3775rr\x01\x00\x00h\x1cK2ubaubah\x1dJ\x1f\xf6\xcfZh\x1eX@\x00\x00\x0002438ec5e5901f50e0c171e7869de7fab0323e533cf1bba7d18c911ed418a43ers\x01\x00\x00h je\x01\x00\x00h!K\x03h"K\x05ube.'('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+
+longer chain getted
+afterset <threading.Event object at 0x10a622320> True
+broadcast: ['http://localhost:8045', 'http://localhost:8029', 'http://localhost:8016', 'http://localhost:8017', 'http://localhost:8032', 'http://localhost:8044', 'http://localhost:8013', 'http://localhost:8023', 'http://localhost:8015', 'http://localhost:8049', 'http://localhost:8000', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8030', 'http://localhost:8003', 'http://localhost:8004', 'http://localhost:8047', 'http://localhost:8009', 'http://localhost:8024', 'http://localhost:8037', 'http://localhost:7999', 'http://localhost:8028', 'http://localhost:8020', 'http://localhost:8046', 'http://localhost:8007', 'http://localhost:8036', 'http://localhost:8035', 'http://localhost:8018', 'http://localhost:8012', 'http://localhost:8040', 'http://localhost:8011', 'http://localhost:8041', 'http://localhost:8005', 'http://localhost:8048', 'http://localhost:8033', 'http://localhost:8008', 'http://localhost:8021', 'http://localhost:8010', 'http://localhost:8014', 'http://localhost:8038', 'http://localhost:8043', 'http://localhost:8031', 'http://localhost:8034', 'http://localhost:8022', 'http://localhost:8006', 'http://localhost:8039', 'http://localhost:8001', 'http://localhost:8019', 'http://localhost:8027', 'http://localhost:8025']
+from http://localhost:8031 ======A block received=========, 20:13:44  current length 25
+13
+=============================
+this block is from a shorter chain
+from http://localhost:8043 ======A block received=========, 20:13:48  current length 25
+2
+=============================
+this block is from a shorter chain
+HTTPConnectionPool(host='localhost', port=8010): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b399d68>: Failed to establish a new connection: [Errno 23] Too many open files in system',))
+HTTPConnectionPool(host='localhost', port=8018): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b399cc0>: Failed to establish a new connection: [Errno 23] Too many open files in system',))
+change diff: 30 1523578399 1523578290 109
+mining interrupted. 24
+change diff: 30 1523578399 1523578290 109
+The block has been accepted
+ 20:13:56 mined a block Block:25
+DataLen:1
+Time:1523578436
+PrevHash:02438ec5e5901f50e0c171e7869de7fab0323e533cf1bba7d18c911ed418a43e
+Nonce:17
+Difficulty:4
+
+broadcast: ['http://localhost:8045', 'http://localhost:8029', 'http://localhost:8016', 'http://localhost:8017', 'http://localhost:8032', 'http://localhost:8044', 'http://localhost:8013', 'http://localhost:8023', 'http://localhost:8015', 'http://localhost:8049', 'http://localhost:8000', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8030', 'http://localhost:8003', 'http://localhost:8004', 'http://localhost:8047', 'http://localhost:8009', 'http://localhost:8024', 'http://localhost:8037', 'http://localhost:7999', 'http://localhost:8028', 'http://localhost:8020', 'http://localhost:8046', 'http://localhost:8007', 'http://localhost:8036', 'http://localhost:8035', 'http://localhost:8018', 'http://localhost:8012', 'http://localhost:8040', 'http://localhost:8011', 'http://localhost:8041', 'http://localhost:8005', 'http://localhost:8048', 'http://localhost:8033', 'http://localhost:8008', 'http://localhost:8021', 'http://localhost:8010', 'http://localhost:8014', 'http://localhost:8038', 'http://localhost:8043', 'http://localhost:8031', 'http://localhost:8034', 'http://localhost:8022', 'http://localhost:8006', 'http://localhost:8039', 'http://localhost:8001', 'http://localhost:8019', 'http://localhost:8027', 'http://localhost:8025']
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+from http://localhost:8021 ======A block received=========, 20:13:59  current length 26
+9
+=============================
+this block is from a shorter chain
+b'ok'
+could not find MARK
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+b'ok'
+could not find MARK
+b'\x80\x03]q\x00(cchain\nBlock\nq\x01)\x81q\x02}q\x03(X\x05\x00\x00\x00indexq\x04K\x00X\x04\x00\x00\x00dataq\x05]q\x06ctransaction\nTransaction\nq\x07)\x81q\x08}q\t(X\x02\x00\x00\x00idq\nX@\x00\x00\x0095db0b8e71740baf81a619bfff7afe3600181828b59815d02c7f1b7b3209c831q\x0bX\x05\x00\x00\x00txInsq\x0c]q\rctransaction\nTxIn\nq\x0e)\x81q\x0f}q\x10(X\x07\x00\x00\x00txOutIdq\x11X\x00\x00\x00\x00q\x12X\n\x00\x00\x00txOutIndexq\x13K\x00X\t\x00\x00\x00signatureq\x14h\x12ubaX\x06\x00\x00\x00txOutsq\x15]q\x16ctransaction\nTxOut\nq\x17)\x81q\x18}q\x19(X\x07\x00\x00\x00addressq\x1aX\x80\x00\x00\x0060ba02269f0aa21a5ee18de8f21f4c159587713db66459d8baca5406021cc51269fe4b4d23587bf58c70e7014d727d1e10ec6b80fa395829b3b79dae3fdc7360q\x1bX\x06\x00\x00\x00amountq\x1cK2ubaubaX\t\x00\x00\x00timestampq\x1dJ\x97q\x90ZX\x04\x00\x00\x00hashq\x1eX@\x00\x00\x00e9d3061d5e216863506649096aac5ddd2089357c0bb3d647db332cd9b926f8b9q\x1fX\t\x00\x00\x00prev_hashq h\x12X\x05\x00\x00\x00nonceq!K\x00X\n\x00\x00\x00difficultyq"K\x00ubh\x01)\x81q#}q$(h\x04K\x01h\x05]q%h\x07)\x81q&}q\'(h\nX@\x00\x00\x005d1bf5ecbcc8d1631a2d18eca4862f5749d52e1caf4830144867fc462ab5c957q(h\x0c]q)h\x0e)\x81q*}q+(h\x11h\x12h\x13K\x01h\x14h\x12ubah\x15]q,h\x17)\x81q-}q.(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efq/h\x1cK2ubaubah\x1dJ$\xf5\xcfZh\x1eX@\x00\x00\x00e66fc2b2efaecec0721c263e91219c628032e0619ac9283343a186d2af2f3bafq0h X@\x00\x00\x00e9d3061d5e216863506649096aac5ddd2089357c0bb3d647db332cd9b926f8b9q1h!K\x00h"K\x00ubh\x01)\x81q2}q3(h\x04K\x02h\x05]q4h\x07)\x81q5}q6(h\nX@\x00\x00\x008d186d4d18c4957d81cc0d901238e7147faa30381412a77f5241abf47f1210e5q7h\x0c]q8h\x0e)\x81q9}q:(h\x11h\x12h\x13K\x02h\x14h\x12ubah\x15]q;h\x17)\x81q<}q=(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fq>h\x1cK2ubaubah\x1dJ\'\xf5\xcfZh\x1eX@\x00\x00\x001f9b0aa745c2d0dd3e243c2f8f680f7dd11f7e90f3368e78859a6ba9d8a38f54q?h h0h!K\x00h"K\x00ubh\x01)\x81q@}qA(h\x04K\x03h\x05]qBh\x07)\x81qC}qD(h\nX@\x00\x00\x00f34abf9aa11ff2a7f2ab80c122c37bf79b718562c9da97cc7416438c9cea18c9qEh\x0c]qFh\x0e)\x81qG}qH(h\x11h\x12h\x13K\x03h\x14h\x12ubah\x15]qIh\x17)\x81qJ}qK(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fqLh\x1cK2ubaubah\x1dJ(\xf5\xcfZh\x1eX@\x00\x00\x00ad15ea1b0301181ea42580c11805220175a20d571b1318505bc12205e6abeb48qMh h?h!K\x00h"K\x00ubh\x01)\x81qN}qO(h\x04K\x04h\x05]qPh\x07)\x81qQ}qR(h\nX@\x00\x00\x001045365dc14c4a18bbac822bccb2e3d272d70bb15ffd904bd95669113d8a1725qSh\x0c]qTh\x0e)\x81qU}qV(h\x11h\x12h\x13K\x04h\x14h\x12ubah\x15]qWh\x17)\x81qX}qY(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fqZh\x1cK2ubaubah\x1dJ(\xf5\xcfZh\x1eX@\x00\x00\x003da0721aeb53cda31def539481e22510b3ae85bf7ef2fd140982b004ae4688faq[h hMh!K\x00h"K\x01ubh\x01)\x81q\\}q](h\x04K\x05h\x05]q^h\x07)\x81q_}q`(h\nX@\x00\x00\x003fe2161e231ff9101d89f981110d8aa5874f2fa3ee777edf2f6e73c98f44793bqah\x0c]qbh\x0e)\x81qc}qd(h\x11h\x12h\x13K\x05h\x14h\x12ubah\x15]qeh\x17)\x81qf}qg(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fqhh\x1cK2ubaubah\x1dJ)\xf5\xcfZh\x1eX@\x00\x00\x007b8c54746f9a00e154fee0085a24cbbacadeb54b19032d685a47b0a0f31a1468qih h[h!K\x00h"K\x01ubh\x01)\x81qj}qk(h\x04K\x06h\x05]qlh\x07)\x81qm}qn(h\nX@\x00\x00\x00d40ac09d98952f8b3c426b55aa4c97aff12eb994745bfccbf39b619550324ad3qoh\x0c]qph\x0e)\x81qq}qr(h\x11h\x12h\x13K\x06h\x14h\x12ubah\x15]qsh\x17)\x81qt}qu(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fqvh\x1cK2ubaubah\x1dJ*\xf5\xcfZh\x1eX@\x00\x00\x005137a4cbba60ad991a888633008c9785fb0eaf13c91be026ff9e6eafef49ebfcqwh hih!K\x01h"K\x01ubh\x01)\x81qx}qy(h\x04K\x07h\x05]qzh\x07)\x81q{}q|(h\nX@\x00\x00\x0078d77b9a4447b0e730f8ec35cbeeac5e02d55a041ce742ca846ac8c1deb2b51dq}h\x0c]q~h\x0e)\x81q\x7f}q\x80(h\x11h\x12h\x13K\x07h\x14h\x12ubah\x15]q\x81h\x17)\x81q\x82}q\x83(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fq\x84h\x1cK2ubaubah\x1dJ*\xf5\xcfZh\x1eX@\x00\x00\x000ed8a10faf0de8a8e4ad527e390a00d26be2cc39c699cdf235e026e02a5af547q\x85h hwh!K\x08h"K\x02ubh\x01)\x81q\x86}q\x87(h\x04K\x08h\x05]q\x88h\x07)\x81q\x89}q\x8a(h\nX@\x00\x00\x005f10764bd68ffe6781ca9b2bbf81bee983e591ec1ddabfaa27263b1d8bf5a883q\x8bh\x0c]q\x8ch\x0e)\x81q\x8d}q\x8e(h\x11h\x12h\x13K\x08h\x14h\x12ubah\x15]q\x8fh\x17)\x81q\x90}q\x91(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fq\x92h\x1cK2ubaubah\x1dJ+\xf5\xcfZh\x1eX@\x00\x00\x001043efb103393a2df76e4831e5bfcc098a4a64b72f91c739e04e9e01acd00cfaq\x93h h\x85h!K\x00h"K\x02ubh\x01)\x81q\x94}q\x95(h\x04K\th\x05]q\x96h\x07)\x81q\x97}q\x98(h\nX@\x00\x00\x003aa7829c2051ffff0802a8245277c4b8f09f743742fb451074e8373a777a7068q\x99h\x0c]q\x9ah\x0e)\x81q\x9b}q\x9c(h\x11h\x12h\x13K\th\x14h\x12ubah\x15]q\x9dh\x17)\x81q\x9e}q\x9f(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fq\xa0h\x1cK2ubaubah\x1dJ,\xf5\xcfZh\x1eX@\x00\x00\x0000c67d8e5a96af3441999f705c5870364e24b1b5350451073bac27f8364b1ceaq\xa1h h\x93h!K\x03h"K\x02ubh\x01)\x81q\xa2}q\xa3(h\x04K\nh\x05]q\xa4h\x07)\x81q\xa5}q\xa6(h\nX@\x00\x00\x00303151ef3c5f2e20aa5ae03e3a63478a55f1fccb3ed5423d8cac6b1cecc09d46q\xa7h\x0c]q\xa8h\x0e)\x81q\xa9}q\xaa(h\x11h\x12h\x13K\nh\x14h\x12ubah\x15]q\xabh\x17)\x81q\xac}q\xad(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fq\xaeh\x1cK2ubaubah\x1dJ-\xf5\xcfZh\x1eX@\x00\x00\x0015a4e1924d4d848aeac3d3a06aac275ce40b340fc30f8c9a975919152ec8a3d4q\xafh h\xa1h!K\x00h"K\x03ubh\x01)\x81q\xb0}q\xb1(h\x04K\x0bh\x05]q\xb2h\x07)\x81q\xb3}q\xb4(h\nX@\x00\x00\x0005eff749da90efb18adc36f7fe5750ac82a2e4a964419141d8ad670dd03d8ea2q\xb5h\x0c]q\xb6h\x0e)\x81q\xb7}q\xb8(h\x11h\x12h\x13K\x0bh\x14h\x12ubah\x15]q\xb9h\x17)\x81q\xba}q\xbb(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fq\xbch\x1cK2ubaubah\x1dJ-\xf5\xcfZh\x1eX@\x00\x00\x0017a707c6edd134bf664dacd097c29cccec73e3c7347ed535977281373d9e6f96q\xbdh h\xafh!K\x00h"K\x03ubh\x01)\x81q\xbe}q\xbf(h\x04K\x0ch\x05]q\xc0h\x07)\x81q\xc1}q\xc2(h\nX@\x00\x00\x00ae0a981f48900c78698870823137ae8f0f1c31bb719134a76b55e56f35c05758q\xc3h\x0c]q\xc4h\x0e)\x81q\xc5}q\xc6(h\x11h\x12h\x13K\x0ch\x14h\x12ubah\x15]q\xc7h\x17)\x81q\xc8}q\xc9(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fq\xcah\x1cK2ubaubah\x1dJ/\xf5\xcfZh\x1eX@\x00\x00\x000936fe01a6c0fc1605934df8c9236814cbc7ff36fc628564fe35ffe6a0bcae8bq\xcbh h\xbdh!K\x02h"K\x03ubh\x01)\x81q\xcc}q\xcd(h\x04K\rh\x05]q\xceh\x07)\x81q\xcf}q\xd0(h\nX@\x00\x00\x00ec7d62585e1e24884f93692d6d5879306be93971f5bcb0d0533a97929e8a77d6q\xd1h\x0c]q\xd2h\x0e)\x81q\xd3}q\xd4(h\x11h\x12h\x13K\rh\x14h\x12ubah\x15]q\xd5h\x17)\x81q\xd6}q\xd7(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fq\xd8h\x1cK2ubaubah\x1dJ\x96\xf5\xcfZh\x1eX@\x00\x00\x0000b55c38d85cee8b75b35380d4867fa2668250a6a353c9d74097fc5bcbd4ce84q\xd9h h\xcbh!K\x01h"K\x04ubh\x01)\x81q\xda}q\xdb(h\x04K\x0eh\x05]q\xdch\x07)\x81q\xdd}q\xde(h\nX@\x00\x00\x00c879c8905f746dfddda3823e80c929b50c7ef83ed57d4f13eed168c883038cfbq\xdfh\x0c]q\xe0h\x0e)\x81q\xe1}q\xe2(h\x11h\x12h\x13K\x0eh\x14h\x12ubah\x15]q\xe3h\x17)\x81q\xe4}q\xe5(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fq\xe6h\x1cK2ubaubah\x1dJ\x99\xf5\xcfZh\x1eX@\x00\x00\x000dc4a821b623cff0b774bbe467f55a8f09f85a988e2fb87c392080a2e593db23q\xe7h h\xd9h!K\x10h"K\x04ubh\x01)\x81q\xe8}q\xe9(h\x04K\x0fh\x05]q\xeah\x07)\x81q\xeb}q\xec(h\nX@\x00\x00\x001da0a8ed76b6361061267d9a5b03565f306e6c858371fa756eb57ee6febdb69bq\xedh\x0c]q\xeeh\x0e)\x81q\xef}q\xf0(h\x11h\x12h\x13K\x0fh\x14h\x12ubah\x15]q\xf1h\x17)\x81q\xf2}q\xf3(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fq\xf4h\x1cK2ubaubah\x1dJ\x9a\xf5\xcfZh\x1eX@\x00\x00\x00021771e0a65487329d5f2b0dd9cd32790adce9c13fde8362789c01b2e77f8ee5q\xf5h h\xe7h!K\x0fh"K\x04ubh\x01)\x81q\xf6}q\xf7(h\x04K\x10h\x05]q\xf8h\x07)\x81q\xf9}q\xfa(h\nX@\x00\x00\x0010917c73d2343ed9398d6ac513489cc9efb3dd4dc71a93a648b1c6b90f0263cdq\xfbh\x0c]q\xfch\x0e)\x81q\xfd}q\xfe(h\x11h\x12h\x13K\x10h\x14h\x12ubah\x15]q\xffh\x17)\x81r\x00\x01\x00\x00}r\x01\x01\x00\x00(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fr\x02\x01\x00\x00h\x1cK2ubaubah\x1dJ\x9b\xf5\xcfZh\x1eX@\x00\x00\x000151c0d163e424b81f7ad0d4175d4deea8aa6ec665e25230e47eab2ba35581a9r\x03\x01\x00\x00h h\xf5h!K\rh"K\x05ubh\x01)\x81r\x04\x01\x00\x00}r\x05\x01\x00\x00(h\x04K\x11h\x05]r\x06\x01\x00\x00h\x07)\x81r\x07\x01\x00\x00}r\x08\x01\x00\x00(h\nX@\x00\x00\x009a7489e51cdb7e2cecd213fcd0aa2e9e1104c583443641dc8783f9066293496ar\t\x01\x00\x00h\x0c]r\n\x01\x00\x00h\x0e)\x81r\x0b\x01\x00\x00}r\x0c\x01\x00\x00(h\x11h\x12h\x13K\x11h\x14h\x12ubah\x15]r\r\x01\x00\x00h\x17)\x81r\x0e\x01\x00\x00}r\x0f\x01\x00\x00(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fr\x10\x01\x00\x00h\x1cK2ubaubah\x1dJ\xa3\xf5\xcfZh\x1eX@\x00\x00\x00068fc8c947098a898be2c314228a44d38ee3ed0ca357a1c0e4f15ad59d927314r\x11\x01\x00\x00h j\x03\x01\x00\x00h!K\x1eh"K\x05ubh\x01)\x81r\x12\x01\x00\x00}r\x13\x01\x00\x00(h\x04K\x12h\x05]r\x14\x01\x00\x00h\x07)\x81r\x15\x01\x00\x00}r\x16\x01\x00\x00(h\nX@\x00\x00\x005c0b410d7bb935e6314f62320412ad1a2d3847cffc17c9b35d9b161ee7bc2c38r\x17\x01\x00\x00h\x0c]r\x18\x01\x00\x00h\x0e)\x81r\x19\x01\x00\x00}r\x1a\x01\x00\x00(h\x11h\x12h\x13K\x12h\x14h\x12ubah\x15]r\x1b\x01\x00\x00h\x17)\x81r\x1c\x01\x00\x00}r\x1d\x01\x00\x00(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fr\x1e\x01\x00\x00h\x1cK2ubaubah\x1dJ\xdc\xf5\xcfZh\x1eX@\x00\x00\x00061bb5f183185fa8c4daa3a22c786a1a5a4a05a72a994a71abd0c304b4cc27b9r\x1f\x01\x00\x00h j\x11\x01\x00\x00h!K\x14h"K\x05ubh\x01)\x81r \x01\x00\x00}r!\x01\x00\x00(h\x04K\x13h\x05]r"\x01\x00\x00h\x07)\x81r#\x01\x00\x00}r$\x01\x00\x00(h\nX@\x00\x00\x0089ab6a78725418d0ddc7d3dbc8fb3374547e498fd11f8517bc8d08ef2058c543r%\x01\x00\x00h\x0c]r&\x01\x00\x00h\x0e)\x81r\'\x01\x00\x00}r(\x01\x00\x00(h\x11h\x12h\x13K\x13h\x14h\x12ubah\x15]r)\x01\x00\x00h\x17)\x81r*\x01\x00\x00}r+\x01\x00\x00(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fr,\x01\x00\x00h\x1cK2ubaubah\x1dJ\xf5\xf5\xcfZh\x1eX@\x00\x00\x000bd1d1df9d552152f263421692ce921d1517274a23b170210a224c44ad04f334r-\x01\x00\x00h j\x1f\x01\x00\x00h!K\x0ch"K\x04ubh\x01)\x81r.\x01\x00\x00}r/\x01\x00\x00(h\x04K\x14h\x05]r0\x01\x00\x00h\x07)\x81r1\x01\x00\x00}r2\x01\x00\x00(h\nX@\x00\x00\x00a5b9d03acc9756aea3d7c24de91f5d1e7510ca0ab2a51e23b732c5c2f3096ccer3\x01\x00\x00h\x0c]r4\x01\x00\x00h\x0e)\x81r5\x01\x00\x00}r6\x01\x00\x00(h\x11h\x12h\x13K\x14h\x14h\x12ubah\x15]r7\x01\x00\x00h\x17)\x81r8\x01\x00\x00}r9\x01\x00\x00(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fr:\x01\x00\x00h\x1cK2ubaubah\x1dJ\x0b\xf6\xcfZh\x1eX@\x00\x00\x0005dba1aeb6a131d42e49642e18d7ea13f2932ce55921e8909d2ab4ed50b24824r;\x01\x00\x00h j-\x01\x00\x00h!K\x0bh"K\x04ubh\x01)\x81r<\x01\x00\x00}r=\x01\x00\x00(h\x04K\x15h\x05]r>\x01\x00\x00h\x07)\x81r?\x01\x00\x00}r@\x01\x00\x00(h\nX@\x00\x00\x0040d652bc155912d49db5b05c7d9fc4ca6544ab1c2b7786ec9abdc3420e6aabc2rA\x01\x00\x00h\x0c]rB\x01\x00\x00h\x0e)\x81rC\x01\x00\x00}rD\x01\x00\x00(h\x11h\x12h\x13K\x15h\x14h\x12ubah\x15]rE\x01\x00\x00h\x17)\x81rF\x01\x00\x00}rG\x01\x00\x00(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970frH\x01\x00\x00h\x1cK2ubaubah\x1dJ\x1c\xf6\xcfZh\x1eX@\x00\x00\x000d66cc42ae11c8af05fca517256f42229cbf94fb8ec867bce9b772a76ae1c39crI\x01\x00\x00h j;\x01\x00\x00h!K\x00h"K\x04ubh\x01)\x81rJ\x01\x00\x00}rK\x01\x00\x00(h\x04K\x16h\x05]rL\x01\x00\x00h\x07)\x81rM\x01\x00\x00}rN\x01\x00\x00(h\nX@\x00\x00\x0075e52902c6dd97ca539d12c1c03a8d6ade24afbb2217c1f7a6a060c51bd22a0drO\x01\x00\x00h\x0c]rP\x01\x00\x00h\x0e)\x81rQ\x01\x00\x00}rR\x01\x00\x00(h\x11h\x12h\x13K\x16h\x14h\x12ubah\x15]rS\x01\x00\x00h\x17)\x81rT\x01\x00\x00}rU\x01\x00\x00(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970frV\x01\x00\x00h\x1cK2ubaubah\x1dJ/\xf6\xcfZh\x1eX@\x00\x00\x000aa94d8eb9fd948b8a666ecafa8cbcf52ecd95c4c53998f1d8ff64d07170ca3crW\x01\x00\x00h jI\x01\x00\x00h!K\x03h"K\x04ubh\x01)\x81rX\x01\x00\x00}rY\x01\x00\x00(h\x04K\x17h\x05]rZ\x01\x00\x00h\x07)\x81r[\x01\x00\x00}r\\\x01\x00\x00(h\nX@\x00\x00\x0036b6da2041075aa5e176871ed6e7a03e975db8488bc6187aed66d73a5db8df49r]\x01\x00\x00h\x0c]r^\x01\x00\x00h\x0e)\x81r_\x01\x00\x00}r`\x01\x00\x00(h\x11h\x12h\x13K\x17h\x14h\x12ubah\x15]ra\x01\x00\x00h\x17)\x81rb\x01\x00\x00}rc\x01\x00\x00(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970frd\x01\x00\x00h\x1cK2ubaubah\x1dJV\xf6\xcfZh\x1eX@\x00\x00\x0001c630bde6574d3aab59e249731774fb0d2c8b302877981feaf81b80701ca3ebre\x01\x00\x00h jW\x01\x00\x00h!K\x02h"K\x04ube.'
+longer chain getted
+b'\x80\x03]q\x00(cchain\nBlock\nq\x01)\x81q\x02}q\x03(X\x05\x00\x00\x00indexq\x04K\x00X\x04\x00\x00\x00dataq\x05]q\x06ctransaction\nTransaction\nq\x07)\x81q\x08}q\t(X\x02\x00\x00\x00idq\nX@\x00\x00\x0095db0b8e71740baf81a619bfff7afe3600181828b59815d02c7f1b7b3209c831q\x0bX\x05\x00\x00\x00txInsq\x0c]q\rctransaction\nTxIn\nq\x0e)\x81q\x0f}q\x10(X\x07\x00\x00\x00txOutIdq\x11X\x00\x00\x00\x00q\x12X\n\x00\x00\x00txOutIndexq\x13K\x00X\t\x00\x00\x00signatureq\x14h\x12ubaX\x06\x00\x00\x00txOutsq\x15]q\x16ctransaction\nTxOut\nq\x17)\x81q\x18}q\x19(X\x07\x00\x00\x00addressq\x1aX\x80\x00\x00\x0060ba02269f0aa21a5ee18de8f21f4c159587713db66459d8baca5406021cc51269fe4b4d23587bf58c70e7014d727d1e10ec6b80fa395829b3b79dae3fdc7360q\x1bX\x06\x00\x00\x00amountq\x1cK2ubaubaX\t\x00\x00\x00timestampq\x1dJ\x97q\x90ZX\x04\x00\x00\x00hashq\x1eX@\x00\x00\x00e9d3061d5e216863506649096aac5ddd2089357c0bb3d647db332cd9b926f8b9q\x1fX\t\x00\x00\x00prev_hashq h\x12X\x05\x00\x00\x00nonceq!K\x00X\n\x00\x00\x00difficultyq"K\x00ubh\x01)\x81q#}q$(h\x04K\x01h\x05]q%h\x07)\x81q&}q\'(h\nX@\x00\x00\x005d1bf5ecbcc8d1631a2d18eca4862f5749d52e1caf4830144867fc462ab5c957q(h\x0c]q)h\x0e)\x81q*}q+(h\x11h\x12h\x13K\x01h\x14h\x12ubah\x15]q,h\x17)\x81q-}q.(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efq/h\x1cK2ubaubah\x1dJ$\xf5\xcfZh\x1eX@\x00\x00\x00e66fc2b2efaecec0721c263e91219c628032e0619ac9283343a186d2af2f3bafq0h X@\x00\x00\x00e9d3061d5e216863506649096aac5ddd2089357c0bb3d647db332cd9b926f8b9q1h!K\x00h"K\x00ubh\x01)\x81q2}q3(h\x04K\x02h\x05]q4h\x07)\x81q5}q6(h\nX@\x00\x00\x008d186d4d18c4957d81cc0d901238e7147faa30381412a77f5241abf47f1210e5q7h\x0c]q8h\x0e)\x81q9}q:(h\x11h\x12h\x13K\x02h\x14h\x12ubah\x15]q;h\x17)\x81q<}q=(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fq>h\x1cK2ubaubah\x1dJ\'\xf5\xcfZh\x1eX@\x00\x00\x001f9b0aa745c2d0dd3e243c2f8f680f7dd11f7e90f3368e78859a6ba9d8a38f54q?h h0h!K\x00h"K\x00ubh\x01)\x81q@}qA(h\x04K\x03h\x05]qBh\x07)\x81qC}qD(h\nX@\x00\x00\x00f34abf9aa11ff2a7f2ab80c122c37bf79b718562c9da97cc7416438c9cea18c9qEh\x0c]qFh\x0e)\x81qG}qH(h\x11h\x12h\x13K\x03h\x14h\x12ubah\x15]qIh\x17)\x81qJ}qK(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fqLh\x1cK2ubaubah\x1dJ(\xf5\xcfZh\x1eX@\x00\x00\x00ad15ea1b0301181ea42580c11805220175a20d571b1318505bc12205e6abeb48qMh h?h!K\x00h"K\x00ubh\x01)\x81qN}qO(h\x04K\x04h\x05]qPh\x07)\x81qQ}qR(h\nX@\x00\x00\x001045365dc14c4a18bbac822bccb2e3d272d70bb15ffd904bd95669113d8a1725qSh\x0c]qTh\x0e)\x81qU}qV(h\x11h\x12h\x13K\x04h\x14h\x12ubah\x15]qWh\x17)\x81qX}qY(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fqZh\x1cK2ubaubah\x1dJ(\xf5\xcfZh\x1eX@\x00\x00\x003da0721aeb53cda31def539481e22510b3ae85bf7ef2fd140982b004ae4688faq[h hMh!K\x00h"K\x01ubh\x01)\x81q\\}q](h\x04K\x05h\x05]q^h\x07)\x81q_}q`(h\nX@\x00\x00\x003fe2161e231ff9101d89f981110d8aa5874f2fa3ee777edf2f6e73c98f44793bqah\x0c]qbh\x0e)\x81qc}qd(h\x11h\x12h\x13K\x05h\x14h\x12ubah\x15]qeh\x17)\x81qf}qg(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fqhh\x1cK2ubaubah\x1dJ)\xf5\xcfZh\x1eX@\x00\x00\x007b8c54746f9a00e154fee0085a24cbbacadeb54b19032d685a47b0a0f31a1468qih h[h!K\x00h"K\x01ubh\x01)\x81qj}qk(h\x04K\x06h\x05]qlh\x07)\x81qm}qn(h\nX@\x00\x00\x00d40ac09d98952f8b3c426b55aa4c97aff12eb994745bfccbf39b619550324ad3qoh\x0c]qph\x0e)\x81qq}qr(h\x11h\x12h\x13K\x06h\x14h\x12ubah\x15]qsh\x17)\x81qt}qu(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fqvh\x1cK2ubaubah\x1dJ*\xf5\xcfZh\x1eX@\x00\x00\x005137a4cbba60ad991a888633008c9785fb0eaf13c91be026ff9e6eafef49ebfcqwh hih!K\x01h"K\x01ubh\x01)\x81qx}qy(h\x04K\x07h\x05]qzh\x07)\x81q{}q|(h\nX@\x00\x00\x0078d77b9a4447b0e730f8ec35cbeeac5e02d55a041ce742ca846ac8c1deb2b51dq}h\x0c]q~h\x0e)\x81q\x7f}q\x80(h\x11h\x12h\x13K\x07h\x14h\x12ubah\x15]q\x81h\x17)\x81q\x82}q\x83(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fq\x84h\x1cK2ubaubah\x1dJ*\xf5\xcfZh\x1eX@\x00\x00\x000ed8a10faf0de8a8e4ad527e390a00d26be2cc39c699cdf235e026e02a5af547q\x85h hwh!K\x08h"K\x02ubh\x01)\x81q\x86}q\x87(h\x04K\x08h\x05]q\x88h\x07)\x81q\x89}q\x8a(h\nX@\x00\x00\x005f10764bd68ffe6781ca9b2bbf81bee983e591ec1ddabfaa27263b1d8bf5a883q\x8bh\x0c]q\x8ch\x0e)\x81q\x8d}q\x8e(h\x11h\x12h\x13K\x08h\x14h\x12ubah\x15]q\x8fh\x17)\x81q\x90}q\x91(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fq\x92h\x1cK2ubaubah\x1dJ+\xf5\xcfZh\x1eX@\x00\x00\x001043efb103393a2df76e4831e5bfcc098a4a64b72f91c739e04e9e01acd00cfaq\x93h h\x85h!K\x00h"K\x02ubh\x01)\x81q\x94}q\x95(h\x04K\th\x05]q\x96h\x07)\x81q\x97}q\x98(h\nX@\x00\x00\x003aa7829c2051ffff0802a8245277c4b8f09f743742fb451074e8373a777a7068q\x99h\x0c]q\x9ah\x0e)\x81q\x9b}q\x9c(h\x11h\x12h\x13K\th\x14h\x12ubah\x15]q\x9dh\x17)\x81q\x9e}q\x9f(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fq\xa0h\x1cK2ubaubah\x1dJ,\xf5\xcfZh\x1eX@\x00\x00\x0000c67d8e5a96af3441999f705c5870364e24b1b5350451073bac27f8364b1ceaq\xa1h h\x93h!K\x03h"K\x02ubh\x01)\x81q\xa2}q\xa3(h\x04K\nh\x05]q\xa4h\x07)\x81q\xa5}q\xa6(h\nX@\x00\x00\x00303151ef3c5f2e20aa5ae03e3a63478a55f1fccb3ed5423d8cac6b1cecc09d46q\xa7h\x0c]q\xa8h\x0e)\x81q\xa9}q\xaa(h\x11h\x12h\x13K\nh\x14h\x12ubah\x15]q\xabh\x17)\x81q\xac}q\xad(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fq\xaeh\x1cK2ubaubah\x1dJ-\xf5\xcfZh\x1eX@\x00\x00\x0015a4e1924d4d848aeac3d3a06aac275ce40b340fc30f8c9a975919152ec8a3d4q\xafh h\xa1h!K\x00h"K\x03ubh\x01)\x81q\xb0}q\xb1(h\x04K\x0bh\x05]q\xb2h\x07)\x81q\xb3}q\xb4(h\nX@\x00\x00\x0005eff749da90efb18adc36f7fe5750ac82a2e4a964419141d8ad670dd03d8ea2q\xb5h\x0c]q\xb6h\x0e)\x81q\xb7}q\xb8(h\x11h\x12h\x13K\x0bh\x14h\x12ubah\x15]q\xb9h\x17)\x81q\xba}q\xbb(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fq\xbch\x1cK2ubaubah\x1dJ-\xf5\xcfZh\x1eX@\x00\x00\x0017a707c6edd134bf664dacd097c29cccec73e3c7347ed535977281373d9e6f96q\xbdh h\xafh!K\x00h"K\x03ubh\x01)\x81q\xbe}q\xbf(h\x04K\x0ch\x05]q\xc0h\x07)\x81q\xc1}q\xc2(h\nX@\x00\x00\x00ae0a981f48900c78698870823137ae8f0f1c31bb719134a76b55e56f35c05758q\xc3h\x0c]q\xc4h\x0e)\x81q\xc5}q\xc6(h\x11h\x12h\x13K\x0ch\x14h\x12ubah\x15]q\xc7h\x17)\x81q\xc8}q\xc9(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fq\xcah\x1cK2ubaubah\x1dJ/\xf5\xcfZh\x1eX@\x00\x00\x000936fe01a6c0fc1605934df8c9236814cbc7ff36fc628564fe35ffe6a0bcae8bq\xcbh h\xbdh!K\x02h"K\x03ubh\x01)\x81q\xcc}q\xcd(h\x04K\rh\x05]q\xceh\x07)\x81q\xcf}q\xd0(h\nX@\x00\x00\x00ec7d62585e1e24884f93692d6d5879306be93971f5bcb0d0533a97929e8a77d6q\xd1h\x0c]q\xd2h\x0e)\x81q\xd3}q\xd4(h\x11h\x12h\x13K\rh\x14h\x12ubah\x15]q\xd5h\x17)\x81q\xd6}q\xd7(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fq\xd8h\x1cK2ubaubah\x1dJ\x96\xf5\xcfZh\x1eX@\x00\x00\x0000b55c38d85cee8b75b35380d4867fa2668250a6a353c9d74097fc5bcbd4ce84q\xd9h h\xcbh!K\x01h"K\x04ubh\x01)\x81q\xda}q\xdb(h\x04K\x0eh\x05]q\xdch\x07)\x81q\xdd}q\xde(h\nX@\x00\x00\x00c879c8905f746dfddda3823e80c929b50c7ef83ed57d4f13eed168c883038cfbq\xdfh\x0c]q\xe0h\x0e)\x81q\xe1}q\xe2(h\x11h\x12h\x13K\x0eh\x14h\x12ubah\x15]q\xe3h\x17)\x81q\xe4}q\xe5(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fq\xe6h\x1cK2ubaubah\x1dJ\x99\xf5\xcfZh\x1eX@\x00\x00\x000dc4a821b623cff0b774bbe467f55a8f09f85a988e2fb87c392080a2e593db23q\xe7h h\xd9h!K\x10h"K\x04ubh\x01)\x81q\xe8}q\xe9(h\x04K\x0fh\x05]q\xeah\x07)\x81q\xeb}q\xec(h\nX@\x00\x00\x001da0a8ed76b6361061267d9a5b03565f306e6c858371fa756eb57ee6febdb69bq\xedh\x0c]q\xeeh\x0e)\x81q\xef}q\xf0(h\x11h\x12h\x13K\x0fh\x14h\x12ubah\x15]q\xf1h\x17)\x81q\xf2}q\xf3(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fq\xf4h\x1cK2ubaubah\x1dJ\x9a\xf5\xcfZh\x1eX@\x00\x00\x00021771e0a65487329d5f2b0dd9cd32790adce9c13fde8362789c01b2e77f8ee5q\xf5h h\xe7h!K\x0fh"K\x04ubh\x01)\x81q\xf6}q\xf7(h\x04K\x10h\x05]q\xf8h\x07)\x81q\xf9}q\xfa(h\nX@\x00\x00\x0010917c73d2343ed9398d6ac513489cc9efb3dd4dc71a93a648b1c6b90f0263cdq\xfbh\x0c]q\xfch\x0e)\x81q\xfd}q\xfe(h\x11h\x12h\x13K\x10h\x14h\x12ubah\x15]q\xffh\x17)\x81r\x00\x01\x00\x00}r\x01\x01\x00\x00(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fr\x02\x01\x00\x00h\x1cK2ubaubah\x1dJ\x9b\xf5\xcfZh\x1eX@\x00\x00\x000151c0d163e424b81f7ad0d4175d4deea8aa6ec665e25230e47eab2ba35581a9r\x03\x01\x00\x00h h\xf5h!K\rh"K\x05ubh\x01)\x81r\x04\x01\x00\x00}r\x05\x01\x00\x00(h\x04K\x11h\x05]r\x06\x01\x00\x00h\x07)\x81r\x07\x01\x00\x00}r\x08\x01\x00\x00(h\nX@\x00\x00\x009a7489e51cdb7e2cecd213fcd0aa2e9e1104c583443641dc8783f9066293496ar\t\x01\x00\x00h\x0c]r\n\x01\x00\x00h\x0e)\x81r\x0b\x01\x00\x00}r\x0c\x01\x00\x00(h\x11h\x12h\x13K\x11h\x14h\x12ubah\x15]r\r\x01\x00\x00h\x17)\x81r\x0e\x01\x00\x00}r\x0f\x01\x00\x00(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fr\x10\x01\x00\x00h\x1cK2ubaubah\x1dJ\xa3\xf5\xcfZh\x1eX@\x00\x00\x00068fc8c947098a898be2c314228a44d38ee3ed0ca357a1c0e4f15ad59d927314r\x11\x01\x00\x00h j\x03\x01\x00\x00h!K\x1eh"K\x05ubh\x01)\x81r\x12\x01\x00\x00}r\x13\x01\x00\x00(h\x04K\x12h\x05]r\x14\x01\x00\x00h\x07)\x81r\x15\x01\x00\x00}r\x16\x01\x00\x00(h\nX@\x00\x00\x005c0b410d7bb935e6314f62320412ad1a2d3847cffc17c9b35d9b161ee7bc2c38r\x17\x01\x00\x00h\x0c]r\x18\x01\x00\x00h\x0e)\x81r\x19\x01\x00\x00}r\x1a\x01\x00\x00(h\x11h\x12h\x13K\x12h\x14h\x12ubah\x15]r\x1b\x01\x00\x00h\x17)\x81r\x1c\x01\x00\x00}r\x1d\x01\x00\x00(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fr\x1e\x01\x00\x00h\x1cK2ubaubah\x1dJ\xdc\xf5\xcfZh\x1eX@\x00\x00\x00061bb5f183185fa8c4daa3a22c786a1a5a4a05a72a994a71abd0c304b4cc27b9r\x1f\x01\x00\x00h j\x11\x01\x00\x00h!K\x14h"K\x05ubh\x01)\x81r \x01\x00\x00}r!\x01\x00\x00(h\x04K\x13h\x05]r"\x01\x00\x00h\x07)\x81r#\x01\x00\x00}r$\x01\x00\x00(h\nX@\x00\x00\x0089ab6a78725418d0ddc7d3dbc8fb3374547e498fd11f8517bc8d08ef2058c543r%\x01\x00\x00h\x0c]r&\x01\x00\x00h\x0e)\x81r\'\x01\x00\x00}r(\x01\x00\x00(h\x11h\x12h\x13K\x13h\x14h\x12ubah\x15]r)\x01\x00\x00h\x17)\x81r*\x01\x00\x00}r+\x01\x00\x00(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fr,\x01\x00\x00h\x1cK2ubaubah\x1dJ\xf5\xf5\xcfZh\x1eX@\x00\x00\x000bd1d1df9d552152f263421692ce921d1517274a23b170210a224c44ad04f334r-\x01\x00\x00h j\x1f\x01\x00\x00h!K\x0ch"K\x04ubh\x01)\x81r.\x01\x00\x00}r/\x01\x00\x00(h\x04K\x14h\x05]r0\x01\x00\x00h\x07)\x81r1\x01\x00\x00}r2\x01\x00\x00(h\nX@\x00\x00\x00a5b9d03acc9756aea3d7c24de91f5d1e7510ca0ab2a51e23b732c5c2f3096ccer3\x01\x00\x00h\x0c]r4\x01\x00\x00h\x0e)\x81r5\x01\x00\x00}r6\x01\x00\x00(h\x11h\x12h\x13K\x14h\x14h\x12ubah\x15]r7\x01\x00\x00h\x17)\x81r8\x01\x00\x00}r9\x01\x00\x00(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970fr:\x01\x00\x00h\x1cK2ubaubah\x1dJ\x0b\xf6\xcfZh\x1eX@\x00\x00\x0005dba1aeb6a131d42e49642e18d7ea13f2932ce55921e8909d2ab4ed50b24824r;\x01\x00\x00h j-\x01\x00\x00h!K\x0bh"K\x04ubh\x01)\x81r<\x01\x00\x00}r=\x01\x00\x00(h\x04K\x15h\x05]r>\x01\x00\x00h\x07)\x81r?\x01\x00\x00}r@\x01\x00\x00(h\nX@\x00\x00\x0040d652bc155912d49db5b05c7d9fc4ca6544ab1c2b7786ec9abdc3420e6aabc2rA\x01\x00\x00h\x0c]rB\x01\x00\x00h\x0e)\x81rC\x01\x00\x00}rD\x01\x00\x00(h\x11h\x12h\x13K\x15h\x14h\x12ubah\x15]rE\x01\x00\x00h\x17)\x81rF\x01\x00\x00}rG\x01\x00\x00(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970frH\x01\x00\x00h\x1cK2ubaubah\x1dJ\x1c\xf6\xcfZh\x1eX@\x00\x00\x000d66cc42ae11c8af05fca517256f42229cbf94fb8ec867bce9b772a76ae1c39crI\x01\x00\x00h j;\x01\x00\x00h!K\x00h"K\x04ubh\x01)\x81rJ\x01\x00\x00}rK\x01\x00\x00(h\x04K\x16h\x05]rL\x01\x00\x00h\x07)\x81rM\x01\x00\x00}rN\x01\x00\x00(h\nX@\x00\x00\x0075e52902c6dd97ca539d12c1c03a8d6ade24afbb2217c1f7a6a060c51bd22a0drO\x01\x00\x00h\x0c]rP\x01\x00\x00h\x0e)\x81rQ\x01\x00\x00}rR\x01\x00\x00(h\x11h\x12h\x13K\x16h\x14h\x12ubah\x15]rS\x01\x00\x00h\x17)\x81rT\x01\x00\x00}rU\x01\x00\x00(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970frV\x01\x00\x00h\x1cK2ubaubah\x1dJ/\xf6\xcfZh\x1eX@\x00\x00\x000aa94d8eb9fd948b8a666ecafa8cbcf52ecd95c4c53998f1d8ff64d07170ca3crW\x01\x00\x00h jI\x01\x00\x00h!K\x03h"K\x04ubh\x01)\x81rX\x01\x00\x00}rY\x01\x00\x00(h\x04K\x17h\x05]rZ\x01\x00\x00h\x07)\x81r[\x01\x00\x00}r\\\x01\x00\x00(h\nX@\x00\x00\x0036b6da2041075aa5e176871ed6e7a03e975db8488bc6187aed66d73a5db8df49r]\x01\x00\x00h\x0c]r^\x01\x00\x00h\x0e)\x81r_\x01\x00\x00}r`\x01\x00\x00(h\x11h\x12h\x13K\x17h\x14h\x12ubah\x15]ra\x01\x00\x00h\x17)\x81rb\x01\x00\x00}rc\x01\x00\x00(h\x1aX\x80\x00\x00\x00a51f3ed48894d08fdfedaa66f370650175d75f4b3829ba66fa1d40e148e171f0520d75d072defe4d6d5a5f3e3f24a8badb2b5092097013a3eba887cb6732970frd\x01\x00\x00h\x1cK2ubaubah\x1dJV\xf6\xcfZh\x1eX@\x00\x00\x0001c630bde6574d3aab59e249731774fb0d2c8b302877981feaf81b80701ca3ebre\x01\x00\x00h jW\x01\x00\x00h!K\x02h"K\x04ube.'
+longer chain getted
+from http://localhost:8020 ======A block received=========, 20:14:20  current length 26
+22
+=============================
+this block is from a shorter chain
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+replaced chain
+afterset <threading.Event object at 0x10a622320> True
+broadcast: ['http://localhost:8045', 'http://localhost:8029', 'http://localhost:8016', 'http://localhost:8017', 'http://localhost:8032', 'http://localhost:8044', 'http://localhost:8013', 'http://localhost:8023', 'http://localhost:8015', 'http://localhost:8049', 'http://localhost:8000', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8030', 'http://localhost:8003', 'http://localhost:8004', 'http://localhost:8047', 'http://localhost:8009', 'http://localhost:8024', 'http://localhost:8037', 'http://localhost:7999', 'http://localhost:8028', 'http://localhost:8020', 'http://localhost:8046', 'http://localhost:8007', 'http://localhost:8036', 'http://localhost:8035', 'http://localhost:8018', 'http://localhost:8012', 'http://localhost:8040', 'http://localhost:8011', 'http://localhost:8041', 'http://localhost:8005', 'http://localhost:8048', 'http://localhost:8033', 'http://localhost:8008', 'http://localhost:8021', 'http://localhost:8010', 'http://localhost:8014', 'http://localhost:8038', 'http://localhost:8043', 'http://localhost:8031', 'http://localhost:8034', 'http://localhost:8022', 'http://localhost:8006', 'http://localhost:8039', 'http://localhost:8001', 'http://localhost:8019', 'http://localhost:8027', 'http://localhost:8025']
+from http://localhost:8032 ======A block received=========, 20:14:23  current length 24
+0
+=============================
+this block is from a shorter chain
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+HTTPConnectionPool(host='localhost', port=8009): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b1a4320>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+HTTPConnectionPool(host='localhost', port=8026): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10a723780>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+mining interrupted. 23
+The block has been accepted
+ 20:14:38 mined a block Block:24
+DataLen:1
+Time:1523578478
+PrevHash:01c630bde6574d3aab59e249731774fb0d2c8b302877981feaf81b80701ca3eb
+Nonce:9
+Difficulty:4
+
+broadcast: ['http://localhost:8045', 'http://localhost:8029', 'http://localhost:8016', 'http://localhost:8017', 'http://localhost:8032', 'http://localhost:8044', 'http://localhost:8013', 'http://localhost:8023', 'http://localhost:8015', 'http://localhost:8049', 'http://localhost:8000', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8030', 'http://localhost:8003', 'http://localhost:8004', 'http://localhost:8047', 'http://localhost:8009', 'http://localhost:8024', 'http://localhost:8037', 'http://localhost:7999', 'http://localhost:8028', 'http://localhost:8020', 'http://localhost:8046', 'http://localhost:8007', 'http://localhost:8036', 'http://localhost:8035', 'http://localhost:8018', 'http://localhost:8012', 'http://localhost:8040', 'http://localhost:8011', 'http://localhost:8041', 'http://localhost:8005', 'http://localhost:8048', 'http://localhost:8033', 'http://localhost:8008', 'http://localhost:8021', 'http://localhost:8010', 'http://localhost:8014', 'http://localhost:8038', 'http://localhost:8043', 'http://localhost:8031', 'http://localhost:8034', 'http://localhost:8022', 'http://localhost:8006', 'http://localhost:8039', 'http://localhost:8001', 'http://localhost:8019', 'http://localhost:8027', 'http://localhost:8025']
+from http://localhost:8026 ======A block received=========, 20:14:52  current length 25
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 20:14:52  current length 25
+16
+=============================
+this block is from a shorter chain
+from http://localhost:8018 ======A block received=========, 20:14:52  current length 25
+16
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 20:14:52  current length 25
+14
+=============================
+this block is from a shorter chain
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+replaced chain
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+afterset <threading.Event object at 0x10a622320> True
+broadcast: ['http://localhost:8045', 'http://localhost:8029', 'http://localhost:8016', 'http://localhost:8017', 'http://localhost:8032', 'http://localhost:8044', 'http://localhost:8013', 'http://localhost:8023', 'http://localhost:8015', 'http://localhost:8049', 'http://localhost:8000', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8030', 'http://localhost:8003', 'http://localhost:8004', 'http://localhost:8047', 'http://localhost:8009', 'http://localhost:8024', 'http://localhost:8037', 'http://localhost:7999', 'http://localhost:8028', 'http://localhost:8020', 'http://localhost:8046', 'http://localhost:8007', 'http://localhost:8036', 'http://localhost:8035', 'http://localhost:8018', 'http://localhost:8012', 'http://localhost:8040', 'http://localhost:8011', 'http://localhost:8041', 'http://localhost:8005', 'http://localhost:8048', 'http://localhost:8033', 'http://localhost:8008', 'http://localhost:8021', 'http://localhost:8010', 'http://localhost:8014', 'http://localhost:8038', 'http://localhost:8043', 'http://localhost:8031', 'http://localhost:8034', 'http://localhost:8022', 'http://localhost:8006', 'http://localhost:8039', 'http://localhost:8001', 'http://localhost:8019', 'http://localhost:8027', 'http://localhost:8025']
+HTTPConnectionPool(host='localhost', port=8044): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b328b00>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8016): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b31da20>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8023): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b31d6d8>: Failed to establish a new connection: [Errno 24] Too many open files',))
+from http://localhost:8006 ======A block received=========, 20:15:15  current length 25
+21
+=============================
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+this block is from a shorter chain
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+change diff: 30 1523578478 1523578415 63
+mining interrupted. 24
+change diff: 30 1523578478 1523578415 63
+The block has been accepted
+ 20:15:27 mined a block Block:25
+DataLen:1
+Time:1523578527
+PrevHash:0e5cb8411bc959ed4f8ecb7856d45f60da1ed73f0b8938f3e63650fbf2e95bd1
+Nonce:2
+Difficulty:3
+
+broadcast: ['http://localhost:8045', 'http://localhost:8029', 'http://localhost:8016', 'http://localhost:8017', 'http://localhost:8032', 'http://localhost:8044', 'http://localhost:8013', 'http://localhost:8023', 'http://localhost:8015', 'http://localhost:8049', 'http://localhost:8000', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8030', 'http://localhost:8003', 'http://localhost:8004', 'http://localhost:8047', 'http://localhost:8009', 'http://localhost:8024', 'http://localhost:8037', 'http://localhost:7999', 'http://localhost:8028', 'http://localhost:8020', 'http://localhost:8046', 'http://localhost:8007', 'http://localhost:8036', 'http://localhost:8035', 'http://localhost:8018', 'http://localhost:8012', 'http://localhost:8040', 'http://localhost:8011', 'http://localhost:8041', 'http://localhost:8005', 'http://localhost:8048', 'http://localhost:8033', 'http://localhost:8008', 'http://localhost:8021', 'http://localhost:8010', 'http://localhost:8014', 'http://localhost:8038', 'http://localhost:8043', 'http://localhost:8031', 'http://localhost:8034', 'http://localhost:8022', 'http://localhost:8006', 'http://localhost:8039', 'http://localhost:8001', 'http://localhost:8019', 'http://localhost:8027', 'http://localhost:8025']
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+HTTPConnectionPool(host='localhost', port=8023): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b65a550>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b65a1d0>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8009): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b673a20>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8024): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b673c88>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8013): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b6a41d0>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8042): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b6a4b70>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8031): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b69a860>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8028): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b69ab38>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8043): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b69ae10>: Failed to establish a new connection: [Errno 24] Too many open files',))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+replaced chain
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
+HTTPConnectionPool(host='localhost', port=8037): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b3dc710>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8020): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b6d6470>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8047): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b6d6e10>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8024): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b3f69b0>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8025): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b68e748>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=7999): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b67d9e8>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8004): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b6e2978>: Failed to establish a new connection: [Errno 24] Too many open files',))
+b'ok'
+could not find MARK
+The block has been accepted
+ 20:16:07 mined a block Block:26
+DataLen:1
+Time:1523578567
+PrevHash:058204b50c2d2e8ed7eee4314578c19742af8181a6e7e19881aa1688a4ca2304
+Nonce:1
+Difficulty:3
+
+broadcast: ['http://localhost:8045', 'http://localhost:8029', 'http://localhost:8016', 'http://localhost:8017', 'http://localhost:8032', 'http://localhost:8044', 'http://localhost:8013', 'http://localhost:8023', 'http://localhost:8015', 'http://localhost:8049', 'http://localhost:8000', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8030', 'http://localhost:8003', 'http://localhost:8004', 'http://localhost:8047', 'http://localhost:8009', 'http://localhost:8024', 'http://localhost:8037', 'http://localhost:7999', 'http://localhost:8028', 'http://localhost:8020', 'http://localhost:8046', 'http://localhost:8007', 'http://localhost:8036', 'http://localhost:8035', 'http://localhost:8018', 'http://localhost:8012', 'http://localhost:8040', 'http://localhost:8011', 'http://localhost:8041', 'http://localhost:8005', 'http://localhost:8048', 'http://localhost:8033', 'http://localhost:8008', 'http://localhost:8021', 'http://localhost:8010', 'http://localhost:8014', 'http://localhost:8038', 'http://localhost:8043', 'http://localhost:8031', 'http://localhost:8034', 'http://localhost:8022', 'http://localhost:8006', 'http://localhost:8039', 'http://localhost:8001', 'http://localhost:8019', 'http://localhost:8027', 'http://localhost:8025']
+HTTPConnectionPool(host='localhost', port=8046): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b6fc7b8>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8007): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b706550>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8036): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b70f198>: Failed to establish a new connection: [Errno 24] Too many open files',))
+b'ok'
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+from http://localhost:8033 ======A block received=========, 20:16:22  current length 27
+16
+=============================
+this block is from a shorter chain
+from http://localhost:8038 ======A block received=========, 20:16:22  current length 27
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8048 ======A block received=========, 20:16:22  current length 27
+9
+=============================
+this block is from a shorter chain
+from http://localhost:8048 ======A block received=========, 20:16:22  current length 27
+6
+=============================
+this block is from a shorter chain
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+HTTPConnectionPool(host='localhost', port=8014): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b7a7400>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8010): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b7cbf28>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8045): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b7d6940>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8008): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b7d6cc0>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8005): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b31d860>: Failed to establish a new connection: [Errno 24] Too many open files',))
+could not find MARK
+from http://localhost:8035 ======A block received=========, 20:16:36  current length 27
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8011 ======A block received=========, 20:16:36  current length 27
+21
+=============================
+this block is from a shorter chain
+from http://localhost:8015 ======A block received=========, 20:16:36  current length 27
+4
+=============================
+this block is from a shorter chain
+The block has been accepted
+ 20:16:45 mined a block Block:27
+DataLen:1
+Time:1523578605
+PrevHash:1fff1ffb672c3c389919c1f6988809576fe43e994b6906a78ad252eaea9a37c7
+Nonce:5
+Difficulty:3
+
+broadcast: ['http://localhost:8045', 'http://localhost:8029', 'http://localhost:8016', 'http://localhost:8017', 'http://localhost:8032', 'http://localhost:8044', 'http://localhost:8013', 'http://localhost:8023', 'http://localhost:8015', 'http://localhost:8049', 'http://localhost:8000', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8030', 'http://localhost:8003', 'http://localhost:8004', 'http://localhost:8047', 'http://localhost:8009', 'http://localhost:8024', 'http://localhost:8037', 'http://localhost:7999', 'http://localhost:8028', 'http://localhost:8020', 'http://localhost:8046', 'http://localhost:8007', 'http://localhost:8036', 'http://localhost:8035', 'http://localhost:8018', 'http://localhost:8012', 'http://localhost:8040', 'http://localhost:8011', 'http://localhost:8041', 'http://localhost:8005', 'http://localhost:8048', 'http://localhost:8033', 'http://localhost:8008', 'http://localhost:8021', 'http://localhost:8010', 'http://localhost:8014', 'http://localhost:8038', 'http://localhost:8043', 'http://localhost:8031', 'http://localhost:8034', 'http://localhost:8022', 'http://localhost:8006', 'http://localhost:8039', 'http://localhost:8001', 'http://localhost:8019', 'http://localhost:8027', 'http://localhost:8025']
+HTTPConnectionPool(host='localhost', port=8031): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b843fd0>: Failed to establish a new connection: [Errno 24] Too many open files',))
+from http://localhost:8026 ======A block received=========, 20:16:48  current length 28
+18
+=============================
+this block is from a shorter chain
+from http://localhost:8033 ======A block received=========, 20:16:48  current length 28
+21
+=============================
+this block is from a shorter chain
+from http://localhost:8016 ======A block received=========, 20:16:48  current length 28
+22
+=============================
+this block is from a shorter chain
+from http://localhost:8019 ======A block received=========, 20:16:48  current length 28
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8028 ======A block received=========, 20:16:48  current length 28
+3
+=============================
+this block is from a shorter chain
+HTTPConnectionPool(host='localhost', port=8026): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b8b1710>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8006): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b891a20>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8034): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b8c60b8>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8034): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b8da668>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8031): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b8dacc0>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8022): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b8e86d8>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8039): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b932f28>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8028): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b965390>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8029): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b965710>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8009): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b9659e8>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8032): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b970320>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8019): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b970fd0>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8027): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b956198>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8017): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b970ba8>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8032): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b99b470>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=7999): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b98c470>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8046): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b97bda0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8016): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b98c0f0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8044): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b98cf98>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b99b748>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8007): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b99b9b0>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8023): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b69aa58>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8013): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b9a7208>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8047): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b9b2908>: Failed to establish a new connection: [Errno 24] Too many open files',))
+change diff: 30 1523578605 1523578527 78
+The block has been accepted
+ 20:17:24 mined a block Block:28
+DataLen:1
+Time:1523578644
+PrevHash:05da48ee9a23d6fae597198fd5e54c66124732659ac2f1bb57f636dba6265e0a
+Nonce:7
+Difficulty:2
+
+broadcast: ['http://localhost:8045', 'http://localhost:8029', 'http://localhost:8016', 'http://localhost:8017', 'http://localhost:8032', 'http://localhost:8044', 'http://localhost:8013', 'http://localhost:8023', 'http://localhost:8015', 'http://localhost:8049', 'http://localhost:8000', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8030', 'http://localhost:8003', 'http://localhost:8004', 'http://localhost:8047', 'http://localhost:8009', 'http://localhost:8024', 'http://localhost:8037', 'http://localhost:7999', 'http://localhost:8028', 'http://localhost:8020', 'http://localhost:8046', 'http://localhost:8007', 'http://localhost:8036', 'http://localhost:8035', 'http://localhost:8018', 'http://localhost:8012', 'http://localhost:8040', 'http://localhost:8011', 'http://localhost:8041', 'http://localhost:8005', 'http://localhost:8048', 'http://localhost:8033', 'http://localhost:8008', 'http://localhost:8021', 'http://localhost:8010', 'http://localhost:8014', 'http://localhost:8038', 'http://localhost:8043', 'http://localhost:8031', 'http://localhost:8034', 'http://localhost:8022', 'http://localhost:8006', 'http://localhost:8039', 'http://localhost:8001', 'http://localhost:8019', 'http://localhost:8027', 'http://localhost:8025']
+HTTPConnectionPool(host='localhost', port=8049): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b297860>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8029): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b9d8c50>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8042): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b9bd1d0>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8042): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1096bad30>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8015): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10ba274a8>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8044): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b55ab00>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8041): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b706ba8>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8018): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b2af2e8>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8026): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10ba27208>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8026): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10ba5ec18>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8004): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10ba6c5f8>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8030): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b36d198>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8011): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10ba6ca90>: Failed to establish a new connection: [Errno 24] Too many open files',))
+b'ok'
+could not find MARK
+HTTPConnectionPool(host='localhost', port=8005): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b150e10>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8033): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b2a3f98>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8009): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b143f60>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8021): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10ba8b780>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8048): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10ba6c9b0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8028): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b1e1400>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8006): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10baa4630>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8045): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10baa47f0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8038): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10baa4b00>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=7999): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10baa4d30>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=7999): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10baa4f60>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8034): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bab1320>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8007): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bab16a0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8022): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bab1940>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8046): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bab1cc0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8008): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b057d30>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8010): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10ba9d860>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8020): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bac2358>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8029): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bac26d8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8031): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bac2860>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8035): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bac27f0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8039): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b462a90>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8036): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bac2438>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bac2c50>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8037): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bac2fd0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8028): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bad0390>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8012): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bad0780>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8018): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bad0b00>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8025): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10baf25f8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8011): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b0b0a58>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8020): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bb28908>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8042): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bb5bcc0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8023): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bb69e10>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8007): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bb17a90>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8015): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b7d6be0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8017): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bb28588>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8008): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b5a2908>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8018): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bb4dfd0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8033): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bb5ba58>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8044): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bb69080>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8021): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bb69a20>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8015): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bb82d68>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8036): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bb369e8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8035): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bb3fcf8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8032): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bb4d780>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8038): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bb8f748>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8022): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bb8fa58>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8003): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bb8fd30>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8049): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bba4278>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8026): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bba4668>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8019): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bae6668>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8048): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bb3f1d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8026): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bb8f470>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8014): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bb696a0>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bb8f630>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bbe5cc0>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8006): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bb8ff60>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8024): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bbe5dd8>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8039): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bbf4208>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8009): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bbf4ba8>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=7999): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bc260f0>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8037): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bc263c8>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8047): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bc19da0>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8045): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bc267b8>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8025): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bc26ba8>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8036): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bc26f28>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8017): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bc38358>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8020): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bc38518>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8007): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bc43710>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8011): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bc38ef0>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8032): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bc43320>: Failed to establish a new connection: [Errno 24] Too many open files',))
+The block has been accepted
+ 20:17:58 mined a block Block:29
+DataLen:1
+Time:1523578678
+PrevHash:0ca2108dcf4ba9b79220ae358cb3708ab2e342d8a419ff9e21d6c5080de37177
+Nonce:0
+Difficulty:2
+
+broadcast: ['http://localhost:8045', 'http://localhost:8029', 'http://localhost:8016', 'http://localhost:8017', 'http://localhost:8032', 'http://localhost:8044', 'http://localhost:8013', 'http://localhost:8023', 'http://localhost:8015', 'http://localhost:8049', 'http://localhost:8000', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8030', 'http://localhost:8003', 'http://localhost:8004', 'http://localhost:8047', 'http://localhost:8009', 'http://localhost:8024', 'http://localhost:8037', 'http://localhost:7999', 'http://localhost:8028', 'http://localhost:8020', 'http://localhost:8046', 'http://localhost:8007', 'http://localhost:8036', 'http://localhost:8035', 'http://localhost:8018', 'http://localhost:8012', 'http://localhost:8040', 'http://localhost:8011', 'http://localhost:8041', 'http://localhost:8005', 'http://localhost:8048', 'http://localhost:8033', 'http://localhost:8008', 'http://localhost:8021', 'http://localhost:8010', 'http://localhost:8014', 'http://localhost:8038', 'http://localhost:8043', 'http://localhost:8031', 'http://localhost:8034', 'http://localhost:8022', 'http://localhost:8006', 'http://localhost:8039', 'http://localhost:8001', 'http://localhost:8019', 'http://localhost:8027', 'http://localhost:8025']
+HTTPConnectionPool(host='localhost', port=8046): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bc53160>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8041): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bc534e0>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8005): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bc538d0>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8044): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bc69358>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8048): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b8e8668>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8003): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bc695f8>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8040): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bc78550>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8015): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bc78160>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8012): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bc69860>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8005): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bc82d30>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8010): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bcc7d68>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8030): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bc8de10>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8026): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bc9b240>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8024): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bcd1fd0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8014): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bce0828>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8031): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bcef160>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8028): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b970780>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8007): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bcef8d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8043): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bcefb00>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8038): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b965940>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8009): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bc5f630>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8003): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b9204e0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8037): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bce0c18>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8011): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b8fd860>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8020): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bce0e10>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8008): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bca9ef0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8033): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bcb8208>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8033): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bc9b940>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8046): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b6a40f0>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8018): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b2c5ef0>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8035): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b67d390>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8022): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b97bc50>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8047): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bcb86a0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8021): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bcd1e10>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8036): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b9a7198>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8006): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b9a7ba8>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8034): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b99b898>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bc825c0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8042): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bc8d198>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8048): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bc8d400>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8010): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bcd1588>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8041): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bc9b550>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=7999): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bcd1a20>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8019): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bd1bdd8>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8022): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bd0c7b8>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8039): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bcfce80>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8046): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bd39390>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8027): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bd39710>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8005): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b9d8c18>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8009): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b6e2be0>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8035): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b6e2fd0>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8021): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bd64160>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8033): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bd644e0>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8008): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b9f1748>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8006): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bd70668>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8014): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bd709e8>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8034): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bd70b00>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8043): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bd70ef0>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8006): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bd7b198>: Failed to establish a new connection: [Errno 24] Too many open files',))
+b'ok'
+could not find MARK

@@ -1,0 +1,251 @@
+start main
+peers: ['http://localhost:8027', 'http://localhost:8006', 'http://localhost:8016', 'http://localhost:8019', 'http://localhost:8033', 'http://localhost:8044', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8036', 'http://localhost:8004', 'http://localhost:8029', 'http://localhost:8007', 'http://localhost:8049', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8021', 'http://localhost:8024', 'http://localhost:8030', 'http://localhost:8043', 'http://localhost:8025', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8000', 'http://localhost:8022', 'http://localhost:8008', 'http://localhost:8005', 'http://localhost:8031', 'http://localhost:8010', 'http://localhost:8047', 'http://localhost:8003', 'http://localhost:7999', 'http://localhost:8041', 'http://localhost:8035', 'http://localhost:8017', 'http://localhost:8023', 'http://localhost:8011', 'http://localhost:8039', 'http://localhost:8018', 'http://localhost:8034', 'http://localhost:8040', 'http://localhost:8012', 'http://localhost:8013', 'http://localhost:8045', 'http://localhost:8032', 'http://localhost:8038', 'http://localhost:8020', 'http://localhost:8002', 'http://localhost:8048', 'http://localhost:8001', 'http://localhost:8015']
+start utxos: [<transaction.UnspentTxOut object at 0x10a8b62b0>]
+request a chain
+HTTPConnectionPool(host='localhost', port=8027): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10a96e438>: Failed to establish a new connection: [Errno 61] Connection refused',))
+request a chain
+b'\x80\x03]q\x00cchain\nBlock\nq\x01)\x81q\x02}q\x03(X\x05\x00\x00\x00indexq\x04K\x00X\x04\x00\x00\x00dataq\x05]q\x06ctransaction\nTransaction\nq\x07)\x81q\x08}q\t(X\x02\x00\x00\x00idq\nX@\x00\x00\x0095db0b8e71740baf81a619bfff7afe3600181828b59815d02c7f1b7b3209c831q\x0bX\x05\x00\x00\x00txInsq\x0c]q\rctransaction\nTxIn\nq\x0e)\x81q\x0f}q\x10(X\x07\x00\x00\x00txOutIdq\x11X\x00\x00\x00\x00q\x12X\n\x00\x00\x00txOutIndexq\x13K\x00X\t\x00\x00\x00signatureq\x14h\x12ubaX\x06\x00\x00\x00txOutsq\x15]q\x16ctransaction\nTxOut\nq\x17)\x81q\x18}q\x19(X\x07\x00\x00\x00addressq\x1aX\x80\x00\x00\x0060ba02269f0aa21a5ee18de8f21f4c159587713db66459d8baca5406021cc51269fe4b4d23587bf58c70e7014d727d1e10ec6b80fa395829b3b79dae3fdc7360q\x1bX\x06\x00\x00\x00amountq\x1cK2ubaubaX\t\x00\x00\x00timestampq\x1dJ\x97q\x90ZX\x04\x00\x00\x00hashq\x1eX@\x00\x00\x00e9d3061d5e216863506649096aac5ddd2089357c0bb3d647db332cd9b926f8b9q\x1fX\t\x00\x00\x00prev_hashq h\x12X\x05\x00\x00\x00nonceq!K\x00X\n\x00\x00\x00difficultyq"K\x00uba.'
+longer chain getted
+afterset <threading.Event object at 0x10a8b6320> True
+broadcast: ['http://localhost:8027', 'http://localhost:8006', 'http://localhost:8016', 'http://localhost:8019', 'http://localhost:8033', 'http://localhost:8044', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8036', 'http://localhost:8004', 'http://localhost:8029', 'http://localhost:8007', 'http://localhost:8049', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8021', 'http://localhost:8024', 'http://localhost:8030', 'http://localhost:8043', 'http://localhost:8025', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8000', 'http://localhost:8022', 'http://localhost:8008', 'http://localhost:8005', 'http://localhost:8031', 'http://localhost:8010', 'http://localhost:8047', 'http://localhost:8003', 'http://localhost:7999', 'http://localhost:8041', 'http://localhost:8035', 'http://localhost:8017', 'http://localhost:8023', 'http://localhost:8011', 'http://localhost:8039', 'http://localhost:8018', 'http://localhost:8034', 'http://localhost:8040', 'http://localhost:8012', 'http://localhost:8013', 'http://localhost:8045', 'http://localhost:8032', 'http://localhost:8038', 'http://localhost:8020', 'http://localhost:8002', 'http://localhost:8048', 'http://localhost:8001', 'http://localhost:8015']
+replaced chain
+mining interrupted. 0
+The block has been accepted
+ 20:09:12 mined a block Block:1
+DataLen:1
+Time:1523578152
+PrevHash:e9d3061d5e216863506649096aac5ddd2089357c0bb3d647db332cd9b926f8b9
+Nonce:0
+Difficulty:0
+
+broadcast: ['http://localhost:8027', 'http://localhost:8006', 'http://localhost:8016', 'http://localhost:8019', 'http://localhost:8033', 'http://localhost:8044', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8036', 'http://localhost:8004', 'http://localhost:8029', 'http://localhost:8007', 'http://localhost:8049', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8021', 'http://localhost:8024', 'http://localhost:8030', 'http://localhost:8043', 'http://localhost:8025', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8000', 'http://localhost:8022', 'http://localhost:8008', 'http://localhost:8005', 'http://localhost:8031', 'http://localhost:8010', 'http://localhost:8047', 'http://localhost:8003', 'http://localhost:7999', 'http://localhost:8041', 'http://localhost:8035', 'http://localhost:8017', 'http://localhost:8023', 'http://localhost:8011', 'http://localhost:8039', 'http://localhost:8018', 'http://localhost:8034', 'http://localhost:8040', 'http://localhost:8012', 'http://localhost:8013', 'http://localhost:8045', 'http://localhost:8032', 'http://localhost:8038', 'http://localhost:8020', 'http://localhost:8002', 'http://localhost:8048', 'http://localhost:8001', 'http://localhost:8015']
+The block has been accepted
+ 20:09:13 mined a block Block:2
+DataLen:1
+Time:1523578153
+PrevHash:0c5e63f5befea069a6a9d73e260bfb744d1e7fd8a7ed7c95f9b6eb5eb7fe04cb
+Nonce:0
+Difficulty:0
+
+broadcast: ['http://localhost:8027', 'http://localhost:8006', 'http://localhost:8016', 'http://localhost:8019', 'http://localhost:8033', 'http://localhost:8044', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8036', 'http://localhost:8004', 'http://localhost:8029', 'http://localhost:8007', 'http://localhost:8049', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8021', 'http://localhost:8024', 'http://localhost:8030', 'http://localhost:8043', 'http://localhost:8025', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8000', 'http://localhost:8022', 'http://localhost:8008', 'http://localhost:8005', 'http://localhost:8031', 'http://localhost:8010', 'http://localhost:8047', 'http://localhost:8003', 'http://localhost:7999', 'http://localhost:8041', 'http://localhost:8035', 'http://localhost:8017', 'http://localhost:8023', 'http://localhost:8011', 'http://localhost:8039', 'http://localhost:8018', 'http://localhost:8034', 'http://localhost:8040', 'http://localhost:8012', 'http://localhost:8013', 'http://localhost:8045', 'http://localhost:8032', 'http://localhost:8038', 'http://localhost:8020', 'http://localhost:8002', 'http://localhost:8048', 'http://localhost:8001', 'http://localhost:8015']
+The block has been accepted
+ 20:09:13 mined a block Block:3
+DataLen:1
+Time:1523578153
+PrevHash:b8caf6d34316ef76bd8fcea09c857eaf487b83928c013e4430addde4192bd1dc
+Nonce:0
+Difficulty:0
+
+broadcast: ['http://localhost:8027', 'http://localhost:8006', 'http://localhost:8016', 'http://localhost:8019', 'http://localhost:8033', 'http://localhost:8044', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8036', 'http://localhost:8004', 'http://localhost:8029', 'http://localhost:8007', 'http://localhost:8049', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8021', 'http://localhost:8024', 'http://localhost:8030', 'http://localhost:8043', 'http://localhost:8025', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8000', 'http://localhost:8022', 'http://localhost:8008', 'http://localhost:8005', 'http://localhost:8031', 'http://localhost:8010', 'http://localhost:8047', 'http://localhost:8003', 'http://localhost:7999', 'http://localhost:8041', 'http://localhost:8035', 'http://localhost:8017', 'http://localhost:8023', 'http://localhost:8011', 'http://localhost:8039', 'http://localhost:8018', 'http://localhost:8034', 'http://localhost:8040', 'http://localhost:8012', 'http://localhost:8013', 'http://localhost:8045', 'http://localhost:8032', 'http://localhost:8038', 'http://localhost:8020', 'http://localhost:8002', 'http://localhost:8048', 'http://localhost:8001', 'http://localhost:8015']
+change diff: 30 1523578153 1523578152 1
+The block has been accepted
+ 20:09:14 mined a block Block:4
+DataLen:1
+Time:1523578154
+PrevHash:d7f88aacf8d623d1e7d170bfc2c422e07db11bdd9548cbdba1cbb1f232d4c92a
+Nonce:0
+Difficulty:1
+
+broadcast: ['http://localhost:8027', 'http://localhost:8006', 'http://localhost:8016', 'http://localhost:8019', 'http://localhost:8033', 'http://localhost:8044', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8036', 'http://localhost:8004', 'http://localhost:8029', 'http://localhost:8007', 'http://localhost:8049', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8021', 'http://localhost:8024', 'http://localhost:8030', 'http://localhost:8043', 'http://localhost:8025', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8000', 'http://localhost:8022', 'http://localhost:8008', 'http://localhost:8005', 'http://localhost:8031', 'http://localhost:8010', 'http://localhost:8047', 'http://localhost:8003', 'http://localhost:7999', 'http://localhost:8041', 'http://localhost:8035', 'http://localhost:8017', 'http://localhost:8023', 'http://localhost:8011', 'http://localhost:8039', 'http://localhost:8018', 'http://localhost:8034', 'http://localhost:8040', 'http://localhost:8012', 'http://localhost:8013', 'http://localhost:8045', 'http://localhost:8032', 'http://localhost:8038', 'http://localhost:8020', 'http://localhost:8002', 'http://localhost:8048', 'http://localhost:8001', 'http://localhost:8015']
+The block has been accepted
+ 20:09:15 mined a block Block:5
+DataLen:1
+Time:1523578155
+PrevHash:499ab66d7a6072abde09c568cd6e0eb15615661cbb1d4385f7a3d49d27cd6a37
+Nonce:0
+Difficulty:1
+
+broadcast: ['http://localhost:8027', 'http://localhost:8006', 'http://localhost:8016', 'http://localhost:8019', 'http://localhost:8033', 'http://localhost:8044', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8036', 'http://localhost:8004', 'http://localhost:8029', 'http://localhost:8007', 'http://localhost:8049', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8021', 'http://localhost:8024', 'http://localhost:8030', 'http://localhost:8043', 'http://localhost:8025', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8000', 'http://localhost:8022', 'http://localhost:8008', 'http://localhost:8005', 'http://localhost:8031', 'http://localhost:8010', 'http://localhost:8047', 'http://localhost:8003', 'http://localhost:7999', 'http://localhost:8041', 'http://localhost:8035', 'http://localhost:8017', 'http://localhost:8023', 'http://localhost:8011', 'http://localhost:8039', 'http://localhost:8018', 'http://localhost:8034', 'http://localhost:8040', 'http://localhost:8012', 'http://localhost:8013', 'http://localhost:8045', 'http://localhost:8032', 'http://localhost:8038', 'http://localhost:8020', 'http://localhost:8002', 'http://localhost:8048', 'http://localhost:8001', 'http://localhost:8015']
+The block has been accepted
+ 20:09:16 mined a block Block:6
+DataLen:1
+Time:1523578156
+PrevHash:45ef144c04916c08033d2958aa2f9dfa3c1d0afed8e7ae770ae777ae056023e7
+Nonce:0
+Difficulty:1
+
+broadcast: ['http://localhost:8027', 'http://localhost:8006', 'http://localhost:8016', 'http://localhost:8019', 'http://localhost:8033', 'http://localhost:8044', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8036', 'http://localhost:8004', 'http://localhost:8029', 'http://localhost:8007', 'http://localhost:8049', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8021', 'http://localhost:8024', 'http://localhost:8030', 'http://localhost:8043', 'http://localhost:8025', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8000', 'http://localhost:8022', 'http://localhost:8008', 'http://localhost:8005', 'http://localhost:8031', 'http://localhost:8010', 'http://localhost:8047', 'http://localhost:8003', 'http://localhost:7999', 'http://localhost:8041', 'http://localhost:8035', 'http://localhost:8017', 'http://localhost:8023', 'http://localhost:8011', 'http://localhost:8039', 'http://localhost:8018', 'http://localhost:8034', 'http://localhost:8040', 'http://localhost:8012', 'http://localhost:8013', 'http://localhost:8045', 'http://localhost:8032', 'http://localhost:8038', 'http://localhost:8020', 'http://localhost:8002', 'http://localhost:8048', 'http://localhost:8001', 'http://localhost:8015']
+change diff: 30 1523578156 1523578154 2
+The block has been accepted
+ 20:09:17 mined a block Block:7
+DataLen:1
+Time:1523578157
+PrevHash:36a35cc035cd8cfe0fb719ef0f1a1d302d28666c6531a445d49c50069d620570
+Nonce:11
+Difficulty:2
+
+broadcast: ['http://localhost:8027', 'http://localhost:8006', 'http://localhost:8016', 'http://localhost:8019', 'http://localhost:8033', 'http://localhost:8044', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8036', 'http://localhost:8004', 'http://localhost:8029', 'http://localhost:8007', 'http://localhost:8049', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8021', 'http://localhost:8024', 'http://localhost:8030', 'http://localhost:8043', 'http://localhost:8025', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8000', 'http://localhost:8022', 'http://localhost:8008', 'http://localhost:8005', 'http://localhost:8031', 'http://localhost:8010', 'http://localhost:8047', 'http://localhost:8003', 'http://localhost:7999', 'http://localhost:8041', 'http://localhost:8035', 'http://localhost:8017', 'http://localhost:8023', 'http://localhost:8011', 'http://localhost:8039', 'http://localhost:8018', 'http://localhost:8034', 'http://localhost:8040', 'http://localhost:8012', 'http://localhost:8013', 'http://localhost:8045', 'http://localhost:8032', 'http://localhost:8038', 'http://localhost:8020', 'http://localhost:8002', 'http://localhost:8048', 'http://localhost:8001', 'http://localhost:8015']
+The block has been accepted
+ 20:09:17 mined a block Block:8
+DataLen:1
+Time:1523578157
+PrevHash:3f3cfc52596d46347b0f836470fdf7b99f32a77183ee011ca9a5aca07ae2fe9a
+Nonce:0
+Difficulty:2
+
+broadcast: ['http://localhost:8027', 'http://localhost:8006', 'http://localhost:8016', 'http://localhost:8019', 'http://localhost:8033', 'http://localhost:8044', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8036', 'http://localhost:8004', 'http://localhost:8029', 'http://localhost:8007', 'http://localhost:8049', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8021', 'http://localhost:8024', 'http://localhost:8030', 'http://localhost:8043', 'http://localhost:8025', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8000', 'http://localhost:8022', 'http://localhost:8008', 'http://localhost:8005', 'http://localhost:8031', 'http://localhost:8010', 'http://localhost:8047', 'http://localhost:8003', 'http://localhost:7999', 'http://localhost:8041', 'http://localhost:8035', 'http://localhost:8017', 'http://localhost:8023', 'http://localhost:8011', 'http://localhost:8039', 'http://localhost:8018', 'http://localhost:8034', 'http://localhost:8040', 'http://localhost:8012', 'http://localhost:8013', 'http://localhost:8045', 'http://localhost:8032', 'http://localhost:8038', 'http://localhost:8020', 'http://localhost:8002', 'http://localhost:8048', 'http://localhost:8001', 'http://localhost:8015']
+The block has been accepted
+ 20:09:18 mined a block Block:9
+DataLen:1
+Time:1523578158
+PrevHash:24535db0fbf5a940f4341bdd6033e417c8e65772fce34f127d6c13a6df0d03af
+Nonce:3
+Difficulty:2
+
+broadcast: ['http://localhost:8027', 'http://localhost:8006', 'http://localhost:8016', 'http://localhost:8019', 'http://localhost:8033', 'http://localhost:8044', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8036', 'http://localhost:8004', 'http://localhost:8029', 'http://localhost:8007', 'http://localhost:8049', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8021', 'http://localhost:8024', 'http://localhost:8030', 'http://localhost:8043', 'http://localhost:8025', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8000', 'http://localhost:8022', 'http://localhost:8008', 'http://localhost:8005', 'http://localhost:8031', 'http://localhost:8010', 'http://localhost:8047', 'http://localhost:8003', 'http://localhost:7999', 'http://localhost:8041', 'http://localhost:8035', 'http://localhost:8017', 'http://localhost:8023', 'http://localhost:8011', 'http://localhost:8039', 'http://localhost:8018', 'http://localhost:8034', 'http://localhost:8040', 'http://localhost:8012', 'http://localhost:8013', 'http://localhost:8045', 'http://localhost:8032', 'http://localhost:8038', 'http://localhost:8020', 'http://localhost:8002', 'http://localhost:8048', 'http://localhost:8001', 'http://localhost:8015']
+change diff: 30 1523578158 1523578157 1
+The block has been accepted
+ 20:09:38 mined a block Block:10
+DataLen:1
+Time:1523578178
+PrevHash:1c743cd6800e9c6452daf369fed51ed7fdb6b86fba0586547cf2b02f50e2f84e
+Nonce:15
+Difficulty:3
+
+broadcast: ['http://localhost:8027', 'http://localhost:8006', 'http://localhost:8016', 'http://localhost:8019', 'http://localhost:8033', 'http://localhost:8044', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8036', 'http://localhost:8004', 'http://localhost:8029', 'http://localhost:8007', 'http://localhost:8049', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8021', 'http://localhost:8024', 'http://localhost:8030', 'http://localhost:8043', 'http://localhost:8025', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8000', 'http://localhost:8022', 'http://localhost:8008', 'http://localhost:8005', 'http://localhost:8031', 'http://localhost:8010', 'http://localhost:8047', 'http://localhost:8003', 'http://localhost:7999', 'http://localhost:8041', 'http://localhost:8035', 'http://localhost:8017', 'http://localhost:8023', 'http://localhost:8011', 'http://localhost:8039', 'http://localhost:8018', 'http://localhost:8034', 'http://localhost:8040', 'http://localhost:8012', 'http://localhost:8013', 'http://localhost:8045', 'http://localhost:8032', 'http://localhost:8038', 'http://localhost:8020', 'http://localhost:8002', 'http://localhost:8048', 'http://localhost:8001', 'http://localhost:8015']
+The block has been accepted
+ 20:10:05 mined a block Block:11
+DataLen:1
+Time:1523578205
+PrevHash:111843c81b5ede7ab5040a0699b8e15b62b7b6408fb9885fc91b8a2d51e471a8
+Nonce:2
+Difficulty:3
+
+broadcast: ['http://localhost:8027', 'http://localhost:8006', 'http://localhost:8016', 'http://localhost:8019', 'http://localhost:8033', 'http://localhost:8044', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8036', 'http://localhost:8004', 'http://localhost:8029', 'http://localhost:8007', 'http://localhost:8049', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8021', 'http://localhost:8024', 'http://localhost:8030', 'http://localhost:8043', 'http://localhost:8025', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8000', 'http://localhost:8022', 'http://localhost:8008', 'http://localhost:8005', 'http://localhost:8031', 'http://localhost:8010', 'http://localhost:8047', 'http://localhost:8003', 'http://localhost:7999', 'http://localhost:8041', 'http://localhost:8035', 'http://localhost:8017', 'http://localhost:8023', 'http://localhost:8011', 'http://localhost:8039', 'http://localhost:8018', 'http://localhost:8034', 'http://localhost:8040', 'http://localhost:8012', 'http://localhost:8013', 'http://localhost:8045', 'http://localhost:8032', 'http://localhost:8038', 'http://localhost:8020', 'http://localhost:8002', 'http://localhost:8048', 'http://localhost:8001', 'http://localhost:8015']
+The block has been accepted
+ 20:10:25 mined a block Block:12
+DataLen:1
+Time:1523578225
+PrevHash:0d9f464bb8cebc384469e08df8ec7632577150653bf3477cc387d9f820147999
+Nonce:0
+Difficulty:3
+
+broadcast: ['http://localhost:8027', 'http://localhost:8006', 'http://localhost:8016', 'http://localhost:8019', 'http://localhost:8033', 'http://localhost:8044', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8036', 'http://localhost:8004', 'http://localhost:8029', 'http://localhost:8007', 'http://localhost:8049', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8021', 'http://localhost:8024', 'http://localhost:8030', 'http://localhost:8043', 'http://localhost:8025', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8000', 'http://localhost:8022', 'http://localhost:8008', 'http://localhost:8005', 'http://localhost:8031', 'http://localhost:8010', 'http://localhost:8047', 'http://localhost:8003', 'http://localhost:7999', 'http://localhost:8041', 'http://localhost:8035', 'http://localhost:8017', 'http://localhost:8023', 'http://localhost:8011', 'http://localhost:8039', 'http://localhost:8018', 'http://localhost:8034', 'http://localhost:8040', 'http://localhost:8012', 'http://localhost:8013', 'http://localhost:8045', 'http://localhost:8032', 'http://localhost:8038', 'http://localhost:8020', 'http://localhost:8002', 'http://localhost:8048', 'http://localhost:8001', 'http://localhost:8015']
+change diff: 30 1523578225 1523578178 47
+The block has been accepted
+ 20:10:34 mined a block Block:13
+DataLen:1
+Time:1523578234
+PrevHash:14f5e06be2d182e6b9b6526cec78de78015d0b0fb4b34f6345adbcb26ea56f53
+Nonce:2
+Difficulty:3
+
+broadcast: ['http://localhost:8027', 'http://localhost:8006', 'http://localhost:8016', 'http://localhost:8019', 'http://localhost:8033', 'http://localhost:8044', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8036', 'http://localhost:8004', 'http://localhost:8029', 'http://localhost:8007', 'http://localhost:8049', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8021', 'http://localhost:8024', 'http://localhost:8030', 'http://localhost:8043', 'http://localhost:8025', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8000', 'http://localhost:8022', 'http://localhost:8008', 'http://localhost:8005', 'http://localhost:8031', 'http://localhost:8010', 'http://localhost:8047', 'http://localhost:8003', 'http://localhost:7999', 'http://localhost:8041', 'http://localhost:8035', 'http://localhost:8017', 'http://localhost:8023', 'http://localhost:8011', 'http://localhost:8039', 'http://localhost:8018', 'http://localhost:8034', 'http://localhost:8040', 'http://localhost:8012', 'http://localhost:8013', 'http://localhost:8045', 'http://localhost:8032', 'http://localhost:8038', 'http://localhost:8020', 'http://localhost:8002', 'http://localhost:8048', 'http://localhost:8001', 'http://localhost:8015']
+The block has been accepted
+ 20:10:41 mined a block Block:14
+DataLen:1
+Time:1523578241
+PrevHash:1af0e764bdb8975f0d8eae43e97e1446d55e72cb1f2c8fd6ce513c408fbdd697
+Nonce:0
+Difficulty:3
+
+broadcast: ['http://localhost:8027', 'http://localhost:8006', 'http://localhost:8016', 'http://localhost:8019', 'http://localhost:8033', 'http://localhost:8044', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8036', 'http://localhost:8004', 'http://localhost:8029', 'http://localhost:8007', 'http://localhost:8049', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8021', 'http://localhost:8024', 'http://localhost:8030', 'http://localhost:8043', 'http://localhost:8025', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8000', 'http://localhost:8022', 'http://localhost:8008', 'http://localhost:8005', 'http://localhost:8031', 'http://localhost:8010', 'http://localhost:8047', 'http://localhost:8003', 'http://localhost:7999', 'http://localhost:8041', 'http://localhost:8035', 'http://localhost:8017', 'http://localhost:8023', 'http://localhost:8011', 'http://localhost:8039', 'http://localhost:8018', 'http://localhost:8034', 'http://localhost:8040', 'http://localhost:8012', 'http://localhost:8013', 'http://localhost:8045', 'http://localhost:8032', 'http://localhost:8038', 'http://localhost:8020', 'http://localhost:8002', 'http://localhost:8048', 'http://localhost:8001', 'http://localhost:8015']
+The block has been accepted
+ 20:10:45 mined a block Block:15
+DataLen:1
+Time:1523578245
+PrevHash:17302fc08a719aca068a4617e812d27a0d239d79370315ab0dc627148df3565d
+Nonce:3
+Difficulty:3
+
+broadcast: ['http://localhost:8027', 'http://localhost:8006', 'http://localhost:8016', 'http://localhost:8019', 'http://localhost:8033', 'http://localhost:8044', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8036', 'http://localhost:8004', 'http://localhost:8029', 'http://localhost:8007', 'http://localhost:8049', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8021', 'http://localhost:8024', 'http://localhost:8030', 'http://localhost:8043', 'http://localhost:8025', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8000', 'http://localhost:8022', 'http://localhost:8008', 'http://localhost:8005', 'http://localhost:8031', 'http://localhost:8010', 'http://localhost:8047', 'http://localhost:8003', 'http://localhost:7999', 'http://localhost:8041', 'http://localhost:8035', 'http://localhost:8017', 'http://localhost:8023', 'http://localhost:8011', 'http://localhost:8039', 'http://localhost:8018', 'http://localhost:8034', 'http://localhost:8040', 'http://localhost:8012', 'http://localhost:8013', 'http://localhost:8045', 'http://localhost:8032', 'http://localhost:8038', 'http://localhost:8020', 'http://localhost:8002', 'http://localhost:8048', 'http://localhost:8001', 'http://localhost:8015']
+change diff: 30 1523578245 1523578234 11
+The block has been accepted
+ 20:10:48 mined a block Block:16
+DataLen:1
+Time:1523578248
+PrevHash:0dc976fad2b9a2e00649c92331c642fb3ee575d7975c09b4d5fd191d021e3632
+Nonce:20
+Difficulty:4
+
+broadcast: ['http://localhost:8027', 'http://localhost:8006', 'http://localhost:8016', 'http://localhost:8019', 'http://localhost:8033', 'http://localhost:8044', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8036', 'http://localhost:8004', 'http://localhost:8029', 'http://localhost:8007', 'http://localhost:8049', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8021', 'http://localhost:8024', 'http://localhost:8030', 'http://localhost:8043', 'http://localhost:8025', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8000', 'http://localhost:8022', 'http://localhost:8008', 'http://localhost:8005', 'http://localhost:8031', 'http://localhost:8010', 'http://localhost:8047', 'http://localhost:8003', 'http://localhost:7999', 'http://localhost:8041', 'http://localhost:8035', 'http://localhost:8017', 'http://localhost:8023', 'http://localhost:8011', 'http://localhost:8039', 'http://localhost:8018', 'http://localhost:8034', 'http://localhost:8040', 'http://localhost:8012', 'http://localhost:8013', 'http://localhost:8045', 'http://localhost:8032', 'http://localhost:8038', 'http://localhost:8020', 'http://localhost:8002', 'http://localhost:8048', 'http://localhost:8001', 'http://localhost:8015']
+The block has been accepted
+ 20:10:52 mined a block Block:17
+DataLen:1
+Time:1523578252
+PrevHash:01aef6a738e6c7bf5c2bfab8ab0a467fe826f0e41ec1b668bea65ab1666b92b0
+Nonce:2
+Difficulty:4
+
+broadcast: ['http://localhost:8027', 'http://localhost:8006', 'http://localhost:8016', 'http://localhost:8019', 'http://localhost:8033', 'http://localhost:8044', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8036', 'http://localhost:8004', 'http://localhost:8029', 'http://localhost:8007', 'http://localhost:8049', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8021', 'http://localhost:8024', 'http://localhost:8030', 'http://localhost:8043', 'http://localhost:8025', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8000', 'http://localhost:8022', 'http://localhost:8008', 'http://localhost:8005', 'http://localhost:8031', 'http://localhost:8010', 'http://localhost:8047', 'http://localhost:8003', 'http://localhost:7999', 'http://localhost:8041', 'http://localhost:8035', 'http://localhost:8017', 'http://localhost:8023', 'http://localhost:8011', 'http://localhost:8039', 'http://localhost:8018', 'http://localhost:8034', 'http://localhost:8040', 'http://localhost:8012', 'http://localhost:8013', 'http://localhost:8045', 'http://localhost:8032', 'http://localhost:8038', 'http://localhost:8020', 'http://localhost:8002', 'http://localhost:8048', 'http://localhost:8001', 'http://localhost:8015']
+The block has been accepted
+ 20:10:54 mined a block Block:18
+DataLen:1
+Time:1523578254
+PrevHash:0abae31c0b1ca84ee8166ce8b0d318dd15cb9f812a7e88fc3048aab76a6bf06c
+Nonce:31
+Difficulty:4
+
+broadcast: ['http://localhost:8027', 'http://localhost:8006', 'http://localhost:8016', 'http://localhost:8019', 'http://localhost:8033', 'http://localhost:8044', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8036', 'http://localhost:8004', 'http://localhost:8029', 'http://localhost:8007', 'http://localhost:8049', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8021', 'http://localhost:8024', 'http://localhost:8030', 'http://localhost:8043', 'http://localhost:8025', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8000', 'http://localhost:8022', 'http://localhost:8008', 'http://localhost:8005', 'http://localhost:8031', 'http://localhost:8010', 'http://localhost:8047', 'http://localhost:8003', 'http://localhost:7999', 'http://localhost:8041', 'http://localhost:8035', 'http://localhost:8017', 'http://localhost:8023', 'http://localhost:8011', 'http://localhost:8039', 'http://localhost:8018', 'http://localhost:8034', 'http://localhost:8040', 'http://localhost:8012', 'http://localhost:8013', 'http://localhost:8045', 'http://localhost:8032', 'http://localhost:8038', 'http://localhost:8020', 'http://localhost:8002', 'http://localhost:8048', 'http://localhost:8001', 'http://localhost:8015']
+change diff: 30 1523578254 1523578248 6
+The block has been accepted
+ 20:10:56 mined a block Block:19
+DataLen:1
+Time:1523578256
+PrevHash:01a9879545239725ac3a7bf0d88486f14400d263c44ce0a9798ff8d77fbdf1c6
+Nonce:71
+Difficulty:5
+
+broadcast: ['http://localhost:8027', 'http://localhost:8006', 'http://localhost:8016', 'http://localhost:8019', 'http://localhost:8033', 'http://localhost:8044', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8036', 'http://localhost:8004', 'http://localhost:8029', 'http://localhost:8007', 'http://localhost:8049', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8021', 'http://localhost:8024', 'http://localhost:8030', 'http://localhost:8043', 'http://localhost:8025', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8000', 'http://localhost:8022', 'http://localhost:8008', 'http://localhost:8005', 'http://localhost:8031', 'http://localhost:8010', 'http://localhost:8047', 'http://localhost:8003', 'http://localhost:7999', 'http://localhost:8041', 'http://localhost:8035', 'http://localhost:8017', 'http://localhost:8023', 'http://localhost:8011', 'http://localhost:8039', 'http://localhost:8018', 'http://localhost:8034', 'http://localhost:8040', 'http://localhost:8012', 'http://localhost:8013', 'http://localhost:8045', 'http://localhost:8032', 'http://localhost:8038', 'http://localhost:8020', 'http://localhost:8002', 'http://localhost:8048', 'http://localhost:8001', 'http://localhost:8015']
+The block has been accepted
+ 20:11:03 mined a block Block:20
+DataLen:1
+Time:1523578263
+PrevHash:04bc18295ebaa12dc7b0e1e13d0b7b859dac492449725d5fa759f73273fbc75b
+Nonce:106
+Difficulty:5
+
+broadcast: ['http://localhost:8027', 'http://localhost:8006', 'http://localhost:8016', 'http://localhost:8019', 'http://localhost:8033', 'http://localhost:8044', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8036', 'http://localhost:8004', 'http://localhost:8029', 'http://localhost:8007', 'http://localhost:8049', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8021', 'http://localhost:8024', 'http://localhost:8030', 'http://localhost:8043', 'http://localhost:8025', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8000', 'http://localhost:8022', 'http://localhost:8008', 'http://localhost:8005', 'http://localhost:8031', 'http://localhost:8010', 'http://localhost:8047', 'http://localhost:8003', 'http://localhost:7999', 'http://localhost:8041', 'http://localhost:8035', 'http://localhost:8017', 'http://localhost:8023', 'http://localhost:8011', 'http://localhost:8039', 'http://localhost:8018', 'http://localhost:8034', 'http://localhost:8040', 'http://localhost:8012', 'http://localhost:8013', 'http://localhost:8045', 'http://localhost:8032', 'http://localhost:8038', 'http://localhost:8020', 'http://localhost:8002', 'http://localhost:8048', 'http://localhost:8001', 'http://localhost:8015']
+The block has been accepted
+ 20:11:04 mined a block Block:21
+DataLen:1
+Time:1523578264
+PrevHash:040ae2072bce6d1ac6dd261424bff9ba8c9c4fc953e906939b1ae31cdf67abb6
+Nonce:53
+Difficulty:5
+
+broadcast: ['http://localhost:8027', 'http://localhost:8006', 'http://localhost:8016', 'http://localhost:8019', 'http://localhost:8033', 'http://localhost:8044', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8036', 'http://localhost:8004', 'http://localhost:8029', 'http://localhost:8007', 'http://localhost:8049', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8021', 'http://localhost:8024', 'http://localhost:8030', 'http://localhost:8043', 'http://localhost:8025', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8000', 'http://localhost:8022', 'http://localhost:8008', 'http://localhost:8005', 'http://localhost:8031', 'http://localhost:8010', 'http://localhost:8047', 'http://localhost:8003', 'http://localhost:7999', 'http://localhost:8041', 'http://localhost:8035', 'http://localhost:8017', 'http://localhost:8023', 'http://localhost:8011', 'http://localhost:8039', 'http://localhost:8018', 'http://localhost:8034', 'http://localhost:8040', 'http://localhost:8012', 'http://localhost:8013', 'http://localhost:8045', 'http://localhost:8032', 'http://localhost:8038', 'http://localhost:8020', 'http://localhost:8002', 'http://localhost:8048', 'http://localhost:8001', 'http://localhost:8015']
+change diff: 30 1523578264 1523578256 8
+The block has been accepted
+ 20:11:05 mined a block Block:22
+DataLen:1
+Time:1523578265
+PrevHash:01ba120b04f121dffd051919af1757e21e7a0c5d59d53997d4deda96a93612fa
+Nonce:19
+Difficulty:6
+
+broadcast: ['http://localhost:8027', 'http://localhost:8006', 'http://localhost:8016', 'http://localhost:8019', 'http://localhost:8033', 'http://localhost:8044', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8036', 'http://localhost:8004', 'http://localhost:8029', 'http://localhost:8007', 'http://localhost:8049', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8021', 'http://localhost:8024', 'http://localhost:8030', 'http://localhost:8043', 'http://localhost:8025', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8000', 'http://localhost:8022', 'http://localhost:8008', 'http://localhost:8005', 'http://localhost:8031', 'http://localhost:8010', 'http://localhost:8047', 'http://localhost:8003', 'http://localhost:7999', 'http://localhost:8041', 'http://localhost:8035', 'http://localhost:8017', 'http://localhost:8023', 'http://localhost:8011', 'http://localhost:8039', 'http://localhost:8018', 'http://localhost:8034', 'http://localhost:8040', 'http://localhost:8012', 'http://localhost:8013', 'http://localhost:8045', 'http://localhost:8032', 'http://localhost:8038', 'http://localhost:8020', 'http://localhost:8002', 'http://localhost:8048', 'http://localhost:8001', 'http://localhost:8015']
+The block has been accepted
+ 20:11:07 mined a block Block:23
+DataLen:1
+Time:1523578267
+PrevHash:03ffa3fd93f9455f6e17521756792654a9b7dae0a39f9a4601d59abf2260f174
+Nonce:2
+Difficulty:6
+
+broadcast: ['http://localhost:8027', 'http://localhost:8006', 'http://localhost:8016', 'http://localhost:8019', 'http://localhost:8033', 'http://localhost:8044', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8036', 'http://localhost:8004', 'http://localhost:8029', 'http://localhost:8007', 'http://localhost:8049', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8021', 'http://localhost:8024', 'http://localhost:8030', 'http://localhost:8043', 'http://localhost:8025', 'http://localhost:8042', 'http://localhost:8026', 'http://localhost:8000', 'http://localhost:8022', 'http://localhost:8008', 'http://localhost:8005', 'http://localhost:8031', 'http://localhost:8010', 'http://localhost:8047', 'http://localhost:8003', 'http://localhost:7999', 'http://localhost:8041', 'http://localhost:8035', 'http://localhost:8017', 'http://localhost:8023', 'http://localhost:8011', 'http://localhost:8039', 'http://localhost:8018', 'http://localhost:8034', 'http://localhost:8040', 'http://localhost:8012', 'http://localhost:8013', 'http://localhost:8045', 'http://localhost:8032', 'http://localhost:8038', 'http://localhost:8020', 'http://localhost:8002', 'http://localhost:8048', 'http://localhost:8001', 'http://localhost:8015']
+HTTPConnectionPool(host='localhost', port=8039): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10be92fd0>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8012): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10ca89d30>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8049): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bfe6518>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8043): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10ce3a358>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8006): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10ce59320>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8024): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10ca57f28>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8024): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10ce2c6a0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8021): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10ccbf7f0>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8031): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10ce7f128>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8046): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10cdf5780>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=7999): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10ce92e80>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8039): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10ced7e80>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8040): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10ca89128>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8035): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10cc26dd8>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8029): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10ca98898>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8044): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10cf9ab00>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8012): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10cd38eb8>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8039): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10cba7550>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8040): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10ce47c50>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8035): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10cc68898>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8005): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10d0d41d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8025): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10c4b9e80>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8018): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10cea0dd8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8042): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10cb96b00>: Failed to establish a new connection: [Errno 24] Too many open files',))
+HTTPConnectionPool(host='localhost', port=8048): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10cb1fcf8>: Failed to establish a new connection: [Errno 24] Too many open files',))

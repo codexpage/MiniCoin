@@ -1,0 +1,285 @@
+start main
+peers: ['http://localhost:8013', 'http://localhost:7999', 'http://localhost:8040', 'http://localhost:8018', 'http://localhost:8001', 'http://localhost:8038', 'http://localhost:8023', 'http://localhost:8027', 'http://localhost:8034', 'http://localhost:8015', 'http://localhost:8037', 'http://localhost:8016', 'http://localhost:8047', 'http://localhost:8030', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8005', 'http://localhost:8009', 'http://localhost:8049', 'http://localhost:8043', 'http://localhost:8045', 'http://localhost:8011', 'http://localhost:8003', 'http://localhost:8044', 'http://localhost:8029', 'http://localhost:8042', 'http://localhost:8048', 'http://localhost:8012', 'http://localhost:8031', 'http://localhost:8020', 'http://localhost:8028', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8007', 'http://localhost:8024', 'http://localhost:8026', 'http://localhost:8010', 'http://localhost:8021', 'http://localhost:8017', 'http://localhost:8022', 'http://localhost:8032', 'http://localhost:8039', 'http://localhost:8006', 'http://localhost:8004', 'http://localhost:8041', 'http://localhost:8002', 'http://localhost:8025', 'http://localhost:8008', 'http://localhost:8035', 'http://localhost:8036']
+start utxos: [<transaction.UnspentTxOut object at 0x1114a2240>]
+request a chain
+from http://localhost:8047 ======A block received=========, 20:09:22  current length 1
+0
+=============================
+this block is from a shorter chain
+from http://localhost:8047 ======A block received=========, 20:09:22  current length 1
+1
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: ['http://localhost:8013', 'http://localhost:7999', 'http://localhost:8040', 'http://localhost:8018', 'http://localhost:8001', 'http://localhost:8038', 'http://localhost:8023', 'http://localhost:8027', 'http://localhost:8034', 'http://localhost:8015', 'http://localhost:8037', 'http://localhost:8016', 'http://localhost:8047', 'http://localhost:8030', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8005', 'http://localhost:8009', 'http://localhost:8049', 'http://localhost:8043', 'http://localhost:8045', 'http://localhost:8011', 'http://localhost:8003', 'http://localhost:8044', 'http://localhost:8029', 'http://localhost:8042', 'http://localhost:8048', 'http://localhost:8012', 'http://localhost:8031', 'http://localhost:8020', 'http://localhost:8028', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8007', 'http://localhost:8024', 'http://localhost:8026', 'http://localhost:8010', 'http://localhost:8021', 'http://localhost:8017', 'http://localhost:8022', 'http://localhost:8032', 'http://localhost:8039', 'http://localhost:8006', 'http://localhost:8004', 'http://localhost:8041', 'http://localhost:8002', 'http://localhost:8025', 'http://localhost:8008', 'http://localhost:8035', 'http://localhost:8036']
+from http://localhost:8047 ======A block received=========, 20:09:44  current length 2
+2
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: ['http://localhost:8013', 'http://localhost:7999', 'http://localhost:8040', 'http://localhost:8018', 'http://localhost:8001', 'http://localhost:8038', 'http://localhost:8023', 'http://localhost:8027', 'http://localhost:8034', 'http://localhost:8015', 'http://localhost:8037', 'http://localhost:8016', 'http://localhost:8047', 'http://localhost:8030', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8005', 'http://localhost:8009', 'http://localhost:8049', 'http://localhost:8043', 'http://localhost:8045', 'http://localhost:8011', 'http://localhost:8003', 'http://localhost:8044', 'http://localhost:8029', 'http://localhost:8042', 'http://localhost:8048', 'http://localhost:8012', 'http://localhost:8031', 'http://localhost:8020', 'http://localhost:8028', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8007', 'http://localhost:8024', 'http://localhost:8026', 'http://localhost:8010', 'http://localhost:8021', 'http://localhost:8017', 'http://localhost:8022', 'http://localhost:8032', 'http://localhost:8039', 'http://localhost:8006', 'http://localhost:8004', 'http://localhost:8041', 'http://localhost:8002', 'http://localhost:8025', 'http://localhost:8008', 'http://localhost:8035', 'http://localhost:8036']
+from http://localhost:8047 ======A block received=========, 20:10:04  current length 3
+3
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: ['http://localhost:8013', 'http://localhost:7999', 'http://localhost:8040', 'http://localhost:8018', 'http://localhost:8001', 'http://localhost:8038', 'http://localhost:8023', 'http://localhost:8027', 'http://localhost:8034', 'http://localhost:8015', 'http://localhost:8037', 'http://localhost:8016', 'http://localhost:8047', 'http://localhost:8030', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8005', 'http://localhost:8009', 'http://localhost:8049', 'http://localhost:8043', 'http://localhost:8045', 'http://localhost:8011', 'http://localhost:8003', 'http://localhost:8044', 'http://localhost:8029', 'http://localhost:8042', 'http://localhost:8048', 'http://localhost:8012', 'http://localhost:8031', 'http://localhost:8020', 'http://localhost:8028', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8007', 'http://localhost:8024', 'http://localhost:8026', 'http://localhost:8010', 'http://localhost:8021', 'http://localhost:8017', 'http://localhost:8022', 'http://localhost:8032', 'http://localhost:8039', 'http://localhost:8006', 'http://localhost:8004', 'http://localhost:8041', 'http://localhost:8002', 'http://localhost:8025', 'http://localhost:8008', 'http://localhost:8035', 'http://localhost:8036']
+from http://localhost:8047 ======A block received=========, 20:10:18  current length 4
+4
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: ['http://localhost:8013', 'http://localhost:7999', 'http://localhost:8040', 'http://localhost:8018', 'http://localhost:8001', 'http://localhost:8038', 'http://localhost:8023', 'http://localhost:8027', 'http://localhost:8034', 'http://localhost:8015', 'http://localhost:8037', 'http://localhost:8016', 'http://localhost:8047', 'http://localhost:8030', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8005', 'http://localhost:8009', 'http://localhost:8049', 'http://localhost:8043', 'http://localhost:8045', 'http://localhost:8011', 'http://localhost:8003', 'http://localhost:8044', 'http://localhost:8029', 'http://localhost:8042', 'http://localhost:8048', 'http://localhost:8012', 'http://localhost:8031', 'http://localhost:8020', 'http://localhost:8028', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8007', 'http://localhost:8024', 'http://localhost:8026', 'http://localhost:8010', 'http://localhost:8021', 'http://localhost:8017', 'http://localhost:8022', 'http://localhost:8032', 'http://localhost:8039', 'http://localhost:8006', 'http://localhost:8004', 'http://localhost:8041', 'http://localhost:8002', 'http://localhost:8025', 'http://localhost:8008', 'http://localhost:8035', 'http://localhost:8036']
+HTTPConnectionPool(host='localhost', port=7999): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x111e55d30>: Failed to establish a new connection: [Errno 61] Connection refused',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'\x80\x03]q\x00(cchain\nBlock\nq\x01)\x81q\x02}q\x03(X\x05\x00\x00\x00indexq\x04K\x00X\x04\x00\x00\x00dataq\x05]q\x06ctransaction\nTransaction\nq\x07)\x81q\x08}q\t(X\x02\x00\x00\x00idq\nX@\x00\x00\x0095db0b8e71740baf81a619bfff7afe3600181828b59815d02c7f1b7b3209c831q\x0bX\x05\x00\x00\x00txInsq\x0c]q\rctransaction\nTxIn\nq\x0e)\x81q\x0f}q\x10(X\x07\x00\x00\x00txOutIdq\x11X\x00\x00\x00\x00q\x12X\n\x00\x00\x00txOutIndexq\x13K\x00X\t\x00\x00\x00signatureq\x14h\x12ubaX\x06\x00\x00\x00txOutsq\x15]q\x16ctransaction\nTxOut\nq\x17)\x81q\x18}q\x19(X\x07\x00\x00\x00addressq\x1aX\x80\x00\x00\x0060ba02269f0aa21a5ee18de8f21f4c159587713db66459d8baca5406021cc51269fe4b4d23587bf58c70e7014d727d1e10ec6b80fa395829b3b79dae3fdc7360q\x1bX\x06\x00\x00\x00amountq\x1cK2ubaubaX\t\x00\x00\x00timestampq\x1dJ\x97q\x90ZX\x04\x00\x00\x00hashq\x1eX@\x00\x00\x00e9d3061d5e216863506649096aac5ddd2089357c0bb3d647db332cd9b926f8b9q\x1fX\t\x00\x00\x00prev_hashq h\x12X\x05\x00\x00\x00nonceq!K\x00X\n\x00\x00\x00difficultyq"K\x00ubh\x01)\x81q#}q$(h\x04K\x01h\x05]q%h\x07)\x81q&}q\'(h\nX@\x00\x00\x005d1bf5ecbcc8d1631a2d18eca4862f5749d52e1caf4830144867fc462ab5c957q(h\x0c]q)h\x0e)\x81q*}q+(h\x11h\x12h\x13K\x01h\x14h\x12ubah\x15]q,h\x17)\x81q-}q.(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efq/h\x1cK2ubaubah\x1dJ$\xf5\xcfZh\x1eX@\x00\x00\x00e66fc2b2efaecec0721c263e91219c628032e0619ac9283343a186d2af2f3bafq0h X@\x00\x00\x00e9d3061d5e216863506649096aac5ddd2089357c0bb3d647db332cd9b926f8b9q1h!K\x00h"K\x00ubh\x01)\x81q2}q3(h\x04K\x02h\x05]q4h\x07)\x81q5}q6(h\nX@\x00\x00\x00027b08a81734f7c43dcb65ffdbba679c09eef1650013ca531e3f8e836d225c44q7h\x0c]q8h\x0e)\x81q9}q:(h\x11h\x12h\x13K\x02h\x14h\x12ubah\x15]q;h\x17)\x81q<}q=(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efq>h\x1cK2ubaubah\x1dJ$\xf5\xcfZh\x1eX@\x00\x00\x00bf67fa4f82977d1680b81f7eb4046cd804387f84f7cbfc017728dc14185307dbq?h X@\x00\x00\x00e66fc2b2efaecec0721c263e91219c628032e0619ac9283343a186d2af2f3bafq@h!K\x00h"K\x00ubh\x01)\x81qA}qB(h\x04K\x03h\x05]qCh\x07)\x81qD}qE(h\nX@\x00\x00\x0071e8b280aa85b1aa258ba09f075d91936fe3847f1e81cf0d798e09844b94799bqFh\x0c]qGh\x0e)\x81qH}qI(h\x11h\x12h\x13K\x03h\x14h\x12ubah\x15]qJh\x17)\x81qK}qL(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efqMh\x1cK2ubaubah\x1dJ$\xf5\xcfZh\x1eX@\x00\x00\x00b7091706e2c6f3616898939e70bf62a16089b9a849c31b85605f0d444205d875qNh X@\x00\x00\x00bf67fa4f82977d1680b81f7eb4046cd804387f84f7cbfc017728dc14185307dbqOh!K\x00h"K\x00ubh\x01)\x81qP}qQ(h\x04K\x04h\x05]qRh\x07)\x81qS}qT(h\nX@\x00\x00\x0068475fe63e87bddff69d52728ef1fda96c8b0a6380776a45c0bd455418adb0f4qUh\x0c]qVh\x0e)\x81qW}qX(h\x11h\x12h\x13K\x04h\x14h\x12ubah\x15]qYh\x17)\x81qZ}q[(h\x1aX\x80\x00\x00\x000b5e1f1125e45171a42904d37465105b67f2d2c4975aafbe7add741020b3b510fa472b2f8343c0ba6fd5c6aaba20f07397f33bcdb1ac7541d049333885561241q\\h\x1cK2ubaubah\x1dJ\xc6\xf5\xcfZh\x1eX@\x00\x00\x0027dd42f5d6185d55d401bfc53b91c4b978f271a945332864369c951ecd948a52q]h hNh!K\x00h"K\x01ubh\x01)\x81q^}q_(h\x04K\x05h\x05]q`h\x07)\x81qa}qb(h\nX@\x00\x00\x009c00e9510079337051ef8f8021de1a4ea32a2eded6576b56de3adf659f0b8d47qch\x0c]qdh\x0e)\x81qe}qf(h\x11h\x12h\x13K\x05h\x14h\x12ubah\x15]qgh\x17)\x81qh}qi(h\x1aX\x80\x00\x00\x000b5e1f1125e45171a42904d37465105b67f2d2c4975aafbe7add741020b3b510fa472b2f8343c0ba6fd5c6aaba20f07397f33bcdb1ac7541d049333885561241qjh\x1cK2ubaubah\x1dJ\xd4\xf5\xcfZh\x1eX@\x00\x00\x00625cbd6008189201f105f5b29832997ec0a8b8ddb13efdfe14a4905d19efd1ebqkh h]h!K\x00h"K\x01ubh\x01)\x81ql}qm(h\x04K\x06h\x05]qnh\x07)\x81qo}qp(h\nX@\x00\x00\x00c879e5756c4faf6fca902c340c15180dace2c57283f7444edbb16542bc87edb0qqh\x0c]qrh\x0e)\x81qs}qt(h\x11h\x12h\x13K\x06h\x14h\x12ubah\x15]quh\x17)\x81qv}qw(h\x1aX\x80\x00\x00\x000b5e1f1125e45171a42904d37465105b67f2d2c4975aafbe7add741020b3b510fa472b2f8343c0ba6fd5c6aaba20f07397f33bcdb1ac7541d049333885561241qxh\x1cK2ubaubah\x1dJ\xf5\xf5\xcfZh\x1eX@\x00\x00\x002ca021a65e87e93566e7bafce10415e8dc3ad9605fd0d959fbbc4fcd95550a04qyh hkh!K\x02h"K\x01ube.'
+b'ok'
+could not find MARK
+longer chain getted
+afterset <threading.Event object at 0x1114a22b0> True
+broadcast: ['http://localhost:8013', 'http://localhost:7999', 'http://localhost:8040', 'http://localhost:8018', 'http://localhost:8001', 'http://localhost:8038', 'http://localhost:8023', 'http://localhost:8027', 'http://localhost:8034', 'http://localhost:8015', 'http://localhost:8037', 'http://localhost:8016', 'http://localhost:8047', 'http://localhost:8030', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8005', 'http://localhost:8009', 'http://localhost:8049', 'http://localhost:8043', 'http://localhost:8045', 'http://localhost:8011', 'http://localhost:8003', 'http://localhost:8044', 'http://localhost:8029', 'http://localhost:8042', 'http://localhost:8048', 'http://localhost:8012', 'http://localhost:8031', 'http://localhost:8020', 'http://localhost:8028', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8007', 'http://localhost:8024', 'http://localhost:8026', 'http://localhost:8010', 'http://localhost:8021', 'http://localhost:8017', 'http://localhost:8022', 'http://localhost:8032', 'http://localhost:8039', 'http://localhost:8006', 'http://localhost:8004', 'http://localhost:8041', 'http://localhost:8002', 'http://localhost:8025', 'http://localhost:8008', 'http://localhost:8035', 'http://localhost:8036']
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+replaced chain
+b'ok'
+could not find MARK
+HTTPConnectionPool(host='localhost', port=8009): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x112206b00>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+HTTPConnectionPool(host='localhost', port=7999): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x110533630>: Failed to establish a new connection: [Errno 61] Connection refused',))
+HTTPConnectionPool(host='localhost', port=8025): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x11052ed30>: Failed to establish a new connection: [Errno 23] Too many open files in system',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+HTTPConnectionPool(host='localhost', port=8009): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x111ee2a58>: Failed to establish a new connection: [Errno 23] Too many open files in system',))
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+HTTPConnectionPool(host='localhost', port=7999): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1122a0518>: Failed to establish a new connection: [Errno 61] Connection refused',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+HTTPConnectionPool(host='localhost', port=7999): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1122c1e48>: Failed to establish a new connection: [Errno 61] Connection refused',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
+('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
+('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
+('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
+b'ok'
+could not find MARK
+('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+b'ok'
+b'ok'
+could not find MARK
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
+('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+HTTPConnectionPool(host='localhost', port=7999): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1124b9898>: Failed to establish a new connection: [Errno 61] Connection refused',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
+b'ok'
+could not find MARK
