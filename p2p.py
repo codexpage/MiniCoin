@@ -15,11 +15,12 @@ import  wallet as w
 import  utils
 import os
 import datetime
+import random
 
 app = Flask(__name__)
 requests.adapters.DEFAULT_RETRIES = 0
 lock = threading.Lock()
-
+serverStart = False
 
 # requests.adapters.DEFAULT_RETRIES
 # selfip = ""
@@ -121,8 +122,8 @@ def postRequest(url, data):
 #when receive a block
 def receiveBlockHandler(blockandip):
     block,ip = blockandip
-    print("======A block received=========,{time: %H:%M:%S}".format(time =datetime.datetime.now())," current length", len(chain.blockchain))
-    print(block)
+    print("from",ip,"======A block received=========,{time: %H:%M:%S}".format(time =datetime.datetime.now())," current length", len(chain.blockchain))
+    print(block.index)
     print("=============================")
     if not chain.validate_block_types(block):
         print("block structuture not valid")
@@ -150,12 +151,37 @@ def receiveBlockHandler(blockandip):
 
 def getAndReplaceChain(ip):
     print("request a chain")
-    otherchain = getRequest(ip+"/queryall")
-    print("longer chain getted")
-    with lock:
-        if chain.replaceChain(otherchain):
-            broadcast((otherchain[-1],utils.selfip), "/block") #broadcast block
-        print("replaced chain")
+    try:
+        otherchain = getRequest(ip+"/queryall")
+    except Exception as e:
+        print(str(e))
+        return False
+
+    if otherchain:
+        print("longer chain getted")
+        with lock:
+            if chain.replaceChain(otherchain):
+                broadcast((otherchain[-1],utils.selfip), "/block") #broadcast block
+                print("replaced chain")
+                return True
+    else:
+        return False
+
+# def initChain(dest):
+#     print("init chain")
+#     chain = getRequest(dest + "/queryall")
+#     if chain:
+#         with lock:
+#             if chain.replaceChain(chain):
+#                 broadcast((chain[-1],utils.selfip), "/block") #broadcast block
+#                 print("replaced chain")
+#                 return True
+#     return False
+
+def initProgress():
+        for p in utils.peers:
+            if getAndReplaceChain(p):
+                break;
 
 
 #when receive tx

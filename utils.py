@@ -1,5 +1,5 @@
 import hashlib
-
+import random
 # import rsa
 # (privatekey, pubkey) = rsa.newkeys(2048)
 
@@ -50,6 +50,7 @@ def readUrlfromFile():
         li.append(base + ":" + str(p))
     li.remove(selfip)#remove selfip
     peers = li
+    random.shuffle(peers)
     selfport = selfip[-4:]
     return
 

@@ -173,13 +173,14 @@ def assmbleDataToMineBlock():
 
 #mine forever
 def miner():
-    cnt =0
+    # cnt =0
+    p2p.initProgress()
     while True:
         block = assmbleDataToMineBlock()
         if block:
             if not addBlockToChain(block):   #mined block must be valid to add to chain
                 raise Exception("mined block is not valid") #shold never happen, for debug
-            cnt+=1
+            # cnt+=1
             print("{time: %H:%M:%S}".format(time = datetime.datetime.now()),"mined a block",block)
             p2p.broadcast((block,utils.selfip),"/block")
             #TODO save to disk
