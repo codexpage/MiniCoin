@@ -1,0 +1,20 @@
+#!/bin/bash
+let start=8000
+set -m
+for step in 10 5 5 5;
+do
+#"$(($a + 1))"
+    for (( n=$start; n<$((start+step)); n++ ))
+        do
+        #sleep 5
+        python3 -u p2p.py "$n" >./testres/testres"$n" &
+#        echo "$n" &
+    done
+
+    ((start=start+step))
+    if [ $start -eq 8050 ]
+    then break
+    fi
+    sleep 10
+done
+echo "script done"
