@@ -191,9 +191,12 @@ def flush(signal, frame):
         print("get signal", signal)
         pickle.dump(blockchain, open(storage, "wb"))
         print("saved chain to file", storage)
-        pickle.dump(utils.peerList, open(utils.peerList, "wb"))
+        pickle.dump(utils.live, open(utils.peerList, "wb"))
         print("saved peers to file", utils.peerList)
         exit(0)
+
+
+
 #mine forever
 def miner():
     # cnt =0
