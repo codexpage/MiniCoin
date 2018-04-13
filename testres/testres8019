@@ -1,285 +1,3237 @@
 start main
-peers: ['http://localhost:8013', 'http://localhost:7999', 'http://localhost:8040', 'http://localhost:8018', 'http://localhost:8001', 'http://localhost:8038', 'http://localhost:8023', 'http://localhost:8027', 'http://localhost:8034', 'http://localhost:8015', 'http://localhost:8037', 'http://localhost:8016', 'http://localhost:8047', 'http://localhost:8030', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8005', 'http://localhost:8009', 'http://localhost:8049', 'http://localhost:8043', 'http://localhost:8045', 'http://localhost:8011', 'http://localhost:8003', 'http://localhost:8044', 'http://localhost:8029', 'http://localhost:8042', 'http://localhost:8048', 'http://localhost:8012', 'http://localhost:8031', 'http://localhost:8020', 'http://localhost:8028', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8007', 'http://localhost:8024', 'http://localhost:8026', 'http://localhost:8010', 'http://localhost:8021', 'http://localhost:8017', 'http://localhost:8022', 'http://localhost:8032', 'http://localhost:8039', 'http://localhost:8006', 'http://localhost:8004', 'http://localhost:8041', 'http://localhost:8002', 'http://localhost:8025', 'http://localhost:8008', 'http://localhost:8035', 'http://localhost:8036']
-start utxos: [<transaction.UnspentTxOut object at 0x1114a2240>]
+peers: []
+start utxos: [<transaction.UnspentTxOut object at 0x102aad6a0>]
+The block has been accepted
+ 15:47:34 mined a block Block:1
+DataLen:1
+Time:1523648854
+PrevHash:e9d3061d5e216863506649096aac5ddd2089357c0bb3d647db332cd9b926f8b9
+Nonce:0
+Difficulty:0
+
+broadcast: []
+The block has been accepted
+ 15:47:34 mined a block Block:2
+DataLen:1
+Time:1523648854
+PrevHash:9d6793d35239684971e1bf5a58b5654d7f9f55a04cdff8432d359eb95189d972
+Nonce:0
+Difficulty:0
+
+broadcast: []
+The block has been accepted
+ 15:47:34 mined a block Block:3
+DataLen:1
+Time:1523648854
+PrevHash:17b9db8bc403d6aeee3353e1dc9aa541cbf9a73305c15582d3769a73c02eaf2c
+Nonce:0
+Difficulty:0
+
+broadcast: []
+change diff: 30 1523648854 1523648854 0
+The block has been accepted
+ 15:47:34 mined a block Block:4
+DataLen:1
+Time:1523648854
+PrevHash:071724645e395ff834be5011bd177512740d445f57922df5ed1e945474034424
+Nonce:1
+Difficulty:1
+
+broadcast: []
+The block has been accepted
+ 15:47:34 mined a block Block:5
+DataLen:1
+Time:1523648854
+PrevHash:2b48f543bea8de7e49c1207d52d4d60ada9c0dc965e64645564f29fac99aed33
+Nonce:0
+Difficulty:1
+
+broadcast: []
+The block has been accepted
+ 15:47:34 mined a block Block:6
+DataLen:1
+Time:1523648854
+PrevHash:57db9240e6802fd578e0237db5b8d3819f4ef774b5ae94674bd30dc4f84af544
+Nonce:2
+Difficulty:1
+
+broadcast: []
+change diff: 30 1523648854 1523648854 0
+The block has been accepted
+ 15:47:34 mined a block Block:7
+DataLen:1
+Time:1523648854
+PrevHash:7243d0b0ec786719ed930f41fac49d7ec2b5df013cfc619c616d66a40c3b7373
+Nonce:1
+Difficulty:2
+
+broadcast: []
+The block has been accepted
+ 15:47:34 mined a block Block:8
+DataLen:1
+Time:1523648854
+PrevHash:1d863dfe5bd7118788ed3a5b7f98bf48405828af575687a520fb0113fa2046b9
+Nonce:3
+Difficulty:2
+
+broadcast: []
+The block has been accepted
+ 15:47:34 mined a block Block:9
+DataLen:1
+Time:1523648854
+PrevHash:282df8019aea2237cd69a894558c651c6a3591d68ab55ed7792fe103504bbeac
+Nonce:3
+Difficulty:2
+
+broadcast: []
+change diff: 30 1523648854 1523648854 0
+The block has been accepted
+ 15:47:34 mined a block Block:10
+DataLen:1
+Time:1523648854
+PrevHash:15ca961eb24d34bdb46526f4e6738169839ba09e85e3e9c95286510226996a9c
+Nonce:15
+Difficulty:3
+
+broadcast: []
+The block has been accepted
+ 15:47:34 mined a block Block:11
+DataLen:1
+Time:1523648854
+PrevHash:0764e6245b509331ffe93e6a5011933e953e1fba8b748331a51aec11eb410ed9
+Nonce:6
+Difficulty:3
+
+broadcast: []
+The block has been accepted
+ 15:47:34 mined a block Block:12
+DataLen:1
+Time:1523648854
+PrevHash:09205818ff78ed1316bb879aebc1224785007df4ac97ab40ac2916c674a92e8e
+Nonce:1
+Difficulty:3
+
+broadcast: []
+change diff: 30 1523648854 1523648854 0
+The block has been accepted
+ 15:47:34 mined a block Block:13
+DataLen:1
+Time:1523648854
+PrevHash:15f9fa313df74cad930ecad4f8dbc97f6ae31e72ac8f7b3b311bb63a01baa951
+Nonce:8
+Difficulty:4
+
+broadcast: []
+The block has been accepted
+ 15:47:34 mined a block Block:14
+DataLen:1
+Time:1523648854
+PrevHash:072326b9974d053f81e837fc60fb9dbf6cc10cc4b98e5fee92323bac9919b320
+Nonce:16
+Difficulty:4
+
+broadcast: []
+The block has been accepted
+ 15:47:34 mined a block Block:15
+DataLen:1
+Time:1523648854
+PrevHash:04f5bc0848a1f3d1b4302d0f1c423014d89b90d07ae1fc251645ecd1a6e700e1
+Nonce:3
+Difficulty:4
+
+broadcast: []
+change diff: 30 1523648854 1523648854 0
+The block has been accepted
+ 15:47:34 mined a block Block:16
+DataLen:1
+Time:1523648854
+PrevHash:027f9f2773e41ed26bf45e1af14ff1b1ea014d0a78318b5e69a2b9500a69c056
+Nonce:15
+Difficulty:5
+
+broadcast: []
+The block has been accepted
+ 15:47:34 mined a block Block:17
+DataLen:1
+Time:1523648854
+PrevHash:01a77eb649e5c6a003f1ae04b32f34737c52f963d4ae6f75ca8b87b520c5eb81
+Nonce:1
+Difficulty:5
+
+broadcast: []
+The block has been accepted
+ 15:47:34 mined a block Block:18
+DataLen:1
+Time:1523648854
+PrevHash:00f22b2f1781d0bfee85794c56b1abb5cda38c72dcc551333d3a0bc4628fae62
+Nonce:4
+Difficulty:5
+
+broadcast: []
+change diff: 30 1523648854 1523648854 0
+The block has been accepted
+ 15:47:35 mined a block Block:19
+DataLen:1
+Time:1523648854
+PrevHash:0201f548de19d2cb8aa8ba8f21070df77d7baa981e86a8196d905e3164b978c7
+Nonce:24
+Difficulty:6
+
+broadcast: []
+The block has been accepted
+ 15:47:35 mined a block Block:20
+DataLen:1
+Time:1523648855
+PrevHash:03b7c542109f9f519f0b215ed41a98f08000acee3f0e7bb7ddad3542351660ca
+Nonce:8
+Difficulty:6
+
+broadcast: []
+The block has been accepted
+ 15:47:35 mined a block Block:21
+DataLen:1
+Time:1523648855
+PrevHash:01f65027228706805243e762e4ff59969b08a8b5754e26281b5dadda107cbfe1
+Nonce:15
+Difficulty:6
+
+broadcast: []
+change diff: 30 1523648855 1523648854 1
+The block has been accepted
+ 15:47:35 mined a block Block:22
+DataLen:1
+Time:1523648855
+PrevHash:03bdd86af026ac35e4788eac859d434710140245e5ff0065a48c645fc7be941c
+Nonce:222
+Difficulty:7
+
+broadcast: []
+The block has been accepted
+ 15:47:35 mined a block Block:23
+DataLen:1
+Time:1523648855
+PrevHash:0196b4a42ac97a0c356e373f52da0267448e29408e403bc1bd484db1afc712ba
+Nonce:88
+Difficulty:7
+
+broadcast: []
+The block has been accepted
+ 15:47:35 mined a block Block:24
+DataLen:1
+Time:1523648855
+PrevHash:019cd2f15e9677229691f15ac9d53476ba059919848a9b76b1d0e58e5432b9f9
+Nonce:74
+Difficulty:7
+
+broadcast: []
+change diff: 30 1523648855 1523648855 0
+The block has been accepted
+ 15:47:35 mined a block Block:25
+DataLen:1
+Time:1523648855
+PrevHash:011ae96d2894a4d273045afdf1f6c1038c806966770cfbb433b8fe5c3e243b95
+Nonce:15
+Difficulty:8
+
+broadcast: []
+The block has been accepted
+ 15:47:35 mined a block Block:26
+DataLen:1
+Time:1523648855
+PrevHash:009a5aaa029b878c16e13e821af47f45c7f3b0ebacef3f7868b91609d2cb9545
+Nonce:34
+Difficulty:8
+
+broadcast: []
+The block has been accepted
+ 15:47:35 mined a block Block:27
+DataLen:1
+Time:1523648855
+PrevHash:00a032ebf3a0888e16c72ab4eb248ec8c9aa8441a6d0102b795e5f024ba8281b
+Nonce:216
+Difficulty:8
+
+broadcast: []
+change diff: 30 1523648855 1523648855 0
+The block has been accepted
+ 15:47:35 mined a block Block:28
+DataLen:1
+Time:1523648855
+PrevHash:00ad036b5e215e936119bbfd43dd16b42831fe2c41c9b68480a0c720b4dc1be3
+Nonce:543
+Difficulty:9
+
+broadcast: []
+The block has been accepted
+ 15:47:35 mined a block Block:29
+DataLen:1
+Time:1523648855
+PrevHash:0009fc250e79b3f6a0ec9cd7c27c8100b6602ee01eb977c4e1006c6b4d739e90
+Nonce:128
+Difficulty:9
+
+broadcast: []
+The block has been accepted
+ 15:47:35 mined a block Block:30
+DataLen:1
+Time:1523648855
+PrevHash:0061ab255a943563fdc706835bb72de8844ee2f59c7896d8f8d66cd62e71237d
+Nonce:715
+Difficulty:9
+
+broadcast: []
+change diff: 30 1523648855 1523648855 0
+The block has been accepted
+ 15:47:35 mined a block Block:31
+DataLen:1
+Time:1523648855
+PrevHash:007e05daaa9027b9e0d1207f29729463341b5df57f78d5a96349454bc56eb5ab
+Nonce:680
+Difficulty:10
+
+broadcast: []
+The block has been accepted
+ 15:47:35 mined a block Block:32
+DataLen:1
+Time:1523648855
+PrevHash:002f51df8baaaa7870ee8017597ee700e63749165150483b442900d55b5c5c7e
+Nonce:1213
+Difficulty:10
+
+broadcast: []
+The block has been accepted
+ 15:47:35 mined a block Block:33
+DataLen:1
+Time:1523648855
+PrevHash:00243b0efdc954eecaed50e723149154954369942d5a65d95729213b4edcd2cc
+Nonce:1777
+Difficulty:10
+
+broadcast: []
+change diff: 30 1523648855 1523648855 0
+The block has been accepted
+ 15:47:36 mined a block Block:34
+DataLen:1
+Time:1523648855
+PrevHash:0004920e57adaa846594ed3691fa5859f8cf6cee887552e356b65df1c6f3c9a6
+Nonce:4935
+Difficulty:11
+
+broadcast: []
+The block has been accepted
+ 15:47:36 mined a block Block:35
+DataLen:1
+Time:1523648856
+PrevHash:00134fe997d52ce31ba721453bee96f4940fb17b8d1e9f990930dd3c231cc0b7
+Nonce:1572
+Difficulty:11
+
+broadcast: []
+The block has been accepted
+ 15:47:36 mined a block Block:36
+DataLen:1
+Time:1523648856
+PrevHash:001e999e01309d879ab4cb214104c537d377eec57728258816eb9462e7e773ee
+Nonce:80
+Difficulty:11
+
+broadcast: []
+change diff: 30 1523648856 1523648855 1
+The block has been accepted
+ 15:47:36 mined a block Block:37
+DataLen:1
+Time:1523648856
+PrevHash:0017b196427942c492c967b2623ed0cb7741c44ddd5a522af4ea1e8a634cbba5
+Nonce:632
+Difficulty:12
+
+broadcast: []
+The block has been accepted
+ 15:47:36 mined a block Block:38
+DataLen:1
+Time:1523648856
+PrevHash:000dd6d15e5f67e87c8dc42ace20719468aa26d65f310d169e2ac0eb2d7c397f
+Nonce:1663
+Difficulty:12
+
+broadcast: []
+The block has been accepted
+ 15:47:37 mined a block Block:39
+DataLen:1
+Time:1523648856
+PrevHash:000e6a0c16c8710949c626f61633d35e448f552bacabebe9dd8d1e089c017050
+Nonce:5116
+Difficulty:12
+
+broadcast: []
+change diff: 30 1523648856 1523648856 0
+The block has been accepted
+ 15:47:38 mined a block Block:40
+DataLen:1
+Time:1523648857
+PrevHash:0001510a3afe9d5d4692402030970778946ee8c4f4c2dfecd13b06097aa3fa9d
+Nonce:4813
+Difficulty:13
+
+broadcast: []
+heart beat of  http://localhost:8007 b'live'
+from http://localhost:8007 ======A block received=========, 15:47:40  current length 41
+44
+=============================
+need to replace chain from http://localhost:8007
 request a chain
-from http://localhost:8047 ======A block received=========, 20:09:22  current length 1
-0
+longer chain getted
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005']
+replaced chain
+mining interrupted. 44
+could not find MARK
+send all chain
+heart beat of  http://localhost:8025 b'live'
+The block has been accepted
+ 15:47:42 mined a block Block:45
+DataLen:1
+Time:1523648860
+PrevHash:0002a694d0c3dba03911c66bb4e0f21ad2e0772c0c370e021da066b1b5fda542
+Nonce:8970
+Difficulty:14
+
+broadcast: ['http://localhost:8005', 'http://localhost:8002']
+change diff: 30 1523648860 1523648860 0
+could not find MARK
+could not find MARK
+from http://localhost:8025 ======A block received=========, 15:47:43  current length 46
+43
 =============================
 this block is from a shorter chain
-from http://localhost:8047 ======A block received=========, 20:09:22  current length 1
-1
+send all chain
+from http://localhost:8025 ======A block received=========, 15:47:45  current length 46
+47
 =============================
-one block behind, add to chain
-The block has been accepted
-broadcast: ['http://localhost:8013', 'http://localhost:7999', 'http://localhost:8040', 'http://localhost:8018', 'http://localhost:8001', 'http://localhost:8038', 'http://localhost:8023', 'http://localhost:8027', 'http://localhost:8034', 'http://localhost:8015', 'http://localhost:8037', 'http://localhost:8016', 'http://localhost:8047', 'http://localhost:8030', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8005', 'http://localhost:8009', 'http://localhost:8049', 'http://localhost:8043', 'http://localhost:8045', 'http://localhost:8011', 'http://localhost:8003', 'http://localhost:8044', 'http://localhost:8029', 'http://localhost:8042', 'http://localhost:8048', 'http://localhost:8012', 'http://localhost:8031', 'http://localhost:8020', 'http://localhost:8028', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8007', 'http://localhost:8024', 'http://localhost:8026', 'http://localhost:8010', 'http://localhost:8021', 'http://localhost:8017', 'http://localhost:8022', 'http://localhost:8032', 'http://localhost:8039', 'http://localhost:8006', 'http://localhost:8004', 'http://localhost:8041', 'http://localhost:8002', 'http://localhost:8025', 'http://localhost:8008', 'http://localhost:8035', 'http://localhost:8036']
-from http://localhost:8047 ======A block received=========, 20:09:44  current length 2
-2
+need to replace chain from http://localhost:8025
+request a chain
+from http://localhost:8025 ======A block received=========, 15:47:46  current length 46
+47
 =============================
-one block behind, add to chain
-The block has been accepted
-broadcast: ['http://localhost:8013', 'http://localhost:7999', 'http://localhost:8040', 'http://localhost:8018', 'http://localhost:8001', 'http://localhost:8038', 'http://localhost:8023', 'http://localhost:8027', 'http://localhost:8034', 'http://localhost:8015', 'http://localhost:8037', 'http://localhost:8016', 'http://localhost:8047', 'http://localhost:8030', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8005', 'http://localhost:8009', 'http://localhost:8049', 'http://localhost:8043', 'http://localhost:8045', 'http://localhost:8011', 'http://localhost:8003', 'http://localhost:8044', 'http://localhost:8029', 'http://localhost:8042', 'http://localhost:8048', 'http://localhost:8012', 'http://localhost:8031', 'http://localhost:8020', 'http://localhost:8028', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8007', 'http://localhost:8024', 'http://localhost:8026', 'http://localhost:8010', 'http://localhost:8021', 'http://localhost:8017', 'http://localhost:8022', 'http://localhost:8032', 'http://localhost:8039', 'http://localhost:8006', 'http://localhost:8004', 'http://localhost:8041', 'http://localhost:8002', 'http://localhost:8025', 'http://localhost:8008', 'http://localhost:8035', 'http://localhost:8036']
-from http://localhost:8047 ======A block received=========, 20:10:04  current length 3
-3
+need to replace chain from http://localhost:8025
+request a chain
+from http://localhost:8025 ======A block received=========, 15:47:46  current length 46
+47
 =============================
-one block behind, add to chain
-The block has been accepted
-broadcast: ['http://localhost:8013', 'http://localhost:7999', 'http://localhost:8040', 'http://localhost:8018', 'http://localhost:8001', 'http://localhost:8038', 'http://localhost:8023', 'http://localhost:8027', 'http://localhost:8034', 'http://localhost:8015', 'http://localhost:8037', 'http://localhost:8016', 'http://localhost:8047', 'http://localhost:8030', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8005', 'http://localhost:8009', 'http://localhost:8049', 'http://localhost:8043', 'http://localhost:8045', 'http://localhost:8011', 'http://localhost:8003', 'http://localhost:8044', 'http://localhost:8029', 'http://localhost:8042', 'http://localhost:8048', 'http://localhost:8012', 'http://localhost:8031', 'http://localhost:8020', 'http://localhost:8028', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8007', 'http://localhost:8024', 'http://localhost:8026', 'http://localhost:8010', 'http://localhost:8021', 'http://localhost:8017', 'http://localhost:8022', 'http://localhost:8032', 'http://localhost:8039', 'http://localhost:8006', 'http://localhost:8004', 'http://localhost:8041', 'http://localhost:8002', 'http://localhost:8025', 'http://localhost:8008', 'http://localhost:8035', 'http://localhost:8036']
-from http://localhost:8047 ======A block received=========, 20:10:18  current length 4
-4
+need to replace chain from http://localhost:8025
+request a chain
+from http://localhost:8025 ======A block received=========, 15:47:46  current length 46
+47
 =============================
-one block behind, add to chain
-The block has been accepted
-broadcast: ['http://localhost:8013', 'http://localhost:7999', 'http://localhost:8040', 'http://localhost:8018', 'http://localhost:8001', 'http://localhost:8038', 'http://localhost:8023', 'http://localhost:8027', 'http://localhost:8034', 'http://localhost:8015', 'http://localhost:8037', 'http://localhost:8016', 'http://localhost:8047', 'http://localhost:8030', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8005', 'http://localhost:8009', 'http://localhost:8049', 'http://localhost:8043', 'http://localhost:8045', 'http://localhost:8011', 'http://localhost:8003', 'http://localhost:8044', 'http://localhost:8029', 'http://localhost:8042', 'http://localhost:8048', 'http://localhost:8012', 'http://localhost:8031', 'http://localhost:8020', 'http://localhost:8028', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8007', 'http://localhost:8024', 'http://localhost:8026', 'http://localhost:8010', 'http://localhost:8021', 'http://localhost:8017', 'http://localhost:8022', 'http://localhost:8032', 'http://localhost:8039', 'http://localhost:8006', 'http://localhost:8004', 'http://localhost:8041', 'http://localhost:8002', 'http://localhost:8025', 'http://localhost:8008', 'http://localhost:8035', 'http://localhost:8036']
-HTTPConnectionPool(host='localhost', port=7999): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x111e55d30>: Failed to establish a new connection: [Errno 61] Connection refused',))
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-b'ok'
+need to replace chain from http://localhost:8025
+request a chain
+from http://localhost:8007 ======A block received=========, 15:47:46  current length 46
+45
+=============================
+this block is from a shorter chain
+from http://localhost:8025 ======A block received=========, 15:47:46  current length 46
+48
+=============================
+need to replace chain from http://localhost:8025
+request a chain
+longer chain getted
+longer chain getted
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048']
+longer chain getted
+longer chain getted
+replaced chain
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048']
+replaced chain
+afterset <threading.Event object at 0x102aad5c0> True
+heart beat of  http://localhost:8020 b'live'
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048']
+mining interrupted. 48
+replaced chain
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048']
+change diff: 30 1523648862 1523648859 3
+mining interrupted. 48
+replaced chain
+change diff: 30 1523648862 1523648859 3
+longer chain getted
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048']
+replaced chain
+from http://localhost:8007 ======A block received=========, 15:47:48  current length 49
+47
+=============================
+this block is from a shorter chain
+mining interrupted. 48
+change diff: 30 1523648862 1523648859 3
+from http://localhost:8007 ======A block received=========, 15:47:50  current length 49
+50
+=============================
+need to replace chain from http://localhost:8007
+request a chain
+from http://localhost:8007 ======A block received=========, 15:47:50  current length 49
+49
+=============================
+need to replace chain from http://localhost:8007
+request a chain
 could not find MARK
-b'ok'
 could not find MARK
-b'ok'
 could not find MARK
-b'ok'
 could not find MARK
-b'\x80\x03]q\x00(cchain\nBlock\nq\x01)\x81q\x02}q\x03(X\x05\x00\x00\x00indexq\x04K\x00X\x04\x00\x00\x00dataq\x05]q\x06ctransaction\nTransaction\nq\x07)\x81q\x08}q\t(X\x02\x00\x00\x00idq\nX@\x00\x00\x0095db0b8e71740baf81a619bfff7afe3600181828b59815d02c7f1b7b3209c831q\x0bX\x05\x00\x00\x00txInsq\x0c]q\rctransaction\nTxIn\nq\x0e)\x81q\x0f}q\x10(X\x07\x00\x00\x00txOutIdq\x11X\x00\x00\x00\x00q\x12X\n\x00\x00\x00txOutIndexq\x13K\x00X\t\x00\x00\x00signatureq\x14h\x12ubaX\x06\x00\x00\x00txOutsq\x15]q\x16ctransaction\nTxOut\nq\x17)\x81q\x18}q\x19(X\x07\x00\x00\x00addressq\x1aX\x80\x00\x00\x0060ba02269f0aa21a5ee18de8f21f4c159587713db66459d8baca5406021cc51269fe4b4d23587bf58c70e7014d727d1e10ec6b80fa395829b3b79dae3fdc7360q\x1bX\x06\x00\x00\x00amountq\x1cK2ubaubaX\t\x00\x00\x00timestampq\x1dJ\x97q\x90ZX\x04\x00\x00\x00hashq\x1eX@\x00\x00\x00e9d3061d5e216863506649096aac5ddd2089357c0bb3d647db332cd9b926f8b9q\x1fX\t\x00\x00\x00prev_hashq h\x12X\x05\x00\x00\x00nonceq!K\x00X\n\x00\x00\x00difficultyq"K\x00ubh\x01)\x81q#}q$(h\x04K\x01h\x05]q%h\x07)\x81q&}q\'(h\nX@\x00\x00\x005d1bf5ecbcc8d1631a2d18eca4862f5749d52e1caf4830144867fc462ab5c957q(h\x0c]q)h\x0e)\x81q*}q+(h\x11h\x12h\x13K\x01h\x14h\x12ubah\x15]q,h\x17)\x81q-}q.(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efq/h\x1cK2ubaubah\x1dJ$\xf5\xcfZh\x1eX@\x00\x00\x00e66fc2b2efaecec0721c263e91219c628032e0619ac9283343a186d2af2f3bafq0h X@\x00\x00\x00e9d3061d5e216863506649096aac5ddd2089357c0bb3d647db332cd9b926f8b9q1h!K\x00h"K\x00ubh\x01)\x81q2}q3(h\x04K\x02h\x05]q4h\x07)\x81q5}q6(h\nX@\x00\x00\x00027b08a81734f7c43dcb65ffdbba679c09eef1650013ca531e3f8e836d225c44q7h\x0c]q8h\x0e)\x81q9}q:(h\x11h\x12h\x13K\x02h\x14h\x12ubah\x15]q;h\x17)\x81q<}q=(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efq>h\x1cK2ubaubah\x1dJ$\xf5\xcfZh\x1eX@\x00\x00\x00bf67fa4f82977d1680b81f7eb4046cd804387f84f7cbfc017728dc14185307dbq?h X@\x00\x00\x00e66fc2b2efaecec0721c263e91219c628032e0619ac9283343a186d2af2f3bafq@h!K\x00h"K\x00ubh\x01)\x81qA}qB(h\x04K\x03h\x05]qCh\x07)\x81qD}qE(h\nX@\x00\x00\x0071e8b280aa85b1aa258ba09f075d91936fe3847f1e81cf0d798e09844b94799bqFh\x0c]qGh\x0e)\x81qH}qI(h\x11h\x12h\x13K\x03h\x14h\x12ubah\x15]qJh\x17)\x81qK}qL(h\x1aX\x80\x00\x00\x006d375e182abb4c62f104e7877c3d19daed56c72785b0f4936e7cbfce8841977e8ab644cb0c353b2c0755187a2f3ed768071ae8ddaa7ed94e603f173970cfe4efqMh\x1cK2ubaubah\x1dJ$\xf5\xcfZh\x1eX@\x00\x00\x00b7091706e2c6f3616898939e70bf62a16089b9a849c31b85605f0d444205d875qNh X@\x00\x00\x00bf67fa4f82977d1680b81f7eb4046cd804387f84f7cbfc017728dc14185307dbqOh!K\x00h"K\x00ubh\x01)\x81qP}qQ(h\x04K\x04h\x05]qRh\x07)\x81qS}qT(h\nX@\x00\x00\x0068475fe63e87bddff69d52728ef1fda96c8b0a6380776a45c0bd455418adb0f4qUh\x0c]qVh\x0e)\x81qW}qX(h\x11h\x12h\x13K\x04h\x14h\x12ubah\x15]qYh\x17)\x81qZ}q[(h\x1aX\x80\x00\x00\x000b5e1f1125e45171a42904d37465105b67f2d2c4975aafbe7add741020b3b510fa472b2f8343c0ba6fd5c6aaba20f07397f33bcdb1ac7541d049333885561241q\\h\x1cK2ubaubah\x1dJ\xc6\xf5\xcfZh\x1eX@\x00\x00\x0027dd42f5d6185d55d401bfc53b91c4b978f271a945332864369c951ecd948a52q]h hNh!K\x00h"K\x01ubh\x01)\x81q^}q_(h\x04K\x05h\x05]q`h\x07)\x81qa}qb(h\nX@\x00\x00\x009c00e9510079337051ef8f8021de1a4ea32a2eded6576b56de3adf659f0b8d47qch\x0c]qdh\x0e)\x81qe}qf(h\x11h\x12h\x13K\x05h\x14h\x12ubah\x15]qgh\x17)\x81qh}qi(h\x1aX\x80\x00\x00\x000b5e1f1125e45171a42904d37465105b67f2d2c4975aafbe7add741020b3b510fa472b2f8343c0ba6fd5c6aaba20f07397f33bcdb1ac7541d049333885561241qjh\x1cK2ubaubah\x1dJ\xd4\xf5\xcfZh\x1eX@\x00\x00\x00625cbd6008189201f105f5b29832997ec0a8b8ddb13efdfe14a4905d19efd1ebqkh h]h!K\x00h"K\x01ubh\x01)\x81ql}qm(h\x04K\x06h\x05]qnh\x07)\x81qo}qp(h\nX@\x00\x00\x00c879e5756c4faf6fca902c340c15180dace2c57283f7444edbb16542bc87edb0qqh\x0c]qrh\x0e)\x81qs}qt(h\x11h\x12h\x13K\x06h\x14h\x12ubah\x15]quh\x17)\x81qv}qw(h\x1aX\x80\x00\x00\x000b5e1f1125e45171a42904d37465105b67f2d2c4975aafbe7add741020b3b510fa472b2f8343c0ba6fd5c6aaba20f07397f33bcdb1ac7541d049333885561241qxh\x1cK2ubaubah\x1dJ\xf5\xf5\xcfZh\x1eX@\x00\x00\x002ca021a65e87e93566e7bafce10415e8dc3ad9605fd0d959fbbc4fcd95550a04qyh hkh!K\x02h"K\x01ube.'
-b'ok'
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+heart beat of  http://localhost:8031 b'live'
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
 could not find MARK
 longer chain getted
-afterset <threading.Event object at 0x1114a22b0> True
-broadcast: ['http://localhost:8013', 'http://localhost:7999', 'http://localhost:8040', 'http://localhost:8018', 'http://localhost:8001', 'http://localhost:8038', 'http://localhost:8023', 'http://localhost:8027', 'http://localhost:8034', 'http://localhost:8015', 'http://localhost:8037', 'http://localhost:8016', 'http://localhost:8047', 'http://localhost:8030', 'http://localhost:8014', 'http://localhost:8046', 'http://localhost:8005', 'http://localhost:8009', 'http://localhost:8049', 'http://localhost:8043', 'http://localhost:8045', 'http://localhost:8011', 'http://localhost:8003', 'http://localhost:8044', 'http://localhost:8029', 'http://localhost:8042', 'http://localhost:8048', 'http://localhost:8012', 'http://localhost:8031', 'http://localhost:8020', 'http://localhost:8028', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8007', 'http://localhost:8024', 'http://localhost:8026', 'http://localhost:8010', 'http://localhost:8021', 'http://localhost:8017', 'http://localhost:8022', 'http://localhost:8032', 'http://localhost:8039', 'http://localhost:8006', 'http://localhost:8004', 'http://localhost:8041', 'http://localhost:8002', 'http://localhost:8025', 'http://localhost:8008', 'http://localhost:8035', 'http://localhost:8036']
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-b'ok'
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048']
+longer chain getted
+replaced chain
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048']
+mining interrupted. 50
+replaced chain
+from http://localhost:8025 ======A block received=========, 15:47:51  current length 51
+51
+=============================
+need to replace chain from http://localhost:8025
+request a chain
+from http://localhost:8031 ======A block received=========, 15:47:53  current length 51
+51
+=============================
+need to replace chain from http://localhost:8031
+request a chain
 could not find MARK
-b'ok'
+longer chain getted
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048']
+replaced chain
 could not find MARK
-b'ok'
 could not find MARK
-b'ok'
+could not find MARK
+could not find MARK
+could not find MARK
+mining interrupted. 52
+from http://localhost:8025 ======A block received=========, 15:47:55  current length 53
+52
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 15:47:55  current length 53
+51
+=============================
+this block is from a shorter chain
+heart beat of  http://localhost:8011 b'live'
+could not find MARK
+could not find MARK
+from http://localhost:8007 ======A block received=========, 15:47:55  current length 53
+51
+=============================
+this block is from a shorter chain
+from http://localhost:8020 ======A block received=========, 15:47:55  current length 53
+51
+=============================
+this block is from a shorter chain
+from http://localhost:8020 ======A block received=========, 15:47:55  current length 53
+52
+=============================
+this block is from a shorter chain
+longer chain getted
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044']
+from http://localhost:8031 ======A block received=========, 15:47:55  current length 54
+53
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 15:47:55  current length 54
+52
+=============================
+this block is from a shorter chain
+replaced chain
+mining interrupted. 53
+from http://localhost:8011 ======A block received=========, 15:47:56  current length 54
+52
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8020 ======A block received=========, 15:47:58  current length 54
+52
+=============================
+this block is from a shorter chain
+from http://localhost:8011 ======A block received=========, 15:47:58  current length 54
+54
+=============================
+need to replace chain from http://localhost:8011
+request a chain
+from http://localhost:8020 ======A block received=========, 15:47:58  current length 54
+52
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8020 ======A block received=========, 15:48:02  current length 54
+54
+longer chain getted
+=============================
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039']
+this block is from a shorter chain
+mining interrupted. 54
+change diff: 30 1523648875 1523648871 4
+send all chain
+replaced chain
+from http://localhost:8025 ======A block received=========, 15:48:02  current length 55
+54
+=============================
+this block is from a shorter chain
+from http://localhost:8025 ======A block received=========, 15:48:02  current length 55
+53
+=============================
+this block is from a shorter chain
+from http://localhost:8020 ======A block received=========, 15:48:02  current length 55
+55
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039']
+mining interrupted. 55
+send all chain
+send all chain
+send all chain
+send all chain
+could not find MARK
+from http://localhost:8007 ======A block received=========, 15:48:06  current length 56
+54
+=============================
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8020 ======A block received=========, 15:48:06  current length 56
+54
+=============================
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8025 ======A block received=========, 15:48:06  current length 56
+54
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8007 ======A block received=========, 15:48:12  current length 56
+55
+=============================
+this block is from a shorter chain
+send all chain
+from http://localhost:8011 ======A block received=========, 15:48:12  current length 56
+55
+=============================
+this block is from a shorter chain
+The block has been accepted
+ 15:48:14 mined a block Block:56
+DataLen:1
+Time:1523648882
+PrevHash:000005814ceed4ebbfcd5dff93a0f8cc96d0c3f3750e33f2c00e4d7c82dff786
+Nonce:72554
+Difficulty:18
+
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022']
+from http://localhost:8025 ======A block received=========, 15:48:15  current length 57
+55
+=============================
+this block is from a shorter chain
+heart beat of  http://localhost:8024 b'live'
+from http://localhost:8031 ======A block received=========, 15:48:15  current length 57
+54
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 15:48:18  current length 57
+55
+=============================
+this block is from a shorter chain
+from http://localhost:8011 ======A block received=========, 15:48:18  current length 57
+56
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8031 ======A block received=========, 15:48:20  current length 57
+55
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 15:48:20  current length 57
+55
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 15:48:21  current length 57
+54
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 15:48:21  current length 57
+54
+=============================
+this block is from a shorter chain
+from http://localhost:8020 ======A block received=========, 15:48:24  current length 57
+56
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 15:48:24  current length 57
+56
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 15:48:24  current length 57
+56
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 15:48:24  current length 57
+56
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 15:48:24  current length 57
+56
+=============================
+this block is from a shorter chain
+from http://localhost:8025 ======A block received=========, 15:48:24  current length 57
+56
+=============================
+this block is from a shorter chain
+heart beat of  http://localhost:8017 b'live'
+from http://localhost:8025 ======A block received=========, 15:48:25  current length 57
+56
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 15:48:28  current length 57
+56
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 15:48:29  current length 57
+58
+=============================
+need to replace chain from http://localhost:8024
+request a chain
+from http://localhost:8031 ======A block received=========, 15:48:30  current length 57
+56
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 15:48:30  current length 57
+57
+=============================
+need to replace chain from http://localhost:8031
+request a chain
+heart beat of  http://localhost:8049 b'live'
+longer chain getted
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011']
+replaced chain
+mining interrupted. 59
+from http://localhost:8011 ======A block received=========, 15:48:34  current length 60
+57
+=============================
+this block is from a shorter chain
+from http://localhost:8020 ======A block received=========, 15:48:34  current length 60
+57
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 15:48:36  current length 60
+58
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 15:48:36  current length 60
+57
+=============================
+this block is from a shorter chain
+from http://localhost:8011 ======A block received=========, 15:48:38  current length 60
+57
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 15:48:38  current length 60
+57
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 15:48:38  current length 60
+56
+=============================
+this block is from a shorter chain
+from http://localhost:8017 ======A block received=========, 15:48:38  current length 60
+58
+=============================
+this block is from a shorter chain
+from http://localhost:8017 ======A block received=========, 15:48:38  current length 60
+58
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 15:48:38  current length 60
+57
+=============================
+this block is from a shorter chain
+from http://localhost:8025 ======A block received=========, 15:48:38  current length 60
+58
+=============================
+this block is from a shorter chain
+from http://localhost:8049 ======A block received=========, 15:48:38  current length 60
+57
+=============================
+this block is from a shorter chain
+from http://localhost:8020 ======A block received=========, 15:48:38  current length 60
+58
+=============================
+this block is from a shorter chain
+from http://localhost:8049 ======A block received=========, 15:48:38  current length 60
+58
+=============================
+this block is from a shorter chain
+from http://localhost:8020 ======A block received=========, 15:48:38  current length 60
+58
+=============================
+this block is from a shorter chain
+longer chain getted
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011']
+mining interrupted. 59
+replaced chain
+from http://localhost:8007 ======A block received=========, 15:48:40  current length 60
+57
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 15:48:40  current length 60
+59
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 15:48:40  current length 60
+58
+=============================
+this block is from a shorter chain
+from http://localhost:8011 ======A block received=========, 15:48:40  current length 60
+58
+=============================
+this block is from a shorter chain
+from http://localhost:8017 ======A block received=========, 15:48:41  current length 60
+could not find MARK
+57
+=============================
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+from http://localhost:8020 ======A block received=========, 15:48:41  current length 60
+58
+=============================
+this block is from a shorter chain
+from http://localhost:8020 ======A block received=========, 15:48:41  current length 60
+58
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8007 ======A block received=========, 15:48:42  current length 60
+57
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 15:48:42  current length 60
+57
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 15:48:43  current length 60
+59
+=============================
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8020 ======A block received=========, 15:48:43  current length 60
+59
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+from http://localhost:8020 ======A block received=========, 15:48:43  current length 60
+58
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+heart beat of  http://localhost:8021 b'live'
+from http://localhost:8007 ======A block received=========, 15:48:45  current length 60
+58
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 15:48:45  current length 60
+58
+=============================
+this block is from a shorter chain
+from http://localhost:8020 ======A block received=========, 15:48:46  current length 60
+59
+=============================
+this block is from a shorter chain
+send all chain
+from http://localhost:8007 ======A block received=========, 15:48:46  current length 60
+58
+=============================
+this block is from a shorter chain
+send all chain
+from http://localhost:8025 ======A block received=========, 15:48:46  current length 60
+59
+=============================
+this block is from a shorter chain
+send all chain
+send all chain
+from http://localhost:8049 ======A block received=========, 15:48:46  current length 60
+59
+=============================
+this block is from a shorter chain
+from http://localhost:8049 ======A block received=========, 15:48:46  current length 60
+58
+=============================
+this block is from a shorter chain
+send all chain
+send all chain
+send all chain
+from http://localhost:8031 ======A block received=========, 15:48:48  current length 60
+58
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 15:48:48  current length 60
+59
+=============================
+this block is from a shorter chain
+send all chain
+send all chain
+heart beat of  http://localhost:8013 b'live'
+send all chain
+from http://localhost:8011 ======A block received=========, 15:48:53  current length 60
+59
+=============================
+this block is from a shorter chain
+from http://localhost:8049 ======A block received=========, 15:48:53  current length 60
+60
+=============================
+need to replace chain from http://localhost:8049
+request a chain
+from http://localhost:8025 ======A block received=========, 15:48:53  current length 60
+60
+=============================
+need to replace chain from http://localhost:8025
+request a chain
+from http://localhost:8020 ======A block received=========, 15:48:57  current length 60
+60
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037']
+from http://localhost:8013 ======A block received=========, 15:48:57  current length 61
+59
+=============================
+this block is from a shorter chain
+mining interrupted. 60
+change diff: 30 1523648921 1523648901 20
+from http://localhost:8025 ======A block received=========, 15:48:58  current length 61
+61
+=============================
+need to replace chain from http://localhost:8025
+request a chain
+longer chain getted
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037']
+mining interrupted. 61
+from http://localhost:8011 ======A block received=========, 15:49:03  current length 62
+60
+=============================
+this block is from a shorter chain
+from http://localhost:8017 ======A block received=========, 15:49:03  current length 62
+59
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 15:49:03  current length 62
+60
+=============================
+this block is from a shorter chain
+from http://localhost:8017 ======A block received=========, 15:49:03  current length 62
+59
+=============================
+this block is from a shorter chain
+longer chain getted
+replaced chain
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037']
+replaced chain
+mining interrupted. 61
+from http://localhost:8011 ======A block received=========, 15:49:11  current length 62
+60
+=============================
+this block is from a shorter chain
+from http://localhost:8011 ======A block received=========, 15:49:11  current length 62
+59
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 15:49:11  current length 62
+59
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 15:49:12  current length 62
+61
+=============================
+this block is from a shorter chain
+from http://localhost:8013 ======A block received=========, 15:49:20  current length 62
+59
+=============================
+this block is from a shorter chain
+from http://localhost:8013 ======A block received=========, 15:49:20  current length 62
+60
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+from http://localhost:8049 ======A block received=========, 15:49:20  current length 62
+61
+=============================
+this block is from a shorter chain
+from http://localhost:8011 ======A block received=========, 15:49:20  current length 62
+59
+=============================
+this block is from a shorter chain
+heart beat of  http://localhost:8023 b'live'
+could not find MARK
+could not find MARK
+longer chain getted
+afterset <threading.Event object at 0x102aad5c0> True
+could not find MARK
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037']
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8024 ======A block received=========, 15:49:27  current length 62
+60
+=============================
+this block is from a shorter chain
+mining interrupted. 61
+could not find MARK
 could not find MARK
 replaced chain
-b'ok'
 could not find MARK
-HTTPConnectionPool(host='localhost', port=8009): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x112206b00>: Failed to establish a new connection: [Errno 60] Operation timed out',))
-b'ok'
+from http://localhost:8007 ======A block received=========, 15:49:28  current length 62
+60
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 15:49:28  current length 62
+60
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 15:49:28  current length 62
+60
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 15:49:31  current length 62
+60
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 15:49:31  current length 62
+60
+=============================
+this block is from a shorter chain
+from http://localhost:8011 ======A block received=========, 15:49:35  current length 62
+60
+=============================
+this block is from a shorter chain
 could not find MARK
-b'ok'
 could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8021 ======A block received=========, 15:49:35  current length 62
+60
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 15:49:35  current length 62
+61
+=============================
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8021 ======A block received=========, 15:49:35  current length 62
+60
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 15:49:35  current length 62
+60
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8020 ======A block received=========, 15:49:39  current length 62
+61
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 15:49:39  current length 62
+60
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 15:49:39  current length 62
+61
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 15:49:40  current length 62
+61
+=============================
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8011 ======A block received=========, 15:49:40  current length 62
+61
+=============================
+this block is from a shorter chain
+from http://localhost:8013 ======A block received=========, 15:49:40  current length 62
+61
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 15:49:44  current length 62
+61
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 15:49:44  current length 62
+64
+=============================
+need to replace chain from http://localhost:8024
+request a chain
+from http://localhost:8013 ======A block received=========, 15:49:44  current length 62
+61
+=============================
+this block is from a shorter chain
+from http://localhost:8013 ======A block received=========, 15:49:44  current length 62
+60
+=============================
+this block is from a shorter chain
+from http://localhost:8013 ======A block received=========, 15:49:44  current length 62
+61
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 15:49:48  current length 62
+60
+=============================
+this block is from a shorter chain
+from http://localhost:8017 ======A block received=========, 15:49:48  current length 62
+64
+=============================
+need to replace chain from http://localhost:8017
+request a chain
+from http://localhost:8021 ======A block received=========, 15:49:48  current length 62
+60
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8007 ======A block received=========, 15:49:52  current length 62
+61
+=============================
+this block is from a shorter chain
+from http://localhost:8020 ======A block received=========, 15:49:52  current length 62
+62
+=============================
+need to replace chain from http://localhost:8020
+request a chain
+from http://localhost:8013 ======A block received=========, 15:49:52  current length 62
+61
+=============================
+this block is from a shorter chain
+from http://localhost:8011 ======A block received=========, 15:49:52  current length 62
+64
+=============================
+need to replace chain from http://localhost:8011
+request a chain
+send all chain
+send all chain
+from http://localhost:8017 ======A block received=========, 15:49:53  current length 62
+65
+=============================
+need to replace chain from http://localhost:8017
+request a chain
+from http://localhost:8020 ======A block received=========, 15:49:59  current length 62
+63
+=============================
+need to replace chain from http://localhost:8020
+request a chain
+from http://localhost:8023 ======A block received=========, 15:49:59  current length 62
+62
+=============================
+need to replace chain from http://localhost:8023
+request a chain
+from http://localhost:8017 ======A block received=========, 15:49:59  current length 62
+64
+=============================
+need to replace chain from http://localhost:8017
+request a chain
+longer chain getted
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040']
+from http://localhost:8013 ======A block received=========, 15:49:59  current length 66
+61
+=============================
+this block is from a shorter chain
+from http://localhost:8017 ======A block received=========, 15:49:59  current length 66
+63
+=============================
+this block is from a shorter chain
+from http://localhost:8017 ======A block received=========, 15:49:59  current length 66
+63
+=============================
+this block is from a shorter chain
+mining interrupted. 65
+from http://localhost:8007 ======A block received=========, 15:49:59  current length 66
+61
+=============================
+this block is from a shorter chain
+from http://localhost:8017 ======A block received=========, 15:49:59  current length 66
+61
+=============================
+this block is from a shorter chain
+from http://localhost:8011 ======A block received=========, 15:49:59  current length 66
+65
+=============================
+this block is from a shorter chain
+replaced chain
+from http://localhost:8017 ======A block received=========, 15:50:06  current length 66
+61
+=============================
+this block is from a shorter chain
+from http://localhost:8017 ======A block received=========, 15:50:06  current length 66
+64
+=============================
+this block is from a shorter chain
+longer chain getted
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040']
+mining interrupted. 65
+from http://localhost:8011 ======A block received=========, 15:50:06  current length 66
+64
+=============================
+this block is from a shorter chain
+from http://localhost:8013 ======A block received=========, 15:50:07  current length 66
+63
+=============================
+this block is from a shorter chain
+replaced chain
+from http://localhost:8024 ======A block received=========, 15:50:15  current length 66
+64
+=============================
+this block is from a shorter chain
+from http://localhost:8017 ======A block received=========, 15:50:15  current length 66
+61
+=============================
+this block is from a shorter chain
+from http://localhost:8011 ======A block received=========, 15:50:22  current length 66
+63
+=============================
+this block is from a shorter chain
+from http://localhost:8049 ======A block received=========, 15:50:22  current length 66
+63
+=============================
+this block is from a shorter chain
+from http://localhost:8049 ======A block received=========, 15:50:22  current length 66
+62
+=============================
+this block is from a shorter chain
+longer chain getted
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040']
+mining interrupted. 66
+change diff: 30 1523648988 1523648944 44
+longer chain getted
+replaced chain
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040']
+mining interrupted. 66
+change diff: 30 1523648988 1523648944 44
+replaced chain
+from http://localhost:8020 ======A block received=========, 15:50:32  current length 67
+64
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 15:50:32  current length 67
+65
+=============================
+this block is from a shorter chain
+from http://localhost:8011 ======A block received=========, 15:50:32  current length 67
+64
+=============================
+this block is from a shorter chain
+from http://localhost:8049 ======A block received=========, 15:50:32  current length 67
+63
+=============================
+this block is from a shorter chain
+from http://localhost:8013 ======A block received=========, 15:50:32  current length 67
+63
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 15:50:32  current length 67
+63
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 15:50:32  current length 67
+62
+=============================
+this block is from a shorter chain
+longer chain getted
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040']
+mining interrupted. 67
+from http://localhost:8025 ======A block received=========, 15:50:33  current length 68
+62
+=============================
+this block is from a shorter chain
+replaced chain
+from http://localhost:8031 ======A block received=========, 15:50:40  current length 68
+63
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+longer chain getted
+from http://localhost:8020 ======A block received=========, 15:50:40  current length 68
+65
+=============================
+this block is from a shorter chain
+longer chain getted
+afterset <threading.Event object at 0x102aad5c0> True
+could not find MARK
+could not find MARK
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040']
+mining interrupted. 67
+longer chain getted
+replaced chain
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040']
+mining interrupted. 67
+replaced chain
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040']
+mining interrupted. 67
+replaced chain
+from http://localhost:8013 ======A block received=========, 15:50:48  current length 68
+63
+=============================
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8013 ======A block received=========, 15:50:48  current length 68
+64
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+from http://localhost:8049 ======A block received=========, 15:50:48  current length 68
+64
+=============================
+this block is from a shorter chain
+from http://localhost:8023 ======A block received=========, 15:50:48  current length 68
+64
+=============================
+this block is from a shorter chain
+from http://localhost:8023 ======A block received=========, 15:50:48  current length 68
+63
+=============================
+this block is from a shorter chain
+from http://localhost:8013 ======A block received=========, 15:50:48  current length 68
+64
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8007 ======A block received=========, 15:51:00  current length 68
+65
+=============================
+this block is from a shorter chain
+from http://localhost:8025 ======A block received=========, 15:51:00  current length 68
+67
+=============================
+this block is from a shorter chain
+from http://localhost:8017 ======A block received=========, 15:51:00  current length 68
+66
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+heart beat of  http://localhost:8033 b'live'
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8020 ======A block received=========, 15:51:05  current length 68
+65
+=============================
+this block is from a shorter chain
+from http://localhost:8020 ======A block received=========, 15:51:05  current length 68
+could not find MARK
+66
+could not find MARK
+=============================
+could not find MARK
+could not find MARK
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+from http://localhost:8031 ======A block received=========, 15:51:05  current length 68
+65
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8020 ======A block received=========, 15:51:12  current length 68
+65
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 15:51:12  current length 68
+66
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 15:51:12  current length 68
+65
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8023 ======A block received=========, 15:51:12  current length 68
+67
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8025 ======A block received=========, 15:51:12  current length 68
+65
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 15:51:18  current length 68
+61
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 15:51:18  current length 68
+61
+=============================
+this block is from a shorter chain
+from http://localhost:8017 ======A block received=========, 15:51:18  current length 68
+67
+=============================
+this block is from a shorter chain
+from http://localhost:8020 ======A block received=========, 15:51:18  current length 68
+66
+=============================
+this block is from a shorter chain
+from http://localhost:8013 ======A block received=========, 15:51:18  current length 68
+65
+=============================
+this block is from a shorter chain
+from http://localhost:8020 ======A block received=========, 15:51:18  current length 68
+67
+=============================
+this block is from a shorter chain
+from http://localhost:8013 ======A block received=========, 15:51:18  current length 68
+67
+=============================
+this block is from a shorter chain
+from http://localhost:8013 ======A block received=========, 15:51:18  current length 68
+67
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8007 ======A block received=========, 15:51:24  current length 68
+65
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+from http://localhost:8023 ======A block received=========, 15:51:24  current length 68
+65
+=============================
+this block is from a shorter chain
+from http://localhost:8025 ======A block received=========, 15:51:24  current length 68
+65
+=============================
+this block is from a shorter chain
+from http://localhost:8049 ======A block received=========, 15:51:24  current length 68
+65
+=============================
+this block is from a shorter chain
+from http://localhost:8023 ======A block received=========, 15:51:24  current length 68
+68
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013']
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+mining interrupted. 68
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8025 ======A block received=========, 15:51:24  current length 69
+65
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8031 ======A block received=========, 15:51:25  current length 69
+66
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8011 ======A block received=========, 15:51:30  current length 69
+66
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 15:51:30  current length 69
+67
+=============================
+this block is from a shorter chain
+from http://localhost:8013 ======A block received=========, 15:51:31  current length 69
+68
+=============================
+this block is from a shorter chain
+send all chain
+send all chain
+send all chain
+from http://localhost:8023 ======A block received=========, 15:51:34  current length 69
+69
+=============================
+need to replace chain from http://localhost:8023
+request a chain
+from http://localhost:8025 ======A block received=========, 15:51:34  current length 69
+69
+=============================
+need to replace chain from http://localhost:8025
+request a chain
+from http://localhost:8025 ======A block received=========, 15:51:34  current length 69
+69
+=============================
+need to replace chain from http://localhost:8025
+request a chain
+from http://localhost:8017 ======A block received=========, 15:51:46  current length 69
+68
+=============================
+this block is from a shorter chain
+from http://localhost:8020 ======A block received=========, 15:51:46  current length 69
+68
+=============================
+this block is from a shorter chain
+from http://localhost:8013 ======A block received=========, 15:51:46  current length 69
+67
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 15:51:46  current length 69
+66
+=============================
+this block is from a shorter chain
+from http://localhost:8013 ======A block received=========, 15:51:46  current length 69
+67
+=============================
+this block is from a shorter chain
+send all chain
+from http://localhost:8049 ======A block received=========, 15:51:46  current length 69
+65
+=============================
+this block is from a shorter chain
+from http://localhost:8033 ======A block received=========, 15:51:46  current length 69
+66
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 15:51:49  current length 69
+65
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 15:51:51  current length 69
+63
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 15:51:52  current length 69
+67
+=============================
+this block is from a shorter chain
+send all chain
+from http://localhost:8007 ======A block received=========, 15:51:53  current length 69
+68
+=============================
+this block is from a shorter chain
+could not find MARK
+send all chain
+could not find MARK
+from http://localhost:8011 ======A block received=========, 15:51:53  current length 69
+67
+=============================
+this block is from a shorter chain
+send all chain
+send all chain
+send all chain
+send all chain
+send all chain
+send all chain
+send all chain
+send all chain
+could not find MARK
+could not find MARK
+could not find MARK
+send all chain
+send all chain
+send all chain
+send all chain
+send all chain
+from http://localhost:8049 ======A block received=========, 15:51:54  current length 69
+66
+=============================
+this block is from a shorter chain
+from http://localhost:8049 ======A block received=========, 15:51:54  current length 69
+69
+=============================
+need to replace chain from http://localhost:8049
+request a chain
+from http://localhost:8049 ======A block received=========, 15:51:54  current length 69
+66
+=============================
+this block is from a shorter chain
+The block has been accepted
+ 15:51:59 mined a block Block:69
+DataLen:1
+Time:1523649084
+PrevHash:000006097ddc61600c8d64b7c9835a785de86ce01f2b73149b5ec0fe339fa75f
+Nonce:233865
+Difficulty:21
+
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013', 'http://localhost:8017']
+change diff: 30 1523649084 1523648998 86
+from http://localhost:8021 ======A block received=========, 15:52:02  current length 70
+62
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 15:52:04  current length 70
+61
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 15:52:04  current length 70
+64
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 15:52:04  current length 70
+62
+=============================
+this block is from a shorter chain
+send all chain
+send all chain
+from http://localhost:8049 ======A block received=========, 15:52:21  current length 70
+67
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8011 ======A block received=========, 15:52:25  current length 70
+68
+=============================
+this block is from a shorter chain
+from http://localhost:8033 ======A block received=========, 15:52:26  current length 70
+67
+=============================
+this block is from a shorter chain
+longer chain getted
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013', 'http://localhost:8017']
+mining interrupted. 70
+replaced chain
+from http://localhost:8013 ======A block received=========, 15:52:31  current length 71
+68
+=============================
+this block is from a shorter chain
+from http://localhost:8013 ======A block received=========, 15:52:33  current length 71
+69
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 15:52:34  current length 71
+70
+=============================
+this block is from a shorter chain
+longer chain getted
+afterset <threading.Event object at 0x102aad5c0> True
+longer chain getted
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013', 'http://localhost:8017']
+mining interrupted. 70
+replaced chain
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013', 'http://localhost:8017']
+mining interrupted. 70
+replaced chain
+from http://localhost:8049 ======A block received=========, 15:52:48  current length 71
+69
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 15:52:48  current length 71
+64
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 15:52:48  current length 71
+68
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 15:52:48  current length 71
+64
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 15:52:48  current length 71
+64
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 15:52:48  current length 71
+63
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 15:52:48  current length 71
+65
+=============================
+this block is from a shorter chain
+from http://localhost:8049 ======A block received=========, 15:52:48  current length 71
+69
+=============================
+this block is from a shorter chain
+from http://localhost:8049 ======A block received=========, 15:52:53  current length 71
+69
+=============================
+this block is from a shorter chain
+send all chain
+send all chain
+from http://localhost:8007 ======A block received=========, 15:53:02  current length 71
+69
+=============================
+this block is from a shorter chain
+from http://localhost:8049 ======A block received=========, 15:53:07  current length 71
+69
+=============================
+this block is from a shorter chain
+from http://localhost:8011 ======A block received=========, 15:53:08  current length 71
+69
+=============================
+this block is from a shorter chain
+from http://localhost:8049 ======A block received=========, 15:53:10  current length 71
+70
+=============================
+this block is from a shorter chain
+from http://localhost:8011 ======A block received=========, 15:53:11  current length 71
+69
+=============================
+this block is from a shorter chain
+from http://localhost:8011 ======A block received=========, 15:53:13  current length 71
+69
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8021 ======A block received=========, 15:53:17  current length 71
+64
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 15:53:17  current length 71
+64
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 15:53:17  current length 71
+66
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+longer chain getted
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013', 'http://localhost:8017']
+mining interrupted. 70
+replaced chain
+from http://localhost:8033 ======A block received=========, 15:53:20  current length 71
+68
+=============================
+this block is from a shorter chain
+from http://localhost:8033 ======A block received=========, 15:53:20  current length 71
+68
+=============================
+this block is from a shorter chain
+from http://localhost:8033 ======A block received=========, 15:53:20  current length 71
+68
+=============================
+this block is from a shorter chain
+from http://localhost:8033 ======A block received=========, 15:53:20  current length 71
+69
+=============================
+this block is from a shorter chain
+from http://localhost:8033 ======A block received=========, 15:53:20  current length 71
+68
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8017 ======A block received=========, 15:53:28  current length 71
+69
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 15:53:28  current length 71
+71
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013', 'http://localhost:8017']
+mining interrupted. 71
+from http://localhost:8021 ======A block received=========, 15:53:33  current length 72
+69
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 15:53:36  current length 72
+69
+=============================
+this block is from a shorter chain
+from http://localhost:8011 ======A block received=========, 15:53:37  current length 72
+70
+=============================
+this block is from a shorter chain
+from http://localhost:8025 ======A block received=========, 15:53:37  current length 72
+70
+=============================
+this block is from a shorter chain
+from http://localhost:8033 ======A block received=========, 15:53:42  current length 72
+68
+=============================
+this block is from a shorter chain
+from http://localhost:8033 ======A block received=========, 15:53:42  current length 72
+71
+=============================
+this block is from a shorter chain
+from http://localhost:8033 ======A block received=========, 15:53:42  current length 72
+68
+=============================
+this block is from a shorter chain
+from http://localhost:8020 ======A block received=========, 15:53:44  current length 72
+69
+=============================
+this block is from a shorter chain
+from http://localhost:8017 ======A block received=========, 15:53:49  current length 72
+70
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 15:53:49  current length 72
+69
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+heart beat of  http://localhost:8010 b'live'
+could not find MARK
+could not find MARK
+from http://localhost:8025 ======A block received=========, 15:53:55  current length 72
+71
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 15:53:57  current length 72
+69
+=============================
+this block is from a shorter chain
+from http://localhost:8033 ======A block received=========, 15:53:58  current length 72
+71
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 15:53:58  current length 72
+68
+=============================
+this block is from a shorter chain
+from http://localhost:8020 ======A block received=========, 15:54:00  current length 72
+70
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8021 ======A block received=========, 15:54:02  current length 72
+68
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+from http://localhost:8017 ======A block received=========, 15:54:03  current length 72
+69
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 15:54:07  current length 72
+69
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 15:54:07  current length 72
+69
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 15:54:08  current length 72
+68
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8033 ======A block received=========, 15:54:11  current length 72
+70
+=============================
+this block is from a shorter chain
+from http://localhost:8017 ======A block received=========, 15:54:11  current length 72
+70
+=============================
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8011 ======A block received=========, 15:54:11  current length 72
+69
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 15:54:11  current length 72
+70
+=============================
+this block is from a shorter chain
+from http://localhost:8013 ======A block received=========, 15:54:11  current length 72
+70
+=============================
+this block is from a shorter chain
+from http://localhost:8033 ======A block received=========, 15:54:11  current length 72
+69
+=============================
+this block is from a shorter chain
+from http://localhost:8033 ======A block received=========, 15:54:11  current length 72
+69
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 15:54:11  current length 72
+70
+=============================
+this block is from a shorter chain
+from http://localhost:8017 ======A block received=========, 15:54:15  current length 72
+71
+=============================
+this block is from a shorter chain
+from http://localhost:8033 ======A block received=========, 15:54:15  current length 72
+69
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 15:54:15  current length 72
+69
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 15:54:15  current length 72
+71
+=============================
+this block is from a shorter chain
+from http://localhost:8033 ======A block received=========, 15:54:15  current length 72
+69
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 15:54:15  current length 72
+69
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8020 ======A block received=========, 15:54:18  current length 72
+71
+=============================
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8017 ======A block received=========, 15:54:18  current length 72
+69
+=============================
+this block is from a shorter chain
+from http://localhost:8020 ======A block received=========, 15:54:18  current length 72
+71
+=============================
+this block is from a shorter chain
+from http://localhost:8013 ======A block received=========, 15:54:18  current length 72
+71
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+heart beat of  http://localhost:8040 b'live'
+from http://localhost:8023 ======A block received=========, 15:54:20  current length 72
+71
+=============================
+this block is from a shorter chain
+from http://localhost:8023 ======A block received=========, 15:54:20  current length 72
+70
+=============================
+this block is from a shorter chain
+from http://localhost:8011 ======A block received=========, 15:54:24  current length 72
+72
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013', 'http://localhost:8017']
+mining interrupted. 72
+change diff: 30 1523649103 1523649079 24
+from http://localhost:8049 ======A block received=========, 15:54:25  current length 73
+71
+=============================
+this block is from a shorter chain
+send all chain
+from http://localhost:8033 ======A block received=========, 15:54:25  current length 73
+72
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 15:54:25  current length 73
+72
+=============================
+this block is from a shorter chain
+from http://localhost:8025 ======A block received=========, 15:54:25  current length 73
+72
+=============================
+this block is from a shorter chain
+from http://localhost:8023 ======A block received=========, 15:54:25  current length 73
+72
+=============================
+this block is from a shorter chain
+send all chain
+heart beat of  http://localhost:8032 b'live'
+from http://localhost:8023 ======A block received=========, 15:54:41  current length 73
+72
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 15:54:41  current length 73
+71
+=============================
+this block is from a shorter chain
+from http://localhost:8020 ======A block received=========, 15:54:41  current length 73
+72
+=============================
+this block is from a shorter chain
+from http://localhost:8013 ======A block received=========, 15:54:42  current length 73
+73
+=============================
+need to replace chain from http://localhost:8013
+request a chain
+from http://localhost:8024 ======A block received=========, 15:54:43  current length 73
+68
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 15:54:46  current length 73
+68
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 15:54:50  current length 73
+69
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 15:54:50  current length 73
+69
+=============================
+this block is from a shorter chain
+from http://localhost:8017 ======A block received=========, 15:54:51  current length 73
+72
+=============================
+this block is from a shorter chain
+from http://localhost:8049 ======A block received=========, 15:54:51  current length 73
+72
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8011 ======A block received=========, 15:54:51  current length 73
+72
+=============================
+this block is from a shorter chain
+from http://localhost:8011 ======A block received=========, 15:54:51  current length 73
+72
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8021 ======A block received=========, 15:54:52  current length 73
+72
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 15:54:52  current length 73
+72
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 15:54:56  current length 73
+71
+=============================
+this block is from a shorter chain
+from http://localhost:8013 ======A block received=========, 15:54:57  current length 73
+73
+=============================
+need to replace chain from http://localhost:8013
+request a chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8021 ======A block received=========, 15:54:58  current length 73
+72
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 15:54:58  current length 73
+72
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 15:54:58  current length 73
+71
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 15:54:59  current length 73
+71
+=============================
+this block is from a shorter chain
+from http://localhost:8020 ======A block received=========, 15:55:00  current length 73
+73
+=============================
+need to replace chain from http://localhost:8020
+request a chain
+from http://localhost:8011 ======A block received=========, 15:55:00  current length 73
+73
+=============================
+need to replace chain from http://localhost:8011
+request a chain
+from http://localhost:8017 ======A block received=========, 15:55:00  current length 73
+73
+=============================
+need to replace chain from http://localhost:8017
+request a chain
+from http://localhost:8011 ======A block received=========, 15:55:00  current length 73
+71
+=============================
+this block is from a shorter chain
+from http://localhost:8049 ======A block received=========, 15:55:00  current length 73
+71
+=============================
+this block is from a shorter chain
+from http://localhost:8011 ======A block received=========, 15:55:00  current length 73
+72
+=============================
+this block is from a shorter chain
+from http://localhost:8011 ======A block received=========, 15:55:00  current length 73
+72
+=============================
+this block is from a shorter chain
+from http://localhost:8011 ======A block received=========, 15:55:00  current length 73
+72
+=============================
+this block is from a shorter chain
+from http://localhost:8011 ======A block received=========, 15:55:00  current length 73
+72
+=============================
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8024 ======A block received=========, 15:55:00  current length 73
+70
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 15:55:01  current length 73
+72
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 15:55:01  current length 73
+72
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 15:55:01  current length 73
+72
+=============================
+this block is from a shorter chain
+from http://localhost:8010 ======A block received=========, 15:55:02  current length 73
+73
+=============================
+need to replace chain from http://localhost:8010
+request a chain
+from http://localhost:8007 ======A block received=========, 15:55:02  current length 73
+73
+=============================
+need to replace chain from http://localhost:8007
+request a chain
+from http://localhost:8021 ======A block received=========, 15:55:02  current length 73
+72
+=============================
+this block is from a shorter chain
+from http://localhost:8011 ======A block received=========, 15:55:06  current length 73
+73
+=============================
+need to replace chain from http://localhost:8011
+request a chain
+from http://localhost:8011 ======A block received=========, 15:55:06  current length 73
+73
+=============================
+need to replace chain from http://localhost:8011
+request a chain
+longer chain getted
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013', 'http://localhost:8017']
+mining interrupted. 73
+from http://localhost:8049 ======A block received=========, 15:55:06  current length 74
+73
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 15:55:06  current length 74
+71
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 15:55:06  current length 74
+73
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 15:55:07  current length 74
+70
+=============================
+this block is from a shorter chain
+replaced chain
+from http://localhost:8040 ======A block received=========, 15:55:07  current length 74
+73
+=============================
+this block is from a shorter chain
+from http://localhost:8032 ======A block received=========, 15:55:07  current length 74
+72
+=============================
+this block is from a shorter chain
+from http://localhost:8032 ======A block received=========, 15:55:07  current length 74
+72
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 15:55:10  current length 74
+70
+=============================
+this block is from a shorter chain
+from http://localhost:8017 ======A block received=========, 15:55:15  current length 74
+longer chain getted
+longer chain getted
+longer chain getted
+afterset <threading.Event object at 0x102aad5c0> True
+72
+mining interrupted. 73
+=============================
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013', 'http://localhost:8017']
+this block is from a shorter chain
+longer chain getted
+longer chain getted
+longer chain getted
+from http://localhost:8049 ======A block received=========, 15:55:16  current length 74
+72
+=============================
+this block is from a shorter chain
+from http://localhost:8049 ======A block received=========, 15:55:16  current length 74
+73
+=============================
+this block is from a shorter chain
+replaced chain
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013', 'http://localhost:8017']
+mining interrupted. 73
+replaced chain
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013', 'http://localhost:8017']
+mining interrupted. 73
+replaced chain
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013', 'http://localhost:8017']
+mining interrupted. 73
+replaced chain
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013', 'http://localhost:8017']
+mining interrupted. 73
+replaced chain
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013', 'http://localhost:8017']
+mining interrupted. 73
+replaced chain
+from http://localhost:8024 ======A block received=========, 15:55:20  current length 74
+69
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 15:55:27  current length 74
+68
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 15:55:52  current length 74
+71
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 15:55:52  current length 74
+68
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 15:55:52  current length 74
+72
+=============================
+this block is from a shorter chain
+from http://localhost:8032 ======A block received=========, 15:55:52  current length 74
+72
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 15:55:52  current length 74
+74
+=============================
+need to replace chain from http://localhost:8007
+request a chain
+from http://localhost:8032 ======A block received=========, 15:55:53  current length 74
+72
+=============================
+this block is from a shorter chain
+from http://localhost:8010 ======A block received=========, 15:55:53  current length 74
+73
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 15:55:53  current length 74
+73
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 15:55:53  current length 74
+73
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 15:55:53  current length 74
+72
+=============================
+this block is from a shorter chain
+from http://localhost:8025 ======A block received=========, 15:55:53  current length 74
+73
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 15:55:53  current length 74
+73
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 15:55:53  current length 74
+73
+=============================
+this block is from a shorter chain
+from http://localhost:8040 ======A block received=========, 15:56:03  current length 74
+73
+=============================
+this block is from a shorter chain
 ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-b'ok'
-could not find MARK
-b'ok'
-could not find MARK
-b'ok'
-could not find MARK
 ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-b'ok'
 could not find MARK
-b'ok'
-could not find MARK
-b'ok'
-could not find MARK
-b'ok'
-could not find MARK
-b'ok'
-could not find MARK
-b'ok'
-could not find MARK
-b'ok'
-could not find MARK
-b'ok'
-could not find MARK
-HTTPConnectionPool(host='localhost', port=7999): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x110533630>: Failed to establish a new connection: [Errno 61] Connection refused',))
-HTTPConnectionPool(host='localhost', port=8025): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x11052ed30>: Failed to establish a new connection: [Errno 23] Too many open files in system',))
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-HTTPConnectionPool(host='localhost', port=8009): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x111ee2a58>: Failed to establish a new connection: [Errno 23] Too many open files in system',))
+from http://localhost:8031 ======A block received=========, 15:56:11  current length 74
+73
+=============================
+this block is from a shorter chain
 ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
 ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-b'ok'
-could not find MARK
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-b'ok'
-could not find MARK
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-b'ok'
-could not find MARK
-b'ok'
-could not find MARK
-b'ok'
-could not find MARK
 ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
 ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
 ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
 ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-b'ok'
-could not find MARK
-b'ok'
-could not find MARK
-HTTPConnectionPool(host='localhost', port=7999): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1122a0518>: Failed to establish a new connection: [Errno 61] Connection refused',))
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-HTTPConnectionPool(host='localhost', port=7999): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1122c1e48>: Failed to establish a new connection: [Errno 61] Connection refused',))
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-b'ok'
-could not find MARK
-b'ok'
-could not find MARK
-b'ok'
-could not find MARK
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-b'ok'
-could not find MARK
-b'ok'
-could not find MARK
-b'ok'
-could not find MARK
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-b'ok'
-could not find MARK
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-b'ok'
-could not find MARK
-('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
-('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
-b'ok'
-could not find MARK
-b'ok'
-could not find MARK
-b'ok'
-could not find MARK
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
-b'ok'
-could not find MARK
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
-('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
-('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
-b'ok'
-could not find MARK
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-b'ok'
-could not find MARK
-b'ok'
-could not find MARK
-b'ok'
-could not find MARK
-b'ok'
-could not find MARK
-b'ok'
-could not find MARK
-('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
-b'ok'
-could not find MARK
-b'ok'
-could not find MARK
-b'ok'
-could not find MARK
-('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
-('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
-b'ok'
-could not find MARK
-b'ok'
-could not find MARK
-b'ok'
-could not find MARK
-b'ok'
-could not find MARK
 ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
 ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
 ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
-('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
-b'ok'
-could not find MARK
-('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
-b'ok'
-could not find MARK
-b'ok'
-could not find MARK
-b'ok'
-could not find MARK
-b'ok'
-could not find MARK
-b'ok'
-could not find MARK
-b'ok'
-could not find MARK
 ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-b'ok'
+from http://localhost:8033 ======A block received=========, 15:56:38  current length 74
+73
+=============================
+this block is from a shorter chain
 could not find MARK
-b'ok'
-b'ok'
 could not find MARK
 could not find MARK
-b'ok'
+from http://localhost:8033 ======A block received=========, 15:56:38  current length 74
+73
+=============================
+this block is from a shorter chain
+from http://localhost:8033 ======A block received=========, 15:56:38  current length 74
+73
+=============================
+this block is from a shorter chain
+from http://localhost:8023 ======A block received=========, 15:56:38  current length 74
+73
+=============================
+this block is from a shorter chain
 could not find MARK
-b'ok'
+from http://localhost:8023 ======A block received=========, 15:56:38  current length 74
+73
+=============================
+this block is from a shorter chain
 could not find MARK
-b'ok'
 could not find MARK
-b'ok'
 could not find MARK
-('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
-('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
-b'ok'
 could not find MARK
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-HTTPConnectionPool(host='localhost', port=7999): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1124b9898>: Failed to establish a new connection: [Errno 61] Connection refused',))
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-b'ok'
+from http://localhost:8025 ======A block received=========, 15:56:38  current length 74
+73
+=============================
+this block is from a shorter chain
 could not find MARK
-b'ok'
 could not find MARK
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-b'ok'
+from http://localhost:8025 ======A block received=========, 15:56:38  current length 74
+73
+=============================
+this block is from a shorter chain
+from http://localhost:8032 ======A block received=========, 15:56:38  current length 74
+73
+=============================
+this block is from a shorter chain
+from http://localhost:8023 ======A block received=========, 15:56:38  current length 74
+74
+=============================
+need to replace chain from http://localhost:8023
+request a chain
+from http://localhost:8021 ======A block received=========, 15:56:38  current length 74
+73
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 15:56:38  current length 74
+74
+=============================
+need to replace chain from http://localhost:8021
+request a chain
 could not find MARK
-b'ok'
 could not find MARK
-b'ok'
 could not find MARK
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-b'ok'
+The block has been accepted
+ 15:56:47 mined a block Block:74
+DataLen:1
+Time:1523649317
+PrevHash:000007bd3242d2065cd8145d689421bf6bab1b61c0f8a99fe317fa2d28d54bca
+Nonce:648664
+Difficulty:21
+
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013', 'http://localhost:8017']
+from http://localhost:8021 ======A block received=========, 15:57:01  current length 75
+73
+=============================
+this block is from a shorter chain
 could not find MARK
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
-b'ok'
 could not find MARK
-b'ok'
+from http://localhost:8021 ======A block received=========, 15:57:01  current length 75
+73
+=============================
+this block is from a shorter chain
 could not find MARK
-b'ok'
 could not find MARK
-b'ok'
+from http://localhost:8010 ======A block received=========, 15:57:01  current length 75
+72
+=============================
+this block is from a shorter chain
 could not find MARK
-b'ok'
 could not find MARK
-b'ok'
+from http://localhost:8010 ======A block received=========, 15:57:01  current length 75
+72
+=============================
+this block is from a shorter chain
 could not find MARK
-b'ok'
 could not find MARK
-b'ok'
 could not find MARK
-b'ok'
+from http://localhost:8010 ======A block received=========, 15:57:01  current length 75
+72
+=============================
+this block is from a shorter chain
 could not find MARK
-b'ok'
+from http://localhost:8010 ======A block received=========, 15:57:01  current length 75
+72
+=============================
+this block is from a shorter chain
+from http://localhost:8010 ======A block received=========, 15:57:01  current length 75
+72
+=============================
+this block is from a shorter chain
+from http://localhost:8010 ======A block received=========, 15:57:01  current length 75
+75
+=============================
+need to replace chain from http://localhost:8010
+request a chain
 could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8010 ======A block received=========, 15:57:01  current length 75
+76
+=============================
+need to replace chain from http://localhost:8010
+request a chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+longer chain getted
+could not find MARK
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013', 'http://localhost:8017']
+could not find MARK
+from http://localhost:8010 ======A block received=========, 15:57:02  current length 75
+72
+=============================
+this block is from a shorter chain
+from http://localhost:8010 ======A block received=========, 15:57:02  current length 75
+73
+=============================
+this block is from a shorter chain
+mining interrupted. 74
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8032 ======A block received=========, 15:57:02  current length 75
+73
+=============================
+this block is from a shorter chain
+from http://localhost:8033 ======A block received=========, 15:57:02  current length 75
+73
+=============================
+this block is from a shorter chain
+could not find MARK
+replaced chain
+could not find MARK
+from http://localhost:8033 ======A block received=========, 15:57:02  current length 75
+73
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+longer chain getted
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013', 'http://localhost:8017']
+mining interrupted. 74
+could not find MARK
+from http://localhost:8031 ======A block received=========, 15:57:03  current length 75
+73
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 15:57:03  current length 75
+73
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 15:57:03  current length 75
+73
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 15:57:03  current length 75
+73
+=============================
+this block is from a shorter chain
+from http://localhost:8032 ======A block received=========, 15:57:03  current length 75
+74
+=============================
+this block is from a shorter chain
+from http://localhost:8032 ======A block received=========, 15:57:03  current length 75
+73
+=============================
+this block is from a shorter chain
+from http://localhost:8033 ======A block received=========, 15:57:03  current length 75
+73
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 15:57:03  current length 75
+74
+=============================
+this block is from a shorter chain
+from http://localhost:8032 ======A block received=========, 15:57:03  current length 75
+74
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 15:57:03  current length 75
+74
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 15:57:03  current length 75
+73
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+longer chain getted
+could not find MARK
+heart beat of  http://localhost:8048 b'live'
+from http://localhost:8013 ======A block received=========, 15:57:03  current length 75
+could not find MARK
+could not find MARK
+74
+=============================
+this block is from a shorter chain
+replaced chain
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013', 'http://localhost:8017']
+mining interrupted. 74
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8033 ======A block received=========, 15:57:03  current length 75
+74
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8007 ======A block received=========, 15:57:03  current length 75
+75
+=============================
+need to replace chain from http://localhost:8007
+request a chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+replaced chain
+from http://localhost:8017 ======A block received=========, 15:57:04  current length 75
+74
+=============================
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8033 ======A block received=========, 15:57:04  current length 75
+75
+=============================
+need to replace chain from http://localhost:8033
+request a chain
+could not find MARK
+from http://localhost:8025 ======A block received=========, 15:57:04  current length 75
+74
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+from http://localhost:8032 ======A block received=========, 15:57:04  current length 75
+74
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8023 ======A block received=========, 15:57:04  current length 75
+74
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8025 ======A block received=========, 15:57:04  current length 75
+74
+=============================
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8024 ======A block received=========, 15:57:05  current length 75
+76
+=============================
+need to replace chain from http://localhost:8024
+could not find MARK
+request a chain
+could not find MARK
+could not find MARK
+from http://localhost:8049 ======A block received=========, 15:57:05  current length 75
+74
+=============================
+this block is from a shorter chain
+from http://localhost:8023 ======A block received=========, 15:57:05  current length 75
+74
+=============================
+this block is from a shorter chain
+from http://localhost:8010 ======A block received=========, 15:57:05  current length 75
+72
+=============================
+this block is from a shorter chain
+from http://localhost:8010 ======A block received=========, 15:57:05  current length 75
+71
+=============================
+this block is from a shorter chain
+from http://localhost:8010 ======A block received=========, 15:57:05  current length 75
+73
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8033 ======A block received=========, 15:57:05  current length 75
+76
+=============================
+need to replace chain from http://localhost:8033
+request a chain
+could not find MARK
+from http://localhost:8021 ======A block received=========, 15:57:05  current length 75
+74
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+from http://localhost:8033 ======A block received=========, 15:57:05  current length 75
+74
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8031 ======A block received=========, 15:57:05  current length 75
+74
+=============================
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8021 ======A block received=========, 15:57:05  current length 75
+73
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+from http://localhost:8033 ======A block received=========, 15:57:05  current length 75
+73
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+from http://localhost:8021 ======A block received=========, 15:57:05  current length 75
+75
+=============================
+need to replace chain from http://localhost:8021
+request a chain
+could not find MARK
+could not find MARK
+from http://localhost:8021 ======A block received=========, 15:57:06  current length 75
+74
+=============================
+this block is from a shorter chain
+from http://localhost:8023 ======A block received=========, 15:57:06  current length 75
+74
+=============================
+this block is from a shorter chain
+from http://localhost:8023 ======A block received=========, 15:57:06  current length 75
+74
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8023 ======A block received=========, 15:57:06  current length 75
+74
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+from http://localhost:8032 ======A block received=========, 15:57:06  current length 75
+73
+=============================
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8031 ======A block received=========, 15:57:06  current length 75
+76
+=============================
+need to replace chain from http://localhost:8031
+request a chain
+could not find MARK
+from http://localhost:8040 ======A block received=========, 15:57:06  current length 75
+74
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 15:57:06  current length 75
+75
+=============================
+need to replace chain from http://localhost:8031
+request a chain
+could not find MARK
+from http://localhost:8025 ======A block received=========, 15:57:06  current length 75
+73
+=============================
+this block is from a shorter chain
+from http://localhost:8025 ======A block received=========, 15:57:06  current length 75
+73
+=============================
+this block is from a shorter chain
+from http://localhost:8025 ======A block received=========, 15:57:06  current length 75
+74
+=============================
+this block is from a shorter chain
+from http://localhost:8025 ======A block received=========, 15:57:06  current length 75
+74
+=============================
+this block is from a shorter chain
+from http://localhost:8025 ======A block received=========, 15:57:06  current length 75
+74
+=============================
+this block is from a shorter chain
+longer chain getted
+could not find MARK
+could not find MARK
+from http://localhost:8033 ======A block received=========, 15:57:07  current length 75
+77
+=============================
+need to replace chain from http://localhost:8033
+request a chain
+could not find MARK
+could not find MARK
+could not find MARK
+longer chain getted
+from http://localhost:8021 ======A block received=========, 15:57:07  current length 75
+74
+=============================
+this block is from a shorter chain
+from http://localhost:8020 ======A block received=========, 15:57:07  current length 75
+75
+=============================
+need to replace chain from http://localhost:8020
+request a chain
+could not find MARK
+afterset <threading.Event object at 0x102aad5c0> True
+mining interrupted. 74
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013', 'http://localhost:8017']
+from http://localhost:8025 ======A block received=========, 15:57:07  current length 75
+73
+=============================
+this block is from a shorter chain
+longer chain getted
+could not find MARK
+could not find MARK
+longer chain getted
+longer chain getted
+from http://localhost:8025 ======A block received=========, 15:57:07  current length 75
+73
+=============================
+this block is from a shorter chain
+from http://localhost:8033 ======A block received=========, 15:57:07  current length 75
+78
+=============================
+need to replace chain from http://localhost:8033
+request a chain
+from http://localhost:8024 ======A block received=========, 15:57:07  current length 75
+77
+=============================
+need to replace chain from http://localhost:8024
+could not find MARK
+request a chain
+replaced chain
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013', 'http://localhost:8017', 'http://localhost:8043']
+mining interrupted. 74
+could not find MARK
+from http://localhost:8010 ======A block received=========, 15:57:08  current length 75
+72
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+from http://localhost:8031 ======A block received=========, 15:57:08  current length 75
+77
+=============================
+need to replace chain from http://localhost:8031
+request a chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8007 ======A block received=========, 15:57:08  current length 75
+76
+=============================
+need to replace chain from http://localhost:8007
+request a chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+longer chain getted
+could not find MARK
+could not find MARK
+replaced chain
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013', 'http://localhost:8017', 'http://localhost:8043']
+mining interrupted. 74
+from http://localhost:8033 ======A block received=========, 15:57:09  current length 75
+76
+=============================
+need to replace chain from http://localhost:8033
+could not find MARK
+request a chain
+replaced chain
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013', 'http://localhost:8017', 'http://localhost:8043', 'http://localhost:8032']
+mining interrupted. 74
+could not find MARK
+send all chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+heart beat of  http://localhost:8002 b'live'
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+replaced chain
+could not find MARK
+afterset <threading.Event object at 0x102aad5c0> True
+could not find MARK
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013', 'http://localhost:8017', 'http://localhost:8043', 'http://localhost:8032']
+mining interrupted. 74
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+replaced chain
+could not find MARK
+could not find MARK
+could not find MARK
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013', 'http://localhost:8017', 'http://localhost:8043', 'http://localhost:8032']
+mining interrupted. 78
+change diff: 30 1523649399 1523649354 45
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+replaced chain
+from http://localhost:8021 ======A block received=========, 15:57:51  current length 79
+75
+=============================
+this block is from a shorter chain
+from http://localhost:8023 ======A block received=========, 15:57:55  current length 79
+76
+=============================
+this block is from a shorter chain
+from http://localhost:8020 ======A block received=========, 15:57:59  current length 79
+76
+=============================
+this block is from a shorter chain
+send all chain
+from http://localhost:8040 ======A block received=========, 15:58:05  current length 79
+75
+=============================
+this block is from a shorter chain
+from http://localhost:8011 ======A block received=========, 15:58:09  current length 79
+75
+=============================
+this block is from a shorter chain
+could not find MARK
+longer chain getted
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013', 'http://localhost:8017', 'http://localhost:8043', 'http://localhost:8032', 'http://localhost:8046']
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+longer chain getted
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+longer chain getted
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+longer chain getted
+could not find MARK
+could not find MARK
+longer chain getted
+could not find MARK
+longer chain getted
+mining interrupted. 79
+longer chain getted
+longer chain getted
+longer chain getted
+could not find MARK
+could not find MARK
+replaced chain
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013', 'http://localhost:8017', 'http://localhost:8043', 'http://localhost:8032', 'http://localhost:8046']
+mining interrupted. 79
+from http://localhost:8013 ======A block received=========, 15:58:13  current length 80
+76
+=============================
+this block is from a shorter chain
+from http://localhost:8013 ======A block received=========, 15:58:13  current length 80
+76
+=============================
+this block is from a shorter chain
+from http://localhost:8013 ======A block received=========, 15:58:13  current length 80
+76
+=============================
+this block is from a shorter chain
+replaced chain
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013', 'http://localhost:8017', 'http://localhost:8043', 'http://localhost:8032', 'http://localhost:8046']
+mining interrupted. 79
+replaced chain
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013', 'http://localhost:8017', 'http://localhost:8043', 'http://localhost:8032', 'http://localhost:8046']
+mining interrupted. 79
+replaced chain
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013', 'http://localhost:8017', 'http://localhost:8043', 'http://localhost:8032', 'http://localhost:8046']
+mining interrupted. 79
+replaced chain
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013', 'http://localhost:8017', 'http://localhost:8043', 'http://localhost:8032', 'http://localhost:8046']
+mining interrupted. 79
+replaced chain
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013', 'http://localhost:8017', 'http://localhost:8043', 'http://localhost:8032', 'http://localhost:8046']
+mining interrupted. 79
+send all chain
+replaced chain
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013', 'http://localhost:8017', 'http://localhost:8043', 'http://localhost:8032', 'http://localhost:8046']
+mining interrupted. 79
+replaced chain
+afterset <threading.Event object at 0x102aad5c0> True
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013', 'http://localhost:8017', 'http://localhost:8043', 'http://localhost:8032', 'http://localhost:8046']
+mining interrupted. 79
+replaced chain
+The block has been accepted
+ 15:58:22 mined a block Block:80
+DataLen:1
+Time:1523649496
+PrevHash:0000107c1c9298b0aaa3361ed3757ff42002cb1bb0f872900b2ebbfb985107ec
+Nonce:36805
+Difficulty:19
+
+broadcast: ['http://localhost:8005', 'http://localhost:8002', 'http://localhost:8038', 'http://localhost:8048', 'http://localhost:8044', 'http://localhost:8039', 'http://localhost:8022', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8033', 'http://localhost:8000', 'http://localhost:8037', 'http://localhost:8028', 'http://localhost:8010', 'http://localhost:8040', 'http://localhost:8013', 'http://localhost:8017', 'http://localhost:8043', 'http://localhost:8032', 'http://localhost:8046']

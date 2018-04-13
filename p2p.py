@@ -15,6 +15,7 @@ import  wallet as w
 import  utils
 import os
 import datetime
+import time
 import random
 
 app = Flask(__name__)
@@ -38,11 +39,11 @@ serverStart = False
 
 def broadcast(data, route):
     #send to all peer
-    print("broadcast:",utils.peers)
+    print("broadcast:",len(utils.live), utils.live)
     # for url in utils.peers:
     #     postRequest(url+route,data)
     threads = []
-    for url in utils.peers:
+    for url in utils.live:
         t = threading.Thread(target=postRequest, args=(url+route,data))
         threads.append(t)
         t.start()
@@ -102,17 +103,48 @@ def sendMoney():
    receiveTxhandler(tx) # receive from self
    return "ok"
 
+
+@app.route('/heartbeat', methods=["POST"])
+def heartBeat():
+    content = request.get_data()
+    # print(content)
+    peer = pickle.loads(content)
+    addtoLive(str(peer))
+    return "live"
 # r = requests.post("http://bugs.python.org", data={'number': 12524, 'type': 'issue', 'action': 'show'})
+
+def getHeartBeat():
+    while True:
+
+        for p in utils.peers:
+            try:
+                r = requests.post(p + "/heartbeat", pickle.dumps(utils.selfip))
+                print("heart beat of ", p, r.content)
+                if r.content == b"live":
+                    continue
+                else:
+                    updateConnection(p)
+            except:
+                updateConnection(p)
+        time.sleep(10)
+
+def updateConnection(peer):
+    if peer in utils.live:
+        utils.live.remove(peer)
+
+def addtoLive(peer):
+    if peer in utils.peers and peer not in utils.live:
+        utils.live.append(peer)
 
 def getRequest(url) -> dict:
     r = requests.get(url)
-    print(r.content)
+    # print(r.content)
     return pickle.loads(r.content)
 
 def postRequest(url, data):
     try:
         r = requests.post(url, pickle.dumps(data))
-        print(r.content)
+        # print(r.content)
         return pickle.loads(r.content)
     except Exception as e:
         print(e)
@@ -179,7 +211,7 @@ def getAndReplaceChain(ip):
 #     return False
 
 def initProgress():
-        for p in utils.peers:
+        for p in utils.live:
             if getAndReplaceChain(p):
                 break;
 
@@ -199,7 +231,7 @@ def http_server(port):
 def main(port):
     utils.readUrlfromFile()
     w.initWallet()
-    print("peers:", utils.peers)
+    print("peers:", utils.live)
     threads = []
     def start_thread(fnc): #启动线程的函数
         threads.append(threading.Thread(target=fnc, daemon=True))
@@ -207,6 +239,7 @@ def main(port):
 
     print("start utxos:",chain.getUtxos())
     start_thread(chain.miner)
+    start_thread(getHeartBeat)
     # start_thread(http_server(port))
     http_server(port)
     [t.join() for t in threads]#main thread join to wait two subthread

@@ -1,5 +1,6 @@
 import hashlib
 import random
+import copy
 # import rsa
 # (privatekey, pubkey) = rsa.newkeys(2048)
 
@@ -37,7 +38,7 @@ def list_hash(to_hash) -> str:
 selfip = ""
 selfport =""
 peers=[] #read from file list of ip
-
+live = []
 #TODO read url filter url ,build peer list
 def readUrlfromFile():
     #fill peerip TODO read ip from file
@@ -46,11 +47,12 @@ def readUrlfromFile():
     # li = ["http://localhost:8001","http://localhost:8002"]
     li = []
     base = "http://localhost"
-    for p in range (7999, 8050):
+    for p in range (7999, 8100):
         li.append(base + ":" + str(p))
     li.remove(selfip)#remove selfip
     peers = li
     random.shuffle(peers)
+    live = copy.deepcopy(peers)
     selfport = selfip[-4:]
     return
 
