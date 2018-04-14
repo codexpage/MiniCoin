@@ -18,7 +18,7 @@ import datetime
 import time
 import signal
 import random
-
+import itertools
 app = Flask(__name__)
 requests.adapters.DEFAULT_RETRIES = 0
 lock = threading.Lock()
@@ -119,6 +119,12 @@ def heartBeat():
 def syncPeer(peer):
     if peer not in utils.everContact:
         utils.everContact.append(peer)
+
+
+        # simulate a partially connectect network
+        random.shuffle(utils.everContact)
+        part = utils.everContact[:len(utils.everContact)//4]
+        utils.live = part
 
 def getHeartBeat():
     while True:
