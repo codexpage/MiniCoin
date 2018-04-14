@@ -1,0 +1,3665 @@
+start main
+peers: ['http://localhost:8074', 'http://localhost:8004', 'http://localhost:8013', 'http://localhost:8070', 'http://localhost:8061', 'http://localhost:8068', 'http://localhost:8040', 'http://localhost:8035', 'http://localhost:8063', 'http://localhost:8018', 'http://localhost:8041', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8069', 'http://localhost:8015', 'http://localhost:8032', 'http://localhost:8019', 'http://localhost:8048', 'http://localhost:8057', 'http://localhost:8033', 'http://localhost:8001', 'http://localhost:8003', 'http://localhost:8053', 'http://localhost:8007', 'http://localhost:8016', 'http://localhost:8062', 'http://localhost:8031', 'http://localhost:8060', 'http://localhost:8047', 'http://localhost:8017', 'http://localhost:8002', 'http://localhost:8058', 'http://localhost:8051', 'http://localhost:8050', 'http://localhost:8034', 'http://localhost:8029', 'http://localhost:8028', 'http://localhost:8067', 'http://localhost:8046', 'http://localhost:8042', 'http://localhost:8022', 'http://localhost:8010', 'http://localhost:8043', 'http://localhost:8009', 'http://localhost:8065', 'http://localhost:8039', 'http://localhost:8045', 'http://localhost:8027', 'http://localhost:7999', 'http://localhost:8006', 'http://localhost:8052', 'http://localhost:8012', 'http://localhost:8008', 'http://localhost:8064', 'http://localhost:8072', 'http://localhost:8049', 'http://localhost:8071', 'http://localhost:8030', 'http://localhost:8000', 'http://localhost:8026', 'http://localhost:8023', 'http://localhost:8073', 'http://localhost:8044', 'http://localhost:8066', 'http://localhost:8025', 'http://localhost:8056', 'http://localhost:8005', 'http://localhost:8059', 'http://localhost:8014', 'http://localhost:8024', 'http://localhost:8054', 'http://localhost:8020', 'http://localhost:8021', 'http://localhost:8037', 'http://localhost:8055']
+start utxos: [<transaction.UnspentTxOut object at 0x108f33748>]
+from http://localhost:8005 ======A block received=========, 21:51:53  current length 1
+7
+=============================
+need to replace chain from http://localhost:8005
+request a chain
+from http://localhost:8015 ======A block received=========, 21:51:54  current length 1
+13
+=============================
+need to replace chain from http://localhost:8015
+request a chain
+from http://localhost:8016 ======A block received=========, 21:51:55  current length 1
+20
+=============================
+need to replace chain from http://localhost:8016
+request a chain
+The block has been accepted
+ 21:51:58 mined a block Block:1
+DataLen:1
+Time:1523670718
+PrevHash:e9d3061d5e216863506649096aac5ddd2089357c0bb3d647db332cd9b926f8b9
+Nonce:0
+Difficulty:0
+
+broadcast: 75 ['http://localhost:8074', 'http://localhost:8004', 'http://localhost:8013', 'http://localhost:8070', 'http://localhost:8061', 'http://localhost:8068', 'http://localhost:8040', 'http://localhost:8035', 'http://localhost:8063', 'http://localhost:8018', 'http://localhost:8041', 'http://localhost:8036', 'http://localhost:8011', 'http://localhost:8069', 'http://localhost:8015', 'http://localhost:8032', 'http://localhost:8019', 'http://localhost:8048', 'http://localhost:8057', 'http://localhost:8033', 'http://localhost:8001', 'http://localhost:8003', 'http://localhost:8053', 'http://localhost:8007', 'http://localhost:8016', 'http://localhost:8062', 'http://localhost:8031', 'http://localhost:8060', 'http://localhost:8047', 'http://localhost:8017', 'http://localhost:8002', 'http://localhost:8058', 'http://localhost:8051', 'http://localhost:8050', 'http://localhost:8034', 'http://localhost:8029', 'http://localhost:8028', 'http://localhost:8067', 'http://localhost:8046', 'http://localhost:8042', 'http://localhost:8022', 'http://localhost:8010', 'http://localhost:8043', 'http://localhost:8009', 'http://localhost:8065', 'http://localhost:8039', 'http://localhost:8045', 'http://localhost:8027', 'http://localhost:7999', 'http://localhost:8006', 'http://localhost:8052', 'http://localhost:8012', 'http://localhost:8008', 'http://localhost:8064', 'http://localhost:8072', 'http://localhost:8049', 'http://localhost:8071', 'http://localhost:8030', 'http://localhost:8000', 'http://localhost:8026', 'http://localhost:8023', 'http://localhost:8073', 'http://localhost:8044', 'http://localhost:8066', 'http://localhost:8025', 'http://localhost:8056', 'http://localhost:8005', 'http://localhost:8059', 'http://localhost:8014', 'http://localhost:8024', 'http://localhost:8054', 'http://localhost:8020', 'http://localhost:8021', 'http://localhost:8037', 'http://localhost:8055']
+from http://localhost:8009 ======A block received=========, 21:51:58  current length 2
+6
+=============================
+need to replace chain from http://localhost:8009
+request a chain
+from http://localhost:8018 ======A block received=========, 21:51:58  current length 2
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8018 ======A block received=========, 21:51:58  current length 2
+2
+=============================
+need to replace chain from http://localhost:8018
+request a chain
+from http://localhost:8000 ======A block received=========, 21:51:59  current length 2
+16
+=============================
+need to replace chain from http://localhost:8000
+request a chain
+from http://localhost:8007 ======A block received=========, 21:52:00  current length 2
+12
+=============================
+need to replace chain from http://localhost:8007
+request a chain
+from http://localhost:8007 ======A block received=========, 21:52:00  current length 2
+13
+=============================
+need to replace chain from http://localhost:8007
+request a chain
+from http://localhost:8018 ======A block received=========, 21:52:00  current length 2
+11
+=============================
+need to replace chain from http://localhost:8018
+request a chain
+from http://localhost:8002 ======A block received=========, 21:52:01  current length 2
+11
+=============================
+need to replace chain from http://localhost:8002
+request a chain
+from http://localhost:8018 ======A block received=========, 21:52:01  current length 2
+12
+=============================
+need to replace chain from http://localhost:8018
+request a chain
+from http://localhost:8002 ======A block received=========, 21:52:01  current length 2
+7
+=============================
+need to replace chain from http://localhost:8002
+request a chain
+from http://localhost:8017 ======A block received=========, 21:52:01  current length 2
+21
+=============================
+need to replace chain from http://localhost:8017
+request a chain
+The block has been accepted
+ 21:52:02 mined a block Block:2
+DataLen:1
+Time:1523670722
+PrevHash:837d04886261151ae5094ff4f745713a8db4c555c7eb41c8874d6e6468750f83
+Nonce:0
+Difficulty:0
+
+broadcast: 0 []
+The block has been accepted
+ 21:52:02 mined a block Block:3
+DataLen:1
+Time:1523670722
+PrevHash:e14ce471d2666493a698cf3503b148e10c28e100d8e308d74f409f08a67f01de
+Nonce:0
+Difficulty:0
+
+broadcast: 0 []
+change diff: 30 1523670722 1523670718 4
+The block has been accepted
+ 21:52:02 mined a block Block:4
+DataLen:1
+Time:1523670722
+PrevHash:d96b9d34a55307fdfaf367fc2ef0c1df19e5dc5a02da22f6459cf07457fd3964
+Nonce:3
+Difficulty:1
+
+broadcast: 0 []
+The block has been accepted
+ 21:52:02 mined a block Block:5
+DataLen:1
+Time:1523670722
+PrevHash:045c179dc3339ee4e1e342f6045fb90bab3837e8826482ec30aaf1d3e5621a00
+Nonce:2
+Difficulty:1
+
+broadcast: 0 []
+The block has been accepted
+ 21:52:02 mined a block Block:6
+DataLen:1
+Time:1523670722
+PrevHash:6a2a2acc8c60a5f488e540228d6f3aa4f37a4cb2194702f4615408b175413eda
+Nonce:1
+Difficulty:1
+
+broadcast: 0 []
+change diff: 30 1523670722 1523670722 0
+The block has been accepted
+ 21:52:02 mined a block Block:7
+DataLen:1
+Time:1523670722
+PrevHash:03b8c69e15be41194d9e6bf376477c583ee9ffff4a672fc40df9fe4913926ac2
+Nonce:2
+Difficulty:2
+
+broadcast: 0 []
+The block has been accepted
+ 21:52:02 mined a block Block:8
+DataLen:1
+Time:1523670722
+PrevHash:318d2c78c170924a3f69e6807f83907323ca9637c264c3e1939a10402e954d85
+Nonce:0
+Difficulty:2
+
+broadcast: 0 []
+The block has been accepted
+ 21:52:02 mined a block Block:9
+DataLen:1
+Time:1523670722
+PrevHash:2dcc213a68f8b6b50a4c68e319ea8bff726d32f3d00cac5cdd4ca078d776d268
+Nonce:5
+Difficulty:2
+
+broadcast: 0 []
+change diff: 30 1523670722 1523670722 0
+The block has been accepted
+ 21:52:02 mined a block Block:10
+DataLen:1
+Time:1523670722
+PrevHash:01fffa760b9e5e2035d82cea0c995f9a44ce266cf3fbe610ce301b9048d1ee21
+Nonce:1
+Difficulty:3
+
+broadcast: 0 []
+The block has been accepted
+ 21:52:02 mined a block Block:11
+DataLen:1
+Time:1523670722
+PrevHash:1009c5bc92d98e4fc7b787d4c3a04fabee5d240bf84dddcef77babf17c623ee4
+Nonce:11
+Difficulty:3
+
+broadcast: 0 []
+The block has been accepted
+ 21:52:02 mined a block Block:12
+DataLen:1
+Time:1523670722
+PrevHash:0fa400ed24a6e66b49599319bc23c68bb0fbe6f6c74fa5ce735da49eae9da25c
+Nonce:13
+Difficulty:3
+
+broadcast: 0 []
+change diff: 30 1523670722 1523670722 0
+The block has been accepted
+ 21:52:02 mined a block Block:13
+DataLen:1
+Time:1523670722
+PrevHash:1b3a34bd5c2d84d0cb5e61577d185b742c0656ed8b6defafcbb62d0bbb9716c1
+Nonce:35
+Difficulty:4
+
+broadcast: 0 []
+The block has been accepted
+ 21:52:02 mined a block Block:14
+DataLen:1
+Time:1523670722
+PrevHash:01f22ce0f98ff22cbcea2b5dde4ed4f24a494d7b3b3999067f7342c2c13f4bf6
+Nonce:17
+Difficulty:4
+
+broadcast: 0 []
+The block has been accepted
+ 21:52:02 mined a block Block:15
+DataLen:1
+Time:1523670722
+PrevHash:0c645a9f585c3e35db4d7b4be98a86216de18f16e9029198fdcf6389b64fa52f
+Nonce:50
+Difficulty:4
+
+broadcast: 0 []
+change diff: 30 1523670722 1523670722 0
+The block has been accepted
+ 21:52:02 mined a block Block:16
+DataLen:1
+Time:1523670722
+PrevHash:0acc043a8a4f4f2d8377ee442a4ab85c329cb88d7cd498a0a75e3eb673f1c46a
+Nonce:1
+Difficulty:5
+
+broadcast: 0 []
+The block has been accepted
+ 21:52:02 mined a block Block:17
+DataLen:1
+Time:1523670722
+PrevHash:0072178b5b284b5811c001033326b46a1340b39168bccdb18fadf980337e0506
+Nonce:42
+Difficulty:5
+
+broadcast: 0 []
+The block has been accepted
+ 21:52:02 mined a block Block:18
+DataLen:1
+Time:1523670722
+PrevHash:02c3307949444686acc455df8056b355afd989a28c44db5f3824858457446ef3
+Nonce:55
+Difficulty:5
+
+broadcast: 0 []
+change diff: 30 1523670722 1523670722 0
+The block has been accepted
+ 21:52:02 mined a block Block:19
+DataLen:1
+Time:1523670722
+PrevHash:00911468ac8e24afe421d2657ca6077d8ca3848d1b546a151284476dd0067000
+Nonce:43
+Difficulty:6
+
+broadcast: 0 []
+The block has been accepted
+ 21:52:02 mined a block Block:20
+DataLen:1
+Time:1523670722
+PrevHash:02096776f37e3870506851743af1971dfba22751f778471d07f8bfadb1bcb8e0
+Nonce:93
+Difficulty:6
+
+broadcast: 0 []
+The block has been accepted
+ 21:52:02 mined a block Block:21
+DataLen:1
+Time:1523670722
+PrevHash:0043c64fea027c7ea175bf780293e998a25cdd2f3f6e70082f8d2cf132a03913
+Nonce:33
+Difficulty:6
+
+broadcast: 0 []
+change diff: 30 1523670722 1523670722 0
+The block has been accepted
+ 21:52:02 mined a block Block:22
+DataLen:1
+Time:1523670722
+PrevHash:0215d6803269ad478c169819d4e61f6feb12fa45eb0915df56b5e24f13c3eff2
+Nonce:68
+Difficulty:7
+
+broadcast: 0 []
+The block has been accepted
+ 21:52:02 mined a block Block:23
+DataLen:1
+Time:1523670722
+PrevHash:00af86be6b76b63fef619f7d4c58e845371c23d55b321017d07f2628d5f99f35
+Nonce:2
+Difficulty:7
+
+broadcast: 0 []
+The block has been accepted
+ 21:52:02 mined a block Block:24
+DataLen:1
+Time:1523670722
+PrevHash:01d196f2b4ac303e049353400ab688513eb10001f7bc10c7a6ae97b427ee469c
+Nonce:13
+Difficulty:7
+
+broadcast: 0 []
+change diff: 30 1523670722 1523670722 0
+The block has been accepted
+ 21:52:02 mined a block Block:25
+DataLen:1
+Time:1523670722
+PrevHash:018b45acfdc81fe0b3d36cd658c4ea187bbcde536615878e10a6b98333d37f55
+Nonce:156
+Difficulty:8
+
+broadcast: 0 []
+The block has been accepted
+ 21:52:02 mined a block Block:26
+DataLen:1
+Time:1523670722
+PrevHash:00e27e076dc4380bc3e00e260856a05b44a806575072808588689355781fffa6
+Nonce:192
+Difficulty:8
+
+broadcast: 0 []
+The block has been accepted
+ 21:52:03 mined a block Block:27
+DataLen:1
+Time:1523670722
+PrevHash:00b74ba9b17406abf36e445a886ba20217c7c854e2329cc62284ccb10d5d2425
+Nonce:80
+Difficulty:8
+
+broadcast: 0 []
+change diff: 30 1523670722 1523670722 0
+The block has been accepted
+ 21:52:03 mined a block Block:28
+DataLen:1
+Time:1523670723
+PrevHash:007891d93d5872084bf0faa5198020b46094d410f48c040cb91b1700f3589043
+Nonce:83
+Difficulty:9
+
+broadcast: 0 []
+The block has been accepted
+ 21:52:03 mined a block Block:29
+DataLen:1
+Time:1523670723
+PrevHash:0050d60bd3ddc97a70b71882ace4666d41013973997286b89988a1a2e9780630
+Nonce:124
+Difficulty:9
+
+broadcast: 0 []
+The block has been accepted
+ 21:52:03 mined a block Block:30
+DataLen:1
+Time:1523670723
+PrevHash:00460b855b6fdd2f1e134ef1cf9c21dd3ca60cd12c2cf5de57179d298153e52e
+Nonce:103
+Difficulty:9
+
+broadcast: 0 []
+change diff: 30 1523670723 1523670723 0
+The block has been accepted
+ 21:52:03 mined a block Block:31
+DataLen:1
+Time:1523670723
+PrevHash:000b48de2b65b22f26c0d1a4af996c5ea24d33c2acf3c8fec4079612ba0cdc9d
+Nonce:451
+Difficulty:10
+
+broadcast: 0 []
+The block has been accepted
+ 21:52:03 mined a block Block:32
+DataLen:1
+Time:1523670723
+PrevHash:00358256122db0f482d665ed7ae5b5d92ad1101d0b09b853c28644a1913bbb34
+Nonce:1153
+Difficulty:10
+
+broadcast: 0 []
+from http://localhost:8003 ======A block received=========, 21:52:04  current length 33
+8
+=============================
+this block is from a shorter chain
+The block has been accepted
+ 21:52:04 mined a block Block:33
+DataLen:1
+Time:1523670723
+PrevHash:002ec7c17d029d6b68f11a08ccfc56c8be04545f9778948cf8440abe9b455f4b
+Nonce:2116
+Difficulty:10
+
+broadcast: 0 []
+change diff: 30 1523670723 1523670723 0
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+The block has been accepted
+ 21:52:06 mined a block Block:34
+DataLen:1
+Time:1523670724
+PrevHash:003642c49363ec623a0e4bcea3de704c84959c0cba8e612a0b84bc89fd039da2
+Nonce:3655
+Difficulty:11
+
+broadcast: 0 []
+The block has been accepted
+ 21:52:06 mined a block Block:35
+DataLen:1
+Time:1523670726
+PrevHash:0002a393b6bfe3d765cad6a72f67d32e546e72ac01f7dd26f3d2fb59e353d69a
+Nonce:824
+Difficulty:11
+
+broadcast: 0 []
+The block has been accepted
+ 21:52:07 mined a block Block:36
+DataLen:1
+Time:1523670726
+PrevHash:000e85df8c0eada3056db54c6e737567e4085faa48f4a71689c0c7ad9483af81
+Nonce:2205
+Difficulty:11
+
+broadcast: 0 []
+change diff: 30 1523670726 1523670724 2
+The block has been accepted
+ 21:52:07 mined a block Block:37
+DataLen:1
+Time:1523670727
+PrevHash:0012a419d2b25b5cd65f45247f889d7d64694c715f5db099a23dd2d81bab6a23
+Nonce:137
+Difficulty:12
+
+broadcast: 0 []
+from http://localhost:8008 ======A block received=========, 21:52:08  current length 38
+20
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 21:52:08  current length 38
+9
+=============================
+this block is from a shorter chain
+The block has been accepted
+ 21:52:08 mined a block Block:38
+DataLen:1
+Time:1523670727
+PrevHash:000e555b31c689a6341dbf5d289ef82b1a081ff51b22fe9584ca3b20be65678f
+Nonce:2936
+Difficulty:12
+
+broadcast: 0 []
+The block has been accepted
+ 21:52:09 mined a block Block:39
+DataLen:1
+Time:1523670728
+PrevHash:00079db51af9b71b0e095566fe3a6300cbb649936f29164c2f747fc83ef09d88
+Nonce:1434
+Difficulty:12
+
+broadcast: 0 []
+change diff: 30 1523670728 1523670727 1
+from http://localhost:8003 ======A block received=========, 21:52:10  current length 40
+7
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 21:52:10  current length 40
+2
+=============================
+this block is from a shorter chain
+longer chain getted
+afterset <threading.Event object at 0x108f33668> True
+broadcast: 0 []
+replaced chain
+mining interrupted. 39
+from http://localhost:8012 ======A block received=========, 21:52:10  current length 40
+15
+=============================
+this block is from a shorter chain
+change diff: 30 1523670728 1523670727 1
+from http://localhost:8005 ======A block received=========, 21:52:11  current length 40
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8004 ======A block received=========, 21:52:12  current length 40
+10
+=============================
+this block is from a shorter chain
+from http://localhost:8011 ======A block received=========, 21:52:12  current length 40
+19
+=============================
+this block is from a shorter chain
+from http://localhost:8004 ======A block received=========, 21:52:12  current length 40
+13
+=============================
+this block is from a shorter chain
+The block has been accepted
+ 21:52:14 mined a block Block:40
+DataLen:1
+Time:1523670730
+PrevHash:00047dfe8938202d260d1fb2b084297b9147591c81e530d79d52c6db35640077
+Nonce:12986
+Difficulty:13
+
+broadcast: 0 []
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+HTTPConnectionPool(host='localhost', port=8068): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109e8cd68>: Failed to establish a new connection: [Errno 61] Connection refused',))
+HTTPConnectionPool(host='localhost', port=8070): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109ea33c8>: Failed to establish a new connection: [Errno 61] Connection refused',))
+HTTPConnectionPool(host='localhost', port=8074): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109e8c390>: Failed to establish a new connection: [Errno 61] Connection refused',))
+HTTPConnectionPool(host='localhost', port=8063): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109ea3588>: Failed to establish a new connection: [Errno 61] Connection refused',))
+('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
+HTTPConnectionPool(host='localhost', port=8040): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109e8c550>: Failed to establish a new connection: [Errno 61] Connection refused',))
+could not find MARK
+could not find MARK
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+longer chain getted
+afterset <threading.Event object at 0x108f33668> True
+broadcast: 0 []
+replaced chain
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+could not find MARK
+mining interrupted. 40
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+HTTPConnectionPool(host='localhost', port=8041): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109eba198>: Failed to establish a new connection: [Errno 61] Connection refused',))
+HTTPConnectionPool(host='localhost', port=8061): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109ea38d0>: Failed to establish a new connection: [Errno 61] Connection refused',))
+HTTPConnectionPool(host='localhost', port=8057): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109e834a8>: Failed to establish a new connection: [Errno 61] Connection refused',))
+HTTPConnectionPool(host='localhost', port=8069): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109ea3cc0>: Failed to establish a new connection: [Errno 61] Connection refused',))
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+longer chain getted
+afterset <threading.Event object at 0x108f33668> True
+broadcast: 0 []
+replaced chain
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+could not find MARK
+mining interrupted. 40
+The block has been accepted
+ 21:52:22 mined a block ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+longer chain getted
+afterset <threading.Event object at 0x108f33668> True
+broadcast: 0 []
+replaced chain
+could not find MARK
+Block:41
+DataLen:1
+Time:1523670742
+PrevHash:000548868fcdd77aeab7c5db6a4dcf90a9f6638fe1cba3423b970d37597be79d
+Nonce:2401
+Difficulty:13
+
+broadcast: 0 []
+mining interrupted. 41
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+longer chain getted
+afterset <threading.Event object at 0x108f33668> True
+broadcast: 0 []
+replaced chain
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
+mining interrupted. 44
+could not find MARK
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+('Connection aborted.', BrokenPipeError(32, 'Broken pipe'))
+HTTPConnectionPool(host='localhost', port=8048): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109ec54e0>: Failed to establish a new connection: [Errno 61] Connection refused',))
+HTTPConnectionPool(host='localhost', port=8053): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109ea3f98>: Failed to establish a new connection: [Errno 61] Connection refused',))
+could not find MARK
+could not find MARK
+('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+could not find MARK
+longer chain getted
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+afterset <threading.Event object at 0x108f33668> True
+broadcast: 0 []
+replaced chain
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+could not find MARK
+mining interrupted. 44
+HTTPConnectionPool(host='localhost', port=8051): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109f48780>: Failed to establish a new connection: [Errno 61] Connection refused',))
+HTTPConnectionPool(host='localhost', port=8060): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109f481d0>: Failed to establish a new connection: [Errno 61] Connection refused',))
+HTTPConnectionPool(host='localhost', port=8064): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109f13a90>: Failed to establish a new connection: [Errno 61] Connection refused',))
+HTTPConnectionPool(host='localhost', port=8059): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109f212b0>: Failed to establish a new connection: [Errno 61] Connection refused',))
+HTTPConnectionPool(host='localhost', port=8056): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109e62048>: Failed to establish a new connection: [Errno 61] Connection refused',))
+HTTPConnectionPool(host='localhost', port=8072): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109f137f0>: Failed to establish a new connection: [Errno 61] Connection refused',))
+HTTPConnectionPool(host='localhost', port=8054): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109f3c780>: Failed to establish a new connection: [Errno 61] Connection refused',))
+HTTPConnectionPool(host='localhost', port=8047): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109f02b00>: Failed to establish a new connection: [Errno 61] Connection refused',))
+HTTPConnectionPool(host='localhost', port=8067): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109f13278>: Failed to establish a new connection: [Errno 61] Connection refused',))
+HTTPConnectionPool(host='localhost', port=8065): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109f3c518>: Failed to establish a new connection: [Errno 61] Connection refused',))
+HTTPConnectionPool(host='localhost', port=8071): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109f02e10>: Failed to establish a new connection: [Errno 61] Connection refused',))
+HTTPConnectionPool(host='localhost', port=8058): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109f2ef60>: Failed to establish a new connection: [Errno 61] Connection refused',))
+HTTPConnectionPool(host='localhost', port=8050): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109f52160>: Failed to establish a new connection: [Errno 61] Connection refused',))
+HTTPConnectionPool(host='localhost', port=7999): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109ef3b70>: Failed to establish a new connection: [Errno 61] Connection refused',))
+HTTPConnectionPool(host='localhost', port=8046): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109f021d0>: Failed to establish a new connection: [Errno 61] Connection refused',))
+HTTPConnectionPool(host='localhost', port=8043): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109ee0cc0>: Failed to establish a new connection: [Errno 61] Connection refused',))
+HTTPConnectionPool(host='localhost', port=8042): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109e7a898>: Failed to establish a new connection: [Errno 61] Connection refused',))
+HTTPConnectionPool(host='localhost', port=8055): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109e6f550>: Failed to establish a new connection: [Errno 61] Connection refused',))
+HTTPConnectionPool(host='localhost', port=8049): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109e7d198>: Failed to establish a new connection: [Errno 61] Connection refused',))
+HTTPConnectionPool(host='localhost', port=8066): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109edb4a8>: Failed to establish a new connection: [Errno 61] Connection refused',))
+HTTPConnectionPool(host='localhost', port=8073): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109ee0400>: Failed to establish a new connection: [Errno 61] Connection refused',))
+HTTPConnectionPool(host='localhost', port=8052): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109ef35c0>: Failed to establish a new connection: [Errno 61] Connection refused',))
+HTTPConnectionPool(host='localhost', port=8044): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109ee07b8>: Failed to establish a new connection: [Errno 61] Connection refused',))
+HTTPConnectionPool(host='localhost', port=8045): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109ea39b0>: Failed to establish a new connection: [Errno 61] Connection refused',))
+longer chain getted
+longer chain getted
+afterset <threading.Event object at 0x108f33668> True
+broadcast: 0 []
+replaced chain
+longer chain getted
+afterset <threading.Event object at 0x108f33668> True
+broadcast: 0 []
+replaced chain
+afterset <threading.Event object at 0x108f33668> True
+broadcast: 0 []
+replaced chain
+could not find MARK
+mining interrupted. 44
+could not find MARK
+heart beat of  http://localhost:8004 b'live'
+HTTPConnectionPool(host='localhost', port=8062): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109ec50f0>: Failed to establish a new connection: [Errno 61] Connection refused',))
+from http://localhost:8006 ======A block received=========, 21:52:42  current length 45
+10
+=============================
+this block is from a shorter chain
+from http://localhost:8017 ======A block received=========, 21:52:42  current length 45
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8017 ======A block received=========, 21:52:42  current length 45
+5
+=============================
+this block is from a shorter chain
+from http://localhost:8017 ======A block received=========, 21:52:42  current length 45
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8004 ======A block received=========, 21:52:42  current length 45
+11
+=============================
+this block is from a shorter chain
+from http://localhost:8015 ======A block received=========, 21:52:42  current length 45
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8015 ======A block received=========, 21:52:42  current length 45
+8
+=============================
+this block is from a shorter chain
+from http://localhost:8012 ======A block received=========, 21:52:42  current length 45
+10
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 21:52:42  current length 45
+5
+=============================
+this block is from a shorter chain
+from http://localhost:8017 ======A block received=========, 21:52:44  current length 45
+23
+=============================
+this block is from a shorter chain
+from http://localhost:8017 ======A block received=========, 21:52:44  current length 45
+24
+=============================
+this block is from a shorter chain
+from http://localhost:8003 ======A block received=========, 21:52:44  current length 45
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 21:52:44  current length 45
+15
+=============================
+this block is from a shorter chain
+from http://localhost:8008 ======A block received=========, 21:52:44  current length 45
+5
+=============================
+this block is from a shorter chain
+from http://localhost:8015 ======A block received=========, 21:52:44  current length 45
+7
+=============================
+this block is from a shorter chain
+from http://localhost:8003 ======A block received=========, 21:52:44  current length 45
+3
+=============================
+this block is from a shorter chain
+from http://localhost:8016 ======A block received=========, 21:52:44  current length 45
+9
+=============================
+this block is from a shorter chain
+from http://localhost:8004 ======A block received=========, 21:52:45  current length 45
+12
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 21:52:45  current length 45
+11
+=============================
+this block is from a shorter chain
+from http://localhost:8023 ======A block received=========, 21:52:45  current length 45
+1
+=============================
+this block is from a shorter chain
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+The block has been accepted
+ 21:52:45 mined a block Block:45
+DataLen:1
+Time:1523670748
+PrevHash:000771839bcf11b9d61e29fb4912c439bc3a729d1edbc739af0ee3ea1ff82485
+Nonce:18016
+Difficulty:13
+
+broadcast: 0 []
+change diff: 30 1523670748 1523670725 23
+from http://localhost:8000 ======A block received=========, 21:52:46  current length 46
+8
+=============================
+this block is from a shorter chain
+from http://localhost:8003 ======A block received=========, 21:52:46  current length 46
+5
+=============================
+this block is from a shorter chain
+from http://localhost:8010 ======A block received=========, 21:52:46  current length 46
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8010 ======A block received=========, 21:52:46  current length 46
+3
+=============================
+this block is from a shorter chain
+from http://localhost:8012 ======A block received=========, 21:52:46  current length 46
+16
+=============================
+this block is from a shorter chain
+from http://localhost:8016 ======A block received=========, 21:52:46  current length 46
+19
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 21:52:46  current length 46
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 21:52:46  current length 46
+16
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 21:52:46  current length 46
+12
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 21:52:46  current length 46
+6
+=============================
+this block is from a shorter chain
+from http://localhost:8005 ======A block received=========, 21:52:46  current length 46
+42
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 21:52:46  current length 46
+22
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 21:52:46  current length 46
+9
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 21:52:46  current length 46
+9
+=============================
+this block is from a shorter chain
+from http://localhost:8008 ======A block received=========, 21:52:47  current length 46
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 21:52:47  current length 46
+15
+=============================
+this block is from a shorter chain
+from http://localhost:8008 ======A block received=========, 21:52:47  current length 46
+16
+=============================
+this block is from a shorter chain
+from http://localhost:8008 ======A block received=========, 21:52:47  current length 46
+9
+=============================
+this block is from a shorter chain
+from http://localhost:8005 ======A block received=========, 21:52:47  current length 46
+4
+=============================
+this block is from a shorter chain
+from http://localhost:8003 ======A block received=========, 21:52:47  current length 46
+10
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 21:52:48  current length 46
+10
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 21:52:48  current length 46
+12
+=============================
+this block is from a shorter chain
+from http://localhost:8005 ======A block received=========, 21:52:48  current length 46
+3
+=============================
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8006 ======A block received=========, 21:52:53  current length 46
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 21:52:54  current length 46
+4
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 21:52:55  current length 46
+6
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 21:53:02  current length 46
+15
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 21:53:03  current length 46
+29
+=============================
+this block is from a shorter chain
+heart beat of  http://localhost:8013 b'live'
+from http://localhost:8010 ======A block received=========, 21:53:09  current length 46
+19
+=============================
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8015 ======A block received=========, 21:53:12  current length 46
+22
+=============================
+this block is from a shorter chain
+from http://localhost:8018 ======A block received=========, 21:53:12  current length 46
+16
+=============================
+this block is from a shorter chain
+The block has been accepted
+ 21:53:22 mined a block Block:46
+DataLen:1
+Time:1523670765
+PrevHash:0000d0f029fb4acdf5bdeaeb0de670914ca51597f65a76cf2547643620929744
+Nonce:33951
+Difficulty:13
+
+broadcast: 1 ['http://localhost:8005']
+The block has been accepted
+ 21:53:26 mined a block Block:47
+DataLen:1
+Time:1523670803
+PrevHash:0000bb4549403ea21763ffc33c1ba2bcf3853887f173d1c2c3e9debabccd6b50
+Nonce:3624
+Difficulty:13
+
+broadcast: 1 ['http://localhost:8005']
+HTTPConnectionPool(host='localhost', port=8005): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109e7a908>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+could not find MARK
+The block has been accepted
+ 21:53:41 mined a block Block:48
+DataLen:1
+Time:1523670807
+PrevHash:00020da6f65132de27a36872a46f15f48f619d9c5b7d60a01f04dec140da05aa
+Nonce:11644
+Difficulty:13
+
+broadcast: 0 []
+change diff: 30 1523670807 1523670765 42
+The block has been accepted
+ 21:53:43 mined a block Block:49
+DataLen:1
+Time:1523670821
+PrevHash:000739798823e6271458f7ae30aa5ccf6a15560381121d2eeabe2ebf5cb8a41b
+Nonce:2529
+Difficulty:13
+
+broadcast: 0 []
+The block has been accepted
+ 21:53:53 mined a block Block:50
+DataLen:1
+Time:1523670823
+PrevHash:0001116da54ab7faed2eb2547219f9b57a80b8a042a500bdff77b5511055061e
+Nonce:7974
+Difficulty:13
+
+broadcast: 0 []
+The block has been accepted
+ 21:54:15 mined a block Block:51
+DataLen:1
+Time:1523670833
+PrevHash:0001cf903fd72a4319f0d73dc1e3ba0c2edcbdae82e4b2faa72990f1f6223714
+Nonce:17594
+Difficulty:13
+
+broadcast: 0 []
+change diff: 30 1523670833 1523670821 12
+The block has been accepted
+ 21:54:26 mined a block Block:52
+DataLen:1
+Time:1523670855
+PrevHash:0007efb1c28252372bb128ed04682bc20718ff37fa7df12984e3351bcce7b4dd
+Nonce:9931
+Difficulty:14
+
+broadcast: 0 []
+from http://localhost:8017 ======A block received=========, 21:54:36  current length 53
+17
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 21:54:36  current length 53
+19
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 21:54:36  current length 53
+23
+=============================
+this block is from a shorter chain
+from http://localhost:8022 ======A block received=========, 21:54:36  current length 53
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8011 ======A block received=========, 21:54:36  current length 53
+24
+=============================
+this block is from a shorter chain
+from http://localhost:8022 ======A block received=========, 21:54:36  current length 53
+3
+=============================
+this block is from a shorter chain
+from http://localhost:8022 ======A block received=========, 21:54:36  current length 53
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8053 ======A block received=========, 21:54:36  current length 53
+44
+=============================
+this block is from a shorter chain
+from http://localhost:8016 ======A block received=========, 21:54:36  current length 53
+27
+=============================
+this block is from a shorter chain
+from http://localhost:8029 ======A block received=========, 21:54:36  current length 53
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8029 ======A block received=========, 21:54:38  current length 53
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8029 ======A block received=========, 21:54:38  current length 53
+3
+=============================
+this block is from a shorter chain
+from http://localhost:8011 ======A block received=========, 21:54:38  current length 53
+20
+=============================
+this block is from a shorter chain
+from http://localhost:8014 ======A block received=========, 21:54:38  current length 53
+25
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 21:54:38  current length 53
+7
+=============================
+this block is from a shorter chain
+from http://localhost:8014 ======A block received=========, 21:54:38  current length 53
+24
+=============================
+this block is from a shorter chain
+The block has been accepted
+ 21:55:12 mined a block Block:53
+DataLen:1
+Time:1523670866
+PrevHash:00012f155f59f8b742277be2ff9e973f52e9b4cf60846feddc90359c2471294e
+Nonce:32428
+Difficulty:14
+
+broadcast: 0 []
+The block has been accepted
+ 21:55:24 mined a block Block:54
+DataLen:1
+Time:1523670912
+PrevHash:00024d21fa7906c03f6c351bc4270c79a814aa01863036ea78d214c0159ace54
+Nonce:9223
+Difficulty:14
+
+broadcast: 0 []
+change diff: 30 1523670912 1523670855 57
+The block has been accepted
+ 21:55:27 mined a block Block:55
+DataLen:1
+Time:1523670924
+PrevHash:00016998371f4dd7740ffe01d692bb3d647f2df2ffcd628728a0ad2f2733a7f2
+Nonce:2184
+Difficulty:14
+
+broadcast: 0 []
+The block has been accepted
+ 21:56:04 mined a block Block:56
+DataLen:1
+Time:1523670927
+PrevHash:000182a40b5a9468a97dfae633225c3bfcce7e102bb37292bb3d30fb09a848e1
+Nonce:27599
+Difficulty:14
+
+broadcast: 0 []
+from http://localhost:8017 ======A block received=========, 21:56:18  current length 57
+30
+=============================
+this block is from a shorter chain
+The block has been accepted
+ 21:56:28 mined a block Block:57
+DataLen:1
+Time:1523670964
+PrevHash:000306c90aa833626cf0dca3ab5abd43867b3a80184b2276826fe2c0302f685e
+Nonce:17732
+Difficulty:14
+
+broadcast: 0 []
+change diff: 30 1523670964 1523670924 40
+from http://localhost:8008 ======A block received=========, 21:56:48  current length 58
+29
+=============================
+this block is from a shorter chain
+The block has been accepted
+ 21:56:48 mined a block Block:58
+DataLen:1
+Time:1523670988
+PrevHash:00029523353fb613bbcb4fe9e8d254c71063556185557beab1f154a3baa274bc
+Nonce:15418
+Difficulty:14
+
+broadcast: 0 []
+The block has been accepted
+ 21:56:51 mined a block Block:59
+DataLen:1
+Time:1523671008
+PrevHash:00021334259f23704cdff2e51ad08f9ae2fdbbf761d3b1f0edb11c017bf113a4
+Nonce:1647
+Difficulty:14
+
+broadcast: 0 []
+The block has been accepted
+ 21:57:30 mined a block Block:60
+DataLen:1
+Time:1523671011
+PrevHash:0000999cc672cf9be2c37569f56fc62b46203e954484b8ca71b06c9b420d7f12
+Nonce:26988
+Difficulty:14
+
+broadcast: 0 []
+change diff: 30 1523671011 1523670988 23
+from http://localhost:8008 ======A block received=========, 21:57:38  current length 61
+30
+=============================
+this block is from a shorter chain
+from http://localhost:8017 ======A block received=========, 21:57:39  current length 61
+28
+=============================
+this block is from a shorter chain
+The block has been accepted
+ 21:58:21 mined a block Block:61
+DataLen:1
+Time:1523671050
+PrevHash:0002d5fd4d9c4201b97827ac004ab0c7d84e0b7801ca57d9f121058a72751bcd
+Nonce:35954
+Difficulty:14
+
+broadcast: 0 []
+The block has been accepted
+ 21:58:31 mined a block Block:62
+DataLen:1
+Time:1523671101
+PrevHash:000140a07fdae336674f7a545d3850d6bb935b50170fdb93793e20d83a9ead67
+Nonce:6802
+Difficulty:14
+
+broadcast: 0 []
+from http://localhost:8012 ======A block received=========, 21:58:38  current length 63
+29
+=============================
+this block is from a shorter chain
+from http://localhost:8052 ======A block received=========, 21:58:38  current length 63
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8017 ======A block received=========, 21:58:38  current length 63
+29
+=============================
+this block is from a shorter chain
+from http://localhost:8008 ======A block received=========, 21:58:38  current length 63
+19
+=============================
+this block is from a shorter chain
+from http://localhost:8012 ======A block received=========, 21:58:38  current length 63
+27
+=============================
+this block is from a shorter chain
+from http://localhost:8012 ======A block received=========, 21:58:46  current length 63
+32
+=============================
+this block is from a shorter chain
+from http://localhost:8047 ======A block received=========, 21:58:46  current length 63
+3
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 21:58:46  current length 63
+25
+=============================
+this block is from a shorter chain
+The block has been accepted
+ 21:58:49 mined a block Block:63
+DataLen:1
+Time:1523671111
+PrevHash:0000099dbd01f02c20c31929a4ebb49685eef55aa609da187d9e566038183f0f
+Nonce:13287
+Difficulty:14
+
+broadcast: 0 []
+change diff: 30 1523671111 1523671050 61
+from http://localhost:8051 ======A block received=========, 21:58:59  current length 64
+44
+=============================
+this block is from a shorter chain
+from http://localhost:8044 ======A block received=========, 21:58:59  current length 64
+48
+=============================
+this block is from a shorter chain
+from http://localhost:8017 ======A block received=========, 21:58:59  current length 64
+34
+=============================
+this block is from a shorter chain
+from http://localhost:8008 ======A block received=========, 21:58:59  current length 64
+23
+=============================
+this block is from a shorter chain
+The block has been accepted
+ 21:59:09 mined a block Block:64
+DataLen:1
+Time:1523671129
+PrevHash:0001c165a9cf375906fe5feb7a9997b1f8802036f6cb3a26fd5a01074cb22d4f
+Nonce:15060
+Difficulty:13
+
+broadcast: 0 []
+The block has been accepted
+ 21:59:24 mined a block Block:65
+DataLen:1
+Time:1523671149
+PrevHash:0001b9e4fa27c9735ea015404d8f8c69a6d965d877e92127e0ba6846637aee1d
+Nonce:11592
+Difficulty:13
+
+broadcast: 0 []
+The block has been accepted
+ 21:59:28 mined a block Block:66
+DataLen:1
+Time:1523671164
+PrevHash:00052d5008fefdd5c3c5acace172a2f3f75934a25fb53ae90531d96f7ecf0a4c
+Nonce:3829
+Difficulty:13
+
+broadcast: 0 []
+change diff: 30 1523671164 1523671129 35
+The block has been accepted
+ 21:59:36 mined a block Block:67
+DataLen:1
+Time:1523671168
+PrevHash:0004c29b2b7948bd880a1aee7cb336cd901c6807cd9590f35c77752b05e06868
+Nonce:6245
+Difficulty:13
+
+broadcast: 0 []
+The block has been accepted
+ 21:59:39 mined a block Block:68
+DataLen:1
+Time:1523671176
+PrevHash:000764e6e5e6053435458156de54ccd02eb78e2adca4034fb4f7f097c9562f5b
+Nonce:2375
+Difficulty:13
+
+broadcast: 0 []
+The block has been accepted
+ 21:59:54 mined a block Block:69
+DataLen:1
+Time:1523671179
+PrevHash:00052842ce635f7d8c79003cfcd08fbe5bcd9cec27e26e230ed47652198198b1
+Nonce:12047
+Difficulty:13
+
+broadcast: 0 []
+change diff: 30 1523671179 1523671168 11
+The block has been accepted
+ 22:00:06 mined a block Block:70
+DataLen:1
+Time:1523671194
+PrevHash:0002b402e835ef7215a10e808a8ac0e95693490ba3d5709a5138debf09bfab2a
+Nonce:9674
+Difficulty:14
+
+broadcast: 0 []
+The block has been accepted
+ 22:00:19 mined a block Block:71
+DataLen:1
+Time:1523671206
+PrevHash:00032f61ce7e84469fb3b7364804c03d7b30636e738536e00125a2dc96128e86
+Nonce:10010
+Difficulty:14
+
+broadcast: 0 []
+The block has been accepted
+ 22:00:29 mined a block Block:72
+DataLen:1
+Time:1523671219
+PrevHash:0001793f44c129c6fc798c682fbdffda90c227953a567d57ee6ed01260164048
+Nonce:8358
+Difficulty:14
+
+broadcast: 0 []
+change diff: 30 1523671219 1523671194 25
+The block has been accepted
+ 22:01:27 mined a block Block:73
+DataLen:1
+Time:1523671229
+PrevHash:0003a719fda87edb0448cbf522465262961c6ee70e6a97ce8a8f017e11275a57
+Nonce:47611
+Difficulty:14
+
+broadcast: 0 []
+The block has been accepted
+ 22:01:30 mined a block Block:74
+DataLen:1
+Time:1523671287
+PrevHash:0003a00d7cc081d6505455f7c388cc37e13046692ab9c41102d97cb3f5da2c47
+Nonce:2325
+Difficulty:14
+
+broadcast: 0 []
+The block has been accepted
+ 22:01:35 mined a block Block:75
+DataLen:1
+Time:1523671290
+PrevHash:000164d2d46acf31955e9ee239b3f47a05eb20aac7d84f86b1278530cf100be4
+Nonce:3852
+Difficulty:14
+
+broadcast: 0 []
+change diff: 30 1523671290 1523671229 61
+The block has been accepted
+ 22:01:36 mined a block Block:76
+DataLen:1
+Time:1523671295
+PrevHash:00019f90bbd8f209c98524d7cf802e8a85b56a53e54a51791ebb105605cc9965
+Nonce:843
+Difficulty:13
+
+broadcast: 0 []
+The block has been accepted
+ 22:01:59 mined a block Block:77
+DataLen:1
+Time:1523671296
+PrevHash:00016a0cd89c2f1785970b10b8706d533ad5009fc34c426492d452a1ff0c0d94
+Nonce:17812
+Difficulty:13
+
+broadcast: 0 []
+The block has been accepted
+ 22:01:59 mined a block Block:78
+DataLen:1
+Time:1523671319
+PrevHash:00036336bb058090c621d0dac2047b19e1d512edfde2fa22c501d10510c64194
+Nonce:375
+Difficulty:13
+
+broadcast: 0 []
+change diff: 30 1523671319 1523671295 24
+The block has been accepted
+ 22:02:01 mined a block Block:79
+DataLen:1
+Time:1523671319
+PrevHash:0000be5fa67679dbbb33f7a83057f204334a351f9ad4b4661e82e7203a42e1a4
+Nonce:2627
+Difficulty:13
+
+broadcast: 0 []
+The block has been accepted
+ 22:02:02 mined a block Block:80
+DataLen:1
+Time:1523671321
+PrevHash:00050a764de2852f60b2672769f856c586b97bd63c1571df9e209506129e171e
+Nonce:249
+Difficulty:13
+
+broadcast: 0 []
+The block has been accepted
+ 22:02:04 mined a block Block:81
+DataLen:1
+Time:1523671322
+PrevHash:0001cb9aded632c947641942d80129edba9e704497ae52d774a496614bf01610
+Nonce:1236
+Difficulty:13
+
+broadcast: 0 []
+change diff: 30 1523671322 1523671319 3
+The block has been accepted
+ 22:02:35 mined a block Block:82
+DataLen:1
+Time:1523671324
+PrevHash:00021833f32d610a8c243e7e1dd75602d6770e666a5cab0387f896cb31743cb8
+Nonce:25356
+Difficulty:14
+
+broadcast: 0 []
+The block has been accepted
+ 22:02:39 mined a block Block:83
+DataLen:1
+Time:1523671355
+PrevHash:0000d563aa31bd787a21ccafca4cdf6dd5ab409a39d0a33f0feb90b21a591660
+Nonce:3736
+Difficulty:14
+
+broadcast: 0 []
+The block has been accepted
+ 22:02:52 mined a block Block:84
+DataLen:1
+Time:1523671359
+PrevHash:0001f0001d9163177bf0055c857ad19d70e61397fdbf1a71c33b92b62e9c26be
+Nonce:11429
+Difficulty:14
+
+broadcast: 0 []
+change diff: 30 1523671359 1523671324 35
+from http://localhost:8024 ======A block received=========, 22:02:53  current length 85
+11
+=============================
+this block is from a shorter chain
+from http://localhost:8067 ======A block received=========, 22:02:53  current length 85
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8043 ======A block received=========, 22:02:53  current length 85
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8060 ======A block received=========, 22:02:53  current length 85
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 22:02:53  current length 85
+35
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 22:02:53  current length 85
+26
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 22:02:53  current length 85
+27
+=============================
+this block is from a shorter chain
+from http://localhost:8044 ======A block received=========, 22:02:55  current length 85
+51
+=============================
+this block is from a shorter chain
+from http://localhost:8008 ======A block received=========, 22:02:55  current length 85
+24
+=============================
+this block is from a shorter chain
+from http://localhost:8008 ======A block received=========, 22:02:56  current length 85
+31
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 22:02:56  current length 85
+36
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 22:02:56  current length 85
+30
+=============================
+this block is from a shorter chain
+from http://localhost:8042 ======A block received=========, 22:02:56  current length 85
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8042 ======A block received=========, 22:02:56  current length 85
+4
+=============================
+this block is from a shorter chain
+from http://localhost:8056 ======A block received=========, 22:02:56  current length 85
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 22:02:56  current length 85
+33
+=============================
+this block is from a shorter chain
+from http://localhost:8042 ======A block received=========, 22:02:56  current length 85
+6
+=============================
+this block is from a shorter chain
+from http://localhost:8041 ======A block received=========, 22:02:56  current length 85
+3
+=============================
+this block is from a shorter chain
+from http://localhost:8016 ======A block received=========, 22:02:57  current length 85
+30
+=============================
+this block is from a shorter chain
+from http://localhost:8049 ======A block received=========, 22:02:58  current length 85
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8049 ======A block received=========, 22:02:59  current length 85
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8061 ======A block received=========, 22:02:59  current length 85
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8018 ======A block received=========, 22:02:59  current length 85
+19
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 22:03:00  current length 85
+39
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 22:03:02  current length 85
+31
+=============================
+this block is from a shorter chain
+from http://localhost:8035 ======A block received=========, 22:03:03  current length 85
+7
+=============================
+this block is from a shorter chain
+from http://localhost:8035 ======A block received=========, 22:03:04  current length 85
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8046 ======A block received=========, 22:03:05  current length 85
+3
+=============================
+this block is from a shorter chain
+from http://localhost:8055 ======A block received=========, 22:03:05  current length 85
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8015 ======A block received=========, 22:03:05  current length 85
+25
+=============================
+this block is from a shorter chain
+from http://localhost:8040 ======A block received=========, 22:03:05  current length 85
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8069 ======A block received=========, 22:03:05  current length 85
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8043 ======A block received=========, 22:03:05  current length 85
+49
+=============================
+this block is from a shorter chain
+from http://localhost:8054 ======A block received=========, 22:03:05  current length 85
+36
+=============================
+this block is from a shorter chain
+from http://localhost:8040 ======A block received=========, 22:03:05  current length 85
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 22:03:05  current length 85
+38
+=============================
+this block is from a shorter chain
+from http://localhost:8015 ======A block received=========, 22:03:05  current length 85
+23
+=============================
+this block is from a shorter chain
+from http://localhost:8015 ======A block received=========, 22:03:05  current length 85
+32
+=============================
+this block is from a shorter chain
+from http://localhost:8015 ======A block received=========, 22:03:05  current length 85
+33
+=============================
+this block is from a shorter chain
+from http://localhost:8063 ======A block received=========, 22:03:05  current length 85
+55
+=============================
+this block is from a shorter chain
+from http://localhost:8045 ======A block received=========, 22:03:07  current length 85
+49
+=============================
+this block is from a shorter chain
+from http://localhost:8042 ======A block received=========, 22:03:09  current length 85
+8
+=============================
+this block is from a shorter chain
+The block has been accepted
+ 22:03:50 mined a block Block:85
+DataLen:1
+Time:1523671372
+PrevHash:0001587d175ebefeab303e0a8777504415909dafc5319d97e519f423c8220376
+Nonce:43975
+Difficulty:14
+
+broadcast: 0 []
+The block has been accepted
+ 22:03:50 mined a block Block:86
+DataLen:1
+Time:1523671430
+PrevHash:00035eefed31ae29f61ffac0b0c93123761a91c50bf5d43a596b5dcad4a9b168
+Nonce:48
+Difficulty:14
+
+broadcast: 0 []
+The block has been accepted
+ 22:04:04 mined a block Block:87
+DataLen:1
+Time:1523671430
+PrevHash:0002dd2eed0a3e812430f38a90db379c9f63f8e47d750ee9d62add69262eb8d2
+Nonce:11468
+Difficulty:14
+
+broadcast: 0 []
+change diff: 30 1523671430 1523671372 58
+from http://localhost:8024 ======A block received=========, 22:04:05  current length 88
+4
+=============================
+this block is from a shorter chain
+from http://localhost:8051 ======A block received=========, 22:04:07  current length 88
+34
+=============================
+this block is from a shorter chain
+from http://localhost:8013 ======A block received=========, 22:04:08  current length 88
+85
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 22:04:09  current length 88
+40
+=============================
+this block is from a shorter chain
+from http://localhost:8018 ======A block received=========, 22:04:11  current length 88
+28
+=============================
+this block is from a shorter chain
+from http://localhost:8051 ======A block received=========, 22:04:14  current length 88
+53
+=============================
+this block is from a shorter chain
+from http://localhost:8044 ======A block received=========, 22:04:16  current length 88
+54
+=============================
+this block is from a shorter chain
+The block has been accepted
+ 22:04:16 mined a block Block:88
+DataLen:1
+Time:1523671444
+PrevHash:00001c30414a85d9f7e85f2ac4734815e770f3d41f417365272f18d85e0ecbb7
+Nonce:9476
+Difficulty:14
+
+broadcast: 0 []
+from http://localhost:8016 ======A block received=========, 22:04:17  current length 89
+39
+=============================
+this block is from a shorter chain
+from http://localhost:8036 ======A block received=========, 22:04:19  current length 89
+21
+=============================
+this block is from a shorter chain
+from http://localhost:8036 ======A block received=========, 22:04:21  current length 89
+22
+=============================
+this block is from a shorter chain
+from http://localhost:8036 ======A block received=========, 22:04:22  current length 89
+23
+=============================
+this block is from a shorter chain
+from http://localhost:8054 ======A block received=========, 22:04:23  current length 89
+72
+=============================
+this block is from a shorter chain
+from http://localhost:8016 ======A block received=========, 22:04:24  current length 89
+36
+=============================
+this block is from a shorter chain
+from http://localhost:8037 ======A block received=========, 22:04:25  current length 89
+44
+=============================
+this block is from a shorter chain
+from http://localhost:8012 ======A block received=========, 22:04:27  current length 89
+34
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 22:04:29  current length 89
+5
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 22:04:30  current length 89
+6
+=============================
+this block is from a shorter chain
+from http://localhost:8035 ======A block received=========, 22:04:30  current length 89
+11
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 22:04:30  current length 89
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 22:04:30  current length 89
+8
+=============================
+this block is from a shorter chain
+from http://localhost:8016 ======A block received=========, 22:04:30  current length 89
+37
+=============================
+this block is from a shorter chain
+from http://localhost:8011 ======A block received=========, 22:04:32  current length 89
+28
+=============================
+this block is from a shorter chain
+from http://localhost:8054 ======A block received=========, 22:04:33  current length 89
+31
+=============================
+this block is from a shorter chain
+from http://localhost:8060 ======A block received=========, 22:04:35  current length 89
+7
+=============================
+this block is from a shorter chain
+from http://localhost:8045 ======A block received=========, 22:04:37  current length 89
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8062 ======A block received=========, 22:04:38  current length 89
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 22:04:45  current length 89
+48
+=============================
+this block is from a shorter chain
+from http://localhost:8064 ======A block received=========, 22:04:46  current length 89
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8062 ======A block received=========, 22:04:48  current length 89
+6
+=============================
+this block is from a shorter chain
+from http://localhost:8065 ======A block received=========, 22:04:50  current length 89
+59
+=============================
+this block is from a shorter chain
+from http://localhost:8047 ======A block received=========, 22:04:52  current length 89
+62
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 22:04:53  current length 89
+33
+=============================
+this block is from a shorter chain
+from http://localhost:8061 ======A block received=========, 22:04:56  current length 89
+The block has been accepted
+ 22:04:56 mined a block Block:89
+DataLen:1
+Time:1523671456
+PrevHash:00030fdc43b6ffa16f1a25d81afae6eaae4c60d70eeabf63db356ba60a786dfd
+Nonce:27479
+Difficulty:14
+
+broadcast: 0 []
+60
+=============================
+this block is from a shorter chain
+The block has been accepted
+ 22:05:00 mined a block Block:90
+DataLen:1
+Time:1523671496
+PrevHash:0002175ffd67473842c3398c789d1e51aa13f0af2a0a7bae6c7f8f352a72f751
+Nonce:3735
+Difficulty:14
+
+broadcast: 0 []
+change diff: 30 1523671496 1523671444 52
+The block has been accepted
+ 22:05:31 mined a block Block:91
+DataLen:1
+Time:1523671500
+PrevHash:0002c8a49b736f73e821d4606bddcb6cbc06899b9605c1ab7c5d75b63c362359
+Nonce:24465
+Difficulty:14
+
+broadcast: 0 []
+from http://localhost:8031 ======A block received=========, 22:05:38  current length 92
+38
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 22:05:40  current length 92
+41
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 22:05:42  current length 92
+42
+=============================
+this block is from a shorter chain
+from http://localhost:8041 ======A block received=========, 22:05:43  current length 92
+57
+=============================
+this block is from a shorter chain
+from http://localhost:8055 ======A block received=========, 22:05:44  current length 92
+55
+=============================
+this block is from a shorter chain
+from http://localhost:8015 ======A block received=========, 22:05:49  current length 92
+34
+=============================
+this block is from a shorter chain
+from http://localhost:8066 ======A block received=========, 22:05:52  current length 92
+3
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 22:05:55  current length 92
+25
+=============================
+this block is from a shorter chain
+from http://localhost:8033 ======A block received=========, 22:05:58  current length 92
+4
+=============================
+this block is from a shorter chain
+The block has been accepted
+ 22:06:08 mined a block Block:92
+DataLen:1
+Time:1523671531
+PrevHash:0002fca62f7616ad49123d79ea6ca8eb969068d85e9af30a86ef2ca67d824081
+Nonce:29574
+Difficulty:14
+
+broadcast: 0 []
+from http://localhost:8009 ======A block received=========, 22:06:16  current length 93
+21
+=============================
+this block is from a shorter chain
+The block has been accepted
+ 22:06:17 mined a block Block:93
+DataLen:1
+Time:1523671568
+PrevHash:00028e591d1fe61189b4425699efda9563c305f9fd64cc3f0d1f821b8ad62d58
+Nonce:8909
+Difficulty:14
+
+broadcast: 0 []
+change diff: 30 1523671568 1523671500 68
+from http://localhost:8027 ======A block received=========, 22:06:25  current length 94
+25
+=============================
+this block is from a shorter chain
+The block has been accepted
+ 22:06:26 mined a block Block:94
+DataLen:1
+Time:1523671577
+PrevHash:0000f8a6d8e5fd6ac0e8bd063b72c068a2fb2206d04470ff34a885e883b8d39e
+Nonce:6509
+Difficulty:13
+
+broadcast: 0 []
+from http://localhost:8064 ======A block received=========, 22:06:27  current length 95
+54
+=============================
+this block is from a shorter chain
+The block has been accepted
+ 22:06:29 mined a block Block:95
+DataLen:1
+Time:1523671586
+PrevHash:0004388a30ff8420739c5c3300ff086c85adb691562a9383496140b5d12339fe
+Nonce:3196
+Difficulty:13
+
+broadcast: 0 []
+from http://localhost:8011 ======A block received=========, 22:06:30  current length 96
+35
+=============================
+this block is from a shorter chain
+from http://localhost:8064 ======A block received=========, 22:06:35  current length 96
+55
+=============================
+this block is from a shorter chain
+from http://localhost:8045 ======A block received=========, 22:06:43  current length 96
+52
+=============================
+this block is from a shorter chain
+from http://localhost:8016 ======A block received=========, 22:06:44  current length 96
+42
+=============================
+this block is from a shorter chain
+from http://localhost:8037 ======A block received=========, 22:06:46  current length 96
+41
+=============================
+this block is from a shorter chain
+from http://localhost:8016 ======A block received=========, 22:06:46  current length 96
+40
+=============================
+this block is from a shorter chain
+from http://localhost:8050 ======A block received=========, 22:06:46  current length 96
+53
+=============================
+this block is from a shorter chain
+from http://localhost:8033 ======A block received=========, 22:06:46  current length 96
+47
+=============================
+this block is from a shorter chain
+from http://localhost:8066 ======A block received=========, 22:06:46  current length 96
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8047 ======A block received=========, 22:06:46  current length 96
+56
+=============================
+this block is from a shorter chain
+from http://localhost:8068 ======A block received=========, 22:06:46  current length 96
+49
+=============================
+this block is from a shorter chain
+from http://localhost:8050 ======A block received=========, 22:06:46  current length 96
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8047 ======A block received=========, 22:06:46  current length 96
+60
+=============================
+this block is from a shorter chain
+from http://localhost:8047 ======A block received=========, 22:06:47  current length 96
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 22:06:47  current length 96
+36
+=============================
+this block is from a shorter chain
+from http://localhost:8065 ======A block received=========, 22:06:47  current length 96
+69
+=============================
+this block is from a shorter chain
+from http://localhost:8065 ======A block received=========, 22:06:47  current length 96
+57
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 22:06:47  current length 96
+39
+=============================
+this block is from a shorter chain
+from http://localhost:8047 ======A block received=========, 22:06:47  current length 96
+69
+=============================
+this block is from a shorter chain
+from http://localhost:8047 ======A block received=========, 22:06:47  current length 96
+63
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 22:06:48  current length 96
+45
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 22:06:48  current length 96
+18
+=============================
+this block is from a shorter chain
+from http://localhost:8058 ======A block received=========, 22:06:48  current length 96
+68
+=============================
+this block is from a shorter chain
+from http://localhost:8016 ======A block received=========, 22:06:48  current length 96
+44
+=============================
+this block is from a shorter chain
+from http://localhost:8058 ======A block received=========, 22:06:48  current length 96
+70
+=============================
+this block is from a shorter chain
+from http://localhost:8059 ======A block received=========, 22:06:48  current length 96
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8065 ======A block received=========, 22:06:48  current length 96
+70
+=============================
+this block is from a shorter chain
+from http://localhost:8058 ======A block received=========, 22:06:48  current length 96
+66
+=============================
+this block is from a shorter chain
+from http://localhost:8050 ======A block received=========, 22:06:48  current length 96
+58
+=============================
+this block is from a shorter chain
+from http://localhost:8059 ======A block received=========, 22:06:48  current length 96
+3
+=============================
+this block is from a shorter chain
+from http://localhost:8033 ======A block received=========, 22:06:49  current length 96
+46
+=============================
+this block is from a shorter chain
+from http://localhost:8059 ======A block received=========, 22:06:49  current length 96
+4
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 22:06:49  current length 96
+49
+=============================
+this block is from a shorter chain
+from http://localhost:8062 ======A block received=========, 22:06:49  current length 96
+3
+=============================
+this block is from a shorter chain
+from http://localhost:8018 ======A block received=========, 22:06:49  current length 96
+31
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 22:06:49  current length 96
+78
+=============================
+this block is from a shorter chain
+from http://localhost:8044 ======A block received=========, 22:06:49  current length 96
+56
+=============================
+this block is from a shorter chain
+from http://localhost:8050 ======A block received=========, 22:06:49  current length 96
+60
+=============================
+this block is from a shorter chain
+from http://localhost:8018 ======A block received=========, 22:06:50  current length 96
+29
+=============================
+this block is from a shorter chain
+from http://localhost:8033 ======A block received=========, 22:06:50  current length 96
+23
+=============================
+this block is from a shorter chain
+from http://localhost:8015 ======A block received=========, 22:06:50  current length 96
+38
+=============================
+this block is from a shorter chain
+from http://localhost:8030 ======A block received=========, 22:06:50  current length 96
+26
+=============================
+this block is from a shorter chain
+from http://localhost:8027 ======A block received=========, 22:06:50  current length 96
+17
+=============================
+this block is from a shorter chain
+from http://localhost:8060 ======A block received=========, 22:06:50  current length 96
+8
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 22:06:50  current length 96
+47
+=============================
+this block is from a shorter chain
+from http://localhost:8061 ======A block received=========, 22:06:50  current length 96
+63
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 22:06:50  current length 96
+26
+=============================
+this block is from a shorter chain
+from http://localhost:8058 ======A block received=========, 22:06:50  current length 96
+73
+=============================
+this block is from a shorter chain
+from http://localhost:8055 ======A block received=========, 22:06:50  current length 96
+58
+=============================
+this block is from a shorter chain
+The block has been accepted
+ 22:06:51 mined a block Block:96
+DataLen:1
+Time:1523671589
+PrevHash:000168dac7ff14e427fab42e54551c3b187f8c260651e986fdd9d263f95d9dde
+Nonce:19502
+Difficulty:13
+
+broadcast: 0 []
+change diff: 30 1523671589 1523671577 12
+from http://localhost:8055 ======A block received=========, 22:06:52  current length 97
+59
+=============================
+this block is from a shorter chain
+from http://localhost:8060 ======A block received=========, 22:06:52  current length 97
+11
+=============================
+this block is from a shorter chain
+from http://localhost:8046 ======A block received=========, 22:06:52  current length 97
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8026 ======A block received=========, 22:06:53  current length 97
+12
+=============================
+this block is from a shorter chain
+from http://localhost:8061 ======A block received=========, 22:06:53  current length 97
+58
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 22:06:53  current length 97
+34
+=============================
+this block is from a shorter chain
+from http://localhost:8061 ======A block received=========, 22:06:53  current length 97
+61
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 22:06:53  current length 97
+30
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 22:06:53  current length 97
+23
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 22:06:53  current length 97
+25
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 22:06:54  current length 97
+24
+=============================
+this block is from a shorter chain
+from http://localhost:8030 ======A block received=========, 22:06:54  current length 97
+49
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 22:06:56  current length 97
+29
+=============================
+this block is from a shorter chain
+from http://localhost:8047 ======A block received=========, 22:06:56  current length 97
+61
+=============================
+this block is from a shorter chain
+from http://localhost:8061 ======A block received=========, 22:06:56  current length 97
+65
+=============================
+this block is from a shorter chain
+from http://localhost:8011 ======A block received=========, 22:06:56  current length 97
+42
+=============================
+this block is from a shorter chain
+from http://localhost:8050 ======A block received=========, 22:06:56  current length 97
+62
+=============================
+this block is from a shorter chain
+The block has been accepted
+ 22:07:29 mined a block Block:97
+DataLen:1
+Time:1523671611
+PrevHash:00015857f8fa42710de635bccc21f8e48add40241c960309399cc5622ff94009
+Nonce:32311
+Difficulty:14
+
+broadcast: 0 []
+The block has been accepted
+ 22:07:40 mined a block Block:98
+DataLen:1
+Time:1523671649
+PrevHash:0000e03e307efa13ef2edf5655bed51483eb7b81497f8c041862b48f0092808d
+Nonce:9759
+Difficulty:14
+
+broadcast: 0 []
+The block has been accepted
+ 22:07:50 mined a block Block:99
+DataLen:1
+Time:1523671660
+PrevHash:0002531e99afdbacfc82cba11e9c30b858f9613efc3eae93287c39310ce780ae
+Nonce:7957
+Difficulty:14
+
+broadcast: 0 []
+change diff: 30 1523671660 1523671611 49
+The block has been accepted
+ 22:08:48 mined a block Block:100
+DataLen:1
+Time:1523671670
+PrevHash:000243f18fb83965cb0cfa260a0e887ea1548cec1da137d22c2b0fb8c2e68c77
+Nonce:51261
+Difficulty:14
+
+broadcast: 0 []
+The block has been accepted
+ 22:08:56 mined a block Block:101
+DataLen:1
+Time:1523671728
+PrevHash:000283c4aca66e51d5fb7450417527a5a10ac8f6276736fcb208d38ce6a5e2c8
+Nonce:7537
+Difficulty:14
+
+broadcast: 0 []
+The block has been accepted
+ 22:09:16 mined a block Block:102
+DataLen:1
+Time:1523671736
+PrevHash:0002c7040d95015a7de6f6adf102701d9d93c9121748fd9c2b1501a19b1a8a33
+Nonce:17293
+Difficulty:14
+
+broadcast: 0 []
+change diff: 30 1523671736 1523671670 66
+The block has been accepted
+ 22:09:23 mined a block Block:103
+DataLen:1
+Time:1523671756
+PrevHash:00034c91fbff572cd19898b28b3ee4342baddcbc190eb47fb20d72bf204c951b
+Nonce:6763
+Difficulty:13
+
+broadcast: 0 []
+The block has been accepted
+ 22:09:26 mined a block Block:104
+DataLen:1
+Time:1523671763
+PrevHash:00011707c5ed3ecbb00295fbede0df1f6f8df779a3e8f29b8c74efd4cd44804a
+Nonce:4425
+Difficulty:13
+
+broadcast: 0 []
+The block has been accepted
+ 22:09:30 mined a block Block:105
+DataLen:1
+Time:1523671766
+PrevHash:0006d7aa83ca84a81e13eb46345bcd9f9dfadece3c2b497c7eca5eaeb5e129e5
+Nonce:1692
+Difficulty:13
+
+broadcast: 0 []
+change diff: 30 1523671766 1523671756 10
+The block has been accepted
+ 22:09:45 mined a block Block:106
+DataLen:1
+Time:1523671770
+PrevHash:00056002aface27bc565e8fe36ef67c22f1a73c1ffb14cac0e23420a4d355405
+Nonce:14340
+Difficulty:14
+
+broadcast: 0 []
+The block has been accepted
+ 22:10:00 mined a block Block:107
+DataLen:1
+Time:1523671785
+PrevHash:0001eaa67b059ae270f93038d723a039358cf155dea25758ba5e89557ab7053c
+Nonce:16924
+Difficulty:14
+
+broadcast: 0 []
+from http://localhost:8028 ======A block received=========, 22:10:04  current length 108
+39
+=============================
+this block is from a shorter chain
+from http://localhost:8030 ======A block received=========, 22:10:04  current length 108
+40
+=============================
+this block is from a shorter chain
+from http://localhost:8046 ======A block received=========, 22:10:04  current length 108
+64
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 22:10:04  current length 108
+30
+=============================
+this block is from a shorter chain
+from http://localhost:8046 ======A block received=========, 22:10:04  current length 108
+77
+=============================
+this block is from a shorter chain
+from http://localhost:8046 ======A block received=========, 22:10:04  current length 108
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8030 ======A block received=========, 22:10:04  current length 108
+46
+=============================
+this block is from a shorter chain
+from http://localhost:8030 ======A block received=========, 22:10:04  current length 108
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 22:10:04  current length 108
+80
+=============================
+this block is from a shorter chain
+from http://localhost:8068 ======A block received=========, 22:10:04  current length 108
+60
+=============================
+this block is from a shorter chain
+from http://localhost:8055 ======A block received=========, 22:10:05  current length 108
+61
+=============================
+this block is from a shorter chain
+from http://localhost:8031 ======A block received=========, 22:10:05  current length 108
+50
+=============================
+this block is from a shorter chain
+from http://localhost:8020 ======A block received=========, 22:10:05  current length 108
+13
+=============================
+this block is from a shorter chain
+from http://localhost:8069 ======A block received=========, 22:10:05  current length 108
+71
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 22:10:05  current length 108
+35
+=============================
+this block is from a shorter chain
+from http://localhost:8069 ======A block received=========, 22:10:05  current length 108
+81
+=============================
+this block is from a shorter chain
+from http://localhost:8058 ======A block received=========, 22:10:05  current length 108
+74
+=============================
+this block is from a shorter chain
+from http://localhost:8011 ======A block received=========, 22:10:05  current length 108
+46
+=============================
+this block is from a shorter chain
+from http://localhost:8068 ======A block received=========, 22:10:05  current length 108
+59
+=============================
+this block is from a shorter chain
+from http://localhost:8068 ======A block received=========, 22:10:05  current length 108
+39
+=============================
+this block is from a shorter chain
+from http://localhost:8055 ======A block received=========, 22:10:05  current length 108
+60
+=============================
+this block is from a shorter chain
+from http://localhost:8060 ======A block received=========, 22:10:05  current length 108
+13
+=============================
+this block is from a shorter chain
+from http://localhost:8060 ======A block received=========, 22:10:05  current length 108
+92
+=============================
+this block is from a shorter chain
+from http://localhost:8037 ======A block received=========, 22:10:05  current length 108
+67
+=============================
+this block is from a shorter chain
+from http://localhost:8015 ======A block received=========, 22:10:05  current length 108
+69
+=============================
+this block is from a shorter chain
+from http://localhost:8061 ======A block received=========, 22:10:05  current length 108
+68
+=============================
+this block is from a shorter chain
+from http://localhost:8057 ======A block received=========, 22:10:05  current length 108
+63
+=============================
+this block is from a shorter chain
+from http://localhost:8037 ======A block received=========, 22:10:05  current length 108
+64
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 22:10:05  current length 108
+83
+=============================
+this block is from a shorter chain
+from http://localhost:8015 ======A block received=========, 22:10:06  current length 108
+68
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 22:10:06  current length 108
+75
+=============================
+this block is from a shorter chain
+from http://localhost:8045 ======A block received=========, 22:10:06  current length 108
+79
+=============================
+this block is from a shorter chain
+from http://localhost:8020 ======A block received=========, 22:10:06  current length 108
+48
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 22:10:06  current length 108
+34
+=============================
+this block is from a shorter chain
+from http://localhost:8024 ======A block received=========, 22:10:06  current length 108
+49
+=============================
+this block is from a shorter chain
+from http://localhost:8026 ======A block received=========, 22:10:06  current length 108
+45
+=============================
+this block is from a shorter chain
+from http://localhost:8045 ======A block received=========, 22:10:06  current length 108
+82
+=============================
+this block is from a shorter chain
+from http://localhost:8015 ======A block received=========, 22:10:06  current length 108
+91
+=============================
+this block is from a shorter chain
+from http://localhost:8055 ======A block received=========, 22:10:07  current length 108
+62
+=============================
+this block is from a shorter chain
+from http://localhost:8069 ======A block received=========, 22:10:07  current length 108
+87
+=============================
+this block is from a shorter chain
+from http://localhost:8030 ======A block received=========, 22:10:07  current length 108
+93
+=============================
+this block is from a shorter chain
+from http://localhost:8058 ======A block received=========, 22:10:07  current length 108
+75
+=============================
+this block is from a shorter chain
+from http://localhost:8021 ======A block received=========, 22:10:07  current length 108
+37
+=============================
+this block is from a shorter chain
+from http://localhost:8058 ======A block received=========, 22:10:07  current length 108
+80
+=============================
+this block is from a shorter chain
+from http://localhost:8061 ======A block received=========, 22:10:07  current length 108
+79
+=============================
+this block is from a shorter chain
+from http://localhost:8057 ======A block received=========, 22:10:07  current length 108
+91
+=============================
+this block is from a shorter chain
+from http://localhost:8050 ======A block received=========, 22:10:07  current length 108
+64
+=============================
+this block is from a shorter chain
+from http://localhost:8020 ======A block received=========, 22:10:07  current length 108
+54
+=============================
+this block is from a shorter chain
+from http://localhost:8057 ======A block received=========, 22:10:07  current length 108
+92
+=============================
+this block is from a shorter chain
+from http://localhost:8026 ======A block received=========, 22:10:07  current length 108
+22
+=============================
+this block is from a shorter chain
+from http://localhost:8061 ======A block received=========, 22:10:07  current length 108
+80
+=============================
+this block is from a shorter chain
+from http://localhost:8045 ======A block received=========, 22:10:07  current length 108
+80
+=============================
+this block is from a shorter chain
+from http://localhost:8045 ======A block received=========, 22:10:07  current length 108
+83
+=============================
+this block is from a shorter chain
+from http://localhost:8058 ======A block received=========, 22:10:07  current length 108
+81
+=============================
+this block is from a shorter chain
+from http://localhost:8015 ======A block received=========, 22:10:09  current length 108
+81
+=============================
+this block is from a shorter chain
+from http://localhost:8015 ======A block received=========, 22:10:09  current length 108
+80
+=============================
+this block is from a shorter chain
+from http://localhost:8016 ======A block received=========, 22:10:09  current length 108
+62
+=============================
+this block is from a shorter chain
+from http://localhost:8016 ======A block received=========, 22:10:09  current length 108
+72
+=============================
+this block is from a shorter chain
+from http://localhost:8061 ======A block received=========, 22:10:09  current length 108
+69
+=============================
+this block is from a shorter chain
+from http://localhost:8057 ======A block received=========, 22:10:09  current length 108
+93
+=============================
+this block is from a shorter chain
+from http://localhost:8061 ======A block received=========, 22:10:09  current length 108
+89
+=============================
+this block is from a shorter chain
+from http://localhost:8016 ======A block received=========, 22:10:09  current length 108
+87
+=============================
+this block is from a shorter chain
+from http://localhost:8011 ======A block received=========, 22:10:11  current length 108
+44
+=============================
+this block is from a shorter chain
+from http://localhost:8050 ======A block received=========, 22:10:11  current length 108
+68
+=============================
+this block is from a shorter chain
+from http://localhost:8057 ======A block received=========, 22:10:11  current length 108
+95
+=============================
+this block is from a shorter chain
+from http://localhost:8037 ======A block received=========, 22:10:11  current length 108
+94
+=============================
+this block is from a shorter chain
+from http://localhost:8050 ======A block received=========, 22:10:11  current length 108
+96
+=============================
+this block is from a shorter chain
+from http://localhost:8045 ======A block received=========, 22:10:11  current length 108
+84
+=============================
+this block is from a shorter chain
+from http://localhost:8015 ======A block received=========, 22:10:11  current length 108
+82
+=============================
+this block is from a shorter chain
+from http://localhost:8004 ======A block received=========, 22:10:11  current length 108
+110
+=============================
+need to replace chain from http://localhost:8004
+request a chain
+HTTPConnectionPool(host='localhost', port=8004): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109f21908>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8032 ======A block received=========, 22:10:12  current length 108
+17
+=============================
+this block is from a shorter chain
+from http://localhost:8004 ======A block received=========, 22:10:12  current length 108
+111
+=============================
+need to replace chain from http://localhost:8004
+request a chain
+from http://localhost:8050 ======A block received=========, 22:10:12  current length 108
+99
+=============================
+this block is from a shorter chain
+from http://localhost:8032 ======A block received=========, 22:10:12  current length 108
+21
+=============================
+this block is from a shorter chain
+from http://localhost:8032 ======A block received=========, 22:10:12  current length 108
+49
+=============================
+this block is from a shorter chain
+from http://localhost:8016 ======A block received=========, 22:10:12  current length 108
+101
+=============================
+this block is from a shorter chain
+from http://localhost:8032 ======A block received=========, 22:10:12  current length 108
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8037 ======A block received=========, 22:10:12  current length 108
+98
+=============================
+this block is from a shorter chain
+from http://localhost:8015 ======A block received=========, 22:10:12  current length 108
+87
+=============================
+this block is from a shorter chain
+from http://localhost:8057 ======A block received=========, 22:10:12  current length 108
+97
+=============================
+this block is from a shorter chain
+from http://localhost:8015 ======A block received=========, 22:10:12  current length 108
+83
+=============================
+this block is from a shorter chain
+HTTPConnectionPool(host='localhost', port=8004): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109e6fd30>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8050 ======A block received=========, 22:10:13  current length 108
+99
+=============================
+this block is from a shorter chain
+from http://localhost:8050 ======A block received=========, 22:10:13  current length 108
+101
+=============================
+this block is from a shorter chain
+from http://localhost:8004 ======A block received=========, 22:10:13  current length 108
+112
+=============================
+need to replace chain from http://localhost:8004
+request a chain
+HTTPConnectionPool(host='localhost', port=8004): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109e620f0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8032 ======A block received=========, 22:10:14  current length 108
+50
+=============================
+this block is from a shorter chain
+The block has been accepted
+ 22:10:15 mined a block Block:108
+DataLen:1
+Time:1523671800
+PrevHash:0003ce337e84b6d33e46adb5fa5499cef7b3a1133aec3f4ca0a711132169143c
+Nonce:19077
+Difficulty:14
+
+broadcast: 0 []
+change diff: 30 1523671800 1523671770 30
+The block has been accepted
+ 22:10:22 mined a block Block:109
+DataLen:1
+Time:1523671815
+PrevHash:00032675b0240d6eea13875332ab3aed68bdbe1c3b08989228ec0353d7105e72
+Nonce:8425
+Difficulty:14
+
+broadcast: 0 []
+The block has been accepted
+ 22:10:25 mined a block Block:110
+DataLen:1
+Time:1523671822
+PrevHash:0003b37b9a1123ace0233e8fe678a5278aa3980a84758c9a73f059cdacc66270
+Nonce:2749
+Difficulty:14
+
+broadcast: 0 []
+The block has been accepted
+ 22:10:31 mined a block Block:111
+DataLen:1
+Time:1523671825
+PrevHash:000296c03f2ffc5f4cbdcf3e1c50f025096537ebed26c167f73c4175453e061c
+Nonce:6646
+Difficulty:14
+
+broadcast: 0 []
+change diff: 30 1523671825 1523671815 10
+from http://localhost:8025 ======A block received=========, 22:10:43  current length 112
+29
+=============================
+this block is from a shorter chain
+from http://localhost:8015 ======A block received=========, 22:10:43  current length 112
+84
+=============================
+this block is from a shorter chain
+from http://localhost:8034 ======A block received=========, 22:10:43  current length 112
+6
+=============================
+this block is from a shorter chain
+from http://localhost:8034 ======A block received=========, 22:10:43  current length 112
+10
+=============================
+this block is from a shorter chain
+from http://localhost:8004 ======A block received=========, 22:10:43  current length 112
+113
+=============================
+need to replace chain from http://localhost:8004
+request a chain
+HTTPConnectionPool(host='localhost', port=8004): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109db5c18>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8058 ======A block received=========, 22:10:43  current length 112
+90
+=============================
+this block is from a shorter chain
+from http://localhost:8061 ======A block received=========, 22:10:43  current length 112
+90
+=============================
+this block is from a shorter chain
+from http://localhost:8015 ======A block received=========, 22:10:44  current length 112
+103
+=============================
+this block is from a shorter chain
+from http://localhost:8057 ======A block received=========, 22:10:44  current length 112
+90
+=============================
+this block is from a shorter chain
+from http://localhost:8004 ======A block received=========, 22:10:44  current length 112
+114
+=============================
+need to replace chain from http://localhost:8004
+request a chain
+HTTPConnectionPool(host='localhost', port=8004): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109e6fac8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8004 ======A block received=========, 22:10:44  current length 112
+115
+=============================
+need to replace chain from http://localhost:8004
+request a chain
+HTTPConnectionPool(host='localhost', port=8004): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109e7ab00>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8061 ======A block received=========, 22:10:44  current length 112
+91
+=============================
+this block is from a shorter chain
+from http://localhost:8028 ======A block received=========, 22:10:44  current length 112
+53
+=============================
+this block is from a shorter chain
+from http://localhost:8034 ======A block received=========, 22:10:44  current length 112
+7
+=============================
+this block is from a shorter chain
+from http://localhost:8028 ======A block received=========, 22:10:44  current length 112
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8028 ======A block received=========, 22:10:44  current length 112
+36
+=============================
+this block is from a shorter chain
+from http://localhost:8058 ======A block received=========, 22:10:44  current length 112
+91
+=============================
+this block is from a shorter chain
+from http://localhost:8034 ======A block received=========, 22:10:44  current length 112
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8050 ======A block received=========, 22:10:44  current length 112
+103
+=============================
+this block is from a shorter chain
+from http://localhost:8058 ======A block received=========, 22:10:44  current length 112
+92
+=============================
+this block is from a shorter chain
+from http://localhost:8034 ======A block received=========, 22:10:44  current length 112
+13
+=============================
+this block is from a shorter chain
+from http://localhost:8039 ======A block received=========, 22:10:44  current length 112
+10
+=============================
+this block is from a shorter chain
+from http://localhost:8045 ======A block received=========, 22:10:44  current length 112
+85
+=============================
+this block is from a shorter chain
+from http://localhost:8016 ======A block received=========, 22:10:44  current length 112
+107
+=============================
+this block is from a shorter chain
+from http://localhost:8045 ======A block received=========, 22:10:44  current length 112
+87
+=============================
+this block is from a shorter chain
+from http://localhost:8045 ======A block received=========, 22:10:45  current length 112
+86
+=============================
+this block is from a shorter chain
+from http://localhost:8015 ======A block received=========, 22:10:45  current length 112
+105
+=============================
+this block is from a shorter chain
+from http://localhost:8015 ======A block received=========, 22:10:45  current length 112
+93
+=============================
+this block is from a shorter chain
+from http://localhost:8050 ======A block received=========, 22:10:45  current length 112
+102
+=============================
+this block is from a shorter chain
+from http://localhost:8050 ======A block received=========, 22:10:45  current length 112
+104
+=============================
+this block is from a shorter chain
+from http://localhost:8050 ======A block received=========, 22:10:45  current length 112
+88
+=============================
+this block is from a shorter chain
+from http://localhost:8045 ======A block received=========, 22:10:45  current length 112
+88
+=============================
+this block is from a shorter chain
+from http://localhost:8057 ======A block received=========, 22:10:45  current length 112
+93
+=============================
+this block is from a shorter chain
+from http://localhost:8039 ======A block received=========, 22:10:45  current length 112
+18
+=============================
+this block is from a shorter chain
+from http://localhost:8016 ======A block received=========, 22:10:45  current length 112
+93
+=============================
+this block is from a shorter chain
+from http://localhost:8028 ======A block received=========, 22:10:45  current length 112
+54
+=============================
+this block is from a shorter chain
+from http://localhost:8015 ======A block received=========, 22:10:45  current length 112
+106
+=============================
+this block is from a shorter chain
+from http://localhost:8016 ======A block received=========, 22:10:45  current length 112
+103
+=============================
+this block is from a shorter chain
+from http://localhost:8050 ======A block received=========, 22:10:45  current length 112
+94
+=============================
+this block is from a shorter chain
+from http://localhost:8015 ======A block received=========, 22:10:45  current length 112
+93
+=============================
+this block is from a shorter chain
+The block has been accepted
+ 22:10:46 mined a block Block:112
+DataLen:1
+Time:1523671831
+PrevHash:0000ac969d4054b3cb0d1d4b7e5b982ac7ae83cadbc6dc4132df50c9e7125432
+Nonce:14860
+Difficulty:15
+
+broadcast: 1 ['http://localhost:8005']
+HTTPConnectionPool(host='localhost', port=8005): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109d65ba8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+The block has been accepted
+ 22:10:46 mined a block Block:113
+DataLen:1
+Time:1523671846
+PrevHash:0000372ecf9bb69e837b54b1dcb06b788a20d79663fe78d59701f7b6386075e8
+Nonce:436
+Difficulty:15
+
+broadcast: 1 ['http://localhost:8005']
+HTTPConnectionPool(host='localhost', port=8005): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109d65940>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8025 ======A block received=========, 22:10:57  current length 114
+36
+=============================
+this block is from a shorter chain
+from http://localhost:8004 ======A block received=========, 22:10:57  current length 114
+116
+=============================
+need to replace chain from http://localhost:8004
+request a chain
+HTTPConnectionPool(host='localhost', port=8004): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109db5b00>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8016 ======A block received=========, 22:10:57  current length 114
+104
+=============================
+this block is from a shorter chain
+from http://localhost:8050 ======A block received=========, 22:10:57  current length 114
+108
+=============================
+this block is from a shorter chain
+from http://localhost:8034 ======A block received=========, 22:10:57  current length 114
+108
+=============================
+this block is from a shorter chain
+from http://localhost:8039 ======A block received=========, 22:10:57  current length 114
+17
+=============================
+this block is from a shorter chain
+from http://localhost:8013 ======A block received=========, 22:10:57  current length 114
+108
+=============================
+this block is from a shorter chain
+from http://localhost:8016 ======A block received=========, 22:10:57  current length 114
+108
+=============================
+this block is from a shorter chain
+from http://localhost:8016 ======A block received=========, 22:10:57  current length 114
+109
+=============================
+this block is from a shorter chain
+from http://localhost:8025 ======A block received=========, 22:10:57  current length 114
+27
+=============================
+this block is from a shorter chain
+from http://localhost:8057 ======A block received=========, 22:10:57  current length 114
+103
+=============================
+this block is from a shorter chain
+from http://localhost:8050 ======A block received=========, 22:10:57  current length 114
+109
+=============================
+this block is from a shorter chain
+The block has been accepted
+ 22:10:58 mined a block Block:114
+DataLen:1
+Time:1523671846
+PrevHash:000102ef6bffed32f216c89cd917f368a92dadbd4bb95a2851497899bb83fe1b
+Nonce:11838
+Difficulty:15
+from http://localhost:8015 ======A block received=========, 22:10:58  current length 115
+104
+=============================
+this block is from a shorter chain
+
+broadcast: 0 []
+change diff: 30 1523671846 1523671831 15
+from http://localhost:8016 ======A block received=========, 22:10:59  current length 115
+110
+=============================
+this block is from a shorter chain
+from http://localhost:8039 ======A block received=========, 22:11:04  current length 115
+14
+=============================
+this block is from a shorter chain
+from http://localhost:8025 ======A block received=========, 22:11:05  current length 115
+30
+=============================
+this block is from a shorter chain
+from http://localhost:8039 ======A block received=========, 22:11:05  current length 115
+3
+=============================
+this block is from a shorter chain
+The block has been accepted
+ 22:11:05 mined a block Block:115
+DataLen:1
+Time:1523671858
+PrevHash:00017cd6ba45c2647fe7d1adb4c0f85773208faa8e212af0d210c3dd55cf5d6f
+Nonce:12740
+Difficulty:15
+
+broadcast: 0 []
+from http://localhost:8016 ======A block received=========, 22:11:06  current length 116
+111
+=============================
+this block is from a shorter chain
+from http://localhost:8025 ======A block received=========, 22:11:06  current length 116
+23
+=============================
+this block is from a shorter chain
+from http://localhost:8034 ======A block received=========, 22:11:08  current length 116
+109
+=============================
+this block is from a shorter chain
+The block has been accepted
+ 22:11:12 mined a block Block:116
+DataLen:1
+Time:1523671865
+PrevHash:00007ad3acd2aaf778edc885ac22b79b15830e3fe58c3dce87e6adf4b2faee0a
+Nonce:15635
+Difficulty:15
+
+broadcast: 0 []
+The block has been accepted
+ 22:11:16 mined a block Block:117
+DataLen:1
+Time:1523671872
+PrevHash:0000adb911dc72b2802e1a4004b44c27a8a912cdcedd6dfeaf9ef99c9dc2122f
+Nonce:13882
+Difficulty:15
+
+broadcast: 2 ['http://localhost:8044', 'http://localhost:8041']
+change diff: 30 1523671872 1523671858 14
+could not find MARK
+could not find MARK
+heart beat of  http://localhost:8044 b'live'
+The block has been accepted
+ 22:11:30 mined a block Block:118
+DataLen:1
+Time:1523671876
+PrevHash:000096c6d8ff9e5736112a449f90a626ddbff0915b2bb0e1c4cd4379015da838
+Nonce:37516
+Difficulty:16
+
+broadcast: 2 ['http://localhost:8044', 'http://localhost:8041']
+HTTPConnectionPool(host='localhost', port=8044): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109e7d588>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8041): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109e7d550>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+heart beat of  http://localhost:8041 b'live'
+from http://localhost:8044 ======A block received=========, 22:11:41  current length 119
+117
+=============================
+this block is from a shorter chain
+The block has been accepted
+ 22:11:43 mined a block Block:119
+DataLen:1
+Time:1523671890
+PrevHash:000071cfe173fb44444ea1b7f6b8219b83bd9bc5600341b3f97aab772756cd15
+Nonce:28530
+Difficulty:16
+
+broadcast: 2 ['http://localhost:8043', 'http://localhost:8010']
+could not find MARK
+could not find MARK
+heart beat of  http://localhost:8043 b'live'
+heart beat of  http://localhost:8010 b'live'
+from http://localhost:8039 ======A block received=========, 22:11:59  current length 120
+20
+=============================
+this block is from a shorter chain
+The block has been accepted
+ 22:12:01 mined a block Block:120
+DataLen:1
+Time:1523671903
+PrevHash:0000a8ca5083defc64fa2a52db7575dcd266e8f74adcb339e05d99fb619c5139
+Nonce:39105
+Difficulty:16
+
+broadcast: 2 ['http://localhost:8005', 'http://localhost:8041']
+change diff: 30 1523671903 1523671876 27
+could not find MARK
+could not find MARK
+send all chain
+heart beat of  http://localhost:8013 b'live'
+heart beat of  http://localhost:8027 b'live'
+heart beat of  http://localhost:8005 b'live'
+from http://localhost:8004 ======A block received=========, 22:13:05  current length 121
+127
+=============================
+need to replace chain from http://localhost:8004
+request a chain
+HTTPConnectionPool(host='localhost', port=8004): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109de3f28>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+heart beat of  http://localhost:8013 b'live'
+heart beat of  http://localhost:8027 b'live'
+heart beat of  http://localhost:8005 b'live'
+from http://localhost:8004 ======A block received=========, 22:13:19  current length 121
+128
+=============================
+need to replace chain from http://localhost:8004
+request a chain
+HTTPConnectionPool(host='localhost', port=8004): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109ced978>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8004 ======A block received=========, 22:13:19  current length 121
+129
+=============================
+need to replace chain from http://localhost:8004
+request a chain
+HTTPConnectionPool(host='localhost', port=8004): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109ced048>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8044 ======A block received=========, 22:13:27  current length 121
+124
+=============================
+need to replace chain from http://localhost:8044
+request a chain
+HTTPConnectionPool(host='localhost', port=8044): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109cedc18>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+heart beat of  http://localhost:8063 b'live'
+heart beat of  http://localhost:8010 b'live'
+heart beat of  http://localhost:8051 b'live'
+from http://localhost:8044 ======A block received=========, 22:13:42  current length 121
+125
+=============================
+need to replace chain from http://localhost:8044
+request a chain
+HTTPConnectionPool(host='localhost', port=8044): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109d8f1d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8041 ======A block received=========, 22:13:45  current length 121
+125
+=============================
+need to replace chain from http://localhost:8041
+request a chain
+The block has been accepted
+ 22:13:46 mined a block Block:121
+DataLen:1
+Time:1523671921
+PrevHash:0000dbc9ebf3371d0e97eb2efecc8f361aa3bcf21965d5d8b993ecf120037921
+Nonce:287939
+Difficulty:16
+
+broadcast: 3 ['http://localhost:8063', 'http://localhost:8010', 'http://localhost:8051']
+HTTPConnectionPool(host='localhost', port=8010): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109db5780>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8051): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109ced0b8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8063): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x107eef278>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+longer chain getted
+from http://localhost:8043 ======A block received=========, 22:13:47  current length 122
+125
+=============================
+need to replace chain from http://localhost:8043
+request a chain
+HTTPConnectionPool(host='localhost', port=8043): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x107fccb00>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8043 ======A block received=========, 22:13:47  current length 122
+127
+=============================
+need to replace chain from http://localhost:8043
+afterset <threading.Event object at 0x108f33668> True
+request a chain
+HTTPConnectionPool(host='localhost', port=8043): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109874fd0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+broadcast: 3 ['http://localhost:8063', 'http://localhost:8010', 'http://localhost:8051']
+mining interrupted. 125
+from http://localhost:8043 ======A block received=========, 22:13:47  current length 126
+125
+=============================
+HTTPConnectionPool(host='localhost', port=8063): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109874dd8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+this block is from a shorter chain
+HTTPConnectionPool(host='localhost', port=8010): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109d65128>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8005 ======A block received=========, 22:13:47  current length 126
+126
+=============================
+need to replace chain from http://localhost:8005
+request a chain
+HTTPConnectionPool(host='localhost', port=8005): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109dc39e8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8051): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109dc32b0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+replaced chain
+from http://localhost:8027 ======A block received=========, 22:13:49  current length 126
+125
+=============================
+this block is from a shorter chain
+from http://localhost:8027 ======A block received=========, 22:13:49  current length 126
+126
+=============================
+need to replace chain from http://localhost:8027
+request a chain
+HTTPConnectionPool(host='localhost', port=8027): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109dc3860>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8027 ======A block received=========, 22:13:49  current length 126
+126
+=============================
+need to replace chain from http://localhost:8027
+request a chain
+HTTPConnectionPool(host='localhost', port=8027): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109dc34a8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8027 ======A block received=========, 22:13:49  current length 126
+125
+=============================
+this block is from a shorter chain
+from http://localhost:8005 ======A block received=========, 22:13:51  current length 126
+132
+=============================
+need to replace chain from http://localhost:8005
+request a chain
+HTTPConnectionPool(host='localhost', port=8005): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109edb668>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+heart beat of  http://localhost:8063 b'live'
+heart beat of  http://localhost:8010 b'live'
+The block has been accepted
+ 22:13:57 mined a block Block:126
+DataLen:1
+Time:1523672027
+PrevHash:00002741110739c05c50b19d346ed5bdb223c0bbc5d43ae69639102100733f24
+Nonce:47434
+Difficulty:17
+
+broadcast: 3 ['http://localhost:8063', 'http://localhost:8010', 'http://localhost:8051']
+change diff: 30 1523672027 1523671982 45
+HTTPConnectionPool(host='localhost', port=8063): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x107fcc588>: Failed to establish a new connection: [Errno 24] Too many open files',))
+could not find MARK
+could not find MARK
+from http://localhost:8063 ======A block received=========, 22:14:05  current length 127
+127
+=============================
+need to replace chain from http://localhost:8063
+request a chain
+from http://localhost:8027 ======A block received=========, 22:14:07  current length 127
+125
+=============================
+this block is from a shorter chain
+from http://localhost:8010 ======A block received=========, 22:14:07  current length 127
+125
+=============================
+this block is from a shorter chain
+from http://localhost:8041 ======A block received=========, 22:14:07  current length 127
+125
+=============================
+this block is from a shorter chain
+from http://localhost:8010 ======A block received=========, 22:14:07  current length 127
+127
+=============================
+need to replace chain from http://localhost:8010
+request a chain
+HTTPConnectionPool(host='localhost', port=8010): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x107ff1710>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+The block has been accepted
+ 22:14:08 mined a block Block:127
+DataLen:1
+Time:1523672037
+PrevHash:00003855d65faa989bfef01b1b0a97dfb6876618a13197f88a21d8e54064af55
+Nonce:46102
+Difficulty:17
+
+broadcast: 2 ['http://localhost:8063', 'http://localhost:8010']
+HTTPConnectionPool(host='localhost', port=8063): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x107fc75f8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8010): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x107fc7470>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8010 ======A block received=========, 22:14:13  current length 128
+heart beat of  http://localhost:8063 b'live'
+128
+=============================
+need to replace chain from http://localhost:8010
+request a chain
+HTTPConnectionPool(host='localhost', port=8010): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109d8f860>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8005 ======A block received=========, 22:14:13  current length 128
+127
+=============================
+this block is from a shorter chain
+from http://localhost:8005 ======A block received=========, 22:14:15  current length 128
+130
+=============================
+need to replace chain from http://localhost:8005
+request a chain
+HTTPConnectionPool(host='localhost', port=8005): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x107fc7a58>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8041 ======A block received=========, 22:14:15  current length 128
+127
+=============================
+this block is from a shorter chain
+longer chain getted
+afterset <threading.Event object at 0x108f33668> True
+broadcast: 1 ['http://localhost:8063']
+replaced chain
+mining interrupted. 128
+The block has been accepted
+ 22:14:21 mined a block Block:129
+DataLen:1
+Time:1523672057
+PrevHash:00000173d98738217632a1580519b611700a463cdf617cc802f8e1a7fab08386
+Nonce:18589
+Difficulty:18
+
+broadcast: 1 ['http://localhost:8063']
+HTTPConnectionPool(host='localhost', port=8063): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109cedda0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+change diff: 30 1523672057 1523672010 47
+could not find MARK
+from http://localhost:8005 ======A block received=========, 22:14:23  current length 130
+127
+=============================
+this block is from a shorter chain
+from http://localhost:8005 ======A block received=========, 22:14:23  current length 130
+130
+=============================
+need to replace chain from http://localhost:8005
+request a chain
+HTTPConnectionPool(host='localhost', port=8005): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109e7dc50>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8010 ======A block received=========, 22:14:23  current length 130
+130
+=============================
+need to replace chain from http://localhost:8010
+request a chain
+HTTPConnectionPool(host='localhost', port=8010): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109caa208>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8005 ======A block received=========, 22:14:26  current length 130
+136
+=============================
+need to replace chain from http://localhost:8005
+request a chain
+HTTPConnectionPool(host='localhost', port=8005): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109caada0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8010 ======A block received=========, 22:14:26  current length 130
+127
+=============================
+this block is from a shorter chain
+from http://localhost:8044 ======A block received=========, 22:14:26  current length 130
+128
+=============================
+this block is from a shorter chain
+from http://localhost:8051 ======A block received=========, 22:14:27  current length 130
+129
+=============================
+this block is from a shorter chain
+from http://localhost:8044 ======A block received=========, 22:14:29  current length 130
+130
+=============================
+need to replace chain from http://localhost:8044
+request a chain
+HTTPConnectionPool(host='localhost', port=8044): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108f544e0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8010 ======A block received=========, 22:14:30  current length 130
+129
+=============================
+this block is from a shorter chain
+from http://localhost:8010 ======A block received=========, 22:14:31  current length 130
+129
+=============================
+this block is from a shorter chain
+from http://localhost:8010 ======A block received=========, 22:14:31  current length 130
+130
+=============================
+need to replace chain from http://localhost:8010
+request a chain
+HTTPConnectionPool(host='localhost', port=8010): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109c860f0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8010 ======A block received=========, 22:14:33  current length 130
+130
+=============================
+need to replace chain from http://localhost:8010
+request a chain
+HTTPConnectionPool(host='localhost', port=8010): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109c86828>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8063 ======A block received=========, 22:14:33  current length 130
+130
+=============================
+need to replace chain from http://localhost:8063
+request a chain
+HTTPConnectionPool(host='localhost', port=8063): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109c86550>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8051 ======A block received=========, 22:14:33  current length 130
+130
+=============================
+need to replace chain from http://localhost:8051
+request a chain
+HTTPConnectionPool(host='localhost', port=8051): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x107ff9080>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8051 ======A block received=========, 22:14:33  current length 130
+130
+=============================
+need to replace chain from http://localhost:8051
+request a chain
+HTTPConnectionPool(host='localhost', port=8051): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x107fc5400>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8063 ======A block received=========, 22:14:33  current length 130
+130
+=============================
+need to replace chain from http://localhost:8063
+request a chain
+HTTPConnectionPool(host='localhost', port=8063): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x107fc5748>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8051 ======A block received=========, 22:14:33  current length 130
+130
+=============================
+need to replace chain from http://localhost:8051
+request a chain
+HTTPConnectionPool(host='localhost', port=8051): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x107fc5a20>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8027 ======A block received=========, 22:14:35  current length 130
+124
+=============================
+this block is from a shorter chain
+from http://localhost:8027 ======A block received=========, 22:14:35  current length 130
+122
+=============================
+this block is from a shorter chain
+from http://localhost:8027 ======A block received=========, 22:14:35  current length 130
+122
+=============================
+this block is from a shorter chain
+from http://localhost:8027 ======A block received=========, 22:14:37  current length 130
+127
+=============================
+this block is from a shorter chain
+from http://localhost:8041 ======A block received=========, 22:14:37  current length 130
+128
+=============================
+this block is from a shorter chain
+from http://localhost:8005 ======A block received=========, 22:14:37  current length 130
+140
+=============================
+need to replace chain from http://localhost:8005
+request a chain
+HTTPConnectionPool(host='localhost', port=8005): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x107fc5630>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8010 ======A block received=========, 22:14:39  current length 130
+131
+=============================
+need to replace chain from http://localhost:8010
+request a chain
+HTTPConnectionPool(host='localhost', port=8010): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x107fc5208>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8051 ======A block received=========, 22:14:39  current length 130
+130
+=============================
+need to replace chain from http://localhost:8051
+request a chain
+HTTPConnectionPool(host='localhost', port=8051): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109c86320>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8051 ======A block received=========, 22:14:39  current length 130
+130
+=============================
+need to replace chain from http://localhost:8051
+request a chain
+HTTPConnectionPool(host='localhost', port=8051): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109c86860>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8005 ======A block received=========, 22:14:39  current length 130
+130
+=============================
+need to replace chain from http://localhost:8005
+request a chain
+HTTPConnectionPool(host='localhost', port=8005): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109c86da0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8051 ======A block received=========, 22:14:41  current length 130
+132
+=============================
+need to replace chain from http://localhost:8051
+request a chain
+HTTPConnectionPool(host='localhost', port=8051): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109c86710>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8005 ======A block received=========, 22:14:41  current length 130
+140
+=============================
+need to replace chain from http://localhost:8005
+request a chain
+HTTPConnectionPool(host='localhost', port=8005): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109c869e8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8010 ======A block received=========, 22:14:41  current length 130
+132
+=============================
+need to replace chain from http://localhost:8010
+request a chain
+HTTPConnectionPool(host='localhost', port=8010): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108f54f28>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8051 ======A block received=========, 22:14:41  current length 130
+131
+=============================
+need to replace chain from http://localhost:8051
+request a chain
+HTTPConnectionPool(host='localhost', port=8051): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109caa860>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8051 ======A block received=========, 22:14:43  current length 130
+133
+=============================
+need to replace chain from http://localhost:8051
+request a chain
+HTTPConnectionPool(host='localhost', port=8051): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109caa940>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+heart beat of  http://localhost:8043 b'live'
+heart beat of  http://localhost:8063 b'live'
+heart beat of  http://localhost:8044 b'live'
+from http://localhost:8027 ======A block received=========, 22:15:03  current length 130
+145
+=============================
+need to replace chain from http://localhost:8027
+request a chain
+HTTPConnectionPool(host='localhost', port=8027): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109819a90>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8005 ======A block received=========, 22:15:05  current length 130
+135
+=============================
+need to replace chain from http://localhost:8005
+request a chain
+longer chain getted
+afterset <threading.Event object at 0x108f33668> True
+broadcast: 3 ['http://localhost:8043', 'http://localhost:8063', 'http://localhost:8044']
+mining interrupted. 135
+change diff: 30 1523672093 1523672077 16
+replaced chain
+HTTPConnectionPool(host='localhost', port=8063): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x107fc4e80>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8044): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x107fc4978>: Failed to establish a new connection: [Errno 24] Too many open files',))
+could not find MARK
+from http://localhost:8005 ======A block received=========, 22:15:14  current length 136
+126
+=============================
+this block is from a shorter chain
+from http://localhost:8041 ======A block received=========, 22:15:15  current length 136
+133
+=============================
+this block is from a shorter chain
+from http://localhost:8044 ======A block received=========, 22:15:17  current length 136
+136
+=============================
+need to replace chain from http://localhost:8044
+request a chain
+longer chain getted
+afterset <threading.Event object at 0x108f33668> True
+broadcast: 1 ['http://localhost:8059']
+replaced chain
+mining interrupted. 138
+change diff: 30 1523672109 1523672103 6
+The block has been accepted
+ 22:15:36 mined a block Block:139
+DataLen:1
+Time:1523672123
+PrevHash:00002c3abbba9c6417660099e8a776d18e06aceba6bd17a1dd16494d61ad07c9
+Nonce:51880
+Difficulty:19
+
+broadcast: 0 []
+could not find MARK
+from http://localhost:8063 ======A block received=========, 22:15:51  current length 140
+130
+=============================
+this block is from a shorter chain
+from http://localhost:8063 ======A block received=========, 22:15:51  current length 140
+130
+=============================
+this block is from a shorter chain
+from http://localhost:8063 ======A block received=========, 22:15:51  current length 140
+130
+=============================
+this block is from a shorter chain
+from http://localhost:8005 ======A block received=========, 22:15:55  current length 140
+131
+=============================
+this block is from a shorter chain
+from http://localhost:8005 ======A block received=========, 22:16:01  current length 140
+141
+=============================
+need to replace chain from http://localhost:8005
+request a chain
+HTTPConnectionPool(host='localhost', port=8005): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108f54da0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8005 ======A block received=========, 22:16:03  current length 140
+142
+=============================
+need to replace chain from http://localhost:8005
+request a chain
+HTTPConnectionPool(host='localhost', port=8005): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109c867b8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+heart beat of  http://localhost:8005 b'live'
+heart beat of  http://localhost:8024 b'live'
+from http://localhost:8044 ======A block received=========, 22:16:13  current length 140
+142
+=============================
+need to replace chain from http://localhost:8044
+request a chain
+HTTPConnectionPool(host='localhost', port=8044): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x107fc56d8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8043 ======A block received=========, 22:16:15  current length 140
+142
+=============================
+need to replace chain from http://localhost:8043
+request a chain
+HTTPConnectionPool(host='localhost', port=8043): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x107fc5b00>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8043 ======A block received=========, 22:16:15  current length 140
+143
+=============================
+need to replace chain from http://localhost:8043
+request a chain
+HTTPConnectionPool(host='localhost', port=8043): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x107fc50b8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8043 ======A block received=========, 22:16:19  current length 140
+142
+=============================
+need to replace chain from http://localhost:8043
+request a chain
+HTTPConnectionPool(host='localhost', port=8043): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x107fc5f28>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8043 ======A block received=========, 22:16:19  current length 140
+142
+=============================
+need to replace chain from http://localhost:8043
+request a chain
+HTTPConnectionPool(host='localhost', port=8043): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109cb4b38>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8043 ======A block received=========, 22:16:19  current length 140
+143
+=============================
+need to replace chain from http://localhost:8043
+request a chain
+HTTPConnectionPool(host='localhost', port=8043): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109cb4d68>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+heart beat of  http://localhost:8013 b'live'
+heart beat of  http://localhost:8000 b'live'
+heart beat of  http://localhost:8059 b'live'
+heart beat of  http://localhost:8043 b'live'
+from http://localhost:8043 ======A block received=========, 22:16:23  current length 140
+144
+=============================
+need to replace chain from http://localhost:8043
+request a chain
+HTTPConnectionPool(host='localhost', port=8043): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x107fc5eb8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+heart beat of  http://localhost:8013 b'live'
+heart beat of  http://localhost:8000 b'live'
+heart beat of  http://localhost:8059 b'live'
+heart beat of  http://localhost:8043 b'live'
+from http://localhost:8059 ======A block received=========, 22:16:55  current length 140
+146
+=============================
+need to replace chain from http://localhost:8059
+request a chain
+HTTPConnectionPool(host='localhost', port=8059): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109caaf28>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+heart beat of  http://localhost:8013 b'live'
+heart beat of  http://localhost:8000 b'live'
+heart beat of  http://localhost:8059 b'live'
+heart beat of  http://localhost:8043 b'live'
+from http://localhost:8043 ======A block received=========, 22:17:45  current length 140
+151
+=============================
+need to replace chain from http://localhost:8043
+request a chain
+HTTPConnectionPool(host='localhost', port=8043): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109c86668>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8005 ======A block received=========, 22:17:47  current length 140
+150
+=============================
+need to replace chain from http://localhost:8005
+request a chain
+HTTPConnectionPool(host='localhost', port=8005): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109c86cc0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8059 ======A block received=========, 22:17:47  current length 140
+151
+=============================
+need to replace chain from http://localhost:8059
+request a chain
+HTTPConnectionPool(host='localhost', port=8059): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109c86240>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8059 ======A block received=========, 22:17:48  current length 140
+151
+=============================
+need to replace chain from http://localhost:8059
+request a chain
+longer chain getted
+afterset <threading.Event object at 0x108f33668> True
+broadcast: 4 ['http://localhost:8013', 'http://localhost:8000', 'http://localhost:8059', 'http://localhost:8043']
+mining interrupted. 151
+HTTPConnectionPool(host='localhost', port=8059): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109874dd8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8043): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109ced1d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+replaced chain
+could not find MARK
+could not find MARK
+heart beat of  http://localhost:8013 b'live'
+heart beat of  http://localhost:8000 b'live'
+heart beat of  http://localhost:8059 b'live'
+The block has been accepted
+ 22:18:23 mined a block Block:152
+DataLen:1
+Time:1523672272
+PrevHash:0000099479b0c8cee6fb589fba8296eb7be56f56661180a1c4ab26ea1b866ba6
+Nonce:137089
+Difficulty:20
+
+broadcast: 4 ['http://localhost:8013', 'http://localhost:8000', 'http://localhost:8059', 'http://localhost:8043']
+HTTPConnectionPool(host='localhost', port=8013): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109f48e10>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x107ff16a0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8059): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x107ff1470>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8043): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109caacf8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+heart beat of  http://localhost:8043 b'live'
+from http://localhost:8000 ======A block received=========, 22:18:29  current length 153
+154
+=============================
+need to replace chain from http://localhost:8000
+request a chain
+HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109caa8d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8005 ======A block received=========, 22:18:30  current length 153
+148
+=============================
+this block is from a shorter chain
+from http://localhost:8043 ======A block received=========, 22:18:33  current length 153
+153
+=============================
+need to replace chain from http://localhost:8043
+request a chain
+longer chain getted
+from http://localhost:8043 ======A block received=========, 22:18:36  current length 153
+154
+=============================
+need to replace chain from http://localhost:8043
+request a chain
+HTTPConnectionPool(host='localhost', port=8043): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109c94860>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+afterset <threading.Event object at 0x108f33668> True
+broadcast: 2 ['http://localhost:8051', 'http://localhost:8036']
+mining interrupted. 154
+replaced chain
+HTTPConnectionPool(host='localhost', port=8036): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109ca2f60>: Failed to establish a new connection: [Errno 24] Too many open files',))
+could not find MARK
+from http://localhost:8000 ======A block received=========, 22:18:41  current length 155
+155
+=============================
+need to replace chain from http://localhost:8000
+request a chain
+longer chain getted
+afterset <threading.Event object at 0x108f33668> True
+broadcast: 1 ['http://localhost:8036']
+replaced chain
+mining interrupted. 156
+change diff: 30 1523672318 1523672287 31
+could not find MARK
+from http://localhost:8013 ======A block received=========, 22:19:01  current length 157
+156
+=============================
+this block is from a shorter chain
+from http://localhost:8013 ======A block received=========, 22:19:01  current length 157
+156
+=============================
+this block is from a shorter chain
+from http://localhost:8005 ======A block received=========, 22:19:02  current length 157
+152
+=============================
+this block is from a shorter chain
+from http://localhost:8005 ======A block received=========, 22:19:07  current length 157
+156
+=============================
+this block is from a shorter chain
+from http://localhost:8005 ======A block received=========, 22:19:07  current length 157
+156
+=============================
+this block is from a shorter chain
+from http://localhost:8063 ======A block received=========, 22:19:11  current length 157
+157
+=============================
+need to replace chain from http://localhost:8063
+request a chain
+HTTPConnectionPool(host='localhost', port=8063): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109c86828>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8010 ======A block received=========, 22:19:15  current length 157
+157
+=============================
+need to replace chain from http://localhost:8010
+request a chain
+HTTPConnectionPool(host='localhost', port=8010): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109f2ef28>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8005 ======A block received=========, 22:19:17  current length 157
+156
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 22:19:17  current length 157
+157
+=============================
+need to replace chain from http://localhost:8000
+request a chain
+HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109f2ee80>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8063 ======A block received=========, 22:19:25  current length 157
+157
+=============================
+need to replace chain from http://localhost:8063
+request a chain
+longer chain getted
+afterset <threading.Event object at 0x108f33668> True
+broadcast: 3 ['http://localhost:8036', 'http://localhost:8041', 'http://localhost:8045']
+mining interrupted. 158
+replaced chain
+HTTPConnectionPool(host='localhost', port=8036): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109ca2588>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+could not find MARK
+could not find MARK
+The block has been accepted
+ 22:20:54 mined a block Block:159
+DataLen:1
+Time:1523672368
+PrevHash:00000d618ad3945e602bf6c44addad3a44dd6f324ab687435dcc23085fc35a7e
+Nonce:405929
+Difficulty:20
+
+broadcast: 3 ['http://localhost:8036', 'http://localhost:8041', 'http://localhost:8045']
+HTTPConnectionPool(host='localhost', port=8036): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x107fccac8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8041): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x107fcca20>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8045): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x107fcc198>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+change diff: 30 1523672368 1523672326 42
+The block has been accepted
+ 22:22:33 mined a block Block:160
+DataLen:1
+Time:1523672454
+PrevHash:000007172d1957676289fd37b865e420a42d50d5b01ae9536468e228220de0b7
+Nonce:568652
+Difficulty:20
+
+broadcast: 3 ['http://localhost:8036', 'http://localhost:8041', 'http://localhost:8045']
+HTTPConnectionPool(host='localhost', port=8036): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x107fcc8d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8041): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x107fccac8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8045): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x107fccf98>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+heart beat of  http://localhost:8036 b'live'
+heart beat of  http://localhost:8041 b'live'
+heart beat of  http://localhost:8045 b'live'
+from http://localhost:8041 ======A block received=========, 22:23:00  current length 161
+167
+=============================
+need to replace chain from http://localhost:8041
+request a chain
+HTTPConnectionPool(host='localhost', port=8041): Max retries exceeded with url: /queryall (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109d8f7f0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+heart beat of  http://localhost:8036 b'live'
+heart beat of  http://localhost:8041 b'live'
+heart beat of  http://localhost:8045 b'live'
+heart beat of  http://localhost:8036 b'live'
+The block has been accepted
+ 22:23:39 mined a block Block:161
+DataLen:1
+Time:1523672553
+PrevHash:00000c7f00151fe35a499b1a23991398228e983f9664d3a0ce80c0bedaa11d57
+Nonce:316629
+Difficulty:20
+
+broadcast: 3 ['http://localhost:8036', 'http://localhost:8041', 'http://localhost:8045']
+HTTPConnectionPool(host='localhost', port=8036): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109c86748>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8041): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109c86898>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8045): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109c86ef0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+heart beat of  http://localhost:8041 b'live'
+heart beat of  http://localhost:8045 b'live'
+from http://localhost:8027 ======A block received=========, 22:25:05  current length 162
+176
+=============================
+need to replace chain from http://localhost:8027
+request a chain
+longer chain getted
+afterset <threading.Event object at 0x108f33668> True
+broadcast: 1 ['http://localhost:8041']
+mining interrupted. 176
+replaced chain
+could not find MARK
+from http://localhost:8041 ======A block received=========, 22:25:22  current length 177
+170
+=============================
+this block is from a shorter chain
+from http://localhost:8041 ======A block received=========, 22:25:24  current length 177
+175
+=============================
+this block is from a shorter chain
+from http://localhost:8041 ======A block received=========, 22:25:24  current length 177
+175
+=============================
+this block is from a shorter chain
+from http://localhost:8041 ======A block received=========, 22:25:26  current length 177
+176
+=============================
+this block is from a shorter chain
+from http://localhost:8045 ======A block received=========, 22:25:32  current length 177
+176
+=============================
+this block is from a shorter chain
+from http://localhost:8004 ======A block received=========, 22:25:34  current length 177
+177
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: 6 ['http://localhost:8013', 'http://localhost:8007', 'http://localhost:8010', 'http://localhost:8003', 'http://localhost:8045', 'http://localhost:8005']
+mining interrupted. 177
+HTTPConnectionPool(host='localhost', port=8013): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109cede48>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8007): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109e6fc50>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8010): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109d5c908>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+change diff: 30 1523672705 1523672680 25
+HTTPConnectionPool(host='localhost', port=8045): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109874fd0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8003): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109d5cf28>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+HTTPConnectionPool(host='localhost', port=8005): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109d650f0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+from http://localhost:8051 ======A block received=========, 22:25:35  current length 178
+171
+=============================
+this block is from a shorter chain
+from http://localhost:8051 ======A block received=========, 22:25:35  current length 178
+171
+=============================
+this block is from a shorter chain
+from http://localhost:8051 ======A block received=========, 22:25:36  current length 178
+172
+=============================
+this block is from a shorter chain
+from http://localhost:8045 ======A block received=========, 22:25:36  current length 178
+176
+=============================
+this block is from a shorter chain
+from http://localhost:8041 ======A block received=========, 22:25:36  current length 178
+177
+=============================
+this block is from a shorter chain
+get signal 2
