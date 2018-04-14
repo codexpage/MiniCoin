@@ -93,7 +93,7 @@ def receiveTx():
 @app.route('/balance', methods=['GET'])
 def getBalance():
     addr = w.getPubKeyFromWallet()
-    return "Address:"+addr+"\n"+str(w.getBalance(addr,chain.getUtxos()))
+    return json.dumps({'addr':addr,'balance':w.getBalance(addr,chain.getUtxos())})
 
 #self node send money to others
 @app.route('/send', methods=['GET'])
@@ -123,8 +123,9 @@ def syncPeer(peer):
 
         # simulate a partially connectect network
         random.shuffle(utils.everContact)
-        part = utils.everContact[:len(utils.everContact)//4]
-        utils.live = part
+        # part = utils.everContact[:len(utils.everContact)//4]
+        # utils.live = part
+        utils.live = utils.everContact
 
 def getHeartBeat():
     while True:
