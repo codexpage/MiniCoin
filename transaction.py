@@ -253,12 +253,16 @@ def signTxin(tx: Transaction, txInIndex: int, pk: str, unspentTxOuts) -> str:
     return signiture
 
 
-def updateUnspentTxOut(txs, unspentTxout):
+def updateUnspentTxOut(txs, unspentTxout, index):
     newUnspentTxOut = []
     for tx in txs:
         txout = []
         for i in range(0, len(tx.txOuts)):
+            # if index != 0 and  getPubKeyFromWallet() == tx.txOuts[i].address:
+            #     txout.append(UnspentTxOut(tx.id, i, tx.txOuts[i].address, tx.txOuts[i].amount))
+            # else:
             txout.append(UnspentTxOut(tx.id, i, tx.txOuts[i].address, tx.txOuts[i].amount))
+
         newUnspentTxOut = newUnspentTxOut + txout
 
     # newUnspentTxOut = reduce(lambda t1, t2: t1 + t2 ,
@@ -298,7 +302,7 @@ def processTx(txs, unspentTxout, blockIndex):
     if not validateBlockTxs(txs, unspentTxout, blockIndex):
         print("tx dups or invlid coinbase")
         return None
-    return updateUnspentTxOut(txs, unspentTxout)
+    return updateUnspentTxOut(txs, unspentTxout, blockIndex)
 
 
 
