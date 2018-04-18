@@ -120,9 +120,8 @@ def syncPeer(peer):
     if peer not in utils.everContact:
         utils.everContact.append(peer)
 
-
         # simulate a partially connectect network
-        random.shuffle(utils.everContact)
+        # random.shuffle(utils.everContact)
         # part = utils.everContact[:len(utils.everContact)//4]
         # utils.live = part
         utils.live = utils.everContact
@@ -130,7 +129,7 @@ def syncPeer(peer):
 def getHeartBeat():
     while True:
 
-        for p in utils.live:
+        for p in utils.everContact:
             try:
                 r = requests.post(p + "/heartbeat", pickle.dumps(utils.selfip))
                 print("heart beat of ", p, r.content)
@@ -145,6 +144,7 @@ def getHeartBeat():
 def updateConnection(peer):
     if peer in utils.live:
         utils.live.remove(peer)
+    # pass
 
 def addtoLive(peer):
     if peer in utils.peers and peer not in utils.live:
@@ -215,18 +215,21 @@ def getAndReplaceChain(ip):
 
 
 def initProgress():
-        # for p in utils.live:
-        #     if getAndReplaceChain(p):
-        #         break;
-        pass
+        for p in utils.live:
+            if getAndReplaceChain(p):
+                break;
+        # pass
 
 
 #when receive tx
 def receiveTxhandler(tx):
-    if pool.addToTxPool(tx,chain.getUtxos()):#add tx to pool
-        broadcast(tx,"/tx")#broadcast
+    if tx is not None:
+        if pool.addToTxPool(tx,chain.getUtxos()):#add tx to pool
+            broadcast(tx,"/tx")#broadcast
+        else:
+            print("receive a invalid tx")
     else:
-        print("receive a invalid tx")
+        print("void tx")
     #if tx exist, don't broadcast
 
 

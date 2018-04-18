@@ -49,13 +49,15 @@ def readUrlfromFile():
     global peers
     global selfport
     global live
+    global everContact
     if os.path.exists(peerList) and os.path.getsize(peerList) > 0:
-        peers = list(pickle.load(open(peerList, "rb")))
+        everContact = list(pickle.load(open(peerList, "rb")))
 # bugs temporary solution
-        if '.' in peers:
-            peers = []
-        if selfip in peers:
-            peers.remove(selfip)
+#         if '.' in peers:
+#             everContact = []
+        if selfip in everContact:
+            everContact.remove(selfip)
+            live = copy.deepcopy(everContact)
     else:
 
     # if selfip
@@ -66,10 +68,11 @@ def readUrlfromFile():
             li.append(base + ":" + str(p))
         li.remove(selfip)#remove selfip
         peers = li
+        live = copy.deepcopy(peers)
 
 
-    random.shuffle(peers)
-    live = copy.deepcopy(peers)
+        random.shuffle(peers)
+    # everContact = copy.deepcopy(peers)
     selfport = selfip[-4:]
     return
 

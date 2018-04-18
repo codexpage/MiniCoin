@@ -14,7 +14,7 @@ import signal
 import pickle
 # from typing import Iterable
 BLOCK_GENERATION_INTERVAL = 10  # 10s
-DIFFICULTY_ADJUSTMENT_INTERVAL = 3  # 10 blocks
+DIFFICULTY_ADJUSTMENT_INTERVAL = 2  # 10 blocks
 storage = "./chains/blockchains"
 class Block:
     def __init__(self, index, data, timestamp, hash, prev_hash, nonce, difficulty):
