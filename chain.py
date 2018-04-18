@@ -69,7 +69,7 @@ genesis_block = Block(
 
 blockchain = [genesis_block]
 # utxos = []  # list of utxo
-utxos = tr.processTx(blockchain[0].data,[],0)
+utxos = tr.processTx(blockchain[0].data, [], 0)
 
 
 def getBlockchain():
@@ -196,7 +196,6 @@ def flush(signal, frame):
         exit(0)
 
 
-
 #mine forever
 def miner():
     # cnt =0
@@ -275,7 +274,7 @@ def validate_blockchain(chain):
     for i in range(0, len(chain)):
         if i!=0 and (not validate_block(chain[i], chain[i - 1])):
             return None
-        block:Block = chain[-1]
+        block:Block = chain[i]
         res_utxos = tr.processTx(block.data,res_utxos,block.index)
         if not res_utxos:
             print("transactions is invalid")
