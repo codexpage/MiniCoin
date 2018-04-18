@@ -1,0 +1,6 @@
+#!/bin/bash
+for (( n = 0; n< $1; n++ ))
+do
+echo kill -2 $(lsof -t -i:$((8000+$n)))
+done
+
