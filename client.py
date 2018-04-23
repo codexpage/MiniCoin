@@ -23,7 +23,7 @@ def show(num, all):
         threads.append(threading.Thread(target=getBalanceRequest, args=(url, i)))
         threads[-1].start()
     [t.join() for t in threads]
-    print(balance,addr)
+    # print(balance,addr)
     print('========balance==========')
     for i in range(num):
         print(i, balance[i], addr[i] if all else '')
