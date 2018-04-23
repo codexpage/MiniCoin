@@ -1,0 +1,5 @@
+#!/bin/bash
+for n in {8000..8099}
+do
+echo "port $n is $(lsof -t -i:$n)"
+done
