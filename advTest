@@ -1,7 +1,7 @@
 #!/bin/bash
 let start=8000
 set -m
-for step in 10 5 5 5;
+for step in 5 5 5;
 do
 #"$(($a + 1))"
     for (( n=$start; n<$((start+step)); n++ ))
@@ -15,6 +15,6 @@ do
     if [ $start -eq 8050 ]
     then break
     fi
-    sleep 10
+    sleep 30
 done
 echo "script done"

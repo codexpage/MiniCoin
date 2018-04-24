@@ -7,53 +7,33 @@ import requests
 import chain
 import json
 import threading
-# from chain import Block
 import TxPool as pool
-import transaction as tr
 from docopt import docopt
 import  wallet as w
 import  utils
-import os
 import datetime
 import time
 import signal
 import random
-import itertools
 app = Flask(__name__)
 requests.adapters.DEFAULT_RETRIES = 0
 lock = threading.Lock()
 serverStart = False
 
-# requests.adapters.DEFAULT_RETRIES
-# selfip = ""
-# peers=[] #read from file list of ip
-
-
-# #TODO read url filter url ,build peer list
-# def readUrlfromFile():
-#     #fill peerip TODO read ip from file
-#     global peers
-#     li = ["http://localhost:8001","http://localhost:8002"]
-#     li.remove(selfip)#remove selfip
-#     peers = li
-#     return
 
 def broadcast(data, route):
     #send to all peer
     print("broadcast:",len(utils.live), utils.live)
-    # for url in utils.peers:
-    #     postRequest(url+route,data)
+
     threads = []
     for url in utils.live:
         t = threading.Thread(target=postRequest, args=(url+route,data))
         threads.append(t)
         t.start()
-# def post(dest, msg):
-#     postRequest(dest ,msg)
+
 
 @app.route('/querylast', methods=['GET'])
 def querylast():
-    #return last block
     return pickle.dumps(chain.getLastBlock())
 
 @app.route('/queryall', methods=['GET'])
@@ -61,22 +41,10 @@ def queryall():
     print("send all chain")
     return pickle.dumps(chain.blockchain)
 
-# @app.route('/querytx', methods=['GET'])
-# def querytx():
-#     #return the pool
-#     return pickle.dumps
-
-# @app.route('/chain', methods=['POST'])
-# def receiveChain():
-#     content = request.data
-#     print(content)
-#     obj = json.dumps(content)
-#     return "ok"
 
 @app.route('/block', methods=['POST'])
 def receiveBlock():
     content = request.get_data()
-    # print(content)
     obj = pickle.loads(content)
     receiveBlockHandler(obj)
     return "ok"
@@ -84,7 +52,6 @@ def receiveBlock():
 @app.route('/tx', methods=['POST'])
 def receiveTx():
     content = request.get_data()
-    # print(content)
     obj = pickle.loads(content)
     receiveTxhandler(obj)
     return "ok"
@@ -108,12 +75,10 @@ def sendMoney():
 @app.route('/heartbeat', methods=["POST"])
 def heartBeat():
     content = request.get_data()
-    # print(content)
     peer = pickle.loads(content)
     addtoLive(str(peer))
     syncPeer(str(peer))
     return "live"
-# r = requests.post("http://bugs.python.org", data={'number': 12524, 'type': 'issue', 'action': 'show'})
 
 
 def syncPeer(peer):
@@ -144,7 +109,6 @@ def getHeartBeat():
 def updateConnection(peer):
     if peer in utils.live:
         utils.live.remove(peer)
-    # pass
 
 def addtoLive(peer):
     if peer in utils.peers and peer not in utils.live:
@@ -152,13 +116,11 @@ def addtoLive(peer):
 
 def getRequest(url) -> dict:
     r = requests.get(url)
-    # print(r.content)
     return pickle.loads(r.content)
 
 def postRequest(url, data):
     try:
         r = requests.post(url, pickle.dumps(data))
-        # print(r.content)
         return pickle.loads(r.content)
     except Exception as e:
         print(e)
@@ -170,7 +132,6 @@ def receiveBlockHandler(blockandip):
     block,ip = blockandip
     print("from",ip,"======A block received=========,{time: %H:%M:%S}".format(time =datetime.datetime.now())," current length", len(chain.blockchain))
     print(block.index)
-    print("=============================")
     if not chain.validate_block_types(block):
         print("block structuture not valid")
         return
@@ -183,9 +144,7 @@ def receiveBlockHandler(blockandip):
                 chain.mine_interrupt.set()  # stop mining and mine on new block
                 broadcast((block,utils.selfip),"/block") #and broad cast received block
         else: #serveral blocks behind, or branch
-            # addr = request.remote_addr
 
-            #broadcast request query all chain
             print("need to replace chain from",ip)
             th=threading.Thread(target=getAndReplaceChain,args=(ip,), daemon=True)
             th.start()
@@ -248,7 +207,6 @@ def main(port):
     print("start utxos:",chain.getUtxos())
     start_thread(chain.miner)
     start_thread(getHeartBeat)
-    # start_thread(http_server(port))
     http_server(port)
     [t.join() for t in threads]#main thread join to wait two subthread
 
@@ -256,7 +214,6 @@ def main(port):
 if __name__ == '__main__':
     args = docopt(__doc__, argv=None, help=True, version=None, options_first=False)
     port = int(args["<port>"])
-    # print(port)
     utils.selfip = f"http://localhost:{port}"
     utils.peerList += str(port)
     w.privateKeyPath += str(port)
@@ -265,5 +222,4 @@ if __name__ == '__main__':
     signal.signal(signal.SIGINT, chain.flush)
 
     main(port)
-    # http_server(port)
 

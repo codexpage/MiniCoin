@@ -1,6 +1,5 @@
 import transaction
 import copy
-#list of txs
 txPool =[]
 
 def getTxPool():
@@ -8,10 +7,8 @@ def getTxPool():
 
 def addToTxPool(tx: transaction, unspentTxOuts) -> bool:
     if not transaction.validateTx(tx, unspentTxOuts):
-        # raise("invalid tx")
         return False
     if not isValidTxForPool(tx, txPool):
-        # raise("invalid addtion")
         return False
     
     txPool.append(tx)
@@ -34,7 +31,6 @@ def updateTxPool(unspentTxOuts: [transaction.UnspentTxOut]):
 
 
     if len(invalidTxs) > 0:
-        # transactionPool = _.without(transactionPool, ...invalidTxs);
         for invalid in invalidTxs:
             txPool.remove(invalid)
 
@@ -43,12 +39,10 @@ def getTxPoolIns(pool: [transaction.Transaction]):
     ret = []
     for p in pool:
         ret.extend(p.txIns)
-    # return pool.map(lambda tx: tx.txIns).flatten().value()
     return ret
 
 def isValidTxForPool(tx: transaction.Transaction, pool: [transaction.Transaction]):
     txPoolIns = getTxPoolIns(pool)
-
 
     for ins in tx.txIns:
         if containsTxIn(txPoolIns, ins):
@@ -57,7 +51,6 @@ def isValidTxForPool(tx: transaction.Transaction, pool: [transaction.Transaction
 
 
 def containsTxIn(txIns, txIn):
-    # contains = True
     for ins in txIns:
         if txIn.txOutIndex == ins.txOutIndex and txIn.txOutId == ins.txOutId:
             return True

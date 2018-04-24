@@ -1,8 +1,6 @@
-import hashlib
 import utils
 from utils import sha256d, list_hash
 import time
-import json
 import threading
 import transaction as tr
 import wallet as wa
@@ -10,11 +8,9 @@ import TxPool as pool
 import p2p
 import datetime
 import os
-import signal
 import pickle
-# from typing import Iterable
 BLOCK_GENERATION_INTERVAL = 10  # 10s
-DIFFICULTY_ADJUSTMENT_INTERVAL = 2  # 10 blocks
+DIFFICULTY_ADJUSTMENT_INTERVAL = 3  # 10 blocks
 storage = "./chains/blockchains"
 class Block:
     def __init__(self, index, data, timestamp, hash, prev_hash, nonce, difficulty):
@@ -30,8 +26,6 @@ class Block:
     # 计算block hash，不包括nonce
     def calculate_hash(self):
         return list_hash([str(self)]+[tx.id for tx in self.data])
-        # return list_hash(
-        #     [str(self.index), self.data, str(self.timestamp), self.prev_hash, str(self.difficulty), str(self.nonce)])
 
     def __eq__(self, other):
         return (
@@ -65,10 +59,8 @@ genesis_block = Block(
     difficulty=0  # 20 is about 5s
 )
 
-# print(genesis_block.calculate_hash())
 
 blockchain = [genesis_block]
-# utxos = []  # list of utxo
 utxos = tr.processTx(blockchain[0].data, [], 0)
 
 
@@ -87,20 +79,9 @@ def setUtxos(newutxos):
     utxos = newutxos
 
 
-# return utxo.deepcopy() #why?
-
-
-# ====================functions==================
 
 def getLastBlock():
     return blockchain[-1]
-
-
-# def generateEmptyNextBlock():
-#     pass
-
-
-# return a block with no data
 
 
 def getDifficulty():
@@ -161,8 +142,6 @@ def generateBlock_with_data(data):
     return newBlock #return none if interrupted
 
 
-# print(generateBlock_with_data("hello"))
-
 def assmbleDataToMineBlock():
     # choose tx data from pool block = select_from_mempool(block)
     # add coinbase and fee fees = calculate_fees(block)
@@ -210,11 +189,8 @@ def miner():
             # cnt+=1
             print("{time: %H:%M:%S}".format(time = datetime.datetime.now()),"mined a block",block)
             p2p.broadcast((block,utils.selfip),"/block")
-            #TODO save to disk
-        #if block is empty means it was interuptted, start new loop on new block
 
 
-# =========validate block========
 # block类型检查
 def validate_block_types(block):
     """Returns whether all of the types in the given block are correct"""
@@ -228,9 +204,6 @@ def validate_block_types(block):
     )
 
 
-# print(validate_block_types(genesis_block))
-
-
 def validate_genesis_block(block):
     if not genesis_block == block:
         print('Invalid genesis block')
@@ -238,7 +211,6 @@ def validate_genesis_block(block):
     return True
 
 
-# print(validate_genesis_block(genesis_block))
 
 def validate_block(block, prev_block)->bool:
     """Validates a given non-genesis block, raising a ValueError if a problem
@@ -265,7 +237,6 @@ def validate_blockchain(chain):
     """When given a blockchain, validates that all blocks are valid, raising
     a ValueError if an inconsistency or other problem is found"""
     if len(chain) < 1:
-        # raise ValueError('Zero-length blockchain')
         return False
     if not validate_genesis_block(chain[0]):
         return False
@@ -280,10 +251,6 @@ def validate_blockchain(chain):
             print("transactions is invalid")
             return None
     return res_utxos
-
-
-
-# print(validate_blockchain([]))
 
 
 def getAccumulatedDifficulty(chain):
@@ -308,7 +275,6 @@ def addBlockToChain(block):
         return False
 
 
-#TODO treat read chain from file as replace chain, save to disk when exit(or each block)
 # replace the chian with new chain if it's has more work
 def replaceChain(newchain)->bool:
     res_utxos = validate_blockchain(newchain)
@@ -325,12 +291,6 @@ def replaceChain(newchain)->bool:
         print("Received blockchain is invalid.")
         return False
 
-# def isValidTimestamp():
-# 	pass
 
-
-# def addBlockToChain():
-# 	pass
 if __name__ == '__main__':
-    # miner()
     print(getUtxos()[0].amount)

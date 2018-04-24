@@ -54,19 +54,7 @@ def getBalanceRequest(url, index):
     except Exception as e:
         print(e)
         addr[index],balance[index]=None,None
-    # pickle.loads(r.content)
-    # print(r.content)
     return
-
-
-# def postRequest(url, data):
-#     try:
-#         r = requests.post(url, pickle.dumps(data))
-#         # print(r.content)
-#         return pickle.loads(r.content)
-#     except Exception as e:
-#         print(e)
-#         return None
 
 
 

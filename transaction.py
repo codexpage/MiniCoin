@@ -1,10 +1,8 @@
-# import rsa
 import utils
 import ecdsa
 import string
 from functools import reduce
 from wallet import getPrivateKeyFromWallet, getPubKeyFromWallet
-# use rsa2048 (2048bit) instead of dsa
 
 COINBASE_AMOUNT = 50
 
@@ -67,9 +65,6 @@ class Transaction:
         )
 
 
-# def __getattr__(self, item):
-# 	return self.item
-
 
 # txin and txout content to string then sha256 to hash value(txid)
 def getTxid(tx):
@@ -87,7 +82,6 @@ def validateTx(tx: Transaction, unspentTxOuts):
         print("txid is not correct")
         return False
 
-    # hasValidTxIns = tx.txIns.map(lambda t: validateTxIn(t, tx, unspentTxOuts)).reduce(lambda t1, t2: t1 and t2, True)
     hasValidTxIns = True
     for ins in tx.txIns:
         hasValidTxIns = hasValidTxIns and validateTxIn(ins, tx, unspentTxOuts)#all In should be valid
@@ -96,12 +90,10 @@ def validateTx(tx: Transaction, unspentTxOuts):
         print("some txIn in the tx is not invalid ")
         return False
 
-    # totalTxInValue = tx.txIns.map(lambda t: getTxInAmount(t, unspentTxOuts)).reduce(lambda t1, t2: t1 + t2, 0)
     totalTxInValue = 0
     for ins in tx.txIns:
         totalTxInValue += getTxInAmount(ins, unspentTxOuts)
 
-    # totalTxOutValue = tx.txOuts.map(lambda t: t.amount).reduce(lambda t1, t2: t1 + t2, 0)
     totalTxOutValue = 0
     for outs in tx.txOuts:
         totalTxOutValue += outs.amount
@@ -112,7 +104,7 @@ def validateTx(tx: Transaction, unspentTxOuts):
 
     return True
 
-#validate every tx in a block
+
 def validateBlockTxs(txs, unspentTxOuts, index):
     coinbaseTx = txs[0]
     if not validateCoinbaseTx(coinbaseTx, index):
@@ -123,28 +115,13 @@ def validateBlockTxs(txs, unspentTxOuts, index):
     for tx in txs:
         txIns += tx.txIns
 
-    #     // check
-    #     for duplicate txIns.Each txIn can be included only once
-    #     const
-    #     txIns: TxIn[] = _(aTransactions)
-    #     .map(tx= > tx.txIns)
-    #     .flatten()
-    #     .value();
-    #
-    #
-    # if (hasDuplicates(txIns)) {
-    # return false;
-    # }
-    #     txIns = txs.map(lambda tx: txIns).flatten().value()
     if hasDups(txIns):
         print("block contain dup txIn, cannot spend same txout twice.")
         return False
 
-    # normalTx = txs.slice(1)
     validNormalTx = True
     for i in range(1, len(txs)): #every tx  should be valid (except coinbase tx)
         validNormalTx = validNormalTx and validateTx(txs[i], unspentTxOuts)
-    # return normalTx.map(lambda tx: validateTx(tx, unspentTxOuts)).recude(lambda t1, t2: t1 and t2, True)
     return validNormalTx
 
 
@@ -153,21 +130,10 @@ def hasDups(txIns):
         # if len(txIns) == set(txIns):
         return True
     return False
-    # groups = _.countBy(txIns, (txIn) = > txIn.txOutId + txIn.txOutId);
-    # return _(groups)
-    # .map((value, key) = > {
-    # if (value > 1)
-    # {
-    #     console.log('duplicate txIn: ' + key);
-    # return true;
-    # } else {
-    # return false;
-    # pass
 
 
 # input tx and block index
 def validateCoinbaseTx(tx: Transaction, index: int) -> bool:
-    # print(getTxid(tx),tx.id)
     return (
             tx is not None
             and getTxid(tx) == tx.id
@@ -180,7 +146,6 @@ def validateCoinbaseTx(tx: Transaction, index: int) -> bool:
 
 def validateTxIn(txIn: TxIn, tx: Transaction, unspents):
 
-    # referencedTxOut = unspents.find(lambda t: t.txOutId == txIn.txOutId and t.txOutId == txIn.txOutId)
     referencedTxOut=None
 
     for unspent in unspents:
@@ -192,22 +157,12 @@ def validateTxIn(txIn: TxIn, tx: Transaction, unspents):
         print("there is not matching txout in utxos for this txIn", txIn)
         return False
 
-    # public key
     pub = bytes.fromhex(referencedTxOut.address)
     key = ecdsa.VerifyingKey.from_string(string=pub, curve=ecdsa.SECP256k1)
-
-    # key = getPrivateKeyFromWallet().get_verifying_key()
-
-    # key = ecdsa.keyFromPublic(addr, 'hex')
-    # ecdsa.verify(tx.id, txIn.signature)
-    # key = ""
     if not key.verify(bytes.fromhex(txIn.signature), tx.id.encode()):
         print("txin signature incorrect", txIn)
         return False
     return True
-    # key = ec.keyFromPublic(address, 'hex');
-    # return key.verify(transaction.id, txIn.signature);
-    # return rsa.verify(tx.id, txIn.signature, utils.pubkey)
 
 
 def getTxInAmount(txIn: TxIn, unspents):
@@ -220,7 +175,6 @@ def findUnspentTxOut(txId, index, unspents):
             return unspent
 
     return None
-    # return unspents.find(lambda t: t.txOutId == txId and t.txOutIndex == index)
 
 
 def getCoinbaseTx(addr: str, index: int):
@@ -241,14 +195,8 @@ def signTxin(tx: Transaction, txInIndex: int, pk: str, unspentTxOuts) -> str:
     if getPublicKey(pk) != addr:
         raise ("input does not match")
 
-    # TODO key
-    # key = ecdsa.keyFromPrivate(pk, 'hex')
-    # key = ecdsa.SigningKey.from_string(string=pk, curve=ecdsa.SECP256k1)
     key = getPrivateKeyFromWallet()
     signiture = key.sign(id.encode()).hex()  # .toDER().encode('hex')
-
-    # key = toHex(utils.privatekey)
-    # signature = toHex(rsa.encrypt(id, pk))
 
     return signiture
 
@@ -258,18 +206,9 @@ def updateUnspentTxOut(txs, unspentTxout, index):
     for tx in txs:
         txout = []
         for i in range(0, len(tx.txOuts)):
-            # if index != 0 and  getPubKeyFromWallet() == tx.txOuts[i].address:
-            #     txout.append(UnspentTxOut(tx.id, i, tx.txOuts[i].address, tx.txOuts[i].amount))
-            # else:
             txout.append(UnspentTxOut(tx.id, i, tx.txOuts[i].address, tx.txOuts[i].amount))
 
         newUnspentTxOut = newUnspentTxOut + txout
-
-    # newUnspentTxOut = reduce(lambda t1, t2: t1 + t2 ,
-    #                          map(lambda tx:
-    #                              map(lambda txout, index: UnspentTxOut(tx.id, index, txout.address, txout.amount),
-    #                                  tx.txOuts),
-    #                              txs))
     consumedTxOuts = []
     newTxIns = []
     for tx in txs:
@@ -278,10 +217,6 @@ def updateUnspentTxOut(txs, unspentTxout, index):
     for ins in newTxIns:
         consumedTxOuts.append(UnspentTxOut(ins.txOutId, ins.txOutIndex, '', 0))
 
-    # consumedTxOuts = map(lambda txin: UnspentTxOut(txin.txOutId, txin.txOutIndex, "", 0) ,
-    #                      reduce(lambda t1, t2: t1+ t2,
-    #                             map(lambda tx: tx.txIns,
-    #                                 txs)))
 
     result = []
     for unspent in unspentTxout:
@@ -289,12 +224,8 @@ def updateUnspentTxOut(txs, unspentTxout, index):
             result.append(unspent)
     result += newUnspentTxOut
     return result
-    # result = filter(lambda tx: not findUnspentTxOut(tx.txOutsId, tx.txOutsIndex, consumedTxOuts), unspentTxout) \
-    #          + newUnspentTxOut
 
 
-#  input current utxos
-#  return changed utxos after some txs
 def processTx(txs, unspentTxout, blockIndex):
     if not isValidTxList(txs):
         print("tx in block is invalid")
@@ -308,11 +239,7 @@ def processTx(txs, unspentTxout, blockIndex):
 
 
 def getPublicKey(privatekey) -> str:
-    #     rsa.construct()
     return privatekey.get_verifying_key().to_string().hex()
-
-    # return ecdsa.keyFromPrivate(privatekey, 'hex').getPublic().encode('hex')
-    pass
 
 
 def isValidTxIn(txin: TxIn) -> bool:
@@ -359,20 +286,7 @@ def isValidTxStruct(tx: Transaction) -> bool:
             type(tx.id) == str
             and isinstance(tx.txIns, list)
             and validateIn
-            # and reduce(lambda t1, t2: t1 and t2, map(lambda txin: isValidTxIn(txin), tx.txIns))
             and isinstance(tx.txOuts, list)
             and validateOut
-        # and reduce(lambda t1, t2: t1 and t2, map(lambda txout: isValidTxOut(txout), tx.txOuts))
     )
 
-# def updateUtxos(txs, utxo):
-#     # return new utxo list
-#     return []
-#
-#
-# #
-# def processTxs(txs, utxo, blockIndex: int):
-#     # validate block tx
-#     # update utxo
-#     # retuurn
-#     pass
