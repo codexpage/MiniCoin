@@ -1,34 +1,2510 @@
 start main
-peers: ['http://localhost:8009', 'http://localhost:8006', 'http://localhost:8001', 'http://localhost:8004', 'http://localhost:8003', 'http://localhost:8008', 'http://localhost:8000']
-start utxos: [<transaction.UnspentTxOut object at 0x10c9d2470>]
+peers: ['http://localhost:8003', 'http://localhost:8007', 'http://localhost:8008', 'http://localhost:8004', 'http://localhost:8000', 'http://localhost:8006', 'http://localhost:8009', 'http://localhost:8001', 'http://localhost:8002']
+start utxos: [<transaction.UnspentTxOut object at 0x1115f6710>]
 heart beat of  http://localhost:8000 b'live'
-afterset <threading.Event object at 0x10c9d2390> True
-read from file ./chains/blockchains8005
-mining interrupted. 82
+heart beat of  http://localhost:8006 b'live'
 heart beat of  http://localhost:8009 b'live'
 heart beat of  http://localhost:8001 b'live'
-heart beat of  http://localhost:8000 b'live'
-from http://localhost:8009 ======A block received=========, 00:39:07  current length 83
-83
+heart beat of  http://localhost:8002 b'live'
+from http://localhost:8002 ======A block received=========, 18:36:57  current length 1
+1
 =============================
 one block behind, add to chain
 The block has been accepted
-broadcast: 3 ['http://localhost:8009', 'http://localhost:8001', 'http://localhost:8000']
-mining interrupted. 83
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+from http://localhost:8002 ======A block received=========, 18:36:57  current length 2
+2
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+from http://localhost:8001 ======A block received=========, 18:36:57  current length 3
+1
+=============================
+this block is from a shorter chain
 could not find MARK
-from http://localhost:8000 ======A block received=========, 00:39:07  current length 84
-83
+from http://localhost:8009 ======A block received=========, 18:36:57  current length 3
+1
+=============================
+could not find MARK
+could not find MARK
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:36:57  current length 3
+2
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+mining interrupted. 2
+The block has been accepted
+ 18:36:58 mined a block Block:3
+DataLen:1
+Time:1524523018
+PrevHash:fa3476140b7ca0a695a551f19b7a1fd8bd5af38b100f98460c0332786967766e
+Nonce:0
+Difficulty:0
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+change diff: 30 1524523018 1524523017 1
+The block has been accepted
+ 18:36:58 mined a block Block:4
+DataLen:1
+Time:1524523018
+PrevHash:35a757dd8d4982ab4f375f4a1dedddc35e4cdcd8482fafb3de92a58e3cd261eb
+Nonce:1
+Difficulty:1
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+The block has been accepted
+ 18:36:58 mined a block Block:5
+DataLen:1
+Time:1524523018
+PrevHash:5385da46d2603ea8ea01c49b63a76e6b346683835d9b1c15a83a7a8ba8bd129d
+Nonce:3
+Difficulty:1
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+The block has been accepted
+ 18:36:58 mined a block Block:6
+DataLen:1
+Time:1524523018
+PrevHash:1f2981911b6c359c38d42cd492058399554facee9d530d56ef14861c11e2edb2
+Nonce:0
+Difficulty:1
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+change diff: 30 1524523018 1524523018 0
+The block has been accepted
+ 18:36:58 mined a block Block:7
+DataLen:1
+Time:1524523018
+PrevHash:3b63f16656a1a356edd9ef00613f567fe481cf6385fcd204b5ee7d69f4f96d17
+Nonce:9
+Difficulty:2
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+The block has been accepted
+ 18:36:58 mined a block Block:8
+DataLen:1
+Time:1524523018
+PrevHash:1b1c2b754b19b5c0df9d48887ad50527c927d02571494ad3b8347e204975595c
+Nonce:2
+Difficulty:2
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+The block has been accepted
+ 18:36:58 mined a block Block:9
+DataLen:1
+Time:1524523018
+PrevHash:3e5f8e3344e4f3b4fc19a5b0d9e0de194006b1b5d7c29cd7440e23ddc2f3201d
+Nonce:1
+Difficulty:2
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+change diff: 30 1524523018 1524523018 0
+The block has been accepted
+ 18:36:58 mined a block Block:10
+DataLen:1
+Time:1524523018
+PrevHash:00041d83620a5e40f2cf75027715548ec12f1a68c28da4fbb406f70b0b52bd5c
+Nonce:2
+Difficulty:3
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+The block has been accepted
+ 18:36:58 mined a block Block:11
+DataLen:1
+Time:1524523018
+PrevHash:0981871697b981249724ccadd684b5b8e82c2c3622c42dd59069377ce1cf36f0
+Nonce:8
+Difficulty:3
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+The block has been accepted
+ 18:36:58 mined a block Block:12
+DataLen:1
+Time:1524523018
+PrevHash:018d088bb57cda494fe2a765b3cf864f51813648c1a32b413d9373ae0631a643
+Nonce:0
+Difficulty:3
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+change diff: 30 1524523018 1524523018 0
+The block has been accepted
+ 18:36:58 mined a block Block:13
+DataLen:1
+Time:1524523018
+PrevHash:1a97da82456b480b9130094b8952f19cfcb2899c534b8d38f06b2774f603afe8
+Nonce:67
+Difficulty:4
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+The block has been accepted
+ 18:36:58 mined a block Block:14
+DataLen:1
+Time:1524523018
+PrevHash:018389a35ed8a076a637181e8308faa4515a98df6bb34e36f9413e7301070cff
+Nonce:4
+Difficulty:4
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+The block has been accepted
+ 18:36:58 mined a block Block:15
+DataLen:1
+Time:1524523018
+PrevHash:0d1e7f3a5b63e53e707e73159b00e2df612d3cbe0fa1dd346cd5cf9f5e4ab316
+Nonce:20
+Difficulty:4
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+change diff: 30 1524523018 1524523018 0
+The block has been accepted
+ 18:36:58 mined a block Block:16
+DataLen:1
+Time:1524523018
+PrevHash:0d357e562fe0a011c4e9d56a35f3af239642f5fd9f9b17ab37ca51763f39ca97
+Nonce:55
+Difficulty:5
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+The block has been accepted
+ 18:36:58 mined a block Block:17
+DataLen:1
+Time:1524523018
+PrevHash:038a5048686899ae2f95d3cab1bf06037a759a3d0d2e5ed172fa974e56217b9f
+Nonce:9
+Difficulty:5
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+The block has been accepted
+ 18:36:58 mined a block Block:18
+DataLen:1
+Time:1524523018
+PrevHash:00a12dd3743947abf1ec490d9e9485b0d71887ee9da1bfbfa62dabc6afb9180a
+Nonce:91
+Difficulty:5
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+change diff: 30 1524523018 1524523018 0
+The block has been accepted
+ 18:36:58 mined a block Block:19
+DataLen:1
+Time:1524523018
+PrevHash:04e43bd7a9fe7cf081db6584acf9856a6cfb5ddc3e74517e28585343975689aa
+Nonce:84
+Difficulty:6
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+The block has been accepted
+ 18:36:59 mined a block Block:20
+DataLen:1
+Time:1524523018
+PrevHash:030fcb44ea5af2139d54282866e9e4c58cb219f9c0dc9ba419043a4b4cd189f4
+Nonce:156
+Difficulty:6
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+The block has been accepted
+ 18:36:59 mined a block Block:21
+DataLen:1
+Time:1524523019
+PrevHash:02c38ddceaaf27c3774f309ec613a5361038780f9789c224ce32023b86fa3c6b
+Nonce:16
+Difficulty:6
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+change diff: 30 1524523019 1524523018 1
+The block has been accepted
+ 18:36:59 mined a block Block:22
+DataLen:1
+Time:1524523019
+PrevHash:0048ad516b9d2017943dc7dc76a755493dac2ae24245f4a9fc316791984a9abb
+Nonce:9
+Difficulty:7
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+The block has been accepted
+ 18:36:59 mined a block Block:23
+DataLen:1
+Time:1524523019
+PrevHash:00f97b0053abe6a2ad3d362735acce1fe2c18375a8d63566825fe114640a0783
+Nonce:351
+Difficulty:7
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+The block has been accepted
+ 18:36:59 mined a block Block:24
+DataLen:1
+Time:1524523019
+PrevHash:01aca87156f6fddcc16e697470b3d35d5ec66607b6214d2856ea40f453d2f682
+Nonce:168
+Difficulty:7
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+change diff: 30 1524523019 1524523019 0
+The block has been accepted
+ 18:36:59 mined a block Block:25
+DataLen:1
+Time:1524523019
+PrevHash:00e3bbec80ef2b314a93aa587fde5959c9049e175fa4313e4743b4609f879074
+Nonce:494
+Difficulty:8
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+The block has been accepted
+ 18:36:59 mined a block Block:26
+DataLen:1
+Time:1524523019
+PrevHash:00f4804dfc31329206a2270db783a355f3d6ca293e94070622a56fb241823a53
+Nonce:390
+Difficulty:8
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+The block has been accepted
+ 18:36:59 mined a block Block:27
+DataLen:1
+Time:1524523019
+PrevHash:00302afd8d0abf679bb1c6361ebc4db63c3ef70a4ae22cda76796d517f2531e8
+Nonce:418
+Difficulty:8
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+change diff: 30 1524523019 1524523019 0
+The block has been accepted
+ 18:36:59 mined a block Block:28
+DataLen:1
+Time:1524523019
+PrevHash:0039fa28c0df21d666a4bd517321bfed90ee6c1d978ee669630577269d2b6467
+Nonce:267
+Difficulty:9
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+The block has been accepted
+ 18:36:59 mined a block Block:29
+DataLen:1
+Time:1524523019
+PrevHash:004db354171ecf8ed93e4fb043ae99e73c4f14490f01e85dab393a703fc11516
+Nonce:394
+Difficulty:9
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+The block has been accepted
+ 18:36:59 mined a block Block:30
+DataLen:1
+Time:1524523019
+PrevHash:001613f972c6ca54900e6571ac34c8c2877691fc9c0b46e783088bf8f09c8f30
+Nonce:219
+Difficulty:9
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+change diff: 30 1524523019 1524523019 0
+The block has been accepted
+ 18:36:59 mined a block Block:31
+DataLen:1
+Time:1524523019
+PrevHash:000c0ad69e70fcd3da3eabd79352ad0d00d339520c3b21912cbcd59020a76426
+Nonce:796
+Difficulty:10
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+The block has been accepted
+ 18:37:00 mined a block Block:32
+DataLen:1
+Time:1524523019
+PrevHash:002ba276b7933644e508614d647848e30738cac8f906e07203037ebb269900b1
+Nonce:1364
+Difficulty:10
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+The block has been accepted
+ 18:37:00 mined a block Block:33
+DataLen:1
+Time:1524523020
+PrevHash:0032ed9681ae5a307ec2478e614d46cadefe16cfd3ed5e55e10facb19588ddb1
+Nonce:774
+Difficulty:10
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+change diff: 30 1524523020 1524523019 1
+The block has been accepted
+ 18:37:00 mined a block Block:34
+DataLen:1
+Time:1524523020
+PrevHash:003bedb2981d26c0a3890d1d1266aa28b37658c3bcd3dc461e01fee3cece3176
+Nonce:801
+Difficulty:11
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+The block has been accepted
+ 18:37:00 mined a block Block:35
+DataLen:1
+Time:1524523020
+PrevHash:001384139500bea4e15c949c2dd60c6d8c0fd49da481b47742c1a0722f1f67c2
+Nonce:1597
+Difficulty:11
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+The block has been accepted
+ 18:37:00 mined a block Block:36
+DataLen:1
+Time:1524523020
+PrevHash:00015adb2257a5f232c887075f6126e58c523923f7a414221f2c94038171cfb5
+Nonce:3857
+Difficulty:11
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+change diff: 30 1524523020 1524523020 0
+The block has been accepted
+ 18:37:02 mined a block Block:37
+DataLen:1
+Time:1524523020
+PrevHash:00050664966fd4052d9bfdf5377d5f647a3fb0acbd30ab328fa665e4573a5033
+Nonce:15969
+Difficulty:12
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+The block has been accepted
+ 18:37:02 mined a block Block:38
+DataLen:1
+Time:1524523022
+PrevHash:000a1ed43b42027caf77e2da27c795e30fa495e7ec9e0ccfc9633890154031b6
+Nonce:573
+Difficulty:12
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+The block has been accepted
+ 18:37:03 mined a block Block:39
+DataLen:1
+Time:1524523022
+PrevHash:000366cc32b86fbf6ac5ba447cb4af4fafa59d446492fb798f5402babeb93a50
+Nonce:2925
+Difficulty:12
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+change diff: 30 1524523022 1524523020 2
+The block has been accepted
+ 18:37:03 mined a block Block:40
+DataLen:1
+Time:1524523023
+PrevHash:00083c2f05d9837e367a7ea76b476b1db86ea2c9cd8bc0774f1476d9f60b6ae5
+Nonce:3041
+Difficulty:13
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+from http://localhost:8002 ======A block received=========, 18:37:03  current length 41
+3
+=============================
+this block is from a shorter chain
+The block has been accepted
+ 18:37:04 mined a block Block:41
+DataLen:1
+Time:1524523023
+PrevHash:00009f079b4967a7c7e397adc7ad05e160e63d47c9dd0e82f0d3afcd57b2a6ed
+Nonce:13857
+Difficulty:13
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+The block has been accepted
+ 18:37:05 mined a block Block:42
+DataLen:1
+Time:1524523024
+PrevHash:000315d1b5763dc40f3b3921667c2128ac36f3c3d4ca7c0574ef0c1b81cd6714
+Nonce:2579
+Difficulty:13
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+change diff: 30 1524523024 1524523023 1
+The block has been accepted
+ 18:37:07 mined a block Block:43
+DataLen:1
+Time:1524523025
+PrevHash:0002ef5226840e63dae47fd0af1650a8a11e4fcae24f7c1be99927d3d83b0724
+Nonce:36077
+Difficulty:14
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+The block has been accepted
+ 18:37:08 mined a block Block:44
+DataLen:1
+Time:1524523027
+PrevHash:0001f4dc34e674eb31f6a045c9b4f3dd20040ccc9a87deda79a10cdfb96b7825
+Nonce:2229
+Difficulty:14
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+The block has been accepted
+ 18:37:10 mined a block Block:45
+DataLen:1
+Time:1524523028
+PrevHash:00035220128fee1659c2b04c0e3f61bfeb38cf974b4370033e0c428885aa698d
+Nonce:30843
+Difficulty:14
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+change diff: 30 1524523028 1524523025 3
+The block has been accepted
+ 18:37:10 mined a block Block:46
+DataLen:1
+Time:1524523030
+PrevHash:000152b2a9a521326d2afe15e75d60a0a4627631055e866aa5aa0a1f74814620
+Nonce:2646
+Difficulty:15
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+from http://localhost:8009 ======A block received=========, 18:37:11  current length 47
+32
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:11  current length 47
+29
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:11  current length 47
+23
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:11  current length 47
+30
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:11  current length 47
+32
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:11  current length 47
+40
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:11  current length 47
+31
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:11  current length 47
+33
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:11  current length 47
+17
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:11  current length 47
+5
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:11  current length 47
+13
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:11  current length 47
+21
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:11  current length 47
+31
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:11  current length 47
+9
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:11  current length 47
+19
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:11  current length 47
+38
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:11  current length 47
+12
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:11  current length 47
+17
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:11  current length 47
+10
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:11  current length 47
+42
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:11  current length 47
+26
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:11  current length 47
+34
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:11  current length 47
+28
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:11  current length 47
+25
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:11  current length 47
+24
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:11  current length 47
+21
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:11  current length 47
+22
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:11  current length 47
+19
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:11  current length 47
+4
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:11  current length 47
+30
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:11  current length 47
+11
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:11  current length 47
+22
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:11  current length 47
+7
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:11  current length 47
+13
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:11  current length 47
+37
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:12  current length 47
+39
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:12  current length 47
+23
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:12  current length 47
+20
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:12  current length 47
+14
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:12  current length 47
+5
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:12  current length 47
+34
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:12  current length 47
+8
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:12  current length 47
+40
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:12  current length 47
+3
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:12  current length 47
+33
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:12  current length 47
+18
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:12  current length 47
+38
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:12  current length 47
+18
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:12  current length 47
+41
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:12  current length 47
+35
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:12  current length 47
+16
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:12  current length 47
+36
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:12  current length 47
+36
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:12  current length 47
+3
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:12  current length 47
+39
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:12  current length 47
+24
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:12  current length 47
+27
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:12  current length 47
+7
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:12  current length 47
+41
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:12  current length 47
+2
+=============================
+this block is from a shorter chain
+The block has been accepted
+ 18:37:12 mined a block Block:47
+DataLen:1
+Time:1524523030
+PrevHash:000091009f4182c4987d20ea64ed53173de3d93ca70655df0d0fc29e1515c9ce
+Nonce:11903
+Difficulty:15
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+from http://localhost:8001 ======A block received=========, 18:37:12  current length 48
+12
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:12  current length 48
+11
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:12  current length 48
+37
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:12  current length 48
+15
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:12  current length 48
+10
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:12  current length 48
+20
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:12  current length 48
+27
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:12  current length 48
+26
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:12  current length 48
+28
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:12  current length 48
+43
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:12  current length 48
+6
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:12  current length 48
+35
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:12  current length 48
+9
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:12  current length 48
+25
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:12  current length 48
+14
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:12  current length 48
+42
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:12  current length 48
+8
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:12  current length 48
+16
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:13  current length 48
+6
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:13  current length 48
+4
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:13  current length 48
+29
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:13  current length 48
+15
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:13  current length 48
+46
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:13  current length 48
+45
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:13  current length 48
+44
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:13  current length 48
+45
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:13  current length 48
+46
+=============================
+this block is from a shorter chain
+The block has been accepted
+ 18:37:13 mined a block Block:48
+DataLen:1
+Time:1524523032
+PrevHash:00002d91f7a43366f968c43bba1731d64ecf72bb871db846c953bbc87493801e
+Nonce:4296
+Difficulty:15
+
+broadcast: 3 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007']
+from http://localhost:8009 ======A block received=========, 18:37:13  current length 49
+44
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:13  current length 49
+43
+=============================
+this block is from a shorter chain
+change diff: 30 1524523032 1524523030 2
+from http://localhost:8009 ======A block received=========, 18:37:13  current length 49
+47
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+heart beat of  http://localhost:8001 b'live'
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8002 ======A block received=========, 18:37:15  current length 49
+39
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:15  current length 49
+20
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:15  current length 49
+25
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:15  current length 49
+40
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:15  current length 49
+16
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:15  current length 49
+37
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:15  current length 49
+48
+=============================
+this block is from a shorter chain
+heart beat of  http://localhost:8009 b'live'
+from http://localhost:8002 ======A block received=========, 18:37:15  current length 49
+41
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:15  current length 49
+36
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:15  current length 49
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:15  current length 49
+4
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:15  current length 49
+29
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:15  current length 49
+27
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:15  current length 49
+31
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:15  current length 49
+8
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:16  current length 49
+23
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:16  current length 49
+35
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:16  current length 49
+3
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:16  current length 49
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:16  current length 49
+11
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:16  current length 49
+38
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:16  current length 49
+19
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:16  current length 49
+31
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:16  current length 49
+7
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:16  current length 49
+26
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:16  current length 49
+6
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:16  current length 49
+4
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:16  current length 49
+42
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:16  current length 49
+44
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:16  current length 49
+24
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:16  current length 49
+43
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:16  current length 49
+28
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:16  current length 49
+40
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:16  current length 49
+34
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:16  current length 49
+14
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:16  current length 49
+33
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:16  current length 49
+32
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:16  current length 49
+17
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:16  current length 49
+38
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:16  current length 49
+2
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:16  current length 49
+39
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:16  current length 49
+5
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:16  current length 49
+1
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:16  current length 49
+10
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:16  current length 49
+12
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:16  current length 49
+29
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:16  current length 49
+36
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:16  current length 49
+3
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:16  current length 49
+37
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:16  current length 49
+41
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:16  current length 49
+21
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:17  current length 49
+48
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:17  current length 49
+49
+=============================
+need to replace chain from http://localhost:8009
+request a chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8001 ======A block received=========, 18:37:17  current length 49
+49
+=============================
+need to replace chain from http://localhost:8001
+request a chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+longer chain getted
+afterset <threading.Event object at 0x1115f6630> True
+broadcast: 4 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007', 'http://localhost:8000']
+mining interrupted. 49
+could not find MARK
+could not find MARK
+replaced chain
+could not find MARK
+could not find MARK
+from http://localhost:8000 ======A block received=========, 18:37:18  current length 50
+45
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+from http://localhost:8001 ======A block received=========, 18:37:18  current length 50
+could not find MARK
+could not find MARK
+49
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+send all chain
+could not find MARK
+from http://localhost:8000 ======A block received=========, 18:37:18  current length 50
+49
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8001 ======A block received=========, 18:37:18  current length 50
+48
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8006 ======A block received=========, 18:37:18  current length 50
+27
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:18  current length 50
+18
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+longer chain getted
+afterset <threading.Event object at 0x1115f6630> True
+broadcast: 4 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007', 'http://localhost:8000']
+could not find MARK
+mining interrupted. 49
+replaced chain
+from http://localhost:8006 ======A block received=========, 18:37:18  current length 50
+15
+=============================
+this block is from a shorter chain
+send all chain
+from http://localhost:8006 ======A block received=========, 18:37:18  current length 50
+30
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:18  current length 50
+13
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:18  current length 50
+15
+=============================
+this block is from a shorter chain
+send all chain
+from http://localhost:8002 ======A block received=========, 18:37:18  current length 50
+23
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:18  current length 50
+5
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:18  current length 50
+9
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:18  current length 50
+25
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:18  current length 50
+21
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:18  current length 50
+14
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:18  current length 50
+could not find MARK
+could not find MARK
+33
+could not find MARK
+=============================
+could not find MARK
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8006 ======A block received=========, 18:37:18  current length 50
+26
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8002 ======A block received=========, 18:37:18  current length 50
+16
 could not find MARK
 =============================
 this block is from a shorter chain
-from http://localhost:8001 ======A block received=========, 00:39:07  current length 84
-83
+from http://localhost:8006 ======A block received=========, 18:37:19  current length 50
+13
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:19  current length 50
+4
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:19  current length 50
+could not find MARK
+20
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:19  current length 50
+10
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+send all chain
+send all chain
+heart beat of  http://localhost:8007 b'live'
+from http://localhost:8006 ======A block received=========, 18:37:19  current length 50
+37
+=============================
+this block is from a shorter chain
+send all chain
+from http://localhost:8009 ======A block received=========, 18:37:19  current length 50
+49
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:19  current length 50
+49
+=============================
+this block is from a shorter chain
+heart beat of  http://localhost:8000 b'live'
+from http://localhost:8001 ======A block received=========, 18:37:19  current length 50
+49
+=============================
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8001 ======A block received=========, 18:37:19  current length 50
+49
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:19  current length 50
+49
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:19  current length 50
+49
+=============================
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8002 ======A block received=========, 18:37:19  current length 50
+45
+=============================
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8000 ======A block received=========, 18:37:19  current length 50
+49
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:19  current length 50
+49
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:19  current length 50
+49
+=============================
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8001 ======A block received=========, 18:37:20  current length 50
+50
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: 4 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007', 'http://localhost:8000']
+mining interrupted. 50
+could not find MARK
+from http://localhost:8009 ======A block received=========, 18:37:20  current length 51
+50
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:20  current length 51
+50
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+from http://localhost:8001 ======A block received=========, 18:37:20  current length 51
+51
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: 4 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007', 'http://localhost:8000']
+mining interrupted. 51
+change diff: 30 1524523040 1524523034 6
+from http://localhost:8007 ======A block received=========, 18:37:20  current length 52
+50
+=============================
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8000 ======A block received=========, 18:37:20  current length 52
+51
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8007 ======A block received=========, 18:37:20  current length 52
+51
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 18:37:21  current length 52
+52
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: 4 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007', 'http://localhost:8000']
+mining interrupted. 52
+from http://localhost:8009 ======A block received=========, 18:37:21  current length 53
+52
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:21  current length 53
+51
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:21  current length 53
+52
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8000 ======A block received=========, 18:37:21  current length 53
+52
+=============================
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8006 ======A block received=========, 18:37:22  current length 53
+33
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:22  current length 53
+12
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:22  current length 53
+16
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:22  current length 53
+25
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:22  current length 53
+28
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:22  current length 53
+34
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:22  current length 53
+43
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:22  current length 53
+17
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:22  current length 53
+43
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:22  current length 53
+11
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:22  current length 53
+21
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:22  current length 53
+32
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:22  current length 53
+26
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:22  current length 53
+45
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:22  current length 53
+24
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:22  current length 53
+7
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:22  current length 53
+12
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:22  current length 53
+19
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:22  current length 53
+34
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:22  current length 53
+32
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:22  current length 53
+44
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:22  current length 53
+30
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:22  current length 53
+8
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:22  current length 53
+44
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:22  current length 53
+41
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:22  current length 53
+20
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:22  current length 53
+23
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:22  current length 53
+24
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:22  current length 53
+6
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:22  current length 53
+17
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:22  current length 53
+39
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:22  current length 53
+11
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:22  current length 53
+9
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:22  current length 53
+22
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:23  current length 53
+10
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:23  current length 53
+42
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:23  current length 53
+36
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:23  current length 53
+18
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:23  current length 53
+14
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:23  current length 53
+31
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:23  current length 53
+7
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:23  current length 53
+40
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:23  current length 53
+8
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:23  current length 53
+22
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:23  current length 53
+35
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:23  current length 53
+38
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:23  current length 53
+28
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:23  current length 53
+19
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:23  current length 53
+29
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:23  current length 53
+6
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:23  current length 53
+5
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:23  current length 53
+42
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:23  current length 53
+53
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: 4 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007', 'http://localhost:8000']
+mining interrupted. 53
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8007 ======A block received=========, 18:37:23  current length 54
+53
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:23  current length 54
+53
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:23  current length 54
+46
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:23  current length 54
+53
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:23  current length 54
+53
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:24  current length 54
+53
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:24  current length 54
+53
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:24  current length 54
+53
+=============================
+this block is from a shorter chain
+could not find MARK
+The block has been accepted
+ 18:37:25 mined a block Block:54
+DataLen:1
+Time:1524523043
+PrevHash:00007df72b2d34f942c7bb673ab581020de4f7cbfac86b99b60b13775ea34971
+Nonce:14873
+Difficulty:17
+
+broadcast: 6 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007', 'http://localhost:8000', 'http://localhost:8006', 'http://localhost:8002']
+change diff: 30 1524523043 1524523040 3
+from http://localhost:8001 ======A block received=========, 18:37:25  current length 55
+54
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8006 ======A block received=========, 18:37:25  current length 55
+54
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:37:25  current length 55
+54
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8002 ======A block received=========, 18:37:25  current length 55
+54
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 18:37:25  current length 55
+54
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:26  current length 55
+55
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: 6 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007', 'http://localhost:8000', 'http://localhost:8006', 'http://localhost:8002']
+mining interrupted. 55
+could not find MARK
+could not find MARK
+from http://localhost:8007 ======A block received=========, 18:37:26  current length 56
+55
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:26  current length 56
+55
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+from http://localhost:8000 ======A block received=========, 18:37:26  current length 56
+55
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:26  current length 56
+55
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:26  current length 56
+54
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+from http://localhost:8009 ======A block received=========, 18:37:26  current length 56
+55
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:27  current length 56
+56
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: 6 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007', 'http://localhost:8000', 'http://localhost:8006', 'http://localhost:8002']
+mining interrupted. 56
+from http://localhost:8009 ======A block received=========, 18:37:27  current length 57
+56
+=============================
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8001 ======A block received=========, 18:37:27  current length 57
+56
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8006 ======A block received=========, 18:37:27  current length 57
+56
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 18:37:27  current length 57
+56
+=============================
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8002 ======A block received=========, 18:37:27  current length 57
+56
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:27  current length 57
+57
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: 6 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007', 'http://localhost:8000', 'http://localhost:8006', 'http://localhost:8002']
+mining interrupted. 57
+change diff: 30 1524523047 1524523045 2
+could not find MARK
+from http://localhost:8007 ======A block received=========, 18:37:27  current length 58
+57
+=============================
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8009 ======A block received=========, 18:37:27  current length 58
+57
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:27  current length 58
+57
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8006 ======A block received=========, 18:37:28  current length 58
+57
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:28  current length 58
+57
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:29  current length 58
+27
+=============================
+this block is from a shorter chain
+heart beat of  http://localhost:8001 b'live'
+from http://localhost:8000 ======A block received=========, 18:37:29  current length 58
+22
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:29  current length 58
+30
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:29  current length 58
+13
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:29  current length 58
+9
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:29  current length 58
+18
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:29  current length 58
+15
+=============================
+heart beat of  http://localhost:8009 b'live'
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:29  current length 58
+35
+=============================
+this block is from a shorter chain
+heart beat of  http://localhost:8007 b'live'
+heart beat of  http://localhost:8000 b'live'
+heart beat of  http://localhost:8006 b'live'
+heart beat of  http://localhost:8002 b'live'
+from http://localhost:8002 ======A block received=========, 18:37:30  current length 58
+58
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: 6 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007', 'http://localhost:8000', 'http://localhost:8006', 'http://localhost:8002']
+mining interrupted. 58
+from http://localhost:8009 ======A block received=========, 18:37:30  current length 59
+58
+=============================
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8001 ======A block received=========, 18:37:30  current length 59
+58
+=============================
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8007 ======A block received=========, 18:37:30  current length 59
+58
+=============================
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8000 ======A block received=========, 18:37:30  current length 59
+58
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+from http://localhost:8006 ======A block received=========, 18:37:30  current length 59
+58
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:30  current length 59
+59
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: 6 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007', 'http://localhost:8000', 'http://localhost:8006', 'http://localhost:8002']
+mining interrupted. 59
+from http://localhost:8006 ======A block received=========, 18:37:31  current length 60
+59
+=============================
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8000 ======A block received=========, 18:37:31  current length 60
+59
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8009 ======A block received=========, 18:37:31  current length 60
+59
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:31  current length 60
+59
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 18:37:31  current length 60
+59
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:32  current length 60
+60
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: 6 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007', 'http://localhost:8000', 'http://localhost:8006', 'http://localhost:8002']
+mining interrupted. 60
+change diff: 30 1524523050 1524523047 3
+from http://localhost:8009 ======A block received=========, 18:37:32  current length 61
+could not find MARK
+could not find MARK
+60
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 18:37:32  current length 61
+60
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:32  current length 61
+60
+=============================
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8006 ======A block received=========, 18:37:32  current length 61
+60
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+from http://localhost:8001 ======A block received=========, 18:37:32  current length 61
+60
+=============================
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8001 ======A block received=========, 18:37:38  current length 61
+61
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: 6 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007', 'http://localhost:8000', 'http://localhost:8006', 'http://localhost:8002']
+mining interrupted. 61
+could not find MARK
+from http://localhost:8009 ======A block received=========, 18:37:39  current length 62
+61
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8000 ======A block received=========, 18:37:39  current length 62
+61
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:39  current length 62
+61
+=============================
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8002 ======A block received=========, 18:37:39  current length 62
+61
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 18:37:39  current length 62
+61
+=============================
+this block is from a shorter chain
+heart beat of  http://localhost:8001 b'live'
+heart beat of  http://localhost:8009 b'live'
+heart beat of  http://localhost:8007 b'live'
+heart beat of  http://localhost:8000 b'live'
+heart beat of  http://localhost:8006 b'live'
+heart beat of  http://localhost:8002 b'live'
+The block has been accepted
+ 18:37:47 mined a block Block:62
+DataLen:1
+Time:1524523059
+PrevHash:000004083201970a40a5b44b0e85674e02f95f282cf13f6059a62e21bb3c2ca3
+Nonce:101267
+Difficulty:20
+
+broadcast: 6 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007', 'http://localhost:8000', 'http://localhost:8006', 'http://localhost:8002']
+from http://localhost:8001 ======A block received=========, 18:37:48  current length 63
+62
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8009 ======A block received=========, 18:37:48  current length 63
+62
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:48  current length 63
+62
+=============================
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8002 ======A block received=========, 18:37:48  current length 63
+62
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 18:37:48  current length 63
+62
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:48  current length 63
+62
+=============================
+this block is from a shorter chain
+heart beat of  http://localhost:8001 b'live'
+heart beat of  http://localhost:8009 b'live'
+heart beat of  http://localhost:8007 b'live'
+heart beat of  http://localhost:8000 b'live'
+heart beat of  http://localhost:8006 b'live'
+heart beat of  http://localhost:8002 b'live'
+from http://localhost:8001 ======A block received=========, 18:37:56  current length 63
+63
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: 6 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007', 'http://localhost:8000', 'http://localhost:8006', 'http://localhost:8002']
+mining interrupted. 63
+could not find MARK
+could not find MARK
+from http://localhost:8009 ======A block received=========, 18:37:56  current length 64
+63
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:56  current length 64
+63
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+change diff: 30 1524523068 1524523052 16
+from http://localhost:8002 ======A block received=========, 18:37:57  current length 64
+63
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:37:57  current length 64
+63
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 18:37:57  current length 64
+63
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:37:58  current length 64
+64
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: 6 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007', 'http://localhost:8000', 'http://localhost:8006', 'http://localhost:8002']
+mining interrupted. 64
+could not find MARK
+from http://localhost:8009 ======A block received=========, 18:37:58  current length 65
+64
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8006 ======A block received=========, 18:37:58  current length 65
+64
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 18:37:58  current length 65
+64
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:37:58  current length 65
+could not find MARK
+64
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:37:58  current length 65
+64
+=============================
+this block is from a shorter chain
+could not find MARK
+heart beat of  http://localhost:8001 b'live'
+heart beat of  http://localhost:8009 b'live'
+heart beat of  http://localhost:8007 b'live'
+heart beat of  http://localhost:8000 b'live'
+heart beat of  http://localhost:8006 b'live'
+heart beat of  http://localhost:8002 b'live'
+from http://localhost:8001 ======A block received=========, 18:38:05  current length 65
+65
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: 6 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007', 'http://localhost:8000', 'http://localhost:8006', 'http://localhost:8002']
+mining interrupted. 65
+from http://localhost:8009 ======A block received=========, 18:38:05  current length 66
+65
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:38:05  current length 66
+65
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8007 ======A block received=========, 18:38:06  current length 66
+65
+=============================
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8000 ======A block received=========, 18:38:06  current length 66
+65
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+from http://localhost:8006 ======A block received=========, 18:38:06  current length 66
+65
+=============================
+this block is from a shorter chain
+heart beat of  http://localhost:8001 b'live'
+heart beat of  http://localhost:8009 b'live'
+heart beat of  http://localhost:8007 b'live'
+heart beat of  http://localhost:8000 b'live'
+heart beat of  http://localhost:8006 b'live'
+heart beat of  http://localhost:8002 b'live'
+from http://localhost:8002 ======A block received=========, 18:38:18  current length 66
+66
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: 6 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007', 'http://localhost:8000', 'http://localhost:8006', 'http://localhost:8002']
+mining interrupted. 66
+could not find MARK
+from http://localhost:8009 ======A block received=========, 18:38:18  current length 67
+66
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:38:18  current length 67
+66
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+from http://localhost:8007 ======A block received=========, 18:38:18  current length 67
+66
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:38:18  current length 67
+66
+=============================
+this block is from a shorter chain
+change diff: 30 1524523085 1524523076 9
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8006 ======A block received=========, 18:38:18  current length 67
+66
+=============================
+this block is from a shorter chain
+heart beat of  http://localhost:8001 b'live'
+heart beat of  http://localhost:8009 b'live'
+heart beat of  http://localhost:8007 b'live'
+heart beat of  http://localhost:8000 b'live'
+heart beat of  http://localhost:8006 b'live'
+heart beat of  http://localhost:8002 b'live'
+from http://localhost:8001 ======A block received=========, 18:38:28  current length 67
+67
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: 6 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007', 'http://localhost:8000', 'http://localhost:8006', 'http://localhost:8002']
+mining interrupted. 67
+from http://localhost:8009 ======A block received=========, 18:38:28  current length 68
+67
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:38:28  current length 68
+67
+=============================
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8007 ======A block received=========, 18:38:28  current length 68
+67
+=============================
+could not find MARK
+this block is from a shorter chain
+could not find MARK
+from http://localhost:8006 ======A block received=========, 18:38:28  current length 68
+67
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8000 ======A block received=========, 18:38:28  current length 68
+67
+=============================
+this block is from a shorter chain
+heart beat of  http://localhost:8001 b'live'
+heart beat of  http://localhost:8009 b'live'
+heart beat of  http://localhost:8007 b'live'
+heart beat of  http://localhost:8000 b'live'
+heart beat of  http://localhost:8006 b'live'
+heart beat of  http://localhost:8002 b'live'
+heart beat of  http://localhost:8001 b'live'
+heart beat of  http://localhost:8009 b'live'
+heart beat of  http://localhost:8007 b'live'
+heart beat of  http://localhost:8000 b'live'
+heart beat of  http://localhost:8006 b'live'
+heart beat of  http://localhost:8002 b'live'
+heart beat of  http://localhost:8001 b'live'
+heart beat of  http://localhost:8009 b'live'
+heart beat of  http://localhost:8007 b'live'
+heart beat of  http://localhost:8000 b'live'
+heart beat of  http://localhost:8006 b'live'
+heart beat of  http://localhost:8002 b'live'
+from http://localhost:8002 ======A block received=========, 18:39:04  current length 68
+68
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: 6 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007', 'http://localhost:8000', 'http://localhost:8006', 'http://localhost:8002']
+mining interrupted. 68
+could not find MARK
+from http://localhost:8006 ======A block received=========, 18:39:05  current length 69
+68
+=============================
+this block is from a shorter chain
+from http://localhost:8000 ======A block received=========, 18:39:05  current length 69
+68
+=============================
+could not find MARK
+this block is from a shorter chain
+could not find MARK
+heart beat of  http://localhost:8001 b'live'
+could not find MARK
+could not find MARK
+could not find MARK
+broadcast: 6 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007', 'http://localhost:8000', 'http://localhost:8006', 'http://localhost:8002']
+receive a invalid tx
+from http://localhost:8001 ======A block received=========, 18:39:39  current length 69
+68
+=============================
+this block is from a shorter chain
+receive a invalid tx
+from http://localhost:8007 ======A block received=========, 18:39:55  current length 69
+68
+=============================
+this block is from a shorter chain
+heart beat of  http://localhost:8009 b'live'
+could not find MARK
+receive a invalid tx
+from http://localhost:8009 ======A block received=========, 18:40:11  current length 69
+68
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+receive a invalid tx
+could not find MARK
+heart beat of  http://localhost:8007 b'live'
+receive a invalid tx
+from http://localhost:8002 ======A block received=========, 18:40:38  current length 69
+69
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: 6 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007', 'http://localhost:8000', 'http://localhost:8006', 'http://localhost:8002']
+mining interrupted. 69
+change diff: 30 1524523144 1524523098 46
+could not find MARK
+from http://localhost:8000 ======A block received=========, 18:40:38  current length 70
+69
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 18:40:38  current length 70
+69
+=============================
+this block is from a shorter chain
+could not find MARK
+could not find MARK
+heart beat of  http://localhost:8000 b'live'
+heart beat of  http://localhost:8006 b'live'
+heart beat of  http://localhost:8002 b'live'
+could not find MARK
+could not find MARK
+receive a invalid tx
+from http://localhost:8006 ======A block received=========, 18:40:48  current length 70
+69
+=============================
+this block is from a shorter chain
+from http://localhost:8001 ======A block received=========, 18:40:48  current length 70
+69
+=============================
+this block is from a shorter chain
+heart beat of  http://localhost:8001 b'live'
+from http://localhost:8009 ======A block received=========, 18:40:57  current length 70
+69
 =============================
 this block is from a shorter chain
 could not find MARK
 heart beat of  http://localhost:8009 b'live'
-heart beat of  http://localhost:8001 b'live'
+heart beat of  http://localhost:8007 b'live'
 heart beat of  http://localhost:8000 b'live'
+heart beat of  http://localhost:8006 b'live'
+heart beat of  http://localhost:8002 b'live'
+from http://localhost:8001 ======A block received=========, 18:41:09  current length 70
+70
+=============================
+one block behind, add to chain
+heart beat of  http://localhost:8001 b'live'
+The block has been accepted
+ 18:41:21 mined a block Block:70
+DataLen:2
+Time:1524523238
+PrevHash:000005fdfe8d123be11e3f00ddb897dae127d528b4acda3f0d880bf38ecd9fa9
+Nonce:386570
+Difficulty:21
+
+broadcast: 6 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007', 'http://localhost:8000', 'http://localhost:8006', 'http://localhost:8002']
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+The block has been accepted
+broadcast: 6 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007', 'http://localhost:8000', 'http://localhost:8006', 'http://localhost:8002']
+mining interrupted. 70
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+from http://localhost:8007 ======A block received=========, 18:41:24  current length 72
+70
+=============================
+this block is from a shorter chain
+from http://localhost:8006 ======A block received=========, 18:41:24  current length 72
+70
+=============================
+this block is from a shorter chain
+send all chain
+send all chain
+from http://localhost:8006 ======A block received=========, 18:41:24  current length 72
+70
+=============================
+this block is from a shorter chain
+from http://localhost:8009 ======A block received=========, 18:41:25  current length 72
+70
+=============================
+this block is from a shorter chain
+heart beat of  http://localhost:8009 b'live'
+could not find MARK
+could not find MARK
+heart beat of  http://localhost:8007 b'live'
+heart beat of  http://localhost:8000 b'live'
+heart beat of  http://localhost:8006 b'live'
+from http://localhost:8000 ======A block received=========, 18:41:25  current length 72
+70
+=============================
+this block is from a shorter chain
+from http://localhost:8002 ======A block received=========, 18:41:26  current length 72
+70
+=============================
+this block is from a shorter chain
+from http://localhost:8007 ======A block received=========, 18:41:32  current length 72
+71
+=============================
+need to replace chain from http://localhost:8007
+request a chain
+from http://localhost:8006 ======A block received=========, 18:41:32  current length 72
+71
+=============================
+need to replace chain from http://localhost:8006
+request a chain
+longer chain getted
+longer chain getted
+could not find MARK
+from http://localhost:8002 ======A block received=========, 18:41:34  current length 72
+70
+=============================
+could not find MARK
+this block is from a shorter chain
+heart beat of  http://localhost:8002 b'live'
+from http://localhost:8000 ======A block received=========, 18:41:38  current length 72
+70
+=============================
+this block is from a shorter chain
+heart beat of  http://localhost:8001 b'live'
+heart beat of  http://localhost:8009 b'live'
+heart beat of  http://localhost:8007 b'live'
+heart beat of  http://localhost:8000 b'live'
+heart beat of  http://localhost:8006 b'live'
+heart beat of  http://localhost:8002 b'live'
+afterset <threading.Event object at 0x1115f6630> True
+broadcast: 6 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007', 'http://localhost:8000', 'http://localhost:8006', 'http://localhost:8002']
+mining interrupted. 70
+could not find MARK
+send all chain
+could not find MARK
+replaced chain
+could not find MARK
+could not find MARK
+could not find MARK
+send all chain
+could not find MARK
+send all chain
+from http://localhost:8009 ======A block received=========, 18:41:48  current length 72
+71
+=============================
+need to replace chain from http://localhost:8009
+request a chain
+from http://localhost:8001 ======A block received=========, 18:41:48  current length 72
+71
+=============================
+need to replace chain from http://localhost:8001
+request a chain
+longer chain getted
+longer chain getted
+from http://localhost:8006 ======A block received=========, 18:41:51  current length 72
+72
+=============================
+need to replace chain from http://localhost:8006
+request a chain
+from http://localhost:8001 ======A block received=========, 18:41:51  current length 72
+72
+=============================
+need to replace chain from http://localhost:8001
+request a chain
+longer chain getted
+from http://localhost:8007 ======A block received=========, 18:41:51  current length 72
+72
+=============================
+need to replace chain from http://localhost:8007
+request a chain
+longer chain getted
+from http://localhost:8009 ======A block received=========, 18:41:51  current length 72
+72
+=============================
+need to replace chain from http://localhost:8009
+request a chain
+longer chain getted
+longer chain getted
+from http://localhost:8002 ======A block received=========, 18:41:52  current length 72
+71
+=============================
+need to replace chain from http://localhost:8002
+request a chain
+longer chain getted
+heart beat of  http://localhost:8001 b'live'
+heart beat of  http://localhost:8009 b'live'
+heart beat of  http://localhost:8007 b'live'
+heart beat of  http://localhost:8000 b'live'
+heart beat of  http://localhost:8006 b'live'
+heart beat of  http://localhost:8002 b'live'
+from http://localhost:8000 ======A block received=========, 18:41:56  current length 72
+71
+=============================
+one block behind, add to chain
+The block has been accepted
+broadcast: 6 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007', 'http://localhost:8000', 'http://localhost:8006', 'http://localhost:8002']
+mining interrupted. 71
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+could not find MARK
+send all chain
+from http://localhost:8009 ======A block received=========, 18:42:02  current length 73
+71
+=============================
+this block is from a shorter chain
+afterset <threading.Event object at 0x1115f6630> True
+broadcast: 6 ['http://localhost:8001', 'http://localhost:8009', 'http://localhost:8007', 'http://localhost:8000', 'http://localhost:8006', 'http://localhost:8002']
+mining interrupted. 71
+could not find MARK
+replaced chain
+could not find MARK
+could not find MARK
+HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /block (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1127a7048>: Failed to establish a new connection: [Errno 61] Connection refused',))
+could not find MARK
+send all chain
+could not find MARK
 get signal 2
 saved chain to file ./chains/blockchains8005
 saved peers to file ./peerlist/peersto8005
